@@ -1,1 +1,694 @@
-{"system":{"id":"039b6994-a3e7-4531-967d-d5db7fceb5eb","rev":"dfd7f48","version":"2.40.5","date":"2026-02-17T18:17:06.764+0000"}}
+{
+  "system": {
+    "id": "039b6994-a3e7-4531-967d-d5db7fceb5eb",
+    "rev": "dfd7f48",
+    "version": "2.40.5",
+    "date": "2026-02-18T17:37:47.143Z"
+  },
+  "indicatorGroups": [
+    {
+      "id": "LpcIUjJzCEY",
+      "code": "IGP_BLADDER",
+      "name": "Bladder Indicators",
+      "shortName": "Bladder Indicators",
+      "description": "Aggregate indicators for Bladder cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "HWm0CYcnsS6"
+        },
+        {
+          "id": "KFRL4oZLhtI"
+        }
+      ]
+    },
+    {
+      "id": "1EBq8oxutiY",
+      "code": "IGP_BREAST",
+      "name": "Breast Indicators",
+      "shortName": "Breast Indicators",
+      "description": "Aggregate indicators for Breast cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "xsewnYkKu5o"
+        },
+        {
+          "id": "keBCltGBDvJ"
+        }
+      ]
+    },
+    {
+      "id": "vLLjUXOKECm",
+      "code": "IGP_COLORECTAL",
+      "name": "Colorectal Indicators",
+      "shortName": "Colorectal Indicators",
+      "description": "Aggregate indicators for Colorectal cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "Y4iMS8Z2tae"
+        },
+        {
+          "id": "HJrRVElg4XR"
+        }
+      ]
+    },
+    {
+      "id": "cW6k2EPv1WC",
+      "code": "IGP_ESOPHAGEAL",
+      "name": "Esophageal Indicators",
+      "shortName": "Esophageal Indicators",
+      "description": "Aggregate indicators for Esophageal cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "dnGjV104v2r"
+        },
+        {
+          "id": "WTfUAW6ZbcZ"
+        }
+      ]
+    },
+    {
+      "id": "fBievK3BLGC",
+      "code": "IGP_KAPOSI_SARCOMA",
+      "name": "Kaposi Sarcoma Indicators",
+      "shortName": "Kaposi Sarcoma Indicators",
+      "description": "Aggregate indicators for Kaposi Sarcoma cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "GwFNeGambO0"
+        },
+        {
+          "id": "lRoYMFNsxGO"
+        }
+      ]
+    },
+    {
+      "id": "M8EMw8K5hqz",
+      "code": "IGP_KIDNEY",
+      "name": "Kidney Indicators",
+      "shortName": "Kidney Indicators",
+      "description": "Aggregate indicators for Kidney cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "TuyQtGVba4V"
+        },
+        {
+          "id": "RDA4cZNVutC"
+        }
+      ]
+    },
+    {
+      "id": "SNDMvetSwX8",
+      "code": "IGP_LEUKEMIA",
+      "name": "Leukemia Indicators",
+      "shortName": "Leukemia Indicators",
+      "description": "Aggregate indicators for Leukemia cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "Enm7X1z5lLN"
+        },
+        {
+          "id": "aWxB8lGFOeA"
+        }
+      ]
+    },
+    {
+      "id": "Huo1RmkBQzr",
+      "code": "IGP_LIVER",
+      "name": "Liver Indicators",
+      "shortName": "Liver Indicators",
+      "description": "Aggregate indicators for Liver cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "WFeVLdgVBXS"
+        },
+        {
+          "id": "EyJBkyN8bKw"
+        }
+      ]
+    },
+    {
+      "id": "ZTcOh7zWOD7",
+      "code": "IGP_LUNG",
+      "name": "Lung Indicators",
+      "shortName": "Lung Indicators",
+      "description": "Aggregate indicators for Lung cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "ya9GsAG7ldp"
+        },
+        {
+          "id": "USlAs6OV8MX"
+        }
+      ]
+    },
+    {
+      "id": "oiV4P3AHrjV",
+      "code": "IGP_LYMPHOMA",
+      "name": "Lymphoma Indicators",
+      "shortName": "Lymphoma Indicators",
+      "description": "Aggregate indicators for Lymphoma cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "wbxPQUbikkO"
+        },
+        {
+          "id": "kWynkAeh5tO"
+        }
+      ]
+    },
+    {
+      "id": "LxfxfC3j9b5",
+      "code": "IGP_ORAL_HEAD_NECK",
+      "name": "Oral Head Neck Indicators",
+      "shortName": "Oral Head Neck Indicators",
+      "description": "Aggregate indicators for Oral Head Neck cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "oXRzlEAh6fJ"
+        },
+        {
+          "id": "hFs0PFOMlgh"
+        }
+      ]
+    },
+    {
+      "id": "Wq3ic3NpVIR",
+      "code": "IGP_OVARIAN",
+      "name": "Ovarian Indicators",
+      "shortName": "Ovarian Indicators",
+      "description": "Aggregate indicators for Ovarian cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "S4Z7y8OlXc0"
+        },
+        {
+          "id": "KlsGSAok61c"
+        }
+      ]
+    },
+    {
+      "id": "s0XYWAqgQzZ",
+      "code": "IGP_PANCREATIC",
+      "name": "Pancreatic Indicators",
+      "shortName": "Pancreatic Indicators",
+      "description": "Aggregate indicators for Pancreatic cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "vT2BrpWhHnZ"
+        },
+        {
+          "id": "ykiPH39mAIg"
+        }
+      ]
+    },
+    {
+      "id": "WK4eFkpT3Dl",
+      "code": "IGP_PROSTATE",
+      "name": "Prostate Indicators",
+      "shortName": "Prostate Indicators",
+      "description": "Aggregate indicators for Prostate cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.142Z",
+      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "HrsXN805Msk"
+        },
+        {
+          "id": "kzBzumNIeRk"
+        }
+      ]
+    },
+    {
+      "id": "kDbDVQle7nA",
+      "code": "IGP_SKIN_MELANOMA",
+      "name": "Skin Melanoma Indicators",
+      "shortName": "Skin Melanoma Indicators",
+      "description": "Aggregate indicators for Skin Melanoma cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.142Z",
+      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "ROLRGJdaBHD"
+        },
+        {
+          "id": "jv9QIskLCv2"
+        }
+      ]
+    },
+    {
+      "id": "tqxegcUGIhW",
+      "code": "IGP_STOMACH",
+      "name": "Stomach Indicators",
+      "shortName": "Stomach Indicators",
+      "description": "Aggregate indicators for Stomach cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.142Z",
+      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "sfaRShVQ6ad"
+        },
+        {
+          "id": "mWCtXa05Ang"
+        }
+      ]
+    },
+    {
+      "id": "uH6zHP9Yt3M",
+      "code": "IGP_TESTICULAR",
+      "name": "Testicular Indicators",
+      "shortName": "Testicular Indicators",
+      "description": "Aggregate indicators for Testicular cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.142Z",
+      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "C1tD4GhnJ1m"
+        },
+        {
+          "id": "Y05tR0czBrY"
+        }
+      ]
+    },
+    {
+      "id": "cT1VZshh9qV",
+      "code": "IGP_THYROID",
+      "name": "Thyroid Indicators",
+      "shortName": "Thyroid Indicators",
+      "description": "Aggregate indicators for Thyroid cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.142Z",
+      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "indicators": [
+        {
+          "id": "As6P5Vkl0EO"
+        },
+        {
+          "id": "kkPfl1AG1St"
+        }
+      ]
+    }
+  ]
+}

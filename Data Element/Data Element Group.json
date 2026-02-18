@@ -1,1 +1,1720 @@
-{"system":{"id":"039b6994-a3e7-4531-967d-d5db7fceb5eb","rev":"dfd7f48","version":"2.40.5","date":"2026-02-17T18:05:20.776+0000"}}
+{
+  "system": {
+    "id": "039b6994-a3e7-4531-967d-d5db7fceb5eb",
+    "rev": "dfd7f48",
+    "version": "2.40.5",
+    "date": "2026-02-18T17:37:47.142Z"
+  },
+  "dataElementGroups": [
+    {
+      "id": "XHg3okGRmKg",
+      "code": "DEG_BLADDER",
+      "name": "Bladder Data Elements",
+      "shortName": "Bladder DE Group",
+      "description": "Aggregate data elements for Bladder cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "p0UKYq91U7l"
+        },
+        {
+          "id": "AQKoSwtqVer"
+        },
+        {
+          "id": "mllBa4wj9L2"
+        },
+        {
+          "id": "mofaBKfsGLL"
+        },
+        {
+          "id": "WsapcufbFup"
+        },
+        {
+          "id": "dgFDwLDUt2H"
+        },
+        {
+          "id": "xM7zMokniaJ"
+        },
+        {
+          "id": "xMdfgHH5pHY"
+        },
+        {
+          "id": "pdCpy7PRgjZ"
+        },
+        {
+          "id": "BxJ8e9Oa9DS"
+        },
+        {
+          "id": "gtS6n5mCvQy"
+        },
+        {
+          "id": "RlnRUn2lwNe"
+        },
+        {
+          "id": "Wn2cM4Z7Ure"
+        },
+        {
+          "id": "H567KczfL8O"
+        },
+        {
+          "id": "HTyHJbj2sti"
+        },
+        {
+          "id": "o05i03UMDO5"
+        },
+        {
+          "id": "DxTkYmxlGpP"
+        },
+        {
+          "id": "IiyPu8zMqXw"
+        },
+        {
+          "id": "SEp2Nvy8fJR"
+        },
+        {
+          "id": "qFFtrgXF0fD"
+        },
+        {
+          "id": "eF7Qywh4UKj"
+        }
+      ]
+    },
+    {
+      "id": "RCpJmdikYIU",
+      "code": "DEG_BREAST",
+      "name": "Breast Data Elements",
+      "shortName": "Breast DE Group",
+      "description": "Aggregate data elements for Breast cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "JmfNL4zEWS5"
+        },
+        {
+          "id": "cGhahzpHv9k"
+        },
+        {
+          "id": "pcIHjOdNKdR"
+        },
+        {
+          "id": "AHTOJC5GTdg"
+        },
+        {
+          "id": "JRFJBXD7vbc"
+        },
+        {
+          "id": "oQdMCePZC0c"
+        },
+        {
+          "id": "EfvNt6hkY2r"
+        },
+        {
+          "id": "NPUj96GEJPm"
+        },
+        {
+          "id": "L7o38aEONzf"
+        },
+        {
+          "id": "xMrVLn8vKeV"
+        },
+        {
+          "id": "c4KIVZhuc6k"
+        },
+        {
+          "id": "lyUGxquBetv"
+        },
+        {
+          "id": "a0UZ7FQ3GBO"
+        },
+        {
+          "id": "Ky0XsfpAfqW"
+        },
+        {
+          "id": "lrSOf3gxlSe"
+        },
+        {
+          "id": "ReQ7lNCWGYQ"
+        },
+        {
+          "id": "xXV4s2lzdso"
+        },
+        {
+          "id": "DV06OH0Wi6H"
+        },
+        {
+          "id": "g9G7paU00du"
+        },
+        {
+          "id": "wxNPirBrjUb"
+        },
+        {
+          "id": "Tugg1anpYEu"
+        }
+      ]
+    },
+    {
+      "id": "Vy3MEKZRSmG",
+      "code": "DEG_COLORECTAL",
+      "name": "Colorectal Data Elements",
+      "shortName": "Colorectal DE Group",
+      "description": "Aggregate data elements for Colorectal cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "iWJpqRionnG"
+        },
+        {
+          "id": "BDZoD2z3teU"
+        },
+        {
+          "id": "eOuyAUI1SjB"
+        },
+        {
+          "id": "Y3SV1wuLW5g"
+        },
+        {
+          "id": "TnUQEKdfa5T"
+        },
+        {
+          "id": "EIXn8iLNZcq"
+        },
+        {
+          "id": "qUQwwWu7ynY"
+        },
+        {
+          "id": "p1hidB0wJtQ"
+        },
+        {
+          "id": "ASWalrC3U4a"
+        },
+        {
+          "id": "RZcXtCGuEGn"
+        },
+        {
+          "id": "ULPI8KwKXAW"
+        },
+        {
+          "id": "oc0DRGeGhPD"
+        },
+        {
+          "id": "uVlIJDOqgXs"
+        },
+        {
+          "id": "vAfVFc96Yw8"
+        },
+        {
+          "id": "FfMq2x0PrUX"
+        },
+        {
+          "id": "TAmSvqt23RV"
+        },
+        {
+          "id": "Z0c0WfJqehq"
+        },
+        {
+          "id": "e5J5F9TsS2T"
+        },
+        {
+          "id": "pSWPiGrLBO5"
+        },
+        {
+          "id": "Yvg5x3xpIp3"
+        },
+        {
+          "id": "kMoytaPpB1U"
+        }
+      ]
+    },
+    {
+      "id": "GZPlay20234",
+      "code": "DEG_ESOPHAGEAL",
+      "name": "Esophageal Data Elements",
+      "shortName": "Esophageal DE Group",
+      "description": "Aggregate data elements for Esophageal cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "tE9iXWGb5Yu"
+        },
+        {
+          "id": "Xw2hmFC1aoF"
+        },
+        {
+          "id": "Kh8QfZjj6tB"
+        },
+        {
+          "id": "lq9kt3F0R7i"
+        },
+        {
+          "id": "l548qOsGSXS"
+        },
+        {
+          "id": "JJgwgqWBZ2M"
+        },
+        {
+          "id": "zDCYNvtgcOr"
+        },
+        {
+          "id": "IvVoimXlkFr"
+        },
+        {
+          "id": "pF7bEVO4JMa"
+        },
+        {
+          "id": "pMPPqnKXehT"
+        },
+        {
+          "id": "uvjWQYOlZRO"
+        },
+        {
+          "id": "Rhp8xhqzH2P"
+        },
+        {
+          "id": "f2vW5JECboV"
+        },
+        {
+          "id": "sd8Fvc6EIPs"
+        },
+        {
+          "id": "jOoMnMeZr7b"
+        },
+        {
+          "id": "HoDDq9jZZmm"
+        },
+        {
+          "id": "XhMy0WC408t"
+        },
+        {
+          "id": "CcPQTtXKy3G"
+        },
+        {
+          "id": "bEjvx3iZ6fZ"
+        },
+        {
+          "id": "MNqyKRTmExh"
+        },
+        {
+          "id": "hiFDSojiMD7"
+        }
+      ]
+    },
+    {
+      "id": "LrmnU5RdezU",
+      "code": "DEG_KAPOSI_SARCOMA",
+      "name": "Kaposi Sarcoma Data Elements",
+      "shortName": "Kaposi Sarcoma DE Group",
+      "description": "Aggregate data elements for Kaposi Sarcoma cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "H29eeIvxWvD"
+        },
+        {
+          "id": "pDWvSV8xJ61"
+        },
+        {
+          "id": "yMHIwpxMXGL"
+        },
+        {
+          "id": "RyK5kqu9ASP"
+        },
+        {
+          "id": "gpEORLTrCbH"
+        },
+        {
+          "id": "J9kSZSxkHdF"
+        },
+        {
+          "id": "ilUk5hTa4G3"
+        },
+        {
+          "id": "I7G30k7fMgh"
+        },
+        {
+          "id": "Nl4LkSMWH5P"
+        },
+        {
+          "id": "h5kus9EiPz8"
+        },
+        {
+          "id": "Leu1mOjd3Cu"
+        },
+        {
+          "id": "dfdsPn1S38l"
+        },
+        {
+          "id": "oOSV33iss67"
+        },
+        {
+          "id": "Y2zYwYgOiaq"
+        },
+        {
+          "id": "wzpHgX3hER3"
+        },
+        {
+          "id": "kQGh3VTuQ18"
+        },
+        {
+          "id": "b1chEyHmy2n"
+        },
+        {
+          "id": "Xcqw7VK11p8"
+        },
+        {
+          "id": "OLixcwhZGfF"
+        },
+        {
+          "id": "IZNNscY2J6K"
+        },
+        {
+          "id": "BanfdDOTvPC"
+        }
+      ]
+    },
+    {
+      "id": "3vchtQ4uMk9",
+      "code": "DEG_KIDNEY",
+      "name": "Kidney Data Elements",
+      "shortName": "Kidney DE Group",
+      "description": "Aggregate data elements for Kidney cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "l2AjtXTtnGC"
+        },
+        {
+          "id": "lcaKWl04FSa"
+        },
+        {
+          "id": "r3WY2wd3wm6"
+        },
+        {
+          "id": "sw3HVzsv2PC"
+        },
+        {
+          "id": "AgwtAwygTfr"
+        },
+        {
+          "id": "RnZP1blNDSD"
+        },
+        {
+          "id": "qqSMX2bZ9dw"
+        },
+        {
+          "id": "mBSwnDj4RYp"
+        },
+        {
+          "id": "l7OFsTVVKL4"
+        },
+        {
+          "id": "ezDCGvLj3wk"
+        },
+        {
+          "id": "wv2tVkAIb39"
+        },
+        {
+          "id": "B3N5kUwQ56w"
+        },
+        {
+          "id": "ioHExfjbzVK"
+        },
+        {
+          "id": "bL99mDRX48V"
+        },
+        {
+          "id": "b3jf2rfLr9L"
+        },
+        {
+          "id": "zDGYYKqwfOu"
+        },
+        {
+          "id": "dQkG2xQ06Vd"
+        },
+        {
+          "id": "zKQh4RNB6Pt"
+        },
+        {
+          "id": "SrrMFlMxe1R"
+        },
+        {
+          "id": "B3Jj0F0gGl5"
+        },
+        {
+          "id": "iTU4hmWJVXB"
+        }
+      ]
+    },
+    {
+      "id": "AHkJtlyVsss",
+      "code": "DEG_LEUKEMIA",
+      "name": "Leukemia Data Elements",
+      "shortName": "Leukemia DE Group",
+      "description": "Aggregate data elements for Leukemia cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "jmG3kxooJV4"
+        },
+        {
+          "id": "kHS8JZHrXmw"
+        },
+        {
+          "id": "QfrMIF6wBzQ"
+        },
+        {
+          "id": "ZaQxIdAt2u2"
+        },
+        {
+          "id": "z5pIx2FjhfT"
+        },
+        {
+          "id": "QcBbX25J2Yc"
+        },
+        {
+          "id": "Ccuj0G8as89"
+        },
+        {
+          "id": "aNhmvzgt7D3"
+        },
+        {
+          "id": "rMUPpu94R7F"
+        },
+        {
+          "id": "olXDPuUgsih"
+        },
+        {
+          "id": "lkEnvdpkD0I"
+        },
+        {
+          "id": "B9yOZRog5NP"
+        },
+        {
+          "id": "CRC1WvACC8R"
+        },
+        {
+          "id": "X9CQfYVvECd"
+        },
+        {
+          "id": "lIAxCdMR46I"
+        },
+        {
+          "id": "jg0hjFW1DBD"
+        },
+        {
+          "id": "h9VYB8aRbWj"
+        },
+        {
+          "id": "kIYRlh3Y4cj"
+        },
+        {
+          "id": "iLIAy5VN5hi"
+        },
+        {
+          "id": "UpitO4Tk4dC"
+        },
+        {
+          "id": "kwHIIzTv9Ad"
+        }
+      ]
+    },
+    {
+      "id": "RzKbiHS7RsF",
+      "code": "DEG_LIVER",
+      "name": "Liver Data Elements",
+      "shortName": "Liver DE Group",
+      "description": "Aggregate data elements for Liver cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "wnN1UXSlAq4"
+        },
+        {
+          "id": "bUHMLKOURkQ"
+        },
+        {
+          "id": "G3HMc2kcQN1"
+        },
+        {
+          "id": "sCek5wUh9fY"
+        },
+        {
+          "id": "R3SXue8Wrz5"
+        },
+        {
+          "id": "kh3qyRwDxcg"
+        },
+        {
+          "id": "q5aGsCf4uIr"
+        },
+        {
+          "id": "HhAssh9uXl2"
+        },
+        {
+          "id": "m0pGd91YIft"
+        },
+        {
+          "id": "yhic55mWrLs"
+        },
+        {
+          "id": "ZfmHv8tBb9h"
+        },
+        {
+          "id": "MsezZ3JryIi"
+        },
+        {
+          "id": "qIxv5Sd2LvC"
+        },
+        {
+          "id": "MMzIqlyM9G1"
+        },
+        {
+          "id": "GM1FNPwLOfD"
+        },
+        {
+          "id": "qKS3UIMtuil"
+        },
+        {
+          "id": "Lp3mfDawkd8"
+        },
+        {
+          "id": "LxwtmRMAWMn"
+        },
+        {
+          "id": "Himn586cAj8"
+        },
+        {
+          "id": "SfdNcPRiCYc"
+        },
+        {
+          "id": "Tp5a2EjOmAl"
+        }
+      ]
+    },
+    {
+      "id": "2ZWGU1VtDiv",
+      "code": "DEG_LUNG",
+      "name": "Lung Data Elements",
+      "shortName": "Lung DE Group",
+      "description": "Aggregate data elements for Lung cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "lkH3FZ42Itv"
+        },
+        {
+          "id": "hsDYLGeimTW"
+        },
+        {
+          "id": "jxQoYMaxtLZ"
+        },
+        {
+          "id": "BwGualJcqVs"
+        },
+        {
+          "id": "OlQ9e2EKhM2"
+        },
+        {
+          "id": "eLQviEQ75wE"
+        },
+        {
+          "id": "UEmAd4aoRSS"
+        },
+        {
+          "id": "NRTKmHqmc4z"
+        },
+        {
+          "id": "f40pyxZgSEZ"
+        },
+        {
+          "id": "oIwC8hNhd1E"
+        },
+        {
+          "id": "tB0Eahf8wVh"
+        },
+        {
+          "id": "CpHTKHsWekm"
+        },
+        {
+          "id": "ZjDVaCGdcIk"
+        },
+        {
+          "id": "IjPOIvhyewt"
+        },
+        {
+          "id": "fSjlGhTBddb"
+        },
+        {
+          "id": "V8wBTsoS2Cc"
+        },
+        {
+          "id": "CFYfxFmjdlE"
+        },
+        {
+          "id": "ZEha63l5x6U"
+        },
+        {
+          "id": "gbufICvzkav"
+        },
+        {
+          "id": "z06nwWH6jhG"
+        },
+        {
+          "id": "uzdbAokxWzs"
+        }
+      ]
+    },
+    {
+      "id": "1qszPjJ9dgS",
+      "code": "DEG_LYMPHOMA",
+      "name": "Lymphoma Data Elements",
+      "shortName": "Lymphoma DE Group",
+      "description": "Aggregate data elements for Lymphoma cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "f061zROt0Iv"
+        },
+        {
+          "id": "ugXaGXYKRnj"
+        },
+        {
+          "id": "evjFRE9sP0A"
+        },
+        {
+          "id": "wZTuzxIms6o"
+        },
+        {
+          "id": "udYXnEwZMm3"
+        },
+        {
+          "id": "q38HzqBaZBs"
+        },
+        {
+          "id": "S0kg1W8qS1P"
+        },
+        {
+          "id": "QD2ZhDI9rE9"
+        },
+        {
+          "id": "Uh8HHPPoU8r"
+        },
+        {
+          "id": "qMJKG8Ng1kp"
+        },
+        {
+          "id": "gbP1PzoIIzd"
+        },
+        {
+          "id": "b4kIEpxuiS8"
+        },
+        {
+          "id": "L82xvZk2kG2"
+        },
+        {
+          "id": "HccucDI0aip"
+        },
+        {
+          "id": "q44cEgGN1ZA"
+        },
+        {
+          "id": "PIlekpj4nkV"
+        },
+        {
+          "id": "wghfqNi4YmX"
+        },
+        {
+          "id": "zPE6XJ8YVod"
+        },
+        {
+          "id": "YpeYyAXBkgT"
+        },
+        {
+          "id": "kzhEuFtalmI"
+        },
+        {
+          "id": "dtgFbPN85k7"
+        }
+      ]
+    },
+    {
+      "id": "MVpL1Lrs53o",
+      "code": "DEG_ORAL_HEAD_NECK",
+      "name": "Oral Head Neck Data Elements",
+      "shortName": "Oral Head Neck DE Group",
+      "description": "Aggregate data elements for Oral Head Neck cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "ZvauUOqCEu1"
+        },
+        {
+          "id": "b2obrqj4wVB"
+        },
+        {
+          "id": "RgWmjWQGhdn"
+        },
+        {
+          "id": "fQSyQz7Yr7b"
+        },
+        {
+          "id": "qX5fFvKUp14"
+        },
+        {
+          "id": "bKa0ko7daib"
+        },
+        {
+          "id": "Sw9i4Dj0xWr"
+        },
+        {
+          "id": "wdb9rwVOO76"
+        },
+        {
+          "id": "y5SIkrE1iMr"
+        },
+        {
+          "id": "p9KwEUOvkqb"
+        },
+        {
+          "id": "msrmMstlceC"
+        },
+        {
+          "id": "f4ej7gQthmB"
+        },
+        {
+          "id": "ZKH4QtFkZc6"
+        },
+        {
+          "id": "hQoBtAHEx7N"
+        },
+        {
+          "id": "OT3tksxnpab"
+        },
+        {
+          "id": "AqXwd6lr7Co"
+        },
+        {
+          "id": "ZRPFxgg8yZ8"
+        },
+        {
+          "id": "QHdgMADaI3H"
+        },
+        {
+          "id": "CKBXXFV1C1d"
+        },
+        {
+          "id": "Csa80yqhd2D"
+        },
+        {
+          "id": "QrpsI6nGEeL"
+        }
+      ]
+    },
+    {
+      "id": "tlOkoudb4Ws",
+      "code": "DEG_OVARIAN",
+      "name": "Ovarian Data Elements",
+      "shortName": "Ovarian DE Group",
+      "description": "Aggregate data elements for Ovarian cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "V8otE8rCpty"
+        },
+        {
+          "id": "IIqwKwmzwon"
+        },
+        {
+          "id": "DrT2XDpBzb8"
+        },
+        {
+          "id": "clHkkgDY52u"
+        },
+        {
+          "id": "gSZbvolqvtJ"
+        },
+        {
+          "id": "giIIrQZXRZx"
+        },
+        {
+          "id": "BBTP2sSGtfd"
+        },
+        {
+          "id": "DbxYsXdcxsu"
+        },
+        {
+          "id": "j38eno5Ghjd"
+        },
+        {
+          "id": "WfflBv2HpYC"
+        },
+        {
+          "id": "fiWdcRD05PK"
+        },
+        {
+          "id": "xyAQfKC9mM1"
+        },
+        {
+          "id": "PPbsKxThVWF"
+        },
+        {
+          "id": "dYDGBhucsht"
+        },
+        {
+          "id": "NmNOOjZiRvs"
+        },
+        {
+          "id": "BwXMIa1TnbR"
+        },
+        {
+          "id": "QEHgueTJLLZ"
+        },
+        {
+          "id": "zYTlV3KtvuX"
+        },
+        {
+          "id": "lFn2yHaHODh"
+        },
+        {
+          "id": "FJv9xSvLtDh"
+        },
+        {
+          "id": "xoCy6bgcd7W"
+        }
+      ]
+    },
+    {
+      "id": "l2CoKk4VsR4",
+      "code": "DEG_PANCREATIC",
+      "name": "Pancreatic Data Elements",
+      "shortName": "Pancreatic DE Group",
+      "description": "Aggregate data elements for Pancreatic cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.141Z",
+      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "RciyS7Ezn2R"
+        },
+        {
+          "id": "cc1U9y4Y2zg"
+        },
+        {
+          "id": "dTNt0u8H5t4"
+        },
+        {
+          "id": "WzdrY1XUPRm"
+        },
+        {
+          "id": "N6988tJWim5"
+        },
+        {
+          "id": "NzTk3LIpf6c"
+        },
+        {
+          "id": "ueAg09aFhEw"
+        },
+        {
+          "id": "yAi9FWP5k7R"
+        },
+        {
+          "id": "H10BtA4bEvC"
+        },
+        {
+          "id": "CTmHtEYpfoE"
+        },
+        {
+          "id": "eDO8bVukhY2"
+        },
+        {
+          "id": "GHFHzVLlu6k"
+        },
+        {
+          "id": "fjwHJsMsYVL"
+        },
+        {
+          "id": "BXnTtCAWTvN"
+        },
+        {
+          "id": "vlfjLrBkKpi"
+        },
+        {
+          "id": "OS6G0rWFLO5"
+        },
+        {
+          "id": "W7VP5Z2ronQ"
+        },
+        {
+          "id": "IguZy7EoVoz"
+        },
+        {
+          "id": "ukeuziMIGeu"
+        },
+        {
+          "id": "Glcjcm6crOl"
+        },
+        {
+          "id": "v0A8PvvQT6o"
+        }
+      ]
+    },
+    {
+      "id": "QjBot59gaDO",
+      "code": "DEG_PROSTATE",
+      "name": "Prostate Data Elements",
+      "shortName": "Prostate DE Group",
+      "description": "Aggregate data elements for Prostate cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.142Z",
+      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "DlWOyG2ch4h"
+        },
+        {
+          "id": "YVNFRj7UMyJ"
+        },
+        {
+          "id": "isUYqceCaFl"
+        },
+        {
+          "id": "K2JKVnBi5np"
+        },
+        {
+          "id": "nPdPPQcH4HO"
+        },
+        {
+          "id": "Ix84OrkJUR7"
+        },
+        {
+          "id": "rfNyjSF1LjQ"
+        },
+        {
+          "id": "kR7E1zO006n"
+        },
+        {
+          "id": "gUyUBS6eIVm"
+        },
+        {
+          "id": "uIBLOins8LG"
+        },
+        {
+          "id": "pHRZGS3Z2R8"
+        },
+        {
+          "id": "tJhQZRljkTb"
+        },
+        {
+          "id": "fdudcKvuQrg"
+        },
+        {
+          "id": "XL50lWEULlO"
+        },
+        {
+          "id": "bANSqPaoUuH"
+        },
+        {
+          "id": "lsfuUkMyo4v"
+        },
+        {
+          "id": "waqY5TwCBOj"
+        },
+        {
+          "id": "br5yGaRolJM"
+        },
+        {
+          "id": "HjqctDqRTvy"
+        },
+        {
+          "id": "xQBs7P3KekP"
+        },
+        {
+          "id": "Qe8uWXeGj0T"
+        }
+      ]
+    },
+    {
+      "id": "g0f9NaXkzTb",
+      "code": "DEG_SKIN_MELANOMA",
+      "name": "Skin Melanoma Data Elements",
+      "shortName": "Skin Melanoma DE Group",
+      "description": "Aggregate data elements for Skin Melanoma cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.142Z",
+      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "V28g7JbUrnv"
+        },
+        {
+          "id": "oRoUA6Zj59p"
+        },
+        {
+          "id": "Ze1qvM2rix9"
+        },
+        {
+          "id": "ZpfLSUGdQtQ"
+        },
+        {
+          "id": "elZ2fdUPTMk"
+        },
+        {
+          "id": "QihqX11w3lw"
+        },
+        {
+          "id": "ZXHv3MXz7tS"
+        },
+        {
+          "id": "mz561EqH8en"
+        },
+        {
+          "id": "aDmOusKFqSd"
+        },
+        {
+          "id": "TjSNJ6AGZEh"
+        },
+        {
+          "id": "zRFFVwCzLSu"
+        },
+        {
+          "id": "ewxwm1alxim"
+        },
+        {
+          "id": "H0DM1Sl6M3E"
+        },
+        {
+          "id": "WmSJBddLu5S"
+        },
+        {
+          "id": "BEzP8BavtYc"
+        },
+        {
+          "id": "O4Y9aku13gg"
+        },
+        {
+          "id": "yCmkVuzVhMA"
+        },
+        {
+          "id": "mRku9IPmh6d"
+        },
+        {
+          "id": "pWaMCZTne34"
+        },
+        {
+          "id": "Ugxg3qx7IK3"
+        },
+        {
+          "id": "DvgMjnsRNWj"
+        }
+      ]
+    },
+    {
+      "id": "GUC5LAFZyB9",
+      "code": "DEG_STOMACH",
+      "name": "Stomach Data Elements",
+      "shortName": "Stomach DE Group",
+      "description": "Aggregate data elements for Stomach cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.142Z",
+      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "R9k2RA3zWEE"
+        },
+        {
+          "id": "xK4sNWRtcyJ"
+        },
+        {
+          "id": "cxXrtkeWj7D"
+        },
+        {
+          "id": "nnp4ONc714S"
+        },
+        {
+          "id": "VU7ap7x8uj0"
+        },
+        {
+          "id": "mjGFgL0CsFO"
+        },
+        {
+          "id": "GuYygE1BywA"
+        },
+        {
+          "id": "hWeeftbihic"
+        },
+        {
+          "id": "uXjsjkMmLuN"
+        },
+        {
+          "id": "SaxSqJj0RlP"
+        },
+        {
+          "id": "Ke53TiPTb62"
+        },
+        {
+          "id": "Lkxu4i4kQ4q"
+        },
+        {
+          "id": "sw2u4l6zJ5f"
+        },
+        {
+          "id": "zSI9AiC6p0M"
+        },
+        {
+          "id": "Z2VXB2HtbgS"
+        },
+        {
+          "id": "nm2avEC7917"
+        },
+        {
+          "id": "YdSOqXjPnkR"
+        },
+        {
+          "id": "RFJyrasMcKA"
+        },
+        {
+          "id": "u6TNdheAag3"
+        },
+        {
+          "id": "oxEX4y9WWK8"
+        },
+        {
+          "id": "Bv5g41HOWLQ"
+        }
+      ]
+    },
+    {
+      "id": "5Z1O0KOrl5q",
+      "code": "DEG_TESTICULAR",
+      "name": "Testicular Data Elements",
+      "shortName": "Testicular DE Group",
+      "description": "Aggregate data elements for Testicular cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.142Z",
+      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "ZQNQfP68pKc"
+        },
+        {
+          "id": "IXP4Mr8rq7D"
+        },
+        {
+          "id": "t4hf8ZnBdkP"
+        },
+        {
+          "id": "kBiubNnnS0L"
+        },
+        {
+          "id": "UylTS8olK2p"
+        },
+        {
+          "id": "XWz6aA0nWRz"
+        },
+        {
+          "id": "gnbaxeRlQcc"
+        },
+        {
+          "id": "V4c0CUhHhyO"
+        },
+        {
+          "id": "zQ6bhhfTkvx"
+        },
+        {
+          "id": "OGgk9LMbCRb"
+        },
+        {
+          "id": "jVCdEQtkMTO"
+        },
+        {
+          "id": "O9S4NysoBac"
+        },
+        {
+          "id": "B9BaJeusZBG"
+        },
+        {
+          "id": "zxDTpXfsf0m"
+        },
+        {
+          "id": "mfPb3c0gTBq"
+        },
+        {
+          "id": "aqHcZcZL1vw"
+        },
+        {
+          "id": "XvPxurxjImn"
+        },
+        {
+          "id": "tgZoQxvH3Xg"
+        },
+        {
+          "id": "P4BRSvzRhNd"
+        },
+        {
+          "id": "sF8R9J6hgU5"
+        },
+        {
+          "id": "Kn1tDRbwtTP"
+        }
+      ]
+    },
+    {
+      "id": "ijrYgoIsMvD",
+      "code": "DEG_THYROID",
+      "name": "Thyroid Data Elements",
+      "shortName": "Thyroid DE Group",
+      "description": "Aggregate data elements for Thyroid cancer screening and treatment",
+      "created": "2026-02-18T17:37:47.142Z",
+      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "dataElements": [
+        {
+          "id": "DrnOrMCV6J2"
+        },
+        {
+          "id": "Jm2vms28CO1"
+        },
+        {
+          "id": "JPLjLEtibg0"
+        },
+        {
+          "id": "aWsfoiY2O4J"
+        },
+        {
+          "id": "qyoHpvrB9NV"
+        },
+        {
+          "id": "Cr2yUQEbQCA"
+        },
+        {
+          "id": "tr6xkhnK6sF"
+        },
+        {
+          "id": "zAEmVVBFSyi"
+        },
+        {
+          "id": "JoYF1SGBkgC"
+        },
+        {
+          "id": "wCp1mbYtvuA"
+        },
+        {
+          "id": "YScsivbrtVW"
+        },
+        {
+          "id": "nzMktOJkf1X"
+        },
+        {
+          "id": "ckSi8FqwO8q"
+        },
+        {
+          "id": "hO1WK1iOKju"
+        },
+        {
+          "id": "wRSZdbERXI4"
+        },
+        {
+          "id": "Y8yjhwcVeGH"
+        },
+        {
+          "id": "MaOpUjywuSB"
+        },
+        {
+          "id": "gKU66nMiQEd"
+        },
+        {
+          "id": "qli6vXgVzl5"
+        },
+        {
+          "id": "hnmndke37bS"
+        },
+        {
+          "id": "ET1ydZBY7L4"
+        }
+      ]
+    }
+  ]
+}

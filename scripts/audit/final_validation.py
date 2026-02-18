@@ -152,11 +152,12 @@ def main():
     print(report)
     
     # Save report to file
-    report_path = f"{BASE_DIR}/PROJECT_VALIDATION_REPORT.txt"
+    report_path = BASE_DIR / "artifacts" / "reports" / "PROJECT_VALIDATION_REPORT.txt"
+    report_path.parent.mkdir(parents=True, exist_ok=True)
     with open(report_path, 'w') as f:
         f.write(report)
     
-    print(f"\n📄 Report saved to: PROJECT_VALIDATION_REPORT.txt")
+    print(f"\n📄 Report saved to: {report_path}")
 
 if __name__ == "__main__":
     main()

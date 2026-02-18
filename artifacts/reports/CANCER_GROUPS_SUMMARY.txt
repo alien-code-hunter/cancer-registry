@@ -1,0 +1,116 @@
+Cancer Element & Indicator Groups Summary
+============================================================
+
+Total Data Element Groups: 18
+Total Indicator Groups: 18
+
+Breakdown by Cancer Type:
+------------------------------------------------------------
+
+Bladder:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: p0UKYq91U7l, AQKoSwtqVer, mllBa4wj9L2, ... (18 more)
+  Indicator IDs: HWm0CYcnsS6, KFRL4oZLhtI
+
+Breast:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: JmfNL4zEWS5, cGhahzpHv9k, pcIHjOdNKdR, ... (18 more)
+  Indicator IDs: xsewnYkKu5o, keBCltGBDvJ
+
+Colorectal:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: iWJpqRionnG, BDZoD2z3teU, eOuyAUI1SjB, ... (18 more)
+  Indicator IDs: Y4iMS8Z2tae, HJrRVElg4XR
+
+Esophageal:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: tE9iXWGb5Yu, Xw2hmFC1aoF, Kh8QfZjj6tB, ... (18 more)
+  Indicator IDs: dnGjV104v2r, WTfUAW6ZbcZ
+
+Kaposi Sarcoma:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: H29eeIvxWvD, pDWvSV8xJ61, yMHIwpxMXGL, ... (18 more)
+  Indicator IDs: GwFNeGambO0, lRoYMFNsxGO
+
+Kidney:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: l2AjtXTtnGC, lcaKWl04FSa, r3WY2wd3wm6, ... (18 more)
+  Indicator IDs: TuyQtGVba4V, RDA4cZNVutC
+
+Leukemia:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: jmG3kxooJV4, kHS8JZHrXmw, QfrMIF6wBzQ, ... (18 more)
+  Indicator IDs: Enm7X1z5lLN, aWxB8lGFOeA
+
+Liver:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: wnN1UXSlAq4, bUHMLKOURkQ, G3HMc2kcQN1, ... (18 more)
+  Indicator IDs: WFeVLdgVBXS, EyJBkyN8bKw
+
+Lung:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: lkH3FZ42Itv, hsDYLGeimTW, jxQoYMaxtLZ, ... (18 more)
+  Indicator IDs: ya9GsAG7ldp, USlAs6OV8MX
+
+Lymphoma:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: f061zROt0Iv, ugXaGXYKRnj, evjFRE9sP0A, ... (18 more)
+  Indicator IDs: wbxPQUbikkO, kWynkAeh5tO
+
+Oral Head Neck:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: ZvauUOqCEu1, b2obrqj4wVB, RgWmjWQGhdn, ... (18 more)
+  Indicator IDs: oXRzlEAh6fJ, hFs0PFOMlgh
+
+Ovarian:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: V8otE8rCpty, IIqwKwmzwon, DrT2XDpBzb8, ... (18 more)
+  Indicator IDs: S4Z7y8OlXc0, KlsGSAok61c
+
+Pancreatic:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: RciyS7Ezn2R, cc1U9y4Y2zg, dTNt0u8H5t4, ... (18 more)
+  Indicator IDs: vT2BrpWhHnZ, ykiPH39mAIg
+
+Prostate:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: DlWOyG2ch4h, YVNFRj7UMyJ, isUYqceCaFl, ... (18 more)
+  Indicator IDs: HrsXN805Msk, kzBzumNIeRk
+
+Skin Melanoma:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: V28g7JbUrnv, oRoUA6Zj59p, Ze1qvM2rix9, ... (18 more)
+  Indicator IDs: ROLRGJdaBHD, jv9QIskLCv2
+
+Stomach:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: R9k2RA3zWEE, xK4sNWRtcyJ, cxXrtkeWj7D, ... (18 more)
+  Indicator IDs: sfaRShVQ6ad, mWCtXa05Ang
+
+Testicular:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: ZQNQfP68pKc, IXP4Mr8rq7D, t4hf8ZnBdkP, ... (18 more)
+  Indicator IDs: C1tD4GhnJ1m, Y05tR0czBrY
+
+Thyroid:
+  Data Elements: 21
+  Indicators: 2
+  Element IDs: DrnOrMCV6J2, Jm2vms28CO1, JPLjLEtibg0, ... (18 more)
+  Indicator IDs: As6P5Vkl0EO, kkPfl1AG1St
