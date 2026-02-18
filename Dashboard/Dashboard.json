@@ -1,1 +1,1853 @@
-{"system":{"id":"039b6994-a3e7-4531-967d-d5db7fceb5eb","rev":"dfd7f48","version":"2.40.5","date":"2026-02-17T18:29:20.949+0000"},"dashboards":[{"name":"Performance","created":"2023-08-06T20:34:15.952","lastUpdated":"2025-06-16T06:36:12.429","translations":[],"createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin admin","displayName":"admin admin","username":"admin"},"favorites":["yUpxSkOhmM3","YmQ6dnrnO0b","f8qlsdxcOz4"],"lastUpdatedBy":{"id":"HbdPqTDPusZ","code":null,"name":"Rauna Mulongeni","displayName":"Rauna Mulongeni","username":"Rauna_Mulongeni"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{"NqRBowDyAAi":{"displayName":"CECAP Admin","access":"rw------","id":"NqRBowDyAAi"}},"public":"r-------"},"layout":{"columns":[]},"itemConfig":{"insertPosition":"START"},"restrictFilters":false,"allowedFilters":[],"id":"LzetqxyM0W3","dashboardItems":[{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.859","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"Q88tZSfUfcr"},"users":[],"x":30,"y":0,"height":29,"width":30,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"JQ0bSFkEUnl","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.859","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"CnJsxIzW8Xd"},"users":[],"x":0,"y":0,"height":29,"width":30,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"lnPMbgTlIJq","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.859","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"pkZlCMO0gM4"},"users":[],"x":40,"y":86,"height":25,"width":20,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"QAAcu94BE0K","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.860","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"VfPaUeHVziz"},"users":[],"x":30,"y":62,"height":24,"width":30,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"W4QnoaO7vfQ","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.860","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"kSdFhQM5I3f"},"users":[],"x":0,"y":62,"height":24,"width":30,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"DaRCbtJoscD","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.860","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"TP37gzmTmnI"},"users":[],"x":0,"y":38,"height":24,"width":32,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"OBhWorInhGj","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.860","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"Yh3jwYWP4jm"},"users":[],"x":24,"y":29,"height":9,"width":8,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"o8Nzr893U3U","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.860","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"yLO5L4I3ZSR"},"users":[],"x":16,"y":29,"height":9,"width":8,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"bnWmMsXIrnD","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.860","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"ID5iaKJHXYR"},"users":[],"x":0,"y":29,"height":9,"width":8,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"F7RFpbqSOxc","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.860","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"j79nWbtWQD5"},"users":[],"x":8,"y":29,"height":9,"width":8,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"es8Mk8HGq1y","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.860","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"Vi8UWVjgNck"},"users":[],"x":32,"y":29,"height":33,"width":28,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"keoIZzdqIK0","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.860","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"haOs7sY7mq0"},"users":[],"x":0,"y":86,"height":25,"width":20,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"y7usrFzctMd","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.860","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"XKkdfwgeWM6"},"users":[],"x":20,"y":86,"height":25,"width":20,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"qRiZOVExMYW","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.860","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"xesesnKgZ1s"},"users":[],"x":0,"y":111,"height":29,"width":20,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"MCqhkVJ9dK3","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.861","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"Uutr1YUeHVZ"},"users":[],"x":20,"y":111,"height":29,"width":20,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"N8MCNvFYlCR","attributeValues":[],"reports":[],"resources":[]},{"created":"2023-08-18T12:26:44.814","lastUpdated":"2023-08-18T12:26:44.861","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"visualization":{"id":"amYmbO1oGK4"},"users":[],"x":40,"y":111,"height":29,"width":20,"type":"VISUALIZATION","contentCount":1,"interpretationCount":0,"interpretationLikeCount":0,"favorite":false,"id":"lIhjEiHIwvd","attributeValues":[],"reports":[],"resources":[]}]}]}
+{
+  "system": {
+    "id": "039b6994-a3e7-4531-967d-d5db7fceb5eb",
+    "rev": "dfd7f48",
+    "version": "2.40.5",
+    "date": "2026-02-17T18:29:20.949+0000"
+  },
+  "dashboards": [
+    {
+      "name": "Performance",
+      "created": "2023-08-06T20:34:15.952",
+      "lastUpdated": "2025-06-16T06:36:12.429",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "favorites": [
+        "yUpxSkOhmM3",
+        "YmQ6dnrnO0b",
+        "f8qlsdxcOz4"
+      ],
+      "lastUpdatedBy": {
+        "id": "HbdPqTDPusZ",
+        "code": null,
+        "name": "Rauna Mulongeni",
+        "displayName": "Rauna Mulongeni",
+        "username": "Rauna_Mulongeni"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {
+          "NqRBowDyAAi": {
+            "displayName": "CECAP Admin",
+            "access": "rw------",
+            "id": "NqRBowDyAAi"
+          }
+        },
+        "public": "r-------"
+      },
+      "layout": {
+        "columns": []
+      },
+      "itemConfig": {
+        "insertPosition": "START"
+      },
+      "restrictFilters": false,
+      "allowedFilters": [],
+      "id": "LzetqxyM0W3",
+      "dashboardItems": [
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.859",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "Q88tZSfUfcr"
+          },
+          "users": [],
+          "x": 30,
+          "y": 0,
+          "height": 29,
+          "width": 30,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "JQ0bSFkEUnl",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.859",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "CnJsxIzW8Xd"
+          },
+          "users": [],
+          "x": 0,
+          "y": 0,
+          "height": 29,
+          "width": 30,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "lnPMbgTlIJq",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.859",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "pkZlCMO0gM4"
+          },
+          "users": [],
+          "x": 40,
+          "y": 86,
+          "height": 25,
+          "width": 20,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "QAAcu94BE0K",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.860",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "VfPaUeHVziz"
+          },
+          "users": [],
+          "x": 30,
+          "y": 62,
+          "height": 24,
+          "width": 30,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "W4QnoaO7vfQ",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.860",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "kSdFhQM5I3f"
+          },
+          "users": [],
+          "x": 0,
+          "y": 62,
+          "height": 24,
+          "width": 30,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "DaRCbtJoscD",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.860",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "TP37gzmTmnI"
+          },
+          "users": [],
+          "x": 0,
+          "y": 38,
+          "height": 24,
+          "width": 32,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "OBhWorInhGj",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.860",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "Yh3jwYWP4jm"
+          },
+          "users": [],
+          "x": 24,
+          "y": 29,
+          "height": 9,
+          "width": 8,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "o8Nzr893U3U",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.860",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "yLO5L4I3ZSR"
+          },
+          "users": [],
+          "x": 16,
+          "y": 29,
+          "height": 9,
+          "width": 8,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "bnWmMsXIrnD",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.860",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "ID5iaKJHXYR"
+          },
+          "users": [],
+          "x": 0,
+          "y": 29,
+          "height": 9,
+          "width": 8,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "F7RFpbqSOxc",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.860",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "j79nWbtWQD5"
+          },
+          "users": [],
+          "x": 8,
+          "y": 29,
+          "height": 9,
+          "width": 8,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "es8Mk8HGq1y",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.860",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "Vi8UWVjgNck"
+          },
+          "users": [],
+          "x": 32,
+          "y": 29,
+          "height": 33,
+          "width": 28,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "keoIZzdqIK0",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.860",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "haOs7sY7mq0"
+          },
+          "users": [],
+          "x": 0,
+          "y": 86,
+          "height": 25,
+          "width": 20,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "y7usrFzctMd",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.860",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "XKkdfwgeWM6"
+          },
+          "users": [],
+          "x": 20,
+          "y": 86,
+          "height": 25,
+          "width": 20,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "qRiZOVExMYW",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.860",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "xesesnKgZ1s"
+          },
+          "users": [],
+          "x": 0,
+          "y": 111,
+          "height": 29,
+          "width": 20,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "MCqhkVJ9dK3",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.861",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "Uutr1YUeHVZ"
+          },
+          "users": [],
+          "x": 20,
+          "y": 111,
+          "height": 29,
+          "width": 20,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "N8MCNvFYlCR",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        },
+        {
+          "created": "2023-08-18T12:26:44.814",
+          "lastUpdated": "2023-08-18T12:26:44.861",
+          "translations": [],
+          "externalAccess": false,
+          "userGroupAccesses": [],
+          "userAccesses": [],
+          "access": {
+            "manage": true,
+            "externalize": true,
+            "write": true,
+            "read": true,
+            "update": true,
+            "delete": true
+          },
+          "favorites": [],
+          "sharing": {
+            "external": false,
+            "users": {},
+            "userGroups": {}
+          },
+          "visualization": {
+            "id": "amYmbO1oGK4"
+          },
+          "users": [],
+          "x": 40,
+          "y": 111,
+          "height": 29,
+          "width": 20,
+          "type": "VISUALIZATION",
+          "contentCount": 1,
+          "interpretationCount": 0,
+          "interpretationLikeCount": 0,
+          "favorite": false,
+          "id": "lIhjEiHIwvd",
+          "attributeValues": [],
+          "reports": [],
+          "resources": []
+        }
+      ]
+    },
+    {
+      "id": "rNy9m4YxyPh",
+      "created": "2026-02-18T15:44:06.456973",
+      "lastUpdated": "2026-02-18T15:44:06.456981",
+      "name": "Bladder Cancer Dashboard",
+      "displayName": "Bladder Cancer Dashboard",
+      "description": "Monitoring dashboard for Bladder cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "U3NGRm3GlLY",
+          "visualization": {
+            "id": "95af9b26-e0"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "QtdcPd7Io9D",
+          "visualization": {
+            "id": "42ac030c-d5"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "JbMQCeHJoQI",
+          "visualization": {
+            "id": "c60597a0-c5"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "nZDbcmHTaPR",
+          "visualization": {
+            "id": "b837cc47-8b"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "c3km9x4SvBc",
+      "created": "2026-02-18T15:44:06.457044",
+      "lastUpdated": "2026-02-18T15:44:06.457046",
+      "name": "Breast Cancer Dashboard",
+      "displayName": "Breast Cancer Dashboard",
+      "description": "Monitoring dashboard for Breast cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "YDbIocOcckV",
+          "visualization": {
+            "id": "d11dabc4-ef"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "FDd2KB7VR4r",
+          "visualization": {
+            "id": "0e3d5cac-76"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "c9cjocfKzFz",
+          "visualization": {
+            "id": "9be17718-c3"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "azLiusaJS5i",
+          "visualization": {
+            "id": "64bfe308-83"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "gcwO8zw4iDx",
+      "created": "2026-02-18T15:44:06.457081",
+      "lastUpdated": "2026-02-18T15:44:06.457083",
+      "name": "Colorectal Cancer Dashboard",
+      "displayName": "Colorectal Cancer Dashboard",
+      "description": "Monitoring dashboard for Colorectal cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "dQseNbWL4kU",
+          "visualization": {
+            "id": "4dda4e4f-d2"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "RszkCsuE2HB",
+          "visualization": {
+            "id": "e5b03e6f-24"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "UX3nI1Ntgic",
+          "visualization": {
+            "id": "64a9e569-39"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "dAPzlUp2hgI",
+          "visualization": {
+            "id": "e3eba9c3-ff"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "CQKmlhHajww",
+      "created": "2026-02-18T15:44:06.457122",
+      "lastUpdated": "2026-02-18T15:44:06.457124",
+      "name": "Esophageal Cancer Dashboard",
+      "displayName": "Esophageal Cancer Dashboard",
+      "description": "Monitoring dashboard for Esophageal cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "f2Glf4ej8RY",
+          "visualization": {
+            "id": "62e13358-78"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "oGsV5zkUT8G",
+          "visualization": {
+            "id": "fe69179b-56"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "xLPfXr3StwK",
+          "visualization": {
+            "id": "0448997c-b8"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "zwiDxWdQh1p",
+          "visualization": {
+            "id": "054d4de0-94"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "Npy7Rh9GEsL",
+      "created": "2026-02-18T15:44:06.457158",
+      "lastUpdated": "2026-02-18T15:44:06.457159",
+      "name": "Kaposi Sarcoma Cancer Dashboard",
+      "displayName": "Kaposi Sarcoma Cancer Dashboard",
+      "description": "Monitoring dashboard for Kaposi Sarcoma cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "INVuKkgFq1T",
+          "visualization": {
+            "id": "b922743c-ca"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "emfZW9Ewde5",
+          "visualization": {
+            "id": "c3a05aec-bf"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "VxyyHqzZYOJ",
+          "visualization": {
+            "id": "3bf781fd-dd"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "xyU5pfQG2U5",
+          "visualization": {
+            "id": "06d9fd1c-31"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "XQh7pd2HRhO",
+      "created": "2026-02-18T15:44:06.457191",
+      "lastUpdated": "2026-02-18T15:44:06.457192",
+      "name": "Kidney Cancer Dashboard",
+      "displayName": "Kidney Cancer Dashboard",
+      "description": "Monitoring dashboard for Kidney cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "aTbk21derTl",
+          "visualization": {
+            "id": "ac134ff2-b5"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "iVCBd91x5Bi",
+          "visualization": {
+            "id": "68d51212-7f"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "XgohPup1uHy",
+          "visualization": {
+            "id": "638e7218-a9"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "eEsHtXXXabb",
+          "visualization": {
+            "id": "7f461f53-b5"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "niUxxMkNEVE",
+      "created": "2026-02-18T15:44:06.457224",
+      "lastUpdated": "2026-02-18T15:44:06.457225",
+      "name": "Leukemia Cancer Dashboard",
+      "displayName": "Leukemia Cancer Dashboard",
+      "description": "Monitoring dashboard for Leukemia cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "ZAWlnhgQobi",
+          "visualization": {
+            "id": "5d8eba26-1c"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "ssvpU2OO9eH",
+          "visualization": {
+            "id": "64d60a15-59"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "dEQ7RImlvzP",
+          "visualization": {
+            "id": "e304bf4e-0b"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "ZJSF3Zwfq1u",
+          "visualization": {
+            "id": "603a5852-67"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "uCtEEA9zn7T",
+      "created": "2026-02-18T15:44:06.457257",
+      "lastUpdated": "2026-02-18T15:44:06.457258",
+      "name": "Liver Cancer Dashboard",
+      "displayName": "Liver Cancer Dashboard",
+      "description": "Monitoring dashboard for Liver cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "QxMJXl8aW9q",
+          "visualization": {
+            "id": "6015d8dd-94"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "rF3UPr9eeM7",
+          "visualization": {
+            "id": "74598130-58"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "a7FGLMe9aH3",
+          "visualization": {
+            "id": "a73c6980-a6"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "NjiMIcjD50U",
+          "visualization": {
+            "id": "c77ea032-38"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "RhlD6znA3FX",
+      "created": "2026-02-18T15:44:06.457293",
+      "lastUpdated": "2026-02-18T15:44:06.457294",
+      "name": "Lung Cancer Dashboard",
+      "displayName": "Lung Cancer Dashboard",
+      "description": "Monitoring dashboard for Lung cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "ic0Y4Z0HIpQ",
+          "visualization": {
+            "id": "e5225c71-17"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "fY4Hu7qnxGk",
+          "visualization": {
+            "id": "beabed25-b8"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "aPKAOjrpzaj",
+          "visualization": {
+            "id": "1103b106-c9"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "KeaotacdL51",
+          "visualization": {
+            "id": "0c169c9a-12"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "dJPlC7cLKXh",
+      "created": "2026-02-18T15:44:06.457326",
+      "lastUpdated": "2026-02-18T15:44:06.457328",
+      "name": "Lymphoma Cancer Dashboard",
+      "displayName": "Lymphoma Cancer Dashboard",
+      "description": "Monitoring dashboard for Lymphoma cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "mb4snHvqrba",
+          "visualization": {
+            "id": "c6e68ad2-80"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "QhBVsT2NRYi",
+          "visualization": {
+            "id": "73b0ede0-e5"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "eA3eZJSkczV",
+          "visualization": {
+            "id": "625fd2a1-f7"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "O1YgQEZSLgh",
+          "visualization": {
+            "id": "80485467-86"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "pKZgtaZpa7i",
+      "created": "2026-02-18T15:44:06.457360",
+      "lastUpdated": "2026-02-18T15:44:06.457361",
+      "name": "Oral Head Neck Cancer Dashboard",
+      "displayName": "Oral Head Neck Cancer Dashboard",
+      "description": "Monitoring dashboard for Oral Head Neck cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "ZiFbZRO0cAc",
+          "visualization": {
+            "id": "af2af017-e4"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "Yw2OD08qPZ1",
+          "visualization": {
+            "id": "a9445b8a-fa"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "kC4alLe4gH8",
+          "visualization": {
+            "id": "af44d8dc-c7"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "VsTgowVCWSy",
+          "visualization": {
+            "id": "b02254e8-9f"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "W9JXG5bBbpg",
+      "created": "2026-02-18T15:44:06.457393",
+      "lastUpdated": "2026-02-18T15:44:06.457394",
+      "name": "Ovarian Cancer Dashboard",
+      "displayName": "Ovarian Cancer Dashboard",
+      "description": "Monitoring dashboard for Ovarian cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "V9w0DxqcB96",
+          "visualization": {
+            "id": "4995c31b-e8"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "JrdZs0DA26Y",
+          "visualization": {
+            "id": "c31d7c21-fc"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "SpUnIIuzuLV",
+          "visualization": {
+            "id": "f9e38bcc-92"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "aTvOtd2o0Nl",
+          "visualization": {
+            "id": "dcecbc36-09"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "apF4DSQz350",
+      "created": "2026-02-18T15:44:06.457426",
+      "lastUpdated": "2026-02-18T15:44:06.457427",
+      "name": "Pancreatic Cancer Dashboard",
+      "displayName": "Pancreatic Cancer Dashboard",
+      "description": "Monitoring dashboard for Pancreatic cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "GBnKJ9bZQM2",
+          "visualization": {
+            "id": "887c1c31-85"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "Vb4ornjUaIQ",
+          "visualization": {
+            "id": "03415877-4b"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "j0mkBuy8CdF",
+          "visualization": {
+            "id": "3f1526de-14"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "L9BIEQgNKBR",
+          "visualization": {
+            "id": "3888f8a5-22"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "G5fXvvwQe9n",
+      "created": "2026-02-18T15:44:06.457459",
+      "lastUpdated": "2026-02-18T15:44:06.457460",
+      "name": "Prostate Cancer Dashboard",
+      "displayName": "Prostate Cancer Dashboard",
+      "description": "Monitoring dashboard for Prostate cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "GDqRy5nETAX",
+          "visualization": {
+            "id": "eca17f1c-fe"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "S7R24UnL4e1",
+          "visualization": {
+            "id": "c4386b2d-dd"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "jQKjVx4caFo",
+          "visualization": {
+            "id": "90d7c0fc-cc"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "A9NVTeZKGyN",
+          "visualization": {
+            "id": "3d7cb02b-93"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "IT5f54zF0zx",
+      "created": "2026-02-18T15:44:06.457492",
+      "lastUpdated": "2026-02-18T15:44:06.457493",
+      "name": "Skin Melanoma Cancer Dashboard",
+      "displayName": "Skin Melanoma Cancer Dashboard",
+      "description": "Monitoring dashboard for Skin Melanoma cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "TLPlJYfNU2w",
+          "visualization": {
+            "id": "78324755-61"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "tiqVNvMYyKD",
+          "visualization": {
+            "id": "58815c09-c4"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "u4Q121fa1S1",
+          "visualization": {
+            "id": "62b60dc7-80"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "D8uY2cLA6NH",
+          "visualization": {
+            "id": "e84160fb-a0"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "TXxS0QIqePT",
+      "created": "2026-02-18T15:44:06.457525",
+      "lastUpdated": "2026-02-18T15:44:06.457526",
+      "name": "Stomach Cancer Dashboard",
+      "displayName": "Stomach Cancer Dashboard",
+      "description": "Monitoring dashboard for Stomach cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "jgx7cFTpnzn",
+          "visualization": {
+            "id": "ba13b721-6e"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "dUIfCj5Lhue",
+          "visualization": {
+            "id": "b52fb333-12"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "NGov89qq0Ix",
+          "visualization": {
+            "id": "e0c0a87b-90"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "cFUNTZgGkrw",
+          "visualization": {
+            "id": "02f5f8f4-10"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "vBPD6GM3LgJ",
+      "created": "2026-02-18T15:44:06.457558",
+      "lastUpdated": "2026-02-18T15:44:06.457560",
+      "name": "Testicular Cancer Dashboard",
+      "displayName": "Testicular Cancer Dashboard",
+      "description": "Monitoring dashboard for Testicular cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "TymJQpJcBIw",
+          "visualization": {
+            "id": "3c38d77f-a8"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "Mx9joJfA0MT",
+          "visualization": {
+            "id": "6c55d313-85"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "yWJljtSlid8",
+          "visualization": {
+            "id": "67386597-db"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "vnHfvNJtBSo",
+          "visualization": {
+            "id": "ce04cf40-7a"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    },
+    {
+      "id": "qMLfDzfOcnq",
+      "created": "2026-02-18T15:44:06.457592",
+      "lastUpdated": "2026-02-18T15:44:06.457593",
+      "name": "Thyroid Cancer Dashboard",
+      "displayName": "Thyroid Cancer Dashboard",
+      "description": "Monitoring dashboard for Thyroid cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "LaUUpL3odPY",
+          "visualization": {
+            "id": "b7e65883-13"
+          },
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "hHnipRGNRlf",
+          "visualization": {
+            "id": "f1d89867-42"
+          },
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "SjVVrcv55fh",
+          "visualization": {
+            "id": "eb27a247-2b"
+          },
+          "x": 0,
+          "y": 4,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "zQYdPPZsSNy",
+          "visualization": {
+            "id": "c6f0ed86-e9"
+          },
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 4,
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "sharing": {
+        "owner": "dhis2user",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "translations": [],
+      "attributeValues": []
+    }
+  ]
+}

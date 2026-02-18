@@ -1,0 +1,669 @@
+{
+  "dataElementsByType": {
+    "Generic Cancer": [
+      {
+        "id": "tzQRmAxcgGv",
+        "name": "ART start date [SCR]"
+      },
+      {
+        "id": "nY1AHh6sf3I",
+        "name": "Biopsy done"
+      },
+      {
+        "id": "AswNlG485pW",
+        "name": "Biopsy performed"
+      },
+      {
+        "id": "muMepco8XZf",
+        "name": "Camera image number (cervicogram)"
+      },
+      {
+        "id": "RbUHsnM2qOF",
+        "name": "Camera image number (cervicogram) (2nd)"
+      },
+      {
+        "id": "neThLcLfBA8",
+        "name": "Camera image number (cervicogram) (2nd) [LAB]"
+      },
+      {
+        "id": "xcVluO0LCIR",
+        "name": "Camera image number (cervicogram) [LAB]"
+      },
+      {
+        "id": "bdHUIHZMHE8",
+        "name": "Cervicogram image"
+      },
+      {
+        "id": "lKByanR0y35",
+        "name": "Cervicogram image (2nd)"
+      },
+      {
+        "id": "XcDe0X4TRCL",
+        "name": "Cervicogram image (2nd) [LAB]"
+      },
+      {
+        "id": "lgfobhHJT7R",
+        "name": "Cervicogram image [LAB]"
+      },
+      {
+        "id": "ujfWtoNaaxo",
+        "name": "Cervicogram taken"
+      },
+      {
+        "id": "ScBky5ZpYAU",
+        "name": "Cervicogram taken [LAB]"
+      },
+      {
+        "id": "UAXKz82eyrI",
+        "name": "Client number from LLETZ register"
+      },
+      {
+        "id": "fmgI82Pyedr",
+        "name": "Completion of screening visit"
+      },
+      {
+        "id": "OLyRCLyxjS7",
+        "name": "Completion of treatment visit"
+      },
+      {
+        "id": "m43keUu0POO",
+        "name": "Confirmed Result"
+      },
+      {
+        "id": "BFlNEIp5mDV",
+        "name": "Date biopsy taken"
+      },
+      {
+        "id": "ClxQpj43ntu",
+        "name": "Gynecological surgical history"
+      },
+      {
+        "id": "JU4J6oxilGu",
+        "name": "HIV care and treatment enrollment status [SCR]"
+      },
+      {
+        "id": "HotgtvNCWAX",
+        "name": "HIV positive client ART number [SCR]"
+      },
+      {
+        "id": "IkXgjQ7ht4J",
+        "name": "HIV positive client ART site [SCR]"
+      },
+      {
+        "id": "BYtJKn4U3kO",
+        "name": "HIV status [SCR]"
+      },
+      {
+        "id": "vyjiVPqueq9",
+        "name": "HPV DNA sample collected by"
+      },
+      {
+        "id": "WpVc7YJarQF",
+        "name": "HPV DNA sample collected by [LAB]"
+      },
+      {
+        "id": "ESGZ3aFYux5",
+        "name": "HPV DNA test result"
+      },
+      {
+        "id": "Csh2CMdIaF5",
+        "name": "HPV DNA test result [LAB]"
+      },
+      {
+        "id": "DfLmfzHDQ8w",
+        "name": "HPV Positive for abnormal results"
+      },
+      {
+        "id": "SCKB95WQtvW",
+        "name": "HPV genotype"
+      },
+      {
+        "id": "EJe2jEzC2gF",
+        "name": "HPV genotype [LAB]"
+      },
+      {
+        "id": "P8ZXz26em4u",
+        "name": "HPV genotyping is performed"
+      },
+      {
+        "id": "hDEIbBjXAK5",
+        "name": "HPV genotyping is performed [LAB]"
+      },
+      {
+        "id": "mxlYoS0bz6n",
+        "name": "HPV screened"
+      },
+      {
+        "id": "qJxzE1GCXyb",
+        "name": "HPV screened and received results"
+      },
+      {
+        "id": "uJqXzxOkRgW",
+        "name": "Histology results"
+      },
+      {
+        "id": "rRH1nU8hLS7",
+        "name": "Histology results [LAB]"
+      },
+      {
+        "id": "g9NIQ4wadnc",
+        "name": "If unknown HIV status, PITC accepted [SCR]"
+      },
+      {
+        "id": "EdBgQxSO7gA",
+        "name": "LLETZ Post treatment complication"
+      },
+      {
+        "id": "loJf0xwpAWs",
+        "name": "LLETZ Type of treatment provided"
+      },
+      {
+        "id": "XLzNhsSPfou",
+        "name": "LLETZ post treatment complication type"
+      },
+      {
+        "id": "P8IpnBuBYEO",
+        "name": "LLETZ status"
+      },
+      {
+        "id": "r2K4RDiZCM7",
+        "name": "LLETZ treated"
+      },
+      {
+        "id": "ZoknNqnNHuQ",
+        "name": "Margins"
+      },
+      {
+        "id": "BBjWFLjUyG7",
+        "name": "Margins [LAB]"
+      },
+      {
+        "id": "VnylDgqziWq",
+        "name": "Month and year of ART start [SCR]"
+      },
+      {
+        "id": "LnMtEoxX1iJ",
+        "name": "PITC results [SCR]"
+      },
+      {
+        "id": "JTIC0iDwAnC",
+        "name": "Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "Nbnizktoj6f",
+        "name": "Pap smear result"
+      },
+      {
+        "id": "h972U1UY6yC",
+        "name": "Pap smear result [LAB]"
+      },
+      {
+        "id": "M0BUnDxWyAU",
+        "name": "Pap smear screened"
+      },
+      {
+        "id": "jn2AScFnXTI",
+        "name": "Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "B60ZiXp3QP9",
+        "name": "Pap smear screened and received results"
+      },
+      {
+        "id": "g5HjpYVmTuz",
+        "name": "Pap smear screened and treated"
+      },
+      {
+        "id": "ejuDsHKWQvU",
+        "name": "Pap smear screening results"
+      },
+      {
+        "id": "WfEkQJ601UB",
+        "name": "Parity"
+      },
+      {
+        "id": "QOOh2k27wKf",
+        "name": "Parity-old"
+      },
+      {
+        "id": "Adud0ssi16J",
+        "name": "Positive margin specification"
+      },
+      {
+        "id": "WuvQlU4x9Yw",
+        "name": "Positive margin specification [LAB]"
+      },
+      {
+        "id": "UIMpxIiAbbz",
+        "name": "Pregnancy test"
+      },
+      {
+        "id": "ShsgUpxe50h",
+        "name": "Re-screening date"
+      },
+      {
+        "id": "qy6NjYkSDaE",
+        "name": "Re-screening date [LAB]"
+      },
+      {
+        "id": "hb31KzIXM4Y",
+        "name": "Re-screening date [TMT]"
+      },
+      {
+        "id": "yn4lAUZxbYS",
+        "name": "Re-screening date for HPV"
+      },
+      {
+        "id": "wGZqEb89nSo",
+        "name": "Re-screening date for HPV [LAB]"
+      },
+      {
+        "id": "IEq3CpgrbNt",
+        "name": "Re-screening date for Pap smear"
+      },
+      {
+        "id": "cRBEVf469LM",
+        "name": "Re-screening date for Pap smear [LAB]"
+      },
+      {
+        "id": "cjiVeyFAawK",
+        "name": "Reason HPV genotyping not performed"
+      },
+      {
+        "id": "g3qokzwkVHC",
+        "name": "Reason HPV genotyping not performed [LAB]"
+      },
+      {
+        "id": "AmNvhMqnTVM",
+        "name": "Reason LLETZ not performed"
+      },
+      {
+        "id": "l4j8UBNOzw5",
+        "name": "Reason PITC not accepted [SCR]"
+      },
+      {
+        "id": "tI2nAjmGTxt",
+        "name": "Reason VAT not performed"
+      },
+      {
+        "id": "V6c8j8DL2RH",
+        "name": "Reason VAT not performed [LAB]"
+      },
+      {
+        "id": "dGmxWckVaTU",
+        "name": "Reason for referral"
+      },
+      {
+        "id": "ZByVRZA7Xzu",
+        "name": "Reason for treatment referral"
+      },
+      {
+        "id": "ke7h1sQ3DX9",
+        "name": "Reason thermoablation postponed"
+      },
+      {
+        "id": "RsTl6rS5OLW",
+        "name": "Reason thermoablation postponed [TMT]"
+      },
+      {
+        "id": "dQji6vLP3dB",
+        "name": "Reason triage test not performed"
+      },
+      {
+        "id": "XxxFyOQe5zB",
+        "name": "Reason triage test not performed [LAB]"
+      },
+      {
+        "id": "t19n576g0Wo",
+        "name": "Referral booking date for LLETZ"
+      },
+      {
+        "id": "PIp2gEqsDAL",
+        "name": "Referral booking date for LLETZ [LAB]"
+      },
+      {
+        "id": "tXjYWVXvYv5",
+        "name": "Referral booking date for treatment"
+      },
+      {
+        "id": "TQ63UTaUaTC",
+        "name": "Referral booking date for treatment [LAB]"
+      },
+      {
+        "id": "yayiufqoUuU",
+        "name": "Referral for other gynecological issues"
+      },
+      {
+        "id": "OmFFgA8WBNA",
+        "name": "Referral health facility for screening"
+      },
+      {
+        "id": "oHOwongOcWV",
+        "name": "Referral health facility for treatment"
+      },
+      {
+        "id": "TDlrn8gs5S0",
+        "name": "Referred from home facility for screening"
+      },
+      {
+        "id": "TXh2V4LRYE0",
+        "name": "Referred from home facility for treatment"
+      },
+      {
+        "id": "myAAAlBgrnI",
+        "name": "Retest date for HPV"
+      },
+      {
+        "id": "drdtsukCRar",
+        "name": "Retest date for HPV [LAB]"
+      },
+      {
+        "id": "TIRUBdJvuXH",
+        "name": "Screening consent form signed"
+      },
+      {
+        "id": "Zs8RjyzVo7t",
+        "name": "Screening type"
+      },
+      {
+        "id": "g9kHxuY0fRh",
+        "name": "Screening type [LAB]"
+      },
+      {
+        "id": "Hu8VyrHXAHk",
+        "name": "Specify complication type"
+      },
+      {
+        "id": "UvtvUH5JEmI",
+        "name": "Specify date if Thermoablation will be performed on different date"
+      },
+      {
+        "id": "g9l8shsdTLL",
+        "name": "Specify date if Thermoablation will be performed on different date [TMT]"
+      },
+      {
+        "id": "MHYLCQ7zvD7",
+        "name": "Specify follow-up post treatment"
+      },
+      {
+        "id": "YHQmdSmd3SO",
+        "name": "Specify gynecological surgical history"
+      },
+      {
+        "id": "U28LBZGDHKW",
+        "name": "Specify other LLETZ post treatment complication type"
+      },
+      {
+        "id": "ZZ08zqOihWx",
+        "name": "Specify other complication type"
+      },
+      {
+        "id": "IB0YDyDJNFL",
+        "name": "Specify other confirmed VIA result for today"
+      },
+      {
+        "id": "PBffRGVyoU3",
+        "name": "Specify other confirmed VIA result for today [LAB]"
+      },
+      {
+        "id": "bFb032Jq3Uo",
+        "name": "Specify other gynecological issue"
+      },
+      {
+        "id": "Vc61nDYtlGs",
+        "name": "Specify other high risk HPV genotype"
+      },
+      {
+        "id": "IPb9V6RYJO3",
+        "name": "Specify other high risk HPV genotype [LAB]"
+      },
+      {
+        "id": "f0zvRmTQfGS",
+        "name": "Specify other histology results"
+      },
+      {
+        "id": "FNEYzdvg5m6",
+        "name": "Specify other histology results [LAB]"
+      },
+      {
+        "id": "E3pK7SwA0kI",
+        "name": "Specify other pap smear result"
+      },
+      {
+        "id": "Ikq8VezSbpJ",
+        "name": "Specify other pap smear result [LAB]"
+      },
+      {
+        "id": "GihkTXUj1Rx",
+        "name": "Specify other reason for LLETZ treatment referral"
+      },
+      {
+        "id": "NnEH9klLcnD",
+        "name": "Specify other site of referral for screening"
+      },
+      {
+        "id": "EuwTi2RTMPj",
+        "name": "Specify other site of referral for treatment"
+      },
+      {
+        "id": "DgjU8FaZ3kl",
+        "name": "Specify post treatment complication"
+      },
+      {
+        "id": "aAAWu9p4WdH",
+        "name": "Specify treatment referral site"
+      },
+      {
+        "id": "jeZhGxi9WBf",
+        "name": "Specify treatment referral site [LAB]"
+      },
+      {
+        "id": "oKW1bKEhbSm",
+        "name": "Specify treatment referral site for LLETZ"
+      },
+      {
+        "id": "rTtMdCIYW7H",
+        "name": "Specify treatment referral site for VIA [LAB]"
+      },
+      {
+        "id": "PhDPf0bUeuv",
+        "name": "Specimen collection date [LAB]"
+      },
+      {
+        "id": "PyPL2SmUcDJ",
+        "name": "Suspicious for cancer and biopsy result"
+      },
+      {
+        "id": "xUNMyQEPjxk",
+        "name": "Suspicious for cancer and biopsy result [LAB]"
+      },
+      {
+        "id": "iiKPiw4tftv",
+        "name": "Test result date [LAB]"
+      },
+      {
+        "id": "pO75wsRjimt",
+        "name": "Thermoablation"
+      },
+      {
+        "id": "vDoMeWJLUj4",
+        "name": "Thermoablation [TMT]"
+      },
+      {
+        "id": "IwyONCmyO4p",
+        "name": "Thermoablation treated"
+      },
+      {
+        "id": "Xb1G6pfOzxx",
+        "name": "Today's confirmed VIA result [LAB]"
+      },
+      {
+        "id": "kCr8Eb7JL6T",
+        "name": "Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "eY3Th6N5Xis",
+        "name": "Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "QW20aSxytpm",
+        "name": "Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "yhkFRp64JlW",
+        "name": "Treatment consent form signed"
+      },
+      {
+        "id": "FZdzT5Mc8LB",
+        "name": "Triage is performed"
+      },
+      {
+        "id": "HcjhZ6fGRV1",
+        "name": "Triage is performed [LAB]"
+      },
+      {
+        "id": "VQIKDjKUznr",
+        "name": "Triage test type"
+      },
+      {
+        "id": "AO7iSUmXp1Q",
+        "name": "Triage test type [LAB]"
+      },
+      {
+        "id": "vKh8TjZGlql",
+        "name": "VIA Assessment for Treatment (VAT) performed"
+      },
+      {
+        "id": "B2ncXK9v11t",
+        "name": "VIA Assessment for Treatment (VAT) performed [LAB]"
+      },
+      {
+        "id": "bVISW8cgNqj",
+        "name": "VIA Assessment for Treatment (VAT) result"
+      },
+      {
+        "id": "nIb7rqutlcR",
+        "name": "VIA Assessment for Treatment (VAT) result [LAB]"
+      },
+      {
+        "id": "xG2Mo60YPX5",
+        "name": "VIA Positive for abnormal results"
+      },
+      {
+        "id": "STIxP70Ourp",
+        "name": "VIA result suspected cancer"
+      },
+      {
+        "id": "MetHojlT1yY",
+        "name": "VIA screened"
+      },
+      {
+        "id": "uBbg5sKzaeD",
+        "name": "VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "YKo6nixV0l6",
+        "name": "VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "QIiAyz4Mu8W",
+        "name": "VIA screened and received results"
+      },
+      {
+        "id": "mHdQf7cIUEd",
+        "name": "VIA screened and treated"
+      },
+      {
+        "id": "dEK9MUu58nc",
+        "name": "VIA screening result"
+      },
+      {
+        "id": "gVgr3dTIdnK",
+        "name": "VIA screening result [LAB]"
+      },
+      {
+        "id": "VnpclckbVhm",
+        "name": "Visit type"
+      },
+      {
+        "id": "NI7tCmmceGU",
+        "name": "Why was the cervicogram not taken"
+      },
+      {
+        "id": "rmijMLAtm0L",
+        "name": "Why was the cervicogram not taken [LAB]"
+      },
+      {
+        "id": "QcXGFYWzYma",
+        "name": "parity-prev"
+      },
+      {
+        "id": "F5X2lAURb55",
+        "name": "Cancer Diagnosis"
+      },
+      {
+        "id": "Y42E2JjYYzl",
+        "name": "Cancer Stage"
+      },
+      {
+        "id": "b3VAiBiZ5eK",
+        "name": "Date of Diagnosis"
+      },
+      {
+        "id": "hI4xMWpZdrU",
+        "name": "Treatment Type"
+      },
+      {
+        "id": "k6K6R7QOCTm",
+        "name": "Performance Status"
+      },
+      {
+        "id": "lis2LY7yQtl",
+        "name": "Comorbidities"
+      },
+      {
+        "id": "JRAUB0VrK2b",
+        "name": "Treatment Response"
+      },
+      {
+        "id": "BOGsCyKhUp0",
+        "name": "Date of Treatment"
+      },
+      {
+        "id": "QCRq9U2eIYW",
+        "name": "Survival Status"
+      },
+      {
+        "id": "jYb6NdNhcUO",
+        "name": "Date of Death"
+      }
+    ],
+    "Breast": [
+      {
+        "id": "bIUCJ8iV84S",
+        "name": "Breast cancer screening done"
+      },
+      {
+        "id": "d9rwbE3H26g",
+        "name": "Breast cancer screening outcome"
+      },
+      {
+        "id": "krz8f4j691G",
+        "name": "Specify breast cancer screening abnormality"
+      },
+      {
+        "id": "Pf1iNgzeyYE",
+        "name": "Specify other breast cancer screening abnormality"
+      },
+      {
+        "id": "jgo8NXcFaSN",
+        "name": "Specify referral site for abnormal breast cancer screening outcome"
+      }
+    ]
+  },
+  "summary": {
+    "Generic Cancer": 159,
+    "Breast": 5
+  },
+  "totalElements": 164
+}

@@ -1,0 +1,6 @@
+Starting enhanced batch import at Wed Feb 18 16:07:01 CAT 2026
+Import Strategy: CREATE_AND_UPDATE
+---
+
+[1;33m=== ENHANCED DATA ELEMENTS ===[0m
+[0;31m✗[0m "message":"One or more errors occurred, please see full details in import report."

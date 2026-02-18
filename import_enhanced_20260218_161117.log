@@ -1,0 +1,12 @@
+Starting enhanced batch import at Wed Feb 18 16:11:17 CAT 2026
+Import Strategy: CREATE_AND_UPDATE
+---
+
+[1;33m=== ENHANCED DATA ELEMENTS ===[0m
+[0;32m✓[0m "stats":{"created":0,"updated":164,"deleted":0,"ignored":0,"total":164}
+
+[1;33m=== ENHANCED DASHBOARDS ===[0m
+[0;32m✓[0m "stats":{"created":18,"updated":1,"deleted":0,"ignored":0,"total":19}
+
+[1;33m=== ENHANCED PROGRAM INDICATORS ===[0m
+[0;31m✗[0m "message":"One or more errors occurred, please see full details in import report."
