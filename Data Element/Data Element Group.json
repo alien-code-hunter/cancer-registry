@@ -3,17 +3,17 @@
     "id": "039b6994-a3e7-4531-967d-d5db7fceb5eb",
     "rev": "dfd7f48",
     "version": "2.40.5",
-    "date": "2026-02-18T17:37:47.142Z"
+    "date": "2026-02-19T07:09:14.400Z"
   },
   "dataElementGroups": [
     {
-      "id": "XHg3okGRmKg",
+      "id": "MsQli6ZGv17",
       "code": "DEG_BLADDER",
       "name": "Bladder Data Elements",
       "shortName": "Bladder DE Group",
       "description": "Aggregate data elements for Bladder cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.399Z",
+      "lastUpdated": "2026-02-19T07:09:14.399Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -102,13 +102,13 @@
       ]
     },
     {
-      "id": "RCpJmdikYIU",
+      "id": "E63fWrmKnnG",
       "code": "DEG_BREAST",
       "name": "Breast Data Elements",
       "shortName": "Breast DE Group",
       "description": "Aggregate data elements for Breast cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.399Z",
+      "lastUpdated": "2026-02-19T07:09:14.399Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -197,13 +197,13 @@
       ]
     },
     {
-      "id": "Vy3MEKZRSmG",
+      "id": "UtX9XbnXiYq",
       "code": "DEG_COLORECTAL",
       "name": "Colorectal Data Elements",
       "shortName": "Colorectal DE Group",
       "description": "Aggregate data elements for Colorectal cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.399Z",
+      "lastUpdated": "2026-02-19T07:09:14.399Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -292,13 +292,13 @@
       ]
     },
     {
-      "id": "GZPlay20234",
+      "id": "s210uWSNn8z",
       "code": "DEG_ESOPHAGEAL",
       "name": "Esophageal Data Elements",
       "shortName": "Esophageal DE Group",
       "description": "Aggregate data elements for Esophageal cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.399Z",
+      "lastUpdated": "2026-02-19T07:09:14.399Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -387,13 +387,13 @@
       ]
     },
     {
-      "id": "LrmnU5RdezU",
+      "id": "5oryA09MTKg",
       "code": "DEG_KAPOSI_SARCOMA",
       "name": "Kaposi Sarcoma Data Elements",
       "shortName": "Kaposi Sarcoma DE Group",
       "description": "Aggregate data elements for Kaposi Sarcoma cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.399Z",
+      "lastUpdated": "2026-02-19T07:09:14.399Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -482,13 +482,13 @@
       ]
     },
     {
-      "id": "3vchtQ4uMk9",
+      "id": "7LnUzMrFYIl",
       "code": "DEG_KIDNEY",
       "name": "Kidney Data Elements",
       "shortName": "Kidney DE Group",
       "description": "Aggregate data elements for Kidney cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -577,13 +577,13 @@
       ]
     },
     {
-      "id": "AHkJtlyVsss",
+      "id": "afg2PTyw2w9",
       "code": "DEG_LEUKEMIA",
       "name": "Leukemia Data Elements",
       "shortName": "Leukemia DE Group",
       "description": "Aggregate data elements for Leukemia cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -672,13 +672,13 @@
       ]
     },
     {
-      "id": "RzKbiHS7RsF",
+      "id": "kFWkds7KeiA",
       "code": "DEG_LIVER",
       "name": "Liver Data Elements",
       "shortName": "Liver DE Group",
       "description": "Aggregate data elements for Liver cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -767,13 +767,13 @@
       ]
     },
     {
-      "id": "2ZWGU1VtDiv",
+      "id": "VIsV4j7EmDq",
       "code": "DEG_LUNG",
       "name": "Lung Data Elements",
       "shortName": "Lung DE Group",
       "description": "Aggregate data elements for Lung cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -862,13 +862,13 @@
       ]
     },
     {
-      "id": "1qszPjJ9dgS",
+      "id": "fxoKOV7yeXy",
       "code": "DEG_LYMPHOMA",
       "name": "Lymphoma Data Elements",
       "shortName": "Lymphoma DE Group",
       "description": "Aggregate data elements for Lymphoma cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -957,13 +957,13 @@
       ]
     },
     {
-      "id": "MVpL1Lrs53o",
+      "id": "zI1xSfCQdo4",
       "code": "DEG_ORAL_HEAD_NECK",
       "name": "Oral Head Neck Data Elements",
       "shortName": "Oral Head Neck DE Group",
       "description": "Aggregate data elements for Oral Head Neck cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -1052,13 +1052,13 @@
       ]
     },
     {
-      "id": "tlOkoudb4Ws",
+      "id": "6NZitte6o5Q",
       "code": "DEG_OVARIAN",
       "name": "Ovarian Data Elements",
       "shortName": "Ovarian DE Group",
       "description": "Aggregate data elements for Ovarian cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -1147,13 +1147,13 @@
       ]
     },
     {
-      "id": "l2CoKk4VsR4",
+      "id": "1h74n78Vtda",
       "code": "DEG_PANCREATIC",
       "name": "Pancreatic Data Elements",
       "shortName": "Pancreatic DE Group",
       "description": "Aggregate data elements for Pancreatic cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -1242,13 +1242,13 @@
       ]
     },
     {
-      "id": "QjBot59gaDO",
+      "id": "jVOcoTSCaXL",
       "code": "DEG_PROSTATE",
       "name": "Prostate Data Elements",
       "shortName": "Prostate DE Group",
       "description": "Aggregate data elements for Prostate cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.142Z",
-      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -1337,13 +1337,13 @@
       ]
     },
     {
-      "id": "g0f9NaXkzTb",
+      "id": "gNhLKwPZ2k7",
       "code": "DEG_SKIN_MELANOMA",
       "name": "Skin Melanoma Data Elements",
       "shortName": "Skin Melanoma DE Group",
       "description": "Aggregate data elements for Skin Melanoma cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.142Z",
-      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -1432,13 +1432,13 @@
       ]
     },
     {
-      "id": "GUC5LAFZyB9",
+      "id": "DWUcqlTqt7x",
       "code": "DEG_STOMACH",
       "name": "Stomach Data Elements",
       "shortName": "Stomach DE Group",
       "description": "Aggregate data elements for Stomach cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.142Z",
-      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -1527,13 +1527,13 @@
       ]
     },
     {
-      "id": "5Z1O0KOrl5q",
+      "id": "WXnQLtOPjVF",
       "code": "DEG_TESTICULAR",
       "name": "Testicular Data Elements",
       "shortName": "Testicular DE Group",
       "description": "Aggregate data elements for Testicular cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.142Z",
-      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -1622,13 +1622,13 @@
       ]
     },
     {
-      "id": "ijrYgoIsMvD",
+      "id": "b24mKK75mvD",
       "code": "DEG_THYROID",
       "name": "Thyroid Data Elements",
       "shortName": "Thyroid DE Group",
       "description": "Aggregate data elements for Thyroid cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.142Z",
-      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",

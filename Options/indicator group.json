@@ -3,17 +3,17 @@
     "id": "039b6994-a3e7-4531-967d-d5db7fceb5eb",
     "rev": "dfd7f48",
     "version": "2.40.5",
-    "date": "2026-02-18T17:37:47.143Z"
+    "date": "2026-02-19T07:09:14.402Z"
   },
   "indicatorGroups": [
     {
-      "id": "LpcIUjJzCEY",
+      "id": "tfozhXEEPiJ",
       "code": "IGP_BLADDER",
       "name": "Bladder Indicators",
       "shortName": "Bladder Indicators",
       "description": "Aggregate indicators for Bladder cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.399Z",
+      "lastUpdated": "2026-02-19T07:09:14.399Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -45,13 +45,13 @@
       ]
     },
     {
-      "id": "1EBq8oxutiY",
+      "id": "10sa4wo9Plc",
       "code": "IGP_BREAST",
       "name": "Breast Indicators",
       "shortName": "Breast Indicators",
       "description": "Aggregate indicators for Breast cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.399Z",
+      "lastUpdated": "2026-02-19T07:09:14.399Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -83,13 +83,13 @@
       ]
     },
     {
-      "id": "vLLjUXOKECm",
+      "id": "NrHuqgmFqsU",
       "code": "IGP_COLORECTAL",
       "name": "Colorectal Indicators",
       "shortName": "Colorectal Indicators",
       "description": "Aggregate indicators for Colorectal cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.399Z",
+      "lastUpdated": "2026-02-19T07:09:14.399Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -121,13 +121,13 @@
       ]
     },
     {
-      "id": "cW6k2EPv1WC",
+      "id": "01phNSDctJt",
       "code": "IGP_ESOPHAGEAL",
       "name": "Esophageal Indicators",
       "shortName": "Esophageal Indicators",
       "description": "Aggregate indicators for Esophageal cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.399Z",
+      "lastUpdated": "2026-02-19T07:09:14.399Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -159,13 +159,13 @@
       ]
     },
     {
-      "id": "fBievK3BLGC",
+      "id": "IoCLHHoworI",
       "code": "IGP_KAPOSI_SARCOMA",
       "name": "Kaposi Sarcoma Indicators",
       "shortName": "Kaposi Sarcoma Indicators",
       "description": "Aggregate indicators for Kaposi Sarcoma cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.399Z",
+      "lastUpdated": "2026-02-19T07:09:14.399Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -197,13 +197,13 @@
       ]
     },
     {
-      "id": "M8EMw8K5hqz",
+      "id": "I7zYn4AzEN9",
       "code": "IGP_KIDNEY",
       "name": "Kidney Indicators",
       "shortName": "Kidney Indicators",
       "description": "Aggregate indicators for Kidney cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -235,13 +235,13 @@
       ]
     },
     {
-      "id": "SNDMvetSwX8",
+      "id": "zuYKA2a36lA",
       "code": "IGP_LEUKEMIA",
       "name": "Leukemia Indicators",
       "shortName": "Leukemia Indicators",
       "description": "Aggregate indicators for Leukemia cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -273,13 +273,13 @@
       ]
     },
     {
-      "id": "Huo1RmkBQzr",
+      "id": "Bcb53pHrzNN",
       "code": "IGP_LIVER",
       "name": "Liver Indicators",
       "shortName": "Liver Indicators",
       "description": "Aggregate indicators for Liver cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -311,13 +311,13 @@
       ]
     },
     {
-      "id": "ZTcOh7zWOD7",
+      "id": "gTjqLsRXnd1",
       "code": "IGP_LUNG",
       "name": "Lung Indicators",
       "shortName": "Lung Indicators",
       "description": "Aggregate indicators for Lung cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -349,13 +349,13 @@
       ]
     },
     {
-      "id": "oiV4P3AHrjV",
+      "id": "psnkj7h35YL",
       "code": "IGP_LYMPHOMA",
       "name": "Lymphoma Indicators",
       "shortName": "Lymphoma Indicators",
       "description": "Aggregate indicators for Lymphoma cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -387,13 +387,13 @@
       ]
     },
     {
-      "id": "LxfxfC3j9b5",
+      "id": "AZNoxA2WbVO",
       "code": "IGP_ORAL_HEAD_NECK",
       "name": "Oral Head Neck Indicators",
       "shortName": "Oral Head Neck Indicators",
       "description": "Aggregate indicators for Oral Head Neck cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -425,13 +425,13 @@
       ]
     },
     {
-      "id": "Wq3ic3NpVIR",
+      "id": "2PYu4oYsGJX",
       "code": "IGP_OVARIAN",
       "name": "Ovarian Indicators",
       "shortName": "Ovarian Indicators",
       "description": "Aggregate indicators for Ovarian cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -463,13 +463,13 @@
       ]
     },
     {
-      "id": "s0XYWAqgQzZ",
+      "id": "TFp6WD6GFwu",
       "code": "IGP_PANCREATIC",
       "name": "Pancreatic Indicators",
       "shortName": "Pancreatic Indicators",
       "description": "Aggregate indicators for Pancreatic cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.141Z",
-      "lastUpdated": "2026-02-18T17:37:47.141Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -501,13 +501,13 @@
       ]
     },
     {
-      "id": "WK4eFkpT3Dl",
+      "id": "x597i0LVYdV",
       "code": "IGP_PROSTATE",
       "name": "Prostate Indicators",
       "shortName": "Prostate Indicators",
       "description": "Aggregate indicators for Prostate cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.142Z",
-      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -539,13 +539,13 @@
       ]
     },
     {
-      "id": "kDbDVQle7nA",
+      "id": "AbLlS4ZfDO7",
       "code": "IGP_SKIN_MELANOMA",
       "name": "Skin Melanoma Indicators",
       "shortName": "Skin Melanoma Indicators",
       "description": "Aggregate indicators for Skin Melanoma cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.142Z",
-      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -577,13 +577,13 @@
       ]
     },
     {
-      "id": "tqxegcUGIhW",
+      "id": "fOjbmj1gnEg",
       "code": "IGP_STOMACH",
       "name": "Stomach Indicators",
       "shortName": "Stomach Indicators",
       "description": "Aggregate indicators for Stomach cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.142Z",
-      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -615,13 +615,13 @@
       ]
     },
     {
-      "id": "uH6zHP9Yt3M",
+      "id": "KPysYUfAdzp",
       "code": "IGP_TESTICULAR",
       "name": "Testicular Indicators",
       "shortName": "Testicular Indicators",
       "description": "Aggregate indicators for Testicular cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.142Z",
-      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",
@@ -653,13 +653,13 @@
       ]
     },
     {
-      "id": "cT1VZshh9qV",
+      "id": "bVZYDLv90EH",
       "code": "IGP_THYROID",
       "name": "Thyroid Indicators",
       "shortName": "Thyroid Indicators",
       "description": "Aggregate indicators for Thyroid cancer screening and treatment",
-      "created": "2026-02-18T17:37:47.142Z",
-      "lastUpdated": "2026-02-18T17:37:47.142Z",
+      "created": "2026-02-19T07:09:14.400Z",
+      "lastUpdated": "2026-02-19T07:09:14.400Z",
       "createdBy": {
         "id": "M5zQapPyTZI",
         "code": "admin",

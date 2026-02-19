@@ -3,7 +3,7 @@
 CANCER REGISTRY PROJECT - FINAL VALIDATION REPORT
 ================================================================================
 
-Generated: 2026-02-18 17:36:31
+Generated: 2026-02-19 08:44:56
 
 --------------------------------------------------------------------------------
 
@@ -23,12 +23,12 @@ Core Metadata:
     - Indicators per cancer: 8
     - Total cancer-specific KPIs: 930
 
-  • Data Elements: 164
+  • Data Elements: 542
     - TRACKER type: 143
     - AGGREGATE type: 21 (not used in programs)
 
   • Dashboards: 19
-  • Validation Rules: 12
+  • Validation Rules: 0
 
 
 📋 PROGRAM DETAILS
@@ -134,7 +134,7 @@ Core Metadata:
 --------------------------------------------------------------------------------
 
   TRACKER (for Tracker Programs): 143
-  AGGREGATE (for Aggregate Data Sets): 21
+  AGGREGATE (for Aggregate Data Sets): 399
 
 
 ✅ VALIDATION STATUS
@@ -182,3 +182,6 @@ PROJECT STATUS: ✅ READY FOR PRODUCTION
 All components validated successfully.
 Cancer registry is fully configured and ready for use.
 ================================================================================
+
+
+📄 Report saved to: /Users/mk/Documents/GitHub/cancer-registry/artifacts/reports/PROJECT_VALIDATION_REPORT.txt

@@ -5,5 +5,74 @@
     "version": "2.40.5",
     "date": "2026-02-17T18:28:21.011+0000"
   },
-  "validationRules": []
+  "validationRules": [
+    {
+      "id": "uW5RfZxBsme",
+      "created": "2026-02-19T09:09:24.665547",
+      "lastUpdated": "2026-02-19T09:09:24.665560",
+      "name": "Treatment must start after diagnosis",
+      "description": "Ensures Date of Treatment is after Date of Diagnosis",
+      "instruction": "Check treatment onset is chronologically after diagnosis",
+      "importance": "HIGH",
+      "operator": "greater_than",
+      "skipFormValidation": false
+    },
+    {
+      "id": "gcGNXK8oKLN",
+      "created": "2026-02-19T09:09:24.665564",
+      "lastUpdated": "2026-02-19T09:09:24.665565",
+      "name": "ECOG status must be 0-4",
+      "description": "Performance Status must be valid ECOG grade (0-4)",
+      "instruction": "0=Fully active, 1=Restricted, 2=>50% bedbound, 3=Bedbound, 4=Completely bedbound",
+      "importance": "MEDIUM",
+      "operator": "between",
+      "leftSide": "0",
+      "rightSide": "4",
+      "skipFormValidation": false
+    },
+    {
+      "id": "y4DaUUuCEfn",
+      "created": "2026-02-19T09:09:24.665569",
+      "lastUpdated": "2026-02-19T09:09:24.665570",
+      "name": "Cancer diagnosis required",
+      "description": "Cancer Diagnosis must be populated before treatment",
+      "instruction": "Enter ICD-10 diagnosis code before documenting treatment",
+      "importance": "HIGH",
+      "operator": "not_empty",
+      "skipFormValidation": false
+    },
+    {
+      "id": "gpJrGaHFPne",
+      "created": "2026-02-19T09:09:24.665573",
+      "lastUpdated": "2026-02-19T09:09:24.665574",
+      "name": "Death date after diagnosis",
+      "description": "If deceased, Date of Death must be after Date of Diagnosis",
+      "instruction": "Check death and diagnosis dates are in proper order",
+      "importance": "HIGH",
+      "operator": "greater_than",
+      "skipFormValidation": false
+    },
+    {
+      "id": "oXwezZP77PI",
+      "created": "2026-02-19T09:09:24.665577",
+      "lastUpdated": "2026-02-19T09:09:24.665578",
+      "name": "Deceased consistency check",
+      "description": "If Survival Status=Deceased, Date of Death must be populated",
+      "instruction": "Enter Date of Death for all patients marked as deceased",
+      "importance": "HIGH",
+      "operator": "not_empty",
+      "skipFormValidation": false
+    },
+    {
+      "id": "TQX8E6wIoFQ",
+      "created": "2026-02-19T09:09:24.665581",
+      "lastUpdated": "2026-02-19T09:09:24.665582",
+      "name": "Treatment response after completion",
+      "description": "Treatment Response should be assessed after treatment completion",
+      "instruction": "Only assess treatment response after treatment is complete",
+      "importance": "MEDIUM",
+      "operator": "not_empty",
+      "skipFormValidation": false
+    }
+  ]
 }

@@ -75850,6 +75850,2166 @@
       "expression": "V{Cases_Pancreatic Cancer}",
       "decimals": 1,
       "aggregationType": "NONE"
+    },
+    {
+      "id": "tfJJq85ljEq",
+      "created": "2026-02-19T09:09:24.598136",
+      "lastUpdated": "2026-02-19T09:09:24.598151",
+      "name": "Bladder - Early Detection Rate",
+      "shortName": "BCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "Hzvmw7iaHUV"
+      },
+      "expression": "V{Total_Bladder_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "qq5Z1iGarNF",
+      "created": "2026-02-19T09:09:24.598165",
+      "lastUpdated": "2026-02-19T09:09:24.598166",
+      "name": "Bladder - Treatment Completion Rate",
+      "shortName": "BCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "Hzvmw7iaHUV"
+      },
+      "expression": "V{Total_Bladder_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "VzUEbbiPMrG",
+      "created": "2026-02-19T09:09:24.598172",
+      "lastUpdated": "2026-02-19T09:09:24.598173",
+      "name": "Bladder - 1-Year Survival Rate",
+      "shortName": "BCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "Hzvmw7iaHUV"
+      },
+      "expression": "V{Total_Bladder_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "fPjFNUJM90c",
+      "created": "2026-02-19T09:09:24.598177",
+      "lastUpdated": "2026-02-19T09:09:24.598178",
+      "name": "Bladder - 5-Year Survival Rate",
+      "shortName": "BCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "Hzvmw7iaHUV"
+      },
+      "expression": "V{Total_Bladder_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "NKJEnuYcznb",
+      "created": "2026-02-19T09:09:24.598182",
+      "lastUpdated": "2026-02-19T09:09:24.598183",
+      "name": "Bladder - Treatment-Related Mortality",
+      "shortName": "BCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "Hzvmw7iaHUV"
+      },
+      "expression": "V{Total_Bladder_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "Of5RPwwJ2cn",
+      "created": "2026-02-19T09:09:24.598186",
+      "lastUpdated": "2026-02-19T09:09:24.598187",
+      "name": "Bladder - Late-Stage at Diagnosis",
+      "shortName": "BCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "Hzvmw7iaHUV"
+      },
+      "expression": "V{Total_Bladder_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "qSRCYKT3zSE",
+      "created": "2026-02-19T09:09:24.598191",
+      "lastUpdated": "2026-02-19T09:09:24.598192",
+      "name": "Bladder - Disease-Free Survival 2-Yr",
+      "shortName": "BCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "Hzvmw7iaHUV"
+      },
+      "expression": "V{Total_Bladder_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "TlRM4LjYGO7",
+      "created": "2026-02-19T09:09:24.598195",
+      "lastUpdated": "2026-02-19T09:09:24.598196",
+      "name": "Bladder - Case Fatality Rate",
+      "shortName": "BCP - CFR",
+      "description": "Deaths from Bladder / Total Bladder cases",
+      "program": {
+        "id": "Hzvmw7iaHUV"
+      },
+      "expression": "V{Total_Bladder_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "Ym2puF6c1vB",
+      "created": "2026-02-19T09:09:24.598202",
+      "lastUpdated": "2026-02-19T09:09:24.598203",
+      "name": "Breast - Early Detection Rate",
+      "shortName": "BrCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "mBPT3WTiyAj"
+      },
+      "expression": "V{Total_Breast_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "dH2i6tZtpPo",
+      "created": "2026-02-19T09:09:24.598206",
+      "lastUpdated": "2026-02-19T09:09:24.598207",
+      "name": "Breast - Treatment Completion Rate",
+      "shortName": "BrCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "mBPT3WTiyAj"
+      },
+      "expression": "V{Total_Breast_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "pFV7E6Nbvxi",
+      "created": "2026-02-19T09:09:24.598211",
+      "lastUpdated": "2026-02-19T09:09:24.598212",
+      "name": "Breast - 1-Year Survival Rate",
+      "shortName": "BrCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "mBPT3WTiyAj"
+      },
+      "expression": "V{Total_Breast_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "QrCgNFBxzcC",
+      "created": "2026-02-19T09:09:24.598215",
+      "lastUpdated": "2026-02-19T09:09:24.598216",
+      "name": "Breast - 5-Year Survival Rate",
+      "shortName": "BrCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "mBPT3WTiyAj"
+      },
+      "expression": "V{Total_Breast_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "wdXdwCT1167",
+      "created": "2026-02-19T09:09:24.598219",
+      "lastUpdated": "2026-02-19T09:09:24.598220",
+      "name": "Breast - Treatment-Related Mortality",
+      "shortName": "BrCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "mBPT3WTiyAj"
+      },
+      "expression": "V{Total_Breast_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "hfpzEtQKBLW",
+      "created": "2026-02-19T09:09:24.598224",
+      "lastUpdated": "2026-02-19T09:09:24.598225",
+      "name": "Breast - Late-Stage at Diagnosis",
+      "shortName": "BrCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "mBPT3WTiyAj"
+      },
+      "expression": "V{Total_Breast_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "YjrIu3k753R",
+      "created": "2026-02-19T09:09:24.598228",
+      "lastUpdated": "2026-02-19T09:09:24.598229",
+      "name": "Breast - Disease-Free Survival 2-Yr",
+      "shortName": "BrCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "mBPT3WTiyAj"
+      },
+      "expression": "V{Total_Breast_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "PpMHVnsMDvS",
+      "created": "2026-02-19T09:09:24.598232",
+      "lastUpdated": "2026-02-19T09:09:24.598233",
+      "name": "Breast - Case Fatality Rate",
+      "shortName": "BrCP - CFR",
+      "description": "Deaths from Breast / Total Breast cases",
+      "program": {
+        "id": "mBPT3WTiyAj"
+      },
+      "expression": "V{Total_Breast_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "c7oSOJnT9dD",
+      "created": "2026-02-19T09:09:24.598238",
+      "lastUpdated": "2026-02-19T09:09:24.598239",
+      "name": "Colorectal - Early Detection Rate",
+      "shortName": "CCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "Wt3H5MQlgUf"
+      },
+      "expression": "V{Total_Colorectal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "C4ym0apImvX",
+      "created": "2026-02-19T09:09:24.598242",
+      "lastUpdated": "2026-02-19T09:09:24.598243",
+      "name": "Colorectal - Treatment Completion Rate",
+      "shortName": "CCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "Wt3H5MQlgUf"
+      },
+      "expression": "V{Total_Colorectal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "Qke4fNtV8zq",
+      "created": "2026-02-19T09:09:24.598246",
+      "lastUpdated": "2026-02-19T09:09:24.598247",
+      "name": "Colorectal - 1-Year Survival Rate",
+      "shortName": "CCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "Wt3H5MQlgUf"
+      },
+      "expression": "V{Total_Colorectal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "wIEgY3RJEaj",
+      "created": "2026-02-19T09:09:24.598251",
+      "lastUpdated": "2026-02-19T09:09:24.598252",
+      "name": "Colorectal - 5-Year Survival Rate",
+      "shortName": "CCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "Wt3H5MQlgUf"
+      },
+      "expression": "V{Total_Colorectal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "U6knOX2r7xO",
+      "created": "2026-02-19T09:09:24.598255",
+      "lastUpdated": "2026-02-19T09:09:24.598256",
+      "name": "Colorectal - Treatment-Related Mortality",
+      "shortName": "CCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "Wt3H5MQlgUf"
+      },
+      "expression": "V{Total_Colorectal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "k0mElWeOqDQ",
+      "created": "2026-02-19T09:09:24.598259",
+      "lastUpdated": "2026-02-19T09:09:24.598260",
+      "name": "Colorectal - Late-Stage at Diagnosis",
+      "shortName": "CCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "Wt3H5MQlgUf"
+      },
+      "expression": "V{Total_Colorectal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "z5gHTZK0NAY",
+      "created": "2026-02-19T09:09:24.598263",
+      "lastUpdated": "2026-02-19T09:09:24.598264",
+      "name": "Colorectal - Disease-Free Survival 2-Yr",
+      "shortName": "CCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "Wt3H5MQlgUf"
+      },
+      "expression": "V{Total_Colorectal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "wuATzse6N58",
+      "created": "2026-02-19T09:09:24.598267",
+      "lastUpdated": "2026-02-19T09:09:24.598268",
+      "name": "Colorectal - Case Fatality Rate",
+      "shortName": "CCP - CFR",
+      "description": "Deaths from Colorectal / Total Colorectal cases",
+      "program": {
+        "id": "Wt3H5MQlgUf"
+      },
+      "expression": "V{Total_Colorectal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "DFjiPMedEbp",
+      "created": "2026-02-19T09:09:24.598273",
+      "lastUpdated": "2026-02-19T09:09:24.598274",
+      "name": "Esophageal - Early Detection Rate",
+      "shortName": "ECP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "y5LoqBEbJBH"
+      },
+      "expression": "V{Total_Esophageal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "gsEchU93c97",
+      "created": "2026-02-19T09:09:24.598277",
+      "lastUpdated": "2026-02-19T09:09:24.598278",
+      "name": "Esophageal - Treatment Completion Rate",
+      "shortName": "ECP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "y5LoqBEbJBH"
+      },
+      "expression": "V{Total_Esophageal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "xXY5eA76HPH",
+      "created": "2026-02-19T09:09:24.598282",
+      "lastUpdated": "2026-02-19T09:09:24.598283",
+      "name": "Esophageal - 1-Year Survival Rate",
+      "shortName": "ECP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "y5LoqBEbJBH"
+      },
+      "expression": "V{Total_Esophageal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "VSvpeSRP304",
+      "created": "2026-02-19T09:09:24.598286",
+      "lastUpdated": "2026-02-19T09:09:24.598287",
+      "name": "Esophageal - 5-Year Survival Rate",
+      "shortName": "ECP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "y5LoqBEbJBH"
+      },
+      "expression": "V{Total_Esophageal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "cqm7pzgFSIp",
+      "created": "2026-02-19T09:09:24.598290",
+      "lastUpdated": "2026-02-19T09:09:24.598291",
+      "name": "Esophageal - Treatment-Related Mortality",
+      "shortName": "ECP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "y5LoqBEbJBH"
+      },
+      "expression": "V{Total_Esophageal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "W8AjgFZQTjk",
+      "created": "2026-02-19T09:09:24.598295",
+      "lastUpdated": "2026-02-19T09:09:24.598296",
+      "name": "Esophageal - Late-Stage at Diagnosis",
+      "shortName": "ECP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "y5LoqBEbJBH"
+      },
+      "expression": "V{Total_Esophageal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "x2XtaAFDFlS",
+      "created": "2026-02-19T09:09:24.598299",
+      "lastUpdated": "2026-02-19T09:09:24.598300",
+      "name": "Esophageal - Disease-Free Survival 2-Yr",
+      "shortName": "ECP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "y5LoqBEbJBH"
+      },
+      "expression": "V{Total_Esophageal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "npA24as813I",
+      "created": "2026-02-19T09:09:24.598303",
+      "lastUpdated": "2026-02-19T09:09:24.598304",
+      "name": "Esophageal - Case Fatality Rate",
+      "shortName": "ECP - CFR",
+      "description": "Deaths from Esophageal / Total Esophageal cases",
+      "program": {
+        "id": "y5LoqBEbJBH"
+      },
+      "expression": "V{Total_Esophageal_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "jtEmndPhw1F",
+      "created": "2026-02-19T09:09:24.598308",
+      "lastUpdated": "2026-02-19T09:09:24.598309",
+      "name": "Kaposi - Early Detection Rate",
+      "shortName": "KCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "QqqEYqUE0vu"
+      },
+      "expression": "V{Total_Kaposi_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "CHDb7swlvjH",
+      "created": "2026-02-19T09:09:24.598313",
+      "lastUpdated": "2026-02-19T09:09:24.598314",
+      "name": "Kaposi - Treatment Completion Rate",
+      "shortName": "KCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "QqqEYqUE0vu"
+      },
+      "expression": "V{Total_Kaposi_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "SEPmmHXWBZV",
+      "created": "2026-02-19T09:09:24.598317",
+      "lastUpdated": "2026-02-19T09:09:24.598318",
+      "name": "Kaposi - 1-Year Survival Rate",
+      "shortName": "KCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "QqqEYqUE0vu"
+      },
+      "expression": "V{Total_Kaposi_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "kBD8y3kfn7c",
+      "created": "2026-02-19T09:09:24.598321",
+      "lastUpdated": "2026-02-19T09:09:24.598322",
+      "name": "Kaposi - 5-Year Survival Rate",
+      "shortName": "KCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "QqqEYqUE0vu"
+      },
+      "expression": "V{Total_Kaposi_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "m3a5zi5XqzG",
+      "created": "2026-02-19T09:09:24.598325",
+      "lastUpdated": "2026-02-19T09:09:24.598326",
+      "name": "Kaposi - Treatment-Related Mortality",
+      "shortName": "KCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "QqqEYqUE0vu"
+      },
+      "expression": "V{Total_Kaposi_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "BNwtAM7D4Jd",
+      "created": "2026-02-19T09:09:24.598329",
+      "lastUpdated": "2026-02-19T09:09:24.598330",
+      "name": "Kaposi - Late-Stage at Diagnosis",
+      "shortName": "KCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "QqqEYqUE0vu"
+      },
+      "expression": "V{Total_Kaposi_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "DCfMJBRSH1x",
+      "created": "2026-02-19T09:09:24.598333",
+      "lastUpdated": "2026-02-19T09:09:24.598334",
+      "name": "Kaposi - Disease-Free Survival 2-Yr",
+      "shortName": "KCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "QqqEYqUE0vu"
+      },
+      "expression": "V{Total_Kaposi_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "xi3tfmLfjiZ",
+      "created": "2026-02-19T09:09:24.598340",
+      "lastUpdated": "2026-02-19T09:09:24.598341",
+      "name": "Kaposi - Case Fatality Rate",
+      "shortName": "KCP - CFR",
+      "description": "Deaths from Kaposi / Total Kaposi cases",
+      "program": {
+        "id": "QqqEYqUE0vu"
+      },
+      "expression": "V{Total_Kaposi_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "GFvzhG0TnL6",
+      "created": "2026-02-19T09:09:24.598346",
+      "lastUpdated": "2026-02-19T09:09:24.598347",
+      "name": "Kidney - Early Detection Rate",
+      "shortName": "KiCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "WzqxxTZje5E"
+      },
+      "expression": "V{Total_Kidney_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "A40CX2YUzVD",
+      "created": "2026-02-19T09:09:24.598350",
+      "lastUpdated": "2026-02-19T09:09:24.598351",
+      "name": "Kidney - Treatment Completion Rate",
+      "shortName": "KiCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "WzqxxTZje5E"
+      },
+      "expression": "V{Total_Kidney_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "KYHgfXMNqmK",
+      "created": "2026-02-19T09:09:24.598354",
+      "lastUpdated": "2026-02-19T09:09:24.598355",
+      "name": "Kidney - 1-Year Survival Rate",
+      "shortName": "KiCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "WzqxxTZje5E"
+      },
+      "expression": "V{Total_Kidney_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "iOVsCDUc1t4",
+      "created": "2026-02-19T09:09:24.598364",
+      "lastUpdated": "2026-02-19T09:09:24.598365",
+      "name": "Kidney - 5-Year Survival Rate",
+      "shortName": "KiCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "WzqxxTZje5E"
+      },
+      "expression": "V{Total_Kidney_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "q1AwChdfhVq",
+      "created": "2026-02-19T09:09:24.598368",
+      "lastUpdated": "2026-02-19T09:09:24.598369",
+      "name": "Kidney - Treatment-Related Mortality",
+      "shortName": "KiCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "WzqxxTZje5E"
+      },
+      "expression": "V{Total_Kidney_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "v2TKSQBMRkm",
+      "created": "2026-02-19T09:09:24.598372",
+      "lastUpdated": "2026-02-19T09:09:24.598373",
+      "name": "Kidney - Late-Stage at Diagnosis",
+      "shortName": "KiCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "WzqxxTZje5E"
+      },
+      "expression": "V{Total_Kidney_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "UfPtDP9htS5",
+      "created": "2026-02-19T09:09:24.598376",
+      "lastUpdated": "2026-02-19T09:09:24.598377",
+      "name": "Kidney - Disease-Free Survival 2-Yr",
+      "shortName": "KiCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "WzqxxTZje5E"
+      },
+      "expression": "V{Total_Kidney_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "HXlmzPsGaRA",
+      "created": "2026-02-19T09:09:24.598381",
+      "lastUpdated": "2026-02-19T09:09:24.598382",
+      "name": "Kidney - Case Fatality Rate",
+      "shortName": "KiCP - CFR",
+      "description": "Deaths from Kidney / Total Kidney cases",
+      "program": {
+        "id": "WzqxxTZje5E"
+      },
+      "expression": "V{Total_Kidney_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "bX6zu6q3EkC",
+      "created": "2026-02-19T09:09:24.598386",
+      "lastUpdated": "2026-02-19T09:09:24.598387",
+      "name": "Leukemia - Early Detection Rate",
+      "shortName": "LCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "WZGXFKPvN8a"
+      },
+      "expression": "V{Total_Leukemia_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "plHlMh5K9Lf",
+      "created": "2026-02-19T09:09:24.598391",
+      "lastUpdated": "2026-02-19T09:09:24.598392",
+      "name": "Leukemia - Treatment Completion Rate",
+      "shortName": "LCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "WZGXFKPvN8a"
+      },
+      "expression": "V{Total_Leukemia_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "E6edmkfhlcP",
+      "created": "2026-02-19T09:09:24.598395",
+      "lastUpdated": "2026-02-19T09:09:24.598396",
+      "name": "Leukemia - 1-Year Survival Rate",
+      "shortName": "LCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "WZGXFKPvN8a"
+      },
+      "expression": "V{Total_Leukemia_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "B8tkGyZxNtJ",
+      "created": "2026-02-19T09:09:24.598399",
+      "lastUpdated": "2026-02-19T09:09:24.598400",
+      "name": "Leukemia - 5-Year Survival Rate",
+      "shortName": "LCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "WZGXFKPvN8a"
+      },
+      "expression": "V{Total_Leukemia_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "zto0Nkmy6ID",
+      "created": "2026-02-19T09:09:24.598403",
+      "lastUpdated": "2026-02-19T09:09:24.598404",
+      "name": "Leukemia - Treatment-Related Mortality",
+      "shortName": "LCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "WZGXFKPvN8a"
+      },
+      "expression": "V{Total_Leukemia_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "QeZjSoVtIUi",
+      "created": "2026-02-19T09:09:24.598409",
+      "lastUpdated": "2026-02-19T09:09:24.598410",
+      "name": "Leukemia - Late-Stage at Diagnosis",
+      "shortName": "LCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "WZGXFKPvN8a"
+      },
+      "expression": "V{Total_Leukemia_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "TB2NwN8pNkS",
+      "created": "2026-02-19T09:09:24.598414",
+      "lastUpdated": "2026-02-19T09:09:24.598415",
+      "name": "Leukemia - Disease-Free Survival 2-Yr",
+      "shortName": "LCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "WZGXFKPvN8a"
+      },
+      "expression": "V{Total_Leukemia_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "sucBpCeSCL2",
+      "created": "2026-02-19T09:09:24.598418",
+      "lastUpdated": "2026-02-19T09:09:24.598419",
+      "name": "Leukemia - Case Fatality Rate",
+      "shortName": "LCP - CFR",
+      "description": "Deaths from Leukemia / Total Leukemia cases",
+      "program": {
+        "id": "WZGXFKPvN8a"
+      },
+      "expression": "V{Total_Leukemia_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "xllZQFAAqsE",
+      "created": "2026-02-19T09:09:24.598424",
+      "lastUpdated": "2026-02-19T09:09:24.598425",
+      "name": "Liver - Early Detection Rate",
+      "shortName": "LiCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "KERBJ5J8Duq"
+      },
+      "expression": "V{Total_Liver_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "BdSyWYn6ZlZ",
+      "created": "2026-02-19T09:09:24.598428",
+      "lastUpdated": "2026-02-19T09:09:24.598429",
+      "name": "Liver - Treatment Completion Rate",
+      "shortName": "LiCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "KERBJ5J8Duq"
+      },
+      "expression": "V{Total_Liver_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "iZIYADpj3iQ",
+      "created": "2026-02-19T09:09:24.598433",
+      "lastUpdated": "2026-02-19T09:09:24.598434",
+      "name": "Liver - 1-Year Survival Rate",
+      "shortName": "LiCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "KERBJ5J8Duq"
+      },
+      "expression": "V{Total_Liver_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "GmackeNE6EC",
+      "created": "2026-02-19T09:09:24.598437",
+      "lastUpdated": "2026-02-19T09:09:24.598438",
+      "name": "Liver - 5-Year Survival Rate",
+      "shortName": "LiCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "KERBJ5J8Duq"
+      },
+      "expression": "V{Total_Liver_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "y3RMI0ptHg3",
+      "created": "2026-02-19T09:09:24.598441",
+      "lastUpdated": "2026-02-19T09:09:24.598442",
+      "name": "Liver - Treatment-Related Mortality",
+      "shortName": "LiCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "KERBJ5J8Duq"
+      },
+      "expression": "V{Total_Liver_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "AnqzwS4MwPP",
+      "created": "2026-02-19T09:09:24.598445",
+      "lastUpdated": "2026-02-19T09:09:24.598448",
+      "name": "Liver - Late-Stage at Diagnosis",
+      "shortName": "LiCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "KERBJ5J8Duq"
+      },
+      "expression": "V{Total_Liver_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "C05RtpXAfRG",
+      "created": "2026-02-19T09:09:24.598453",
+      "lastUpdated": "2026-02-19T09:09:24.598454",
+      "name": "Liver - Disease-Free Survival 2-Yr",
+      "shortName": "LiCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "KERBJ5J8Duq"
+      },
+      "expression": "V{Total_Liver_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "UG2dTKWnJgQ",
+      "created": "2026-02-19T09:09:24.598458",
+      "lastUpdated": "2026-02-19T09:09:24.598459",
+      "name": "Liver - Case Fatality Rate",
+      "shortName": "LiCP - CFR",
+      "description": "Deaths from Liver / Total Liver cases",
+      "program": {
+        "id": "KERBJ5J8Duq"
+      },
+      "expression": "V{Total_Liver_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "tfuCYecorB9",
+      "created": "2026-02-19T09:09:24.598464",
+      "lastUpdated": "2026-02-19T09:09:24.598465",
+      "name": "Lung - Early Detection Rate",
+      "shortName": "LNGP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "hx6VO639dPF"
+      },
+      "expression": "V{Total_Lung_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "HYOEi7GdR2h",
+      "created": "2026-02-19T09:09:24.598468",
+      "lastUpdated": "2026-02-19T09:09:24.598469",
+      "name": "Lung - Treatment Completion Rate",
+      "shortName": "LNGP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "hx6VO639dPF"
+      },
+      "expression": "V{Total_Lung_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "tmNmKqP2bjW",
+      "created": "2026-02-19T09:09:24.598473",
+      "lastUpdated": "2026-02-19T09:09:24.598473",
+      "name": "Lung - 1-Year Survival Rate",
+      "shortName": "LNGP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "hx6VO639dPF"
+      },
+      "expression": "V{Total_Lung_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "OC3u1Nwetye",
+      "created": "2026-02-19T09:09:24.598477",
+      "lastUpdated": "2026-02-19T09:09:24.598478",
+      "name": "Lung - 5-Year Survival Rate",
+      "shortName": "LNGP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "hx6VO639dPF"
+      },
+      "expression": "V{Total_Lung_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "lPjJfUIlqGG",
+      "created": "2026-02-19T09:09:24.598481",
+      "lastUpdated": "2026-02-19T09:09:24.598482",
+      "name": "Lung - Treatment-Related Mortality",
+      "shortName": "LNGP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "hx6VO639dPF"
+      },
+      "expression": "V{Total_Lung_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "NhIRgud11O2",
+      "created": "2026-02-19T09:09:24.598485",
+      "lastUpdated": "2026-02-19T09:09:24.598486",
+      "name": "Lung - Late-Stage at Diagnosis",
+      "shortName": "LNGP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "hx6VO639dPF"
+      },
+      "expression": "V{Total_Lung_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "RhyvXYg2LIn",
+      "created": "2026-02-19T09:09:24.598490",
+      "lastUpdated": "2026-02-19T09:09:24.598490",
+      "name": "Lung - Disease-Free Survival 2-Yr",
+      "shortName": "LNGP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "hx6VO639dPF"
+      },
+      "expression": "V{Total_Lung_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "ufwmCFmJgW8",
+      "created": "2026-02-19T09:09:24.598494",
+      "lastUpdated": "2026-02-19T09:09:24.598495",
+      "name": "Lung - Case Fatality Rate",
+      "shortName": "LNGP - CFR",
+      "description": "Deaths from Lung / Total Lung cases",
+      "program": {
+        "id": "hx6VO639dPF"
+      },
+      "expression": "V{Total_Lung_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "RJwTn2jKo2j",
+      "created": "2026-02-19T09:09:24.598500",
+      "lastUpdated": "2026-02-19T09:09:24.598501",
+      "name": "Lymphoma - Early Detection Rate",
+      "shortName": "LYMCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "Fub5FTJSj9T"
+      },
+      "expression": "V{Total_Lymphoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "NXjWsXF71re",
+      "created": "2026-02-19T09:09:24.598504",
+      "lastUpdated": "2026-02-19T09:09:24.598505",
+      "name": "Lymphoma - Treatment Completion Rate",
+      "shortName": "LYMCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "Fub5FTJSj9T"
+      },
+      "expression": "V{Total_Lymphoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "yKdfunpJnNA",
+      "created": "2026-02-19T09:09:24.598509",
+      "lastUpdated": "2026-02-19T09:09:24.598510",
+      "name": "Lymphoma - 1-Year Survival Rate",
+      "shortName": "LYMCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "Fub5FTJSj9T"
+      },
+      "expression": "V{Total_Lymphoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "NMkQynnOXrA",
+      "created": "2026-02-19T09:09:24.598513",
+      "lastUpdated": "2026-02-19T09:09:24.598514",
+      "name": "Lymphoma - 5-Year Survival Rate",
+      "shortName": "LYMCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "Fub5FTJSj9T"
+      },
+      "expression": "V{Total_Lymphoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "bzTghNBF80I",
+      "created": "2026-02-19T09:09:24.598517",
+      "lastUpdated": "2026-02-19T09:09:24.598518",
+      "name": "Lymphoma - Treatment-Related Mortality",
+      "shortName": "LYMCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "Fub5FTJSj9T"
+      },
+      "expression": "V{Total_Lymphoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "jkpn8AgNAus",
+      "created": "2026-02-19T09:09:24.598521",
+      "lastUpdated": "2026-02-19T09:09:24.598522",
+      "name": "Lymphoma - Late-Stage at Diagnosis",
+      "shortName": "LYMCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "Fub5FTJSj9T"
+      },
+      "expression": "V{Total_Lymphoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "d2rkB9odZZQ",
+      "created": "2026-02-19T09:09:24.598525",
+      "lastUpdated": "2026-02-19T09:09:24.598526",
+      "name": "Lymphoma - Disease-Free Survival 2-Yr",
+      "shortName": "LYMCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "Fub5FTJSj9T"
+      },
+      "expression": "V{Total_Lymphoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "PpOdh401CAe",
+      "created": "2026-02-19T09:09:24.598531",
+      "lastUpdated": "2026-02-19T09:09:24.598532",
+      "name": "Lymphoma - Case Fatality Rate",
+      "shortName": "LYMCP - CFR",
+      "description": "Deaths from Lymphoma / Total Lymphoma cases",
+      "program": {
+        "id": "Fub5FTJSj9T"
+      },
+      "expression": "V{Total_Lymphoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "mtqwY4OG8AK",
+      "created": "2026-02-19T09:09:24.598537",
+      "lastUpdated": "2026-02-19T09:09:24.598538",
+      "name": "Oral - Early Detection Rate",
+      "shortName": "OHCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "rqzY2Z2gq4t"
+      },
+      "expression": "V{Total_Oral_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "cdh39lzQQaY",
+      "created": "2026-02-19T09:09:24.598542",
+      "lastUpdated": "2026-02-19T09:09:24.598543",
+      "name": "Oral - Treatment Completion Rate",
+      "shortName": "OHCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "rqzY2Z2gq4t"
+      },
+      "expression": "V{Total_Oral_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "ORgTlJtXZTg",
+      "created": "2026-02-19T09:09:24.598546",
+      "lastUpdated": "2026-02-19T09:09:24.598547",
+      "name": "Oral - 1-Year Survival Rate",
+      "shortName": "OHCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "rqzY2Z2gq4t"
+      },
+      "expression": "V{Total_Oral_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "FN3CA93JYig",
+      "created": "2026-02-19T09:09:24.598550",
+      "lastUpdated": "2026-02-19T09:09:24.598551",
+      "name": "Oral - 5-Year Survival Rate",
+      "shortName": "OHCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "rqzY2Z2gq4t"
+      },
+      "expression": "V{Total_Oral_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "iHFeOdL78Q6",
+      "created": "2026-02-19T09:09:24.598554",
+      "lastUpdated": "2026-02-19T09:09:24.598555",
+      "name": "Oral - Treatment-Related Mortality",
+      "shortName": "OHCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "rqzY2Z2gq4t"
+      },
+      "expression": "V{Total_Oral_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "donEbJZaYd2",
+      "created": "2026-02-19T09:09:24.598558",
+      "lastUpdated": "2026-02-19T09:09:24.598559",
+      "name": "Oral - Late-Stage at Diagnosis",
+      "shortName": "OHCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "rqzY2Z2gq4t"
+      },
+      "expression": "V{Total_Oral_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "P3m4I3t59rb",
+      "created": "2026-02-19T09:09:24.598562",
+      "lastUpdated": "2026-02-19T09:09:24.598563",
+      "name": "Oral - Disease-Free Survival 2-Yr",
+      "shortName": "OHCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "rqzY2Z2gq4t"
+      },
+      "expression": "V{Total_Oral_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "N1LB1Ff8hJO",
+      "created": "2026-02-19T09:09:24.598566",
+      "lastUpdated": "2026-02-19T09:09:24.598567",
+      "name": "Oral - Case Fatality Rate",
+      "shortName": "OHCP - CFR",
+      "description": "Deaths from Oral / Total Oral cases",
+      "program": {
+        "id": "rqzY2Z2gq4t"
+      },
+      "expression": "V{Total_Oral_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "POOwGKycDzz",
+      "created": "2026-02-19T09:09:24.598573",
+      "lastUpdated": "2026-02-19T09:09:24.598574",
+      "name": "Ovarian - Early Detection Rate",
+      "shortName": "OCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "QnG6Fe9WGUX"
+      },
+      "expression": "V{Total_Ovarian_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "uXl224uC7Az",
+      "created": "2026-02-19T09:09:24.598578",
+      "lastUpdated": "2026-02-19T09:09:24.598578",
+      "name": "Ovarian - Treatment Completion Rate",
+      "shortName": "OCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "QnG6Fe9WGUX"
+      },
+      "expression": "V{Total_Ovarian_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "YI0fev2OBmk",
+      "created": "2026-02-19T09:09:24.598582",
+      "lastUpdated": "2026-02-19T09:09:24.598583",
+      "name": "Ovarian - 1-Year Survival Rate",
+      "shortName": "OCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "QnG6Fe9WGUX"
+      },
+      "expression": "V{Total_Ovarian_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "FQjRCBHmBSH",
+      "created": "2026-02-19T09:09:24.598586",
+      "lastUpdated": "2026-02-19T09:09:24.598587",
+      "name": "Ovarian - 5-Year Survival Rate",
+      "shortName": "OCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "QnG6Fe9WGUX"
+      },
+      "expression": "V{Total_Ovarian_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "rbfhATjTZOH",
+      "created": "2026-02-19T09:09:24.598590",
+      "lastUpdated": "2026-02-19T09:09:24.598591",
+      "name": "Ovarian - Treatment-Related Mortality",
+      "shortName": "OCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "QnG6Fe9WGUX"
+      },
+      "expression": "V{Total_Ovarian_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "YUb5WeSDxV0",
+      "created": "2026-02-19T09:09:24.598594",
+      "lastUpdated": "2026-02-19T09:09:24.598595",
+      "name": "Ovarian - Late-Stage at Diagnosis",
+      "shortName": "OCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "QnG6Fe9WGUX"
+      },
+      "expression": "V{Total_Ovarian_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "X69zUBKW5Kf",
+      "created": "2026-02-19T09:09:24.598598",
+      "lastUpdated": "2026-02-19T09:09:24.598599",
+      "name": "Ovarian - Disease-Free Survival 2-Yr",
+      "shortName": "OCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "QnG6Fe9WGUX"
+      },
+      "expression": "V{Total_Ovarian_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "gd7uVtQmFEx",
+      "created": "2026-02-19T09:09:24.598602",
+      "lastUpdated": "2026-02-19T09:09:24.598603",
+      "name": "Ovarian - Case Fatality Rate",
+      "shortName": "OCP - CFR",
+      "description": "Deaths from Ovarian / Total Ovarian cases",
+      "program": {
+        "id": "QnG6Fe9WGUX"
+      },
+      "expression": "V{Total_Ovarian_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "Gksbyzzq2jE",
+      "created": "2026-02-19T09:09:24.598609",
+      "lastUpdated": "2026-02-19T09:09:24.598610",
+      "name": "Pancreatic - Early Detection Rate",
+      "shortName": "PaCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "Y1i24KERJb5"
+      },
+      "expression": "V{Total_Pancreatic_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "SJF7nzZ6VFy",
+      "created": "2026-02-19T09:09:24.598613",
+      "lastUpdated": "2026-02-19T09:09:24.598614",
+      "name": "Pancreatic - Treatment Completion Rate",
+      "shortName": "PaCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "Y1i24KERJb5"
+      },
+      "expression": "V{Total_Pancreatic_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "USeS3EGnYNw",
+      "created": "2026-02-19T09:09:24.598618",
+      "lastUpdated": "2026-02-19T09:09:24.598619",
+      "name": "Pancreatic - 1-Year Survival Rate",
+      "shortName": "PaCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "Y1i24KERJb5"
+      },
+      "expression": "V{Total_Pancreatic_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "e2b3le8Wph2",
+      "created": "2026-02-19T09:09:24.598622",
+      "lastUpdated": "2026-02-19T09:09:24.598623",
+      "name": "Pancreatic - 5-Year Survival Rate",
+      "shortName": "PaCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "Y1i24KERJb5"
+      },
+      "expression": "V{Total_Pancreatic_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "uGX9YX6itL8",
+      "created": "2026-02-19T09:09:24.598626",
+      "lastUpdated": "2026-02-19T09:09:24.598627",
+      "name": "Pancreatic - Treatment-Related Mortality",
+      "shortName": "PaCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "Y1i24KERJb5"
+      },
+      "expression": "V{Total_Pancreatic_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "dmweSMVIbbF",
+      "created": "2026-02-19T09:09:24.598630",
+      "lastUpdated": "2026-02-19T09:09:24.598631",
+      "name": "Pancreatic - Late-Stage at Diagnosis",
+      "shortName": "PaCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "Y1i24KERJb5"
+      },
+      "expression": "V{Total_Pancreatic_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "Ymkcp0h4uE9",
+      "created": "2026-02-19T09:09:24.598634",
+      "lastUpdated": "2026-02-19T09:09:24.598635",
+      "name": "Pancreatic - Disease-Free Survival 2-Yr",
+      "shortName": "PaCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "Y1i24KERJb5"
+      },
+      "expression": "V{Total_Pancreatic_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "KgL9cEmvyQu",
+      "created": "2026-02-19T09:09:24.598638",
+      "lastUpdated": "2026-02-19T09:09:24.598639",
+      "name": "Pancreatic - Case Fatality Rate",
+      "shortName": "PaCP - CFR",
+      "description": "Deaths from Pancreatic / Total Pancreatic cases",
+      "program": {
+        "id": "Y1i24KERJb5"
+      },
+      "expression": "V{Total_Pancreatic_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "NMITHr1mu1M",
+      "created": "2026-02-19T09:09:24.598645",
+      "lastUpdated": "2026-02-19T09:09:24.598646",
+      "name": "Prostate - Early Detection Rate",
+      "shortName": "PCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "CWgl2tSQLag"
+      },
+      "expression": "V{Total_Prostate_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "VyJkh8WcdyW",
+      "created": "2026-02-19T09:09:24.598649",
+      "lastUpdated": "2026-02-19T09:09:24.598650",
+      "name": "Prostate - Treatment Completion Rate",
+      "shortName": "PCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "CWgl2tSQLag"
+      },
+      "expression": "V{Total_Prostate_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "nMMWYi7EdVY",
+      "created": "2026-02-19T09:09:24.598655",
+      "lastUpdated": "2026-02-19T09:09:24.598657",
+      "name": "Prostate - 1-Year Survival Rate",
+      "shortName": "PCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "CWgl2tSQLag"
+      },
+      "expression": "V{Total_Prostate_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "umDi1Oz0H9h",
+      "created": "2026-02-19T09:09:24.598661",
+      "lastUpdated": "2026-02-19T09:09:24.598662",
+      "name": "Prostate - 5-Year Survival Rate",
+      "shortName": "PCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "CWgl2tSQLag"
+      },
+      "expression": "V{Total_Prostate_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "B4eV4Tt9ZNR",
+      "created": "2026-02-19T09:09:24.598666",
+      "lastUpdated": "2026-02-19T09:09:24.598667",
+      "name": "Prostate - Treatment-Related Mortality",
+      "shortName": "PCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "CWgl2tSQLag"
+      },
+      "expression": "V{Total_Prostate_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "C1bVogXt17N",
+      "created": "2026-02-19T09:09:24.598670",
+      "lastUpdated": "2026-02-19T09:09:24.598672",
+      "name": "Prostate - Late-Stage at Diagnosis",
+      "shortName": "PCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "CWgl2tSQLag"
+      },
+      "expression": "V{Total_Prostate_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "SndYSOlmpYF",
+      "created": "2026-02-19T09:09:24.598676",
+      "lastUpdated": "2026-02-19T09:09:24.598677",
+      "name": "Prostate - Disease-Free Survival 2-Yr",
+      "shortName": "PCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "CWgl2tSQLag"
+      },
+      "expression": "V{Total_Prostate_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "hF0d23dTaSw",
+      "created": "2026-02-19T09:09:24.598681",
+      "lastUpdated": "2026-02-19T09:09:24.598682",
+      "name": "Prostate - Case Fatality Rate",
+      "shortName": "PCP - CFR",
+      "description": "Deaths from Prostate / Total Prostate cases",
+      "program": {
+        "id": "CWgl2tSQLag"
+      },
+      "expression": "V{Total_Prostate_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "TTyLkhpcHKn",
+      "created": "2026-02-19T09:09:24.598689",
+      "lastUpdated": "2026-02-19T09:09:24.598690",
+      "name": "Melanoma - Early Detection Rate",
+      "shortName": "SMeCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "ugQL4uQvCIn"
+      },
+      "expression": "V{Total_Melanoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "UqYrxlaskGR",
+      "created": "2026-02-19T09:09:24.598695",
+      "lastUpdated": "2026-02-19T09:09:24.598696",
+      "name": "Melanoma - Treatment Completion Rate",
+      "shortName": "SMeCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "ugQL4uQvCIn"
+      },
+      "expression": "V{Total_Melanoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "EmkIRjb5MHQ",
+      "created": "2026-02-19T09:09:24.598699",
+      "lastUpdated": "2026-02-19T09:09:24.598700",
+      "name": "Melanoma - 1-Year Survival Rate",
+      "shortName": "SMeCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "ugQL4uQvCIn"
+      },
+      "expression": "V{Total_Melanoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "VhzhqS299dE",
+      "created": "2026-02-19T09:09:24.598703",
+      "lastUpdated": "2026-02-19T09:09:24.598704",
+      "name": "Melanoma - 5-Year Survival Rate",
+      "shortName": "SMeCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "ugQL4uQvCIn"
+      },
+      "expression": "V{Total_Melanoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "WiNBoaLAeGg",
+      "created": "2026-02-19T09:09:24.598708",
+      "lastUpdated": "2026-02-19T09:09:24.598708",
+      "name": "Melanoma - Treatment-Related Mortality",
+      "shortName": "SMeCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "ugQL4uQvCIn"
+      },
+      "expression": "V{Total_Melanoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "UO0mhtXGodn",
+      "created": "2026-02-19T09:09:24.598712",
+      "lastUpdated": "2026-02-19T09:09:24.598713",
+      "name": "Melanoma - Late-Stage at Diagnosis",
+      "shortName": "SMeCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "ugQL4uQvCIn"
+      },
+      "expression": "V{Total_Melanoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "YkerRLskqmn",
+      "created": "2026-02-19T09:09:24.598716",
+      "lastUpdated": "2026-02-19T09:09:24.598717",
+      "name": "Melanoma - Disease-Free Survival 2-Yr",
+      "shortName": "SMeCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "ugQL4uQvCIn"
+      },
+      "expression": "V{Total_Melanoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "IoCzs0Rgi1m",
+      "created": "2026-02-19T09:09:24.598722",
+      "lastUpdated": "2026-02-19T09:09:24.598723",
+      "name": "Melanoma - Case Fatality Rate",
+      "shortName": "SMeCP - CFR",
+      "description": "Deaths from Melanoma / Total Melanoma cases",
+      "program": {
+        "id": "ugQL4uQvCIn"
+      },
+      "expression": "V{Total_Melanoma_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "CcI9BD6ghek",
+      "created": "2026-02-19T09:09:24.598729",
+      "lastUpdated": "2026-02-19T09:09:24.598730",
+      "name": "Stomach - Early Detection Rate",
+      "shortName": "StCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "oAs7wAazMbg"
+      },
+      "expression": "V{Total_Stomach_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "xTcB5WeFUte",
+      "created": "2026-02-19T09:09:24.598734",
+      "lastUpdated": "2026-02-19T09:09:24.598735",
+      "name": "Stomach - Treatment Completion Rate",
+      "shortName": "StCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "oAs7wAazMbg"
+      },
+      "expression": "V{Total_Stomach_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "FNigMxfoBVr",
+      "created": "2026-02-19T09:09:24.598739",
+      "lastUpdated": "2026-02-19T09:09:24.598740",
+      "name": "Stomach - 1-Year Survival Rate",
+      "shortName": "StCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "oAs7wAazMbg"
+      },
+      "expression": "V{Total_Stomach_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "CpZ21u3MHQC",
+      "created": "2026-02-19T09:09:24.598807",
+      "lastUpdated": "2026-02-19T09:09:24.598809",
+      "name": "Stomach - 5-Year Survival Rate",
+      "shortName": "StCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "oAs7wAazMbg"
+      },
+      "expression": "V{Total_Stomach_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "daguydXDOHj",
+      "created": "2026-02-19T09:09:24.598812",
+      "lastUpdated": "2026-02-19T09:09:24.598813",
+      "name": "Stomach - Treatment-Related Mortality",
+      "shortName": "StCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "oAs7wAazMbg"
+      },
+      "expression": "V{Total_Stomach_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "X87wJpowbXa",
+      "created": "2026-02-19T09:09:24.598816",
+      "lastUpdated": "2026-02-19T09:09:24.598817",
+      "name": "Stomach - Late-Stage at Diagnosis",
+      "shortName": "StCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "oAs7wAazMbg"
+      },
+      "expression": "V{Total_Stomach_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "rLE6fPbSvnQ",
+      "created": "2026-02-19T09:09:24.598823",
+      "lastUpdated": "2026-02-19T09:09:24.598824",
+      "name": "Stomach - Disease-Free Survival 2-Yr",
+      "shortName": "StCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "oAs7wAazMbg"
+      },
+      "expression": "V{Total_Stomach_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "fkkeTyOG20V",
+      "created": "2026-02-19T09:09:24.598827",
+      "lastUpdated": "2026-02-19T09:09:24.598828",
+      "name": "Stomach - Case Fatality Rate",
+      "shortName": "StCP - CFR",
+      "description": "Deaths from Stomach / Total Stomach cases",
+      "program": {
+        "id": "oAs7wAazMbg"
+      },
+      "expression": "V{Total_Stomach_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "QL1UH5RxBtQ",
+      "created": "2026-02-19T09:09:24.598835",
+      "lastUpdated": "2026-02-19T09:09:24.598836",
+      "name": "Testicular - Early Detection Rate",
+      "shortName": "TCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "NEhojnkycJ9"
+      },
+      "expression": "V{Total_Testicular_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "IuTJxROknXt",
+      "created": "2026-02-19T09:09:24.598839",
+      "lastUpdated": "2026-02-19T09:09:24.598840",
+      "name": "Testicular - Treatment Completion Rate",
+      "shortName": "TCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "NEhojnkycJ9"
+      },
+      "expression": "V{Total_Testicular_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "LNzHOhXzFlD",
+      "created": "2026-02-19T09:09:24.598843",
+      "lastUpdated": "2026-02-19T09:09:24.598844",
+      "name": "Testicular - 1-Year Survival Rate",
+      "shortName": "TCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "NEhojnkycJ9"
+      },
+      "expression": "V{Total_Testicular_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "TEcLJfgf8qQ",
+      "created": "2026-02-19T09:09:24.598847",
+      "lastUpdated": "2026-02-19T09:09:24.598848",
+      "name": "Testicular - 5-Year Survival Rate",
+      "shortName": "TCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "NEhojnkycJ9"
+      },
+      "expression": "V{Total_Testicular_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "FfKigq76TYt",
+      "created": "2026-02-19T09:09:24.598852",
+      "lastUpdated": "2026-02-19T09:09:24.598852",
+      "name": "Testicular - Treatment-Related Mortality",
+      "shortName": "TCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "NEhojnkycJ9"
+      },
+      "expression": "V{Total_Testicular_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "azoWa2JJsjs",
+      "created": "2026-02-19T09:09:24.598856",
+      "lastUpdated": "2026-02-19T09:09:24.598857",
+      "name": "Testicular - Late-Stage at Diagnosis",
+      "shortName": "TCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "NEhojnkycJ9"
+      },
+      "expression": "V{Total_Testicular_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "e4eHHdIXhDr",
+      "created": "2026-02-19T09:09:24.598860",
+      "lastUpdated": "2026-02-19T09:09:24.598861",
+      "name": "Testicular - Disease-Free Survival 2-Yr",
+      "shortName": "TCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "NEhojnkycJ9"
+      },
+      "expression": "V{Total_Testicular_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "c2r5YrvGuXU",
+      "created": "2026-02-19T09:09:24.598864",
+      "lastUpdated": "2026-02-19T09:09:24.598865",
+      "name": "Testicular - Case Fatality Rate",
+      "shortName": "TCP - CFR",
+      "description": "Deaths from Testicular / Total Testicular cases",
+      "program": {
+        "id": "NEhojnkycJ9"
+      },
+      "expression": "V{Total_Testicular_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "gyaGkacYoKD",
+      "created": "2026-02-19T09:09:24.598871",
+      "lastUpdated": "2026-02-19T09:09:24.598872",
+      "name": "Thyroid - Early Detection Rate",
+      "shortName": "ThCP - Early",
+      "description": "% of cases detected at Stage I-II",
+      "program": {
+        "id": "kLcAWYQ4X2L"
+      },
+      "expression": "V{Total_Thyroid_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "v4rMX7D9SRD",
+      "created": "2026-02-19T09:09:24.598875",
+      "lastUpdated": "2026-02-19T09:09:24.598876",
+      "name": "Thyroid - Treatment Completion Rate",
+      "shortName": "ThCP - Tx Completion",
+      "description": "% of patients who completed planned treatment",
+      "program": {
+        "id": "kLcAWYQ4X2L"
+      },
+      "expression": "V{Total_Thyroid_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "emk4dx2rgTW",
+      "created": "2026-02-19T09:09:24.598879",
+      "lastUpdated": "2026-02-19T09:09:24.598880",
+      "name": "Thyroid - 1-Year Survival Rate",
+      "shortName": "ThCP - 1-Yr Surv",
+      "description": "% of patients alive at 12 months",
+      "program": {
+        "id": "kLcAWYQ4X2L"
+      },
+      "expression": "V{Total_Thyroid_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "qstEatYaf32",
+      "created": "2026-02-19T09:09:24.598884",
+      "lastUpdated": "2026-02-19T09:09:24.598884",
+      "name": "Thyroid - 5-Year Survival Rate",
+      "shortName": "ThCP - 5-Yr Surv",
+      "description": "% of patients alive at 60 months",
+      "program": {
+        "id": "kLcAWYQ4X2L"
+      },
+      "expression": "V{Total_Thyroid_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "o9QXQJULzFG",
+      "created": "2026-02-19T09:09:24.598888",
+      "lastUpdated": "2026-02-19T09:09:24.598889",
+      "name": "Thyroid - Treatment-Related Mortality",
+      "shortName": "ThCP - Tx Mort",
+      "description": "Deaths within 30 days of treatment",
+      "program": {
+        "id": "kLcAWYQ4X2L"
+      },
+      "expression": "V{Total_Thyroid_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "sIWj2wKFX56",
+      "created": "2026-02-19T09:09:24.598892",
+      "lastUpdated": "2026-02-19T09:09:24.598893",
+      "name": "Thyroid - Late-Stage at Diagnosis",
+      "shortName": "ThCP - Late Stage",
+      "description": "% of cases at Stage III-IV at diagnosis",
+      "program": {
+        "id": "kLcAWYQ4X2L"
+      },
+      "expression": "V{Total_Thyroid_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "cBvcFIQ5pkA",
+      "created": "2026-02-19T09:09:24.598896",
+      "lastUpdated": "2026-02-19T09:09:24.598897",
+      "name": "Thyroid - Disease-Free Survival 2-Yr",
+      "shortName": "ThCP - DFS-2Yr",
+      "description": "% without recurrence at 2 years",
+      "program": {
+        "id": "kLcAWYQ4X2L"
+      },
+      "expression": "V{Total_Thyroid_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
+    },
+    {
+      "id": "OHBiPWTrrjC",
+      "created": "2026-02-19T09:09:24.598900",
+      "lastUpdated": "2026-02-19T09:09:24.598901",
+      "name": "Thyroid - Case Fatality Rate",
+      "shortName": "ThCP - CFR",
+      "description": "Deaths from Thyroid / Total Thyroid cases",
+      "program": {
+        "id": "kLcAWYQ4X2L"
+      },
+      "expression": "V{Total_Thyroid_cases}",
+      "decimals": 1,
+      "aggregationType": "NONE",
+      "displayInForm": true
     }
   ]
 }
