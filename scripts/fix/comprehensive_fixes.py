@@ -52,35 +52,29 @@ def issue_1_fix_dashboards():
     return items_fixed
 
 
-def issue_2_assign_data_elements():
-    """Assign data elements to program stages"""
-    print("\n2️⃣ ASSIGNING DATA ELEMENTS TO PROGRAM STAGES")
-    print("-" * 80)
-    
+
+# Step 1: Load data
+def load_program_stage_and_de():
     stage_path = BASE_DIR / "Program" / "Program Stage.json"
     de_path = BASE_DIR / "Data Element" / "Data Element.json"
-    
     with open(stage_path) as f:
         stage_data = json.load(f)
     with open(de_path) as f:
         de_data = json.load(f)
-    
-    # Map cancer types to data elements
+    return stage_data, de_data
+
+# Step 2: Map cancer types to data elements
+def map_cancer_to_data_elements(de_data):
     cancer_de_map = {}
     data_elements = de_data.get('dataElements', [])
-    
     for de in data_elements:
         name = de.get('name', '')
         de_id = de.get('id', '')
-        
-        # Skip if no name
         if not name:
             continue
-        
-        # Try to determine which cancer type(s) this element belongs to
-        for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver', 
-                      'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder', 
-                      'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal', 
+        for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                      'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                      'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
                       'Kaposi', 'Melanoma', 'CECAP']:
             if cancer.lower() in name.lower():
                 if cancer not in cancer_de_map:
@@ -88,23 +82,21 @@ def issue_2_assign_data_elements():
                 cancer_de_map[cancer].append(de_id)
                 break
         else:
-            # Generic cancer elements
             if 'cancer' in name.lower() or 'diagnosis' in name.lower() or 'treatment' in name.lower():
                 if 'Generic' not in cancer_de_map:
                     cancer_de_map['Generic'] = []
                 cancer_de_map['Generic'].append(de_id)
-    
-    # Map cancer types to program stage IDs
+    return cancer_de_map
+
+# Step 3: Map cancer types to program stage IDs
+def map_cancer_to_stages(stage_data):
     stages = stage_data.get('programStages', [])
     cancer_stages = defaultdict(list)
-    
     for stage in stages:
         name = stage.get('name', '')
         stage_id = stage.get('id', '')
         prog = stage.get('program', {})
         prog_id = prog.get('id', '')
-        
-        # Determine which cancer this stage belongs to
         for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
                       'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
                       'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
@@ -112,59 +104,88 @@ def issue_2_assign_data_elements():
             if cancer.lower() in name.lower() or cancer.lower() in prog_id.lower():
                 cancer_stages[cancer].append({'id': stage_id, 'name': name})
                 break
-    
-    # Assign data elements to stages
+    return cancer_stages
+
+# Step 4: Assign data elements to stages in batches
+def assign_data_elements_to_stages(stage_data, cancer_de_map, cancer_stages, batch_size=50):
+    stages = stage_data.get('programStages', [])
     updated_count = 0
-    for stage in stages:
-        stage_id = stage.get('id')
-        if not stage_id:
-            continue
-        
-        # Find which cancer type this stage belongs to
-        cancer_type = None
-        prog_id = stage.get('program', {}).get('id', '')
-        
-        for cancer in cancer_stages:
-            if any(s['id'] == stage_id for s in cancer_stages[cancer]):
-                cancer_type = cancer
-                break
-        
-        if not cancer_type:
-            cancer_type = 'Generic'
-        
-        # Get elements for this cancer type
-        elements_to_add = cancer_de_map.get(cancer_type, [])
-        elements_to_add += cancer_de_map.get('Generic', [])  # Add generic ones too
-        
-        if not elements_to_add:
-            continue
-        
-        # Add elements to stage if not already present
-        existing = stage.get('programStageDataElements', [])
-        existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
-        
-        sort_order = len(existing) + 1
-        for elem_id in elements_to_add:
-            if elem_id not in existing_ids:
-                existing.append({
-                    'dataElement': {'id': elem_id},
-                    'compulsory': False,
-                    'allowProvidedElsewhere': False,
-                    'allowFutureDate': False,
-                    'sortOrder': sort_order
-                })
-                sort_order += 1
-        
-        if len(existing) > 0:
-            stage['programStageDataElements'] = existing
-            updated_count += 1
-    
-    with open(stage_path, 'w') as f:
-        json.dump(stage_data, f, indent=2, ensure_ascii=True)
-        f.write('\n')
-    
-    print(f"✅ Assigned data elements to {updated_count} program stages")
+    total = len(stages)
+    print(f"Total stages: {total}")
+    per_stage_dir = BASE_DIR / "Program" / "stages_tmp"
+    per_stage_dir.mkdir(exist_ok=True)
+    for idx, stage in enumerate(stages):
+        try:
+            stage_id = stage.get('id')
+            if not stage_id:
+                continue
+            cancer_type = None
+            prog_id = stage.get('program', {}).get('id', '')
+            for cancer in cancer_stages:
+                if any(s['id'] == stage_id for s in cancer_stages[cancer]):
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            elements_to_add = cancer_de_map.get(cancer_type, [])
+            elements_to_add += cancer_de_map.get('Generic', [])
+            if not elements_to_add:
+                continue
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+                updated_count += 1
+            # Save each stage to its own file
+            with open(per_stage_dir / f"stage_{idx+1:03d}_{stage_id}.json", 'w') as f:
+                json.dump(stage, f, indent=2, ensure_ascii=True)
+            if idx % 5 == 0:
+                print(f"Processed stage {idx+1}/{total} (ID: {stage_id})")
+        except Exception as e:
+            print(f"Error processing stage {idx+1}/{total} (ID: {stage.get('id')}): {e}")
+    print(f"✅ Assigned data elements to {updated_count} program stages (per-stage file)")
+    print(f"All stages written to {per_stage_dir}")
     return updated_count
+
+# Main runner for stepwise execution
+def run_data_element_assignment_batched():
+    print("\n2️⃣ ASSIGNING DATA ELEMENTS TO PROGRAM STAGES (BATCHED)")
+    print("-" * 80)
+    stage_data, de_data = load_program_stage_and_de()
+    cancer_de_map = map_cancer_to_data_elements(de_data)
+    cancer_stages = map_cancer_to_stages(stage_data)
+    return assign_data_elements_to_stages(stage_data, cancer_de_map, cancer_stages, batch_size=10)
+
+# Utility to merge per-stage files into one Program Stage.json
+def merge_per_stage_files():
+    print("Merging per-stage files into Program Stage.json ...")
+    per_stage_dir = BASE_DIR / "Program" / "stages_tmp"
+    stage_path = BASE_DIR / "Program" / "Program Stage.json"
+    import glob
+    all_files = sorted(glob.glob(str(per_stage_dir / "stage_*.json")))
+    stages = []
+    for fpath in all_files:
+        with open(fpath) as f:
+            stages.append(json.load(f))
+    # Load original file to preserve other keys
+    with open(stage_path) as f:
+        orig = json.load(f)
+    orig['programStages'] = stages
+    with open(stage_path, 'w') as f:
+        json.dump(orig, f, indent=2, ensure_ascii=True)
+        f.write('\n')
+    print(f"Merged {len(stages)} stages into {stage_path}")
 
 
 def issue_3_rename_cecap():
@@ -281,25 +302,22 @@ def main():
     
     results = {}
     
+    # try:
+    #     results['dashboards'] = issue_1_fix_dashboards()
+    # except Exception as e:
+    #     print(f"❌ Dashboard fix failed: {e}")
     try:
-        results['dashboards'] = issue_1_fix_dashboards()
-    except Exception as e:
-        print(f"❌ Dashboard fix failed: {e}")
-    
-    try:
-        results['data_elements'] = issue_2_assign_data_elements()
+        results['data_elements'] = run_data_element_assignment_batched()
     except Exception as e:
         print(f"❌ Data element assignment failed: {e}")
-    
-    try:
-        results['cecap_rename'] = issue_3_rename_cecap()
-    except Exception as e:
-        print(f"❌ CECAP rename failed: {e}")
-    
-    try:
-        results['grouping'] = issue_6_group_data_elements()
-    except Exception as e:
-        print(f"❌ Element grouping failed: {e}")
+    # try:
+    #     results['cecap_rename'] = issue_3_rename_cecap()
+    # except Exception as e:
+    #     print(f"❌ CECAP rename failed: {e}")
+    # try:
+    #     results['grouping'] = issue_6_group_data_elements()
+    # except Exception as e:
+    #     print(f"❌ Element grouping failed: {e}")
     
     print("\n" + "="*80)
     print("✅ FIXES COMPLETED")
