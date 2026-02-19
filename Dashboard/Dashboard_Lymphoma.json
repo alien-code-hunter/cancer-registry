@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "dJPlC7cLKXh",
+      "created": "2026-02-18T15:44:06.457326",
+      "lastUpdated": "2026-02-18T15:44:06.457328",
+      "name": "Lymphoma Cancer Dashboard",
+      "displayName": "Lymphoma Cancer Dashboard",
+      "description": "Monitoring dashboard for Lymphoma cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "c6e68ad2-80",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "73b0ede0-e5",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "625fd2a1-f7",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "80485467-86",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "IAkcKV6ytDE"
+    }
+  ]
+}

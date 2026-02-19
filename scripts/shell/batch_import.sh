@@ -25,8 +25,9 @@ TOTAL=0
 SUCCESS=0
 FAILED=0
 
+
 # Log file
-LOG_DIR="${BASE_DIR}/artifacts/logs"
+LOG_DIR="${BASE_DIR}/logs/API import logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="${LOG_DIR}/import_$(date +%Y%m%d_%H%M%S).log"
 

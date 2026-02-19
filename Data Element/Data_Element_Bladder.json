@@ -1,0 +1,844 @@
+{
+  "dataElements": [
+    {
+      "name": "Bladder - HPV Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - HPV Positive for abnormal results",
+      "formName": "Bladder - HPV Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "p0UKYq91U7l",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - HPV screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - HPV screened",
+      "formName": "Bladder - HPV screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "AQKoSwtqVer",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - HPV screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - HPV screened and received results",
+      "formName": "Bladder - HPV screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "mllBa4wj9L2",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - LLETZ treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - LLETZ treated",
+      "formName": "Bladder - LLETZ treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "mofaBKfsGLL",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - Pap Smear Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - Pap Smear Positive for abnormal results",
+      "formName": "Bladder - Pap Smear Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "WsapcufbFup",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Bladder - Pap smear screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - Pap smear screened",
+      "formName": "Bladder - Pap smear screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "dgFDwLDUt2H",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - Pap smear screened and LLETZ post treatment complication ",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - Pap smear screened and LLETZ post treatm",
+      "formName": "Bladder - Pap smear screened and LLETZ post treatment complication ",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "xM7zMokniaJ",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Bladder - Pap smear screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - Pap smear screened and received results",
+      "formName": "Bladder - Pap smear screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "xMdfgHH5pHY",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - Pap smear screened and treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - Pap smear screened and treated",
+      "formName": "Bladder - Pap smear screened and treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "pdCpy7PRgjZ",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Bladder - Pap smear screening results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - Pap smear screening results",
+      "formName": "Bladder - Pap smear screening results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "BxJ8e9Oa9DS",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Bladder - Thermoablation treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - Thermoablation treated",
+      "formName": "Bladder - Thermoablation treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "gtS6n5mCvQy",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - Total positive for abnormal results (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - Total positive for abnormal results (VIA",
+      "formName": "Bladder - Total positive for abnormal results (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "RlnRUn2lwNe",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - Total screened (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - Total screened (VIA, Pap smear and HPV)",
+      "formName": "Bladder - Total screened (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "Wn2cM4Z7Ure",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - Total screened and received results (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - Total screened and received results (VIA",
+      "formName": "Bladder - Total screened and received results (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "H567KczfL8O",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - VIA Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - VIA Positive for abnormal results",
+      "formName": "Bladder - VIA Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "HTyHJbj2sti",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - VIA result suspected cancer",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - VIA result suspected cancer",
+      "formName": "Bladder - VIA result suspected cancer",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "o05i03UMDO5",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - VIA screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - VIA screened",
+      "formName": "Bladder - VIA screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "DxTkYmxlGpP",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - VIA screened and LLETZ post treatment complication",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "lEvcESYA9GC",
+        "code": null,
+        "name": "Meduletu Kamati",
+        "displayName": "Meduletu Kamati",
+        "username": "Meduletu_Kamati"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - VIA screened and LLETZ post treatment co",
+      "formName": "Bladder - VIA screened and LLETZ post treatment complication",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "IiyPu8zMqXw",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - VIA screened and Thermo post treatment complication",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "lEvcESYA9GC",
+        "code": null,
+        "name": "Meduletu Kamati",
+        "displayName": "Meduletu Kamati",
+        "username": "Meduletu_Kamati"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - VIA screened and Thermo post treatment c",
+      "formName": "Bladder - VIA screened and Thermo post treatment complication",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "SEp2Nvy8fJR",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - VIA screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - VIA screened and received results",
+      "formName": "Bladder - VIA screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "qFFtrgXF0fD",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Bladder - VIA screened and treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Bladder - VIA screened and treated",
+      "formName": "Bladder - VIA screened and treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "eF7Qywh4UKj",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    }
+  ]
+}

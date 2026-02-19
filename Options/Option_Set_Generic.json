@@ -1,0 +1,2304 @@
+{
+  "optionSets": [
+    {
+      "code": "Cancer biopsy result",
+      "name": "Cancer biopsy result",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2024-07-31T19:32:44.247",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "xpEfRQUp2U4"
+        },
+        {
+          "id": "i2ZRoRlxVmH"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 1,
+      "id": "Q18P4AZhQyn",
+      "attributeValues": []
+    },
+    {
+      "code": "Cervicogram status",
+      "name": "Cervicogram status",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2024-07-31T11:26:15.714",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "SrL4NV0t2S2"
+        },
+        {
+          "id": "FppJHOp16UW"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 1,
+      "id": "lA8bU3k9C7y",
+      "attributeValues": []
+    },
+    {
+      "code": "Clinical visit type",
+      "name": "Clinical visit type",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "ifJ60Vmjix7"
+        },
+        {
+          "id": "KAevdNwXR3S"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "N4jCyMVPi8Z",
+      "attributeValues": []
+    },
+    {
+      "code": "Collection method",
+      "name": "Collection method",
+      "created": "2023-01-02T22:39:45.437",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "VWqBR2ERn81"
+        },
+        {
+          "id": "mrKaWnk7kOx"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "TPQgZM46da9",
+      "attributeValues": []
+    },
+    {
+      "code": "Completion status",
+      "name": "Completion status",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "En1JQpuYhs6"
+        },
+        {
+          "id": "LFAqS4oPa8B"
+        },
+        {
+          "id": "p4PIEsK5a5k"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "XcuUnIWeJJi",
+      "attributeValues": []
+    },
+    {
+      "code": "Done status",
+      "name": "Done status",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "g53UyAYRTap"
+        },
+        {
+          "id": "gbWHigh4h8v"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "IkRD97ZO2Py",
+      "attributeValues": []
+    },
+    {
+      "code": "HIV enrollment status",
+      "name": "HIV enrollment status",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "bcmbbq1RmBQ"
+        },
+        {
+          "id": "tBaHf6jwKSn"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "uzxIlyn5xW1",
+      "attributeValues": []
+    },
+    {
+      "code": "HIV status (Known)",
+      "name": "HIV status (Known)",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2024-10-16T11:54:26.195",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "ohNub2r29J6"
+        },
+        {
+          "id": "uzdbnbLc11Y"
+        },
+        {
+          "id": "dHvVvpwWoyE"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "QST5oloV9pS",
+      "attributeValues": []
+    },
+    {
+      "code": "HPV DNA result status",
+      "name": "HPV DNA result status",
+      "created": "2024-10-25T14:48:48.863",
+      "lastUpdated": "2024-10-25T14:51:58.144",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "ScpZLahvZLe"
+        },
+        {
+          "id": "udN4Ywq78gA"
+        },
+        {
+          "id": "aOmL5h3v86A"
+        },
+        {
+          "id": "b6xdCnd4NSo"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 5,
+      "id": "PZH8WEXJ7GV",
+      "attributeValues": []
+    },
+    {
+      "code": "HPV genotype",
+      "name": "HPV genotype",
+      "created": "2023-01-02T22:39:45.437",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "NwwTHI9mOXD"
+        },
+        {
+          "id": "uYoefMqPNGw"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "fDGxSVGWRBa",
+      "attributeValues": []
+    },
+    {
+      "code": "Histology results",
+      "name": "Histology results",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "WRabIbykprT"
+        },
+        {
+          "id": "jWban4Xnagt"
+        },
+        {
+          "id": "Cv4iuJS9M9W"
+        },
+        {
+          "id": "Zi9xP2jDgu5"
+        },
+        {
+          "id": "jah06eEAQis"
+        },
+        {
+          "id": "jvMHK7sNyTo"
+        },
+        {
+          "id": "JlXTmZRIUXz"
+        },
+        {
+          "id": "GlbYW30CFGK"
+        },
+        {
+          "id": "MPL9uGedCNX"
+        },
+        {
+          "id": "y5V0mMeW68n"
+        },
+        {
+          "id": "rjLGxjuyVAg"
+        },
+        {
+          "id": "v6Q81hsT8KE"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "YI5EcvrfFFC",
+      "attributeValues": []
+    },
+    {
+      "code": "LLETZ status",
+      "name": "LLETZ status",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "GU61bbKUlgB"
+        },
+        {
+          "id": "CBPStBljmfc"
+        },
+        {
+          "id": "pFHrgPxzece"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "IfxczsEpVTU",
+      "attributeValues": []
+    },
+    {
+      "code": "Margin status",
+      "name": "Margin status",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "gae3tPscL3b"
+        },
+        {
+          "id": "ufnkqpTI2gu"
+        },
+        {
+          "id": "zArfQD2Vwvr"
+        },
+        {
+          "id": "hic8y8XzenH"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "DGa7yBUeXCe",
+      "attributeValues": []
+    },
+    {
+      "code": "Nationality",
+      "name": "Nationality",
+      "created": "2023-09-18T09:23:21.696",
+      "lastUpdated": "2023-09-18T09:23:21.830",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "jAH83AtyYxK"
+        },
+        {
+          "id": "NVdLHwfxYdy"
+        },
+        {
+          "id": "YDWzU9JUhwr"
+        },
+        {
+          "id": "ydzH3wsY2zr"
+        },
+        {
+          "id": "XZbFAOZXerG"
+        },
+        {
+          "id": "d4zWixwr50g"
+        },
+        {
+          "id": "yV11N1WXcPa"
+        },
+        {
+          "id": "grwvIYWufIo"
+        },
+        {
+          "id": "C8T6OHSkiXz"
+        },
+        {
+          "id": "BLjShjYjgHZ"
+        },
+        {
+          "id": "BwUtnE9lTs6"
+        },
+        {
+          "id": "kVJCh50wmUS"
+        },
+        {
+          "id": "Cpj323KBt60"
+        },
+        {
+          "id": "Vf9WA6VGQaw"
+        },
+        {
+          "id": "dYqx2ITRKEX"
+        },
+        {
+          "id": "Iei596stpNr"
+        },
+        {
+          "id": "TdagFZ5cVKv"
+        },
+        {
+          "id": "U3Ud7yj6Wti"
+        },
+        {
+          "id": "i4Nd9Mesiql"
+        },
+        {
+          "id": "u0VnKKZH4W7"
+        },
+        {
+          "id": "tNm8NXNbXE7"
+        },
+        {
+          "id": "p1zlFp6hqDb"
+        },
+        {
+          "id": "aLLVvqx6xFJ"
+        },
+        {
+          "id": "q9wTtqttKgr"
+        },
+        {
+          "id": "yY4PdtBdZqA"
+        },
+        {
+          "id": "HqNNHtvjefR"
+        },
+        {
+          "id": "A5VuHCAV6Vv"
+        },
+        {
+          "id": "vKFe0a16vvT"
+        },
+        {
+          "id": "FVno9EYHBdC"
+        },
+        {
+          "id": "LMaztcBbMXP"
+        },
+        {
+          "id": "PDrKjO4SKfe"
+        },
+        {
+          "id": "wStN1VwyCo3"
+        },
+        {
+          "id": "yrZ5blVckAq"
+        },
+        {
+          "id": "jX40uOA17cO"
+        },
+        {
+          "id": "FSmnTLn97oA"
+        },
+        {
+          "id": "AuMXIPLD5OE"
+        },
+        {
+          "id": "QvwW2vLG4NG"
+        },
+        {
+          "id": "EAOAGp6DGeE"
+        },
+        {
+          "id": "cQl7MtxGi69"
+        },
+        {
+          "id": "fg56ieVgvH9"
+        },
+        {
+          "id": "YdUF5kMaNrz"
+        },
+        {
+          "id": "BQzNDjLK2ej"
+        },
+        {
+          "id": "Phsy5B2ZHSO"
+        },
+        {
+          "id": "Z0KBgmsDt3f"
+        },
+        {
+          "id": "pXcaliYgB93"
+        },
+        {
+          "id": "g4RRM8TYvtY"
+        },
+        {
+          "id": "IQOMzACIyxd"
+        },
+        {
+          "id": "iwSn72tZ4J1"
+        },
+        {
+          "id": "e8V6FpgznaE"
+        },
+        {
+          "id": "QSOdVE9KDBK"
+        },
+        {
+          "id": "fUqV6a4VZNK"
+        },
+        {
+          "id": "GECfOkCSOKL"
+        },
+        {
+          "id": "mmiQUInHnrL"
+        },
+        {
+          "id": "py8KI6U2Ecz"
+        },
+        {
+          "id": "dTLHR232eRn"
+        },
+        {
+          "id": "OgrEUoW4DZ3"
+        },
+        {
+          "id": "Q1NHVfHT6ru"
+        },
+        {
+          "id": "PAeDohu8O5S"
+        },
+        {
+          "id": "qinpOiJLhSi"
+        },
+        {
+          "id": "oJIyrUysNHZ"
+        },
+        {
+          "id": "zVJPELFFHB3"
+        },
+        {
+          "id": "gcxOITTWo2x"
+        },
+        {
+          "id": "oBjYGpD3kKT"
+        },
+        {
+          "id": "pEhq1yL2QN8"
+        },
+        {
+          "id": "jA5WXlw9alB"
+        },
+        {
+          "id": "OBQh1uk1L8i"
+        },
+        {
+          "id": "s84sH4dnNWV"
+        },
+        {
+          "id": "H75cAAXELga"
+        },
+        {
+          "id": "PVOnZQmfbZu"
+        },
+        {
+          "id": "bwdsTxUS7Dj"
+        },
+        {
+          "id": "lel1JfQ9Wn3"
+        },
+        {
+          "id": "Rr2yJQjifPx"
+        },
+        {
+          "id": "MRxE98s3s53"
+        },
+        {
+          "id": "PVQThDsoTkJ"
+        },
+        {
+          "id": "KmE7cZvXNUc"
+        },
+        {
+          "id": "tNeQhzdNKgS"
+        },
+        {
+          "id": "C7CjyHwcNQV"
+        },
+        {
+          "id": "gSQxwJDWbdS"
+        },
+        {
+          "id": "Sa6RJFVuYV6"
+        },
+        {
+          "id": "B0Nwq4Hs9fk"
+        },
+        {
+          "id": "LSWPYab5HdT"
+        },
+        {
+          "id": "SHnXuGc7ewZ"
+        },
+        {
+          "id": "ZstNMN2SLWa"
+        },
+        {
+          "id": "bWFsP6Cqa3l"
+        },
+        {
+          "id": "ibujLsKv8VG"
+        },
+        {
+          "id": "WuehDedXuL2"
+        },
+        {
+          "id": "fI2VCsxWssB"
+        },
+        {
+          "id": "kejfCJACmkB"
+        },
+        {
+          "id": "s4ajCbtOvws"
+        },
+        {
+          "id": "Z7EZOMOCqGc"
+        },
+        {
+          "id": "OIex2stJDN8"
+        },
+        {
+          "id": "DVyQlOEDiOp"
+        },
+        {
+          "id": "ow5kopJTtXU"
+        },
+        {
+          "id": "bi80GFwTCGF"
+        },
+        {
+          "id": "D4P29wfyot3"
+        },
+        {
+          "id": "eH3CdSRtuBP"
+        },
+        {
+          "id": "FwRhu8gsLSv"
+        },
+        {
+          "id": "qB88KZZR6W1"
+        },
+        {
+          "id": "KzSKTUNBDXl"
+        },
+        {
+          "id": "SLpwBEky83E"
+        },
+        {
+          "id": "P233zsJClc2"
+        },
+        {
+          "id": "CETua6Uv4eO"
+        },
+        {
+          "id": "EviiXFfCCvi"
+        },
+        {
+          "id": "nYbkW2qphqk"
+        },
+        {
+          "id": "YMzPUNp4iYq"
+        },
+        {
+          "id": "WA0of1NKdhC"
+        },
+        {
+          "id": "NYsqnhSgNCy"
+        },
+        {
+          "id": "rVMeoQktZUt"
+        },
+        {
+          "id": "J5PAMKIhdFg"
+        },
+        {
+          "id": "E3cE9nDZh3l"
+        },
+        {
+          "id": "QDqP6QKxSib"
+        },
+        {
+          "id": "ANyJqXVeiEv"
+        },
+        {
+          "id": "YcM53Tij1vV"
+        },
+        {
+          "id": "ISAe9Sv4HTR"
+        },
+        {
+          "id": "SllyGW8uJ8N"
+        },
+        {
+          "id": "GaYb6lYywFX"
+        },
+        {
+          "id": "YiXfRTGREj0"
+        },
+        {
+          "id": "E5nmxo0KmuY"
+        },
+        {
+          "id": "N4arhzpkxFU"
+        },
+        {
+          "id": "nv8zuRQjTtA"
+        },
+        {
+          "id": "uyOMjX4YtmQ"
+        },
+        {
+          "id": "Dpqovxfimgc"
+        },
+        {
+          "id": "XM6oikQOk5D"
+        },
+        {
+          "id": "mQ4oSnOuTJZ"
+        },
+        {
+          "id": "P4NH0ofZJtY"
+        },
+        {
+          "id": "RFKapHlBwSP"
+        },
+        {
+          "id": "odcH5ejdjwJ"
+        },
+        {
+          "id": "NvwxloxUlpm"
+        },
+        {
+          "id": "fKSDBKNsaU2"
+        },
+        {
+          "id": "yAt9zNpw46R"
+        },
+        {
+          "id": "Xcy3lGqQLXo"
+        },
+        {
+          "id": "hRE8jcNni3x"
+        },
+        {
+          "id": "wOujIbx77Wl"
+        },
+        {
+          "id": "gFEST1bRFct"
+        },
+        {
+          "id": "LJCKMi28ATH"
+        },
+        {
+          "id": "Ob6egbR8d7g"
+        },
+        {
+          "id": "HktuofyVTbl"
+        },
+        {
+          "id": "boj5KixTZuD"
+        },
+        {
+          "id": "Ut7pIMXc7uy"
+        },
+        {
+          "id": "p2ooCpTVH4D"
+        },
+        {
+          "id": "AzYWDMq6FkH"
+        },
+        {
+          "id": "mZhcS0M8AZv"
+        },
+        {
+          "id": "oF1fj0AGIWF"
+        },
+        {
+          "id": "HAuI0pwxspA"
+        },
+        {
+          "id": "tyHmZdIex39"
+        },
+        {
+          "id": "zK2IlnsmUC8"
+        },
+        {
+          "id": "xMoijwGbEHQ"
+        },
+        {
+          "id": "hPediVEO0nO"
+        },
+        {
+          "id": "MNPBFifuYum"
+        },
+        {
+          "id": "TIOG5nj1K0F"
+        },
+        {
+          "id": "tANkJHQ1dzs"
+        },
+        {
+          "id": "HdRuvFB2Qyx"
+        },
+        {
+          "id": "EGVCjfutIxe"
+        },
+        {
+          "id": "DiybpfLibyF"
+        },
+        {
+          "id": "rOTi5m1rpGa"
+        },
+        {
+          "id": "NSs9KbhoazN"
+        },
+        {
+          "id": "yQ5nGA87PHh"
+        },
+        {
+          "id": "XCofGIBXH2V"
+        },
+        {
+          "id": "PEnQEgYlAxd"
+        },
+        {
+          "id": "xgdb9afSvtX"
+        },
+        {
+          "id": "Yfsg80vFRHk"
+        },
+        {
+          "id": "J7kJDrSlrqD"
+        },
+        {
+          "id": "XfTGNJW0roF"
+        },
+        {
+          "id": "aXwRQGsQh6s"
+        },
+        {
+          "id": "ju9zX7gwyzY"
+        },
+        {
+          "id": "r2vr5FZQSWK"
+        },
+        {
+          "id": "siInmKy7hvo"
+        },
+        {
+          "id": "RbBtwdcvGSX"
+        },
+        {
+          "id": "ZKucXaFaDmy"
+        },
+        {
+          "id": "Eu7ISjQfkP7"
+        },
+        {
+          "id": "mvOytKCXrvw"
+        },
+        {
+          "id": "vwFbgZ2eVF7"
+        },
+        {
+          "id": "dFeg1rstzdw"
+        },
+        {
+          "id": "KASWpu2KDdn"
+        },
+        {
+          "id": "KRbzrWgPOPt"
+        },
+        {
+          "id": "yBGBwC9LpWG"
+        },
+        {
+          "id": "qKqr4N4S0VN"
+        },
+        {
+          "id": "dTvMUdIYTLq"
+        },
+        {
+          "id": "lAkiDzghnke"
+        },
+        {
+          "id": "zXnnSPdTSmY"
+        },
+        {
+          "id": "QHtZucW3E7K"
+        },
+        {
+          "id": "s7PcaaTtwMJ"
+        },
+        {
+          "id": "hRf9zr4nWh3"
+        },
+        {
+          "id": "HXj31Xuuc9G"
+        },
+        {
+          "id": "o3xJXBCmb9o"
+        },
+        {
+          "id": "BvYla1qXrPe"
+        },
+        {
+          "id": "wp02NaqgWi9"
+        },
+        {
+          "id": "iVKRAQmlg6o"
+        },
+        {
+          "id": "KwXl5J8MV93"
+        },
+        {
+          "id": "r9pEhTPMOGe"
+        },
+        {
+          "id": "YikHGjkFRBh"
+        },
+        {
+          "id": "mswlFprvEeY"
+        },
+        {
+          "id": "pkKZesn77qd"
+        },
+        {
+          "id": "BS4mAtMZgD4"
+        },
+        {
+          "id": "Q5N4JfD3QNq"
+        },
+        {
+          "id": "mYnrVZqcQx3"
+        },
+        {
+          "id": "cFBDq5bqezz"
+        },
+        {
+          "id": "cH4VyMcvq1i"
+        },
+        {
+          "id": "nzk8wXnZMgy"
+        },
+        {
+          "id": "jqbVib6CKG1"
+        },
+        {
+          "id": "VIlMteHs2bS"
+        },
+        {
+          "id": "DCnBTgKXd4y"
+        },
+        {
+          "id": "IM9VwgBhSLJ"
+        },
+        {
+          "id": "YqiC2InqJIW"
+        },
+        {
+          "id": "QEPBmQImeQN"
+        },
+        {
+          "id": "fvWEoJ25EVD"
+        },
+        {
+          "id": "XcMflC49h26"
+        },
+        {
+          "id": "PY5sRzlKdns"
+        },
+        {
+          "id": "YfRqqMhk2UU"
+        },
+        {
+          "id": "f4xW3m3kuC5"
+        },
+        {
+          "id": "wQWP8YhXrZ7"
+        },
+        {
+          "id": "CikIejNKtv9"
+        },
+        {
+          "id": "vyId6d7SHSb"
+        },
+        {
+          "id": "mhyXoW9UU63"
+        },
+        {
+          "id": "EImRJ42bteo"
+        },
+        {
+          "id": "eNKlCgKXsTy"
+        },
+        {
+          "id": "fwdjrsSeWFu"
+        },
+        {
+          "id": "cxBoxD30aoM"
+        },
+        {
+          "id": "Y1xZCHbuOkH"
+        },
+        {
+          "id": "lXO3cR1ao3K"
+        },
+        {
+          "id": "HckJ0t6MLpF"
+        },
+        {
+          "id": "vr0EpDrdnud"
+        },
+        {
+          "id": "qNSXW9jmAgw"
+        },
+        {
+          "id": "LjlmgrmxgqD"
+        },
+        {
+          "id": "rWm6JCTSxFl"
+        },
+        {
+          "id": "TLoONHKKRgK"
+        },
+        {
+          "id": "KAQ1PDOO6lp"
+        },
+        {
+          "id": "hsWzQPFPVfH"
+        },
+        {
+          "id": "i9l5kr0sUEH"
+        },
+        {
+          "id": "aeJ6LJbhjJL"
+        },
+        {
+          "id": "IxqE7cBDTdu"
+        },
+        {
+          "id": "GDCGy3bV0eh"
+        },
+        {
+          "id": "btS8EaTPivZ"
+        },
+        {
+          "id": "YnICO74jCnv"
+        },
+        {
+          "id": "QyEwVcjCqrC"
+        },
+        {
+          "id": "zpmIkDDukno"
+        },
+        {
+          "id": "O5jO68ibsPz"
+        },
+        {
+          "id": "e0N98S3gJD6"
+        },
+        {
+          "id": "RwgFACl8hBY"
+        },
+        {
+          "id": "kamV8W27jic"
+        },
+        {
+          "id": "l0t8xzR4pZg"
+        },
+        {
+          "id": "XyiPvSUm3If"
+        },
+        {
+          "id": "ncjlV66hdHv"
+        },
+        {
+          "id": "RBqIEvt0WUr"
+        },
+        {
+          "id": "peVoJSlKwUF"
+        },
+        {
+          "id": "FvpNc3nWqCP"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 1,
+      "id": "gfFw1rqfA1I",
+      "attributeValues": []
+    },
+    {
+      "code": "Normality status",
+      "name": "Normality status",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "CYs7qxntUGp"
+        },
+        {
+          "id": "PN5KvZhzboO"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "M3HX5MEXhNZ",
+      "attributeValues": []
+    },
+    {
+      "code": "PITC Result status",
+      "name": "PITC Result status",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2024-10-25T14:47:46.020",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "e0szpJFl6TQ"
+        },
+        {
+          "id": "tDdJbjfRuJc"
+        },
+        {
+          "id": "pXZw2Awjey2"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 2,
+      "id": "bHlcFUhoOxk",
+      "attributeValues": []
+    },
+    {
+      "code": "Pap smear result",
+      "name": "Pap smear result",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T14:33:41.272",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "jBuoMIDmWjv"
+        },
+        {
+          "id": "iYrvZSxJljE"
+        },
+        {
+          "id": "FQXkZFcBv21"
+        },
+        {
+          "id": "GHyoeNpI8gD"
+        },
+        {
+          "id": "oJJbWaTCSsc"
+        },
+        {
+          "id": "CFsMPHQroJN"
+        },
+        {
+          "id": "Vq63l9V4Qzh"
+        },
+        {
+          "id": "vnE6RJJVvt2"
+        },
+        {
+          "id": "SpiQaPb9R7I"
+        },
+        {
+          "id": "akdK210Zmce"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 2,
+      "id": "Jq0hEOtqZTn",
+      "attributeValues": []
+    },
+    {
+      "code": "Parity",
+      "name": "Parity",
+      "created": "2023-02-25T09:31:02.119",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "ESDNokH4dDm"
+        },
+        {
+          "id": "lMmernv2OJV"
+        },
+        {
+          "id": "Fk14SciksnN"
+        },
+        {
+          "id": "AW76pd1bFdt"
+        },
+        {
+          "id": "rplfnMdbYwT"
+        },
+        {
+          "id": "gZkLEichtmW"
+        },
+        {
+          "id": "oCgvy2L0dAk"
+        },
+        {
+          "id": "nsxuHdqMsde"
+        },
+        {
+          "id": "a0jWhb64gGU"
+        },
+        {
+          "id": "rQNIE9qijJT"
+        },
+        {
+          "id": "X9gFTq27H7P"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 5,
+      "id": "OozxF8GZw0h",
+      "attributeValues": []
+    },
+    {
+      "code": "Positive margin specification",
+      "name": "Positive margin specification",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "yRC62JGojLT"
+        },
+        {
+          "id": "xBPqh0GAYO9"
+        },
+        {
+          "id": "MoJARikzeVi"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "SwoReto3WQb",
+      "attributeValues": []
+    },
+    {
+      "code": "Post treatment complication - Ablation",
+      "name": "Post treatment complication - Ablation",
+      "created": "2024-10-02T04:22:52.297",
+      "lastUpdated": "2024-10-02T04:23:38.092",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "lLseCHrYkrz"
+        },
+        {
+          "id": "tQLJJlId48i"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 2,
+      "id": "PsIVfcxcW6v",
+      "attributeValues": []
+    },
+    {
+      "code": "Post treatment complication - Coagulation",
+      "name": "Post treatment complication - Coagulation",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2024-10-02T04:29:43.975",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "O5xhqJwSIv3"
+        },
+        {
+          "id": "I02abWdHmWV"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 2,
+      "id": "AS5138hUBwW",
+      "attributeValues": []
+    },
+    {
+      "code": "Post treatment complication type",
+      "name": "Post treatment complication type",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "SqaQSGtSkAv"
+        },
+        {
+          "id": "avXyxECiy0K"
+        },
+        {
+          "id": "MtGcGJnndPd"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "ENg0mnESCTb",
+      "attributeValues": []
+    },
+    {
+      "code": "Pregnancy test result",
+      "name": "Pregnancy test result",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "f9dgqrJ70ZB"
+        },
+        {
+          "id": "rmFvPHrQs5H"
+        },
+        {
+          "id": "yei7Fw1Nu8y"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "Eysz13DD671",
+      "attributeValues": []
+    },
+    {
+      "code": "Referral issue",
+      "name": "Referral issue",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "QQerNy7exQb"
+        },
+        {
+          "id": "j022GIENG4o"
+        },
+        {
+          "id": "MDqSQWmckAU"
+        },
+        {
+          "id": "DPQyWEcGPSb"
+        },
+        {
+          "id": "b5aofmacgIq"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "fXTiwkpVCdt",
+      "attributeValues": []
+    },
+    {
+      "code": "Referral reason",
+      "name": "Referral reason",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "FPh46n7BHbT"
+        },
+        {
+          "id": "y1nzLcASfdP"
+        },
+        {
+          "id": "p1FfNFZkrei"
+        },
+        {
+          "id": "jnHHrqgri4U"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "uGRJSJ1Sdi1",
+      "attributeValues": []
+    },
+    {
+      "code": "Register/form type",
+      "name": "Register/form type",
+      "created": "2024-07-08T09:33:09.446",
+      "lastUpdated": "2024-07-08T09:33:09.473",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "tF9TQYr6E4P"
+        },
+        {
+          "id": "fZ1d8iZMYjJ"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 1,
+      "id": "CNfPPQdnb9L",
+      "attributeValues": []
+    },
+    {
+      "code": "Screening type",
+      "name": "Screening type",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "PJd4djND7vX"
+        },
+        {
+          "id": "xNdTWvtIrIL"
+        },
+        {
+          "id": "BCDsD1kt9es"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 2,
+      "id": "MVLOlKqFrOh",
+      "attributeValues": []
+    },
+    {
+      "code": "Site type",
+      "name": "Site type",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "E4Ha40gQRLj"
+        },
+        {
+          "id": "LUJGHkNwYUV"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "vpxQqy86QfN",
+      "attributeValues": []
+    },
+    {
+      "code": "Thermoablation status",
+      "name": "Thermoablation status",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "ybc1sRcwimc"
+        },
+        {
+          "id": "d0Vm1SeZrGf"
+        },
+        {
+          "id": "d4edv0f81BC"
+        },
+        {
+          "id": "oWqUXhO5VTw"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "kdRy0jvllD4",
+      "attributeValues": []
+    },
+    {
+      "code": "Time after treatment",
+      "name": "Time after treatment",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "ARxqfWQPKAd"
+        },
+        {
+          "id": "DsLbqypzQay"
+        },
+        {
+          "id": "gm8M6llh7gC"
+        },
+        {
+          "id": "jsQYU1KYJ1R"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 1,
+      "id": "SnjJZutQlfU",
+      "attributeValues": []
+    },
+    {
+      "code": "Triage test type",
+      "name": "Triage test type",
+      "created": "2023-01-02T22:39:45.437",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "W8gXRR2Ell8"
+        },
+        {
+          "id": "lmluctmSXjd"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "qyoQQo6bi1d",
+      "attributeValues": []
+    },
+    {
+      "code": "VAT result",
+      "name": "VAT result",
+      "created": "2023-01-02T22:39:45.437",
+      "lastUpdated": "2023-07-07T05:25:52.711",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "crhJwnT82rb"
+        },
+        {
+          "id": "LMhcDcTnbgu"
+        },
+        {
+          "id": "ioXrlo6cD0V"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 2,
+      "id": "FsZdQIcl7Nv",
+      "attributeValues": []
+    },
+    {
+      "code": "VIA result",
+      "name": "VIA result",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "qnv8fijEE6Z"
+        },
+        {
+          "id": "y5Qta2rgRjt"
+        },
+        {
+          "id": "BSlFcq12yz9"
+        },
+        {
+          "id": "dMY4U3whFcc"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "foMe2qbFd2z",
+      "attributeValues": []
+    },
+    {
+      "code": "VIA result (Other)",
+      "name": "VIA result (Other)",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "IVrC2Rvj6zv"
+        },
+        {
+          "id": "BKBSUVMns6y"
+        },
+        {
+          "id": "nyf2AsJEfko"
+        },
+        {
+          "id": "BBPTbaQTiP3"
+        },
+        {
+          "id": "s5cynjbw6UD"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "OTRlKyNxGBN",
+      "attributeValues": []
+    },
+    {
+      "code": "Visit type",
+      "name": "Visit type",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:32.049",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "ueshqYRHmVY"
+        },
+        {
+          "id": "gDhR2uvz3F1"
+        },
+        {
+          "id": "KVZraU76wQI"
+        },
+        {
+          "id": "PODCTnAVte2"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 0,
+      "id": "qBUc27J04Kk",
+      "attributeValues": []
+    }
+  ]
+}

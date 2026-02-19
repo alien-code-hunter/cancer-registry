@@ -1,0 +1,844 @@
+{
+  "dataElements": [
+    {
+      "name": "Kaposi Sarcoma - HPV Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - HPV Positive for abnormal results",
+      "formName": "Kaposi Sarcoma - HPV Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "H29eeIvxWvD",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - HPV screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - HPV screened",
+      "formName": "Kaposi Sarcoma - HPV screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "pDWvSV8xJ61",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - HPV screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - HPV screened and received results",
+      "formName": "Kaposi Sarcoma - HPV screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "yMHIwpxMXGL",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - LLETZ treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - LLETZ treated",
+      "formName": "Kaposi Sarcoma - LLETZ treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "RyK5kqu9ASP",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - Pap Smear Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - Pap Smear Positive for abnormal r",
+      "formName": "Kaposi Sarcoma - Pap Smear Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "gpEORLTrCbH",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - Pap smear screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - Pap smear screened",
+      "formName": "Kaposi Sarcoma - Pap smear screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "J9kSZSxkHdF",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - Pap smear screened and LLETZ post treatment complication ",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - Pap smear screened and LLETZ post",
+      "formName": "Kaposi Sarcoma - Pap smear screened and LLETZ post treatment complication ",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "ilUk5hTa4G3",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - Pap smear screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - Pap smear screened and received r",
+      "formName": "Kaposi Sarcoma - Pap smear screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "I7G30k7fMgh",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - Pap smear screened and treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - Pap smear screened and treated",
+      "formName": "Kaposi Sarcoma - Pap smear screened and treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "Nl4LkSMWH5P",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - Pap smear screening results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - Pap smear screening results",
+      "formName": "Kaposi Sarcoma - Pap smear screening results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "h5kus9EiPz8",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - Thermoablation treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - Thermoablation treated",
+      "formName": "Kaposi Sarcoma - Thermoablation treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "Leu1mOjd3Cu",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - Total positive for abnormal results (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - Total positive for abnormal resul",
+      "formName": "Kaposi Sarcoma - Total positive for abnormal results (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "dfdsPn1S38l",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - Total screened (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - Total screened (VIA, Pap smear an",
+      "formName": "Kaposi Sarcoma - Total screened (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "oOSV33iss67",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - Total screened and received results (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - Total screened and received resul",
+      "formName": "Kaposi Sarcoma - Total screened and received results (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "Y2zYwYgOiaq",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - VIA Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - VIA Positive for abnormal results",
+      "formName": "Kaposi Sarcoma - VIA Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "wzpHgX3hER3",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - VIA result suspected cancer",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - VIA result suspected cancer",
+      "formName": "Kaposi Sarcoma - VIA result suspected cancer",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "kQGh3VTuQ18",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - VIA screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - VIA screened",
+      "formName": "Kaposi Sarcoma - VIA screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "b1chEyHmy2n",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - VIA screened and LLETZ post treatment complication",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "lEvcESYA9GC",
+        "code": null,
+        "name": "Meduletu Kamati",
+        "displayName": "Meduletu Kamati",
+        "username": "Meduletu_Kamati"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - VIA screened and LLETZ post treat",
+      "formName": "Kaposi Sarcoma - VIA screened and LLETZ post treatment complication",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "Xcqw7VK11p8",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - VIA screened and Thermo post treatment complication",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "lEvcESYA9GC",
+        "code": null,
+        "name": "Meduletu Kamati",
+        "displayName": "Meduletu Kamati",
+        "username": "Meduletu_Kamati"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - VIA screened and Thermo post trea",
+      "formName": "Kaposi Sarcoma - VIA screened and Thermo post treatment complication",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "OLixcwhZGfF",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - VIA screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - VIA screened and received results",
+      "formName": "Kaposi Sarcoma - VIA screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "IZNNscY2J6K",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Kaposi Sarcoma - VIA screened and treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - VIA screened and treated",
+      "formName": "Kaposi Sarcoma - VIA screened and treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "BanfdDOTvPC",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    }
+  ]
+}

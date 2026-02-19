@@ -1,0 +1,844 @@
+{
+  "dataElements": [
+    {
+      "name": "Thyroid - HPV Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - HPV Positive for abnormal results",
+      "formName": "Thyroid - HPV Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "DrnOrMCV6J2",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - HPV screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - HPV screened",
+      "formName": "Thyroid - HPV screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "Jm2vms28CO1",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - HPV screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - HPV screened and received results",
+      "formName": "Thyroid - HPV screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "JPLjLEtibg0",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - LLETZ treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - LLETZ treated",
+      "formName": "Thyroid - LLETZ treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "aWsfoiY2O4J",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - Pap Smear Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - Pap Smear Positive for abnormal results",
+      "formName": "Thyroid - Pap Smear Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "qyoHpvrB9NV",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Thyroid - Pap smear screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - Pap smear screened",
+      "formName": "Thyroid - Pap smear screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "Cr2yUQEbQCA",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - Pap smear screened and LLETZ post treatment complication ",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - Pap smear screened and LLETZ post treatm",
+      "formName": "Thyroid - Pap smear screened and LLETZ post treatment complication ",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "tr6xkhnK6sF",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Thyroid - Pap smear screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - Pap smear screened and received results",
+      "formName": "Thyroid - Pap smear screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "zAEmVVBFSyi",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - Pap smear screened and treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - Pap smear screened and treated",
+      "formName": "Thyroid - Pap smear screened and treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "JoYF1SGBkgC",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Thyroid - Pap smear screening results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - Pap smear screening results",
+      "formName": "Thyroid - Pap smear screening results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "wCp1mbYtvuA",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Thyroid - Thermoablation treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - Thermoablation treated",
+      "formName": "Thyroid - Thermoablation treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "YScsivbrtVW",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - Total positive for abnormal results (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - Total positive for abnormal results (VIA",
+      "formName": "Thyroid - Total positive for abnormal results (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "nzMktOJkf1X",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - Total screened (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - Total screened (VIA, Pap smear and HPV)",
+      "formName": "Thyroid - Total screened (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "ckSi8FqwO8q",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - Total screened and received results (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - Total screened and received results (VIA",
+      "formName": "Thyroid - Total screened and received results (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "hO1WK1iOKju",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - VIA Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - VIA Positive for abnormal results",
+      "formName": "Thyroid - VIA Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "wRSZdbERXI4",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - VIA result suspected cancer",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - VIA result suspected cancer",
+      "formName": "Thyroid - VIA result suspected cancer",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "Y8yjhwcVeGH",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - VIA screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - VIA screened",
+      "formName": "Thyroid - VIA screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "MaOpUjywuSB",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - VIA screened and LLETZ post treatment complication",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "lEvcESYA9GC",
+        "code": null,
+        "name": "Meduletu Kamati",
+        "displayName": "Meduletu Kamati",
+        "username": "Meduletu_Kamati"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - VIA screened and LLETZ post treatment co",
+      "formName": "Thyroid - VIA screened and LLETZ post treatment complication",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "gKU66nMiQEd",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - VIA screened and Thermo post treatment complication",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "lEvcESYA9GC",
+        "code": null,
+        "name": "Meduletu Kamati",
+        "displayName": "Meduletu Kamati",
+        "username": "Meduletu_Kamati"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - VIA screened and Thermo post treatment c",
+      "formName": "Thyroid - VIA screened and Thermo post treatment complication",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "qli6vXgVzl5",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - VIA screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - VIA screened and received results",
+      "formName": "Thyroid - VIA screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "hnmndke37bS",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Thyroid - VIA screened and treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - VIA screened and treated",
+      "formName": "Thyroid - VIA screened and treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "ET1ydZBY7L4",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    }
+  ]
+}

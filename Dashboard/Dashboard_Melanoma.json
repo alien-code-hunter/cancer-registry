@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "IT5f54zF0zx",
+      "created": "2026-02-18T15:44:06.457492",
+      "lastUpdated": "2026-02-18T15:44:06.457493",
+      "name": "Skin Melanoma Cancer Dashboard",
+      "displayName": "Skin Melanoma Cancer Dashboard",
+      "description": "Monitoring dashboard for Skin Melanoma cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "78324755-61",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "58815c09-c4",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "62b60dc7-80",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "e84160fb-a0",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "NN3r3pgirm5"
+    }
+  ]
+}

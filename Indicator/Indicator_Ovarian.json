@@ -1,0 +1,84 @@
+{
+  "indicators": [
+    {
+      "name": "Ovarian - % Pap smear screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "IGP_OVARIAN",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Ovarian - % Pap smear screened and received result",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{DbxYsXdcxsu}",
+      "numeratorDescription": "Ovarian - % Pap smear screened and received results",
+      "denominator": "#{giIIrQZXRZx}",
+      "denominatorDescription": "Ovarian - % Pap smear screened and received results",
+      "id": "S4Z7y8OlXc0",
+      "attributeValues": []
+    },
+    {
+      "name": "Ovarian - % VIA screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Ovarian - % VIA screened and received results",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{FJv9xSvLtDh}",
+      "numeratorDescription": "Ovarian - % VIA screened and received results",
+      "denominator": "#{QEHgueTJLLZ}",
+      "denominatorDescription": "Ovarian - % VIA screened and received results",
+      "id": "KlsGSAok61c",
+      "attributeValues": []
+    }
+  ]
+}

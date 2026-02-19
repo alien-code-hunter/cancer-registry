@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "TXxS0QIqePT",
+      "created": "2026-02-18T15:44:06.457525",
+      "lastUpdated": "2026-02-18T15:44:06.457526",
+      "name": "Stomach Cancer Dashboard",
+      "displayName": "Stomach Cancer Dashboard",
+      "description": "Monitoring dashboard for Stomach cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "ba13b721-6e",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "b52fb333-12",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "e0c0a87b-90",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "02f5f8f4-10",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "acs7lNRBVof"
+    }
+  ]
+}

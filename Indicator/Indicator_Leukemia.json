@@ -1,0 +1,84 @@
+{
+  "indicators": [
+    {
+      "name": "Leukemia - % Pap smear screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "IGP_LEUKEMIA",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Leukemia - % Pap smear screened and received resul",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{aNhmvzgt7D3}",
+      "numeratorDescription": "Leukemia - % Pap smear screened and received results",
+      "denominator": "#{QcBbX25J2Yc}",
+      "denominatorDescription": "Leukemia - % Pap smear screened and received results",
+      "id": "Enm7X1z5lLN",
+      "attributeValues": []
+    },
+    {
+      "name": "Leukemia - % VIA screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Leukemia - % VIA screened and received results",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{UpitO4Tk4dC}",
+      "numeratorDescription": "Leukemia - % VIA screened and received results",
+      "denominator": "#{h9VYB8aRbWj}",
+      "denominatorDescription": "Leukemia - % VIA screened and received results",
+      "id": "aWxB8lGFOeA",
+      "attributeValues": []
+    }
+  ]
+}

@@ -1,0 +1,844 @@
+{
+  "dataElements": [
+    {
+      "name": "Prostate - HPV Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - HPV Positive for abnormal results",
+      "formName": "Prostate - HPV Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "DlWOyG2ch4h",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - HPV screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - HPV screened",
+      "formName": "Prostate - HPV screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "YVNFRj7UMyJ",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - HPV screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - HPV screened and received results",
+      "formName": "Prostate - HPV screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "isUYqceCaFl",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - LLETZ treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - LLETZ treated",
+      "formName": "Prostate - LLETZ treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "K2JKVnBi5np",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - Pap Smear Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - Pap Smear Positive for abnormal results",
+      "formName": "Prostate - Pap Smear Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "nPdPPQcH4HO",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Prostate - Pap smear screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - Pap smear screened",
+      "formName": "Prostate - Pap smear screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "Ix84OrkJUR7",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - Pap smear screened and LLETZ post treatment complication ",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - Pap smear screened and LLETZ post treat",
+      "formName": "Prostate - Pap smear screened and LLETZ post treatment complication ",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "rfNyjSF1LjQ",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Prostate - Pap smear screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - Pap smear screened and received results",
+      "formName": "Prostate - Pap smear screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "kR7E1zO006n",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - Pap smear screened and treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - Pap smear screened and treated",
+      "formName": "Prostate - Pap smear screened and treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "gUyUBS6eIVm",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Prostate - Pap smear screening results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - Pap smear screening results",
+      "formName": "Prostate - Pap smear screening results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "uIBLOins8LG",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Prostate - Thermoablation treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - Thermoablation treated",
+      "formName": "Prostate - Thermoablation treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "pHRZGS3Z2R8",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - Total positive for abnormal results (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - Total positive for abnormal results (VI",
+      "formName": "Prostate - Total positive for abnormal results (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "tJhQZRljkTb",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - Total screened (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - Total screened (VIA, Pap smear and HPV)",
+      "formName": "Prostate - Total screened (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "fdudcKvuQrg",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - Total screened and received results (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - Total screened and received results (VI",
+      "formName": "Prostate - Total screened and received results (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "XL50lWEULlO",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - VIA Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - VIA Positive for abnormal results",
+      "formName": "Prostate - VIA Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "bANSqPaoUuH",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - VIA result suspected cancer",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - VIA result suspected cancer",
+      "formName": "Prostate - VIA result suspected cancer",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "lsfuUkMyo4v",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - VIA screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - VIA screened",
+      "formName": "Prostate - VIA screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "waqY5TwCBOj",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - VIA screened and LLETZ post treatment complication",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "lEvcESYA9GC",
+        "code": null,
+        "name": "Meduletu Kamati",
+        "displayName": "Meduletu Kamati",
+        "username": "Meduletu_Kamati"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - VIA screened and LLETZ post treatment c",
+      "formName": "Prostate - VIA screened and LLETZ post treatment complication",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "br5yGaRolJM",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - VIA screened and Thermo post treatment complication",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "lEvcESYA9GC",
+        "code": null,
+        "name": "Meduletu Kamati",
+        "displayName": "Meduletu Kamati",
+        "username": "Meduletu_Kamati"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - VIA screened and Thermo post treatment ",
+      "formName": "Prostate - VIA screened and Thermo post treatment complication",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "HjqctDqRTvy",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - VIA screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - VIA screened and received results",
+      "formName": "Prostate - VIA screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "xQBs7P3KekP",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Prostate - VIA screened and treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Prostate - VIA screened and treated",
+      "formName": "Prostate - VIA screened and treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "Qe8uWXeGj0T",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    }
+  ]
+}

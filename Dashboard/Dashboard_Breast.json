@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "c3km9x4SvBc",
+      "created": "2026-02-18T15:44:06.457044",
+      "lastUpdated": "2026-02-18T15:44:06.457046",
+      "name": "Breast Cancer Dashboard",
+      "displayName": "Breast Cancer Dashboard",
+      "description": "Monitoring dashboard for Breast cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "d11dabc4-ef",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "0e3d5cac-76",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "9be17718-c3",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "64bfe308-83",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "GUEdxCFIfc8"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "apF4DSQz350",
+      "created": "2026-02-18T15:44:06.457426",
+      "lastUpdated": "2026-02-18T15:44:06.457427",
+      "name": "Pancreatic Cancer Dashboard",
+      "displayName": "Pancreatic Cancer Dashboard",
+      "description": "Monitoring dashboard for Pancreatic cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "887c1c31-85",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "03415877-4b",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "3f1526de-14",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "3888f8a5-22",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "10SJUU4Nu9G"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "indicators": [
+    {
+      "name": "Kidney - % Pap smear screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "IGP_KIDNEY",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kidney - % Pap smear screened and received results",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{mBSwnDj4RYp}",
+      "numeratorDescription": "Kidney - % Pap smear screened and received results",
+      "denominator": "#{RnZP1blNDSD}",
+      "denominatorDescription": "Kidney - % Pap smear screened and received results",
+      "id": "TuyQtGVba4V",
+      "attributeValues": []
+    },
+    {
+      "name": "Kidney - % VIA screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kidney - % VIA screened and received results",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{B3Jj0F0gGl5}",
+      "numeratorDescription": "Kidney - % VIA screened and received results",
+      "denominator": "#{dQkG2xQ06Vd}",
+      "denominatorDescription": "Kidney - % VIA screened and received results",
+      "id": "RDA4cZNVutC",
+      "attributeValues": []
+    }
+  ]
+}

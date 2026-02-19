@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "niUxxMkNEVE",
+      "created": "2026-02-18T15:44:06.457224",
+      "lastUpdated": "2026-02-18T15:44:06.457225",
+      "name": "Leukemia Cancer Dashboard",
+      "displayName": "Leukemia Cancer Dashboard",
+      "description": "Monitoring dashboard for Leukemia cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "5d8eba26-1c",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "64d60a15-59",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "e304bf4e-0b",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "603a5852-67",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "GsDujmjkBXs"
+    }
+  ]
+}

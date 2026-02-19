@@ -1,0 +1,3854 @@
+{
+  "programRules": [
+    {
+      "name": "ASSIGN: Age from DOB of patient",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2023-06-12T10:18:34.074",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "PodwHpJYplJ"
+        }
+      ],
+      "condition": "d2:hasValue(A{dob_of_the_patient}) && d2:yearsBetween(A{dob_of_the_patient},V{enrollment_date}) >= 15",
+      "id": "v7iqDw5Q9O3"
+    },
+    {
+      "name": "ASSIGN: Month and Year of HIV diagnosis from the DATE",
+      "created": "2023-09-17T14:32:10.958",
+      "lastUpdated": "2024-10-29T10:13:45.073",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "ej4kesxs5nM"
+        }
+      ],
+      "condition": "d2:hasValue(A{hiv_status}) && d2:hasValue(A{hiv_care_and_treatment_enrollement_status})  && d2:hasValue(A{date_of_hiv_diagnosis})",
+      "id": "ltUBHPWmX17"
+    },
+    {
+      "name": "ASSIGN: Month and Year of HIV diagnosis from the DATE [SCR]",
+      "created": "2024-10-25T02:38:16.985",
+      "lastUpdated": "2024-10-29T12:01:48.860",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "xHtDIPZOvQ0"
+        }
+      ],
+      "condition": "d2:hasValue(#{scr_hiv_status}) && d2:hasValue(#{scr_hiv_care_and_treatment_enrollement_status}) && d2:hasValue(#{scr_date_of_hiv_diagnosis})",
+      "id": "OXwTlSmry34"
+    },
+    {
+      "name": "ASSIGN: Suspicious for cancer and biopsy result - Confirmed cancer",
+      "created": "2024-07-31T16:56:30.053",
+      "lastUpdated": "2024-07-31T18:44:40.074",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "MYFT2hEsVsV"
+        }
+      ],
+      "condition": "d2:hasValue(#{histology_results}) && (#{histology_results} == 'Carcinoma in situ' || #{histology_results} == 'Invasive squamous cancer' || #{histology_results} == 'Invasive adenocarcinoma')\n\n\n\n\n\n",
+      "id": "UV1ALSnRWOs"
+    },
+    {
+      "name": "ASSIGN: Suspicious for cancer and biopsy result - Confirmed cancer [LAB]",
+      "created": "2024-07-31T20:21:07.078",
+      "lastUpdated": "2024-07-31T20:21:07.078",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "jbPynZRteKh"
+        }
+      ],
+      "condition": "d2:hasValue(#{lab_histology_results}) && (#{lab_histology_results} == 'Carcinoma in situ' || #{lab_histology_results} == 'Invasive squamous cancer' || #{lab_histology_results} == 'Invasive adenocarcinoma')",
+      "id": "fpir6V6Sfpz"
+    },
+    {
+      "name": "ASSIGN: Suspicious for cancer and biopsy result - No cancer",
+      "created": "2024-07-31T18:44:28.099",
+      "lastUpdated": "2024-07-31T18:44:28.099",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "SrhrANwQuZv"
+        }
+      ],
+      "condition": "d2:hasValue(#{histology_results}) && #{histology_results} == 'Normal finding'\n\n\n\n\n",
+      "id": "hKl1C0duNHD"
+    },
+    {
+      "name": "ASSIGN: Suspicious for cancer and biopsy result - No cancer [LAB]",
+      "created": "2024-07-31T20:22:54.600",
+      "lastUpdated": "2024-07-31T20:22:54.600",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "hQt3xBekaOs"
+        }
+      ],
+      "condition": "d2:hasValue(#{lab_histology_results}) && #{lab_histology_results} == 'Normal finding'\n\n\n\n\n",
+      "id": "I8ysX0hTXVv"
+    },
+    {
+      "name": "CONCATENATE: Names from firstname and surname",
+      "created": "2023-09-16T09:03:55.087",
+      "lastUpdated": "2023-09-17T02:35:08.461",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "BfFbdz8NI5v"
+        }
+      ],
+      "condition": "d2:length(A{first_name}) > 0 && d2:length(A{surname}) > 0",
+      "id": "OdVpsivUSG2"
+    },
+    {
+      "name": "CONCATENATE: Names from firstname only",
+      "created": "2023-09-16T09:04:57.511",
+      "lastUpdated": "2023-09-17T02:35:12.096",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "xumGXptXP6g"
+        }
+      ],
+      "condition": "d2:length(A{first_name}) > 0 && d2:length(A{surname}) == 0",
+      "id": "NJUSFEb2gTx"
+    },
+    {
+      "name": "CONCATENATE: Names from surname only",
+      "created": "2023-09-16T09:06:51.270",
+      "lastUpdated": "2023-09-17T02:35:15.862",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "Upn06Hyoluf"
+        }
+      ],
+      "condition": "d2:length(A{first_name}) == 0 && d2:length(A{surname}) > 0",
+      "id": "v7JLgZwlgRV"
+    },
+    {
+      "name": "HIDE: Biopsy performed",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-11-26T12:07:35.838",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "RrVl582h9uy",
+        "code": null,
+        "name": "Sam Kasozi",
+        "displayName": "Sam Kasozi",
+        "username": "Sam_Kasozi"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "OiG10qBbGWN"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) || \n\n(#{screening_type} == 'HPV' &&\n(!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) || #{hpv_genotype} != 'Other high risk HPV subtypes' ||\n!d2:hasValue(#{triage_is_performed}) || !#{triage_is_performed} ||\n!d2:hasValue(#{triage_test_type}) ||\n(#{triage_test_type} == 'VIA' && (!d2:hasValue(#{via_screening_result}) || \n#{via_screening_result} == 'VIA negative' ||\n(#{via_screening_result} != 'VIA negative' && #{referral_for_via_positive_result} != 'Other gynecological issues'))) ||\n(#{triage_test_type} == 'Cytology' && (#{pap_smear_result} == 'Pap smear negative' || #{pap_smear_result} == 'CIN I' || #{pap_smear_result} == 'Invasive cancer' || #{pap_smear_result} == 'Result pending' || #{pap_smear_result} == 'ASCUS' || #{pap_smear_result} == 'ASC_H')))) ||\n\n(#{screening_type} == 'Pap smear' && (#{pap_smear_result} == 'Pap smear negative' || #{pap_smear_result} == 'CIN I' || #{pap_smear_result} == 'Invasive cancer' || #{pap_smear_result} == 'Result pending' || #{pap_smear_result} == 'ASCUS' || #{pap_smear_result} == 'ASC_H')) ||\n\n(#{screening_type} == 'VIA' && (\n!d2:hasValue(#{via_screening_result}) || \n#{via_screening_result} == 'VIA negative' ||\n(#{via_screening_result} != 'VIA negative' && #{referral_for_via_positive_result} != 'Other gynecological issues')))",
+      "id": "DORxHG4Bt8R"
+    },
+    {
+      "name": "HIDE: Cervicogram image and Cervicogram image number",
+      "created": "2024-07-31T09:20:49.264",
+      "lastUpdated": "2024-10-06T11:46:50.082",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "yaw7w0g4n34"
+        },
+        {
+          "id": "YfqikSoxzgd"
+        },
+        {
+          "id": "eGgOQcIJZ0E"
+        },
+        {
+          "id": "WkLCNeHnLsb"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) || #{screening_type} == 'Pap smear' || !d2:hasValue(#{cervicogram_taken}) || #{cervicogram_taken} != 'Cervicogram taken'",
+      "id": "XVZ9BgfqNA1"
+    },
+    {
+      "name": "HIDE: Cervicogram image and Cervicogram image number [LAB]",
+      "created": "2024-08-02T17:36:58.390",
+      "lastUpdated": "2024-10-06T11:48:08.899",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "OduDQ4KiUot"
+        },
+        {
+          "id": "fpkrtLUpzSR"
+        },
+        {
+          "id": "WuxbfoC9VfA"
+        },
+        {
+          "id": "DqGSIUDRpCy"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result}) || !d2:hasValue(#{lab_cervicogram_taken}) || #{lab_cervicogram_taken} != 'Cervicogram taken'",
+      "id": "cTemEkH1vv6"
+    },
+    {
+      "name": "HIDE: Cervicogram taken",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-11T11:12:57.495",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "EVsnnnqZHxT"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) || #{screening_type} == 'Pap smear'",
+      "id": "elTO4Uo8yPQ"
+    },
+    {
+      "name": "HIDE: Cervicogram taken [LAB]",
+      "created": "2024-08-02T17:34:19.398",
+      "lastUpdated": "2024-08-02T17:34:19.398",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "ViYfdPOGSiK"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result})",
+      "id": "b7r0ML99YNk"
+    },
+    {
+      "name": "HIDE: Checkbox and Specify other site of referral for screening",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-11T11:12:57.495",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "BW6ONywP6nb"
+        },
+        {
+          "id": "okfKzM0ODyT"
+        }
+      ],
+      "condition": "d2:hasValue(#{site_of_referral_for_screening})",
+      "id": "IJsDcFdwDyY"
+    },
+    {
+      "name": "HIDE: Checkbox and Specify other site of referral for treatment",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-11T11:12:57.495",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "hsZaRhje6nl"
+        },
+        {
+          "id": "I2GKCriAU0r"
+        }
+      ],
+      "condition": "d2:hasValue(#{site_of_referral_for_treatment})",
+      "id": "PGPLL60LVSB"
+    },
+    {
+      "name": "HIDE: Checkbox for unknown DOB (Age) of patient",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-11T11:12:57.495",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "itEBegg2nsZ"
+        }
+      ],
+      "condition": "d2:hasValue(A{dob_of_the_patient}) || A{age_of_the_patient} > 0",
+      "id": "e339GM8oEku"
+    },
+    {
+      "name": "HIDE: Checkbox for unknown DOB (Age) of patient and DOB field",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-11T11:12:57.495",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "cuD1bKJKL4e"
+        },
+        {
+          "id": "E9Yk0z5QOPA"
+        }
+      ],
+      "condition": "!d2:hasValue(A{dob_of_the_patient}) && A{age_of_the_patient} > 0",
+      "id": "TmErx2SzSUD"
+    },
+    {
+      "name": "HIDE: DOB and Age of patient if unknown",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-11T11:12:57.495",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "guoQdNlNTN0"
+        },
+        {
+          "id": "O0d1hBztpeF"
+        }
+      ],
+      "condition": "A{unknown_dob_or_age_of_the_patient} == 1",
+      "id": "QS2VwOjSCdv"
+    },
+    {
+      "name": "HIDE: Date biopsy taken [TMT]",
+      "created": "2024-10-06T18:48:44.939",
+      "lastUpdated": "2024-10-22T06:31:05.154",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "KLyMmaCo6tl"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || #{confirmed_result} != 'Suspicious for cancer' || !d2:hasValue(#{tmt_biopsy_done}) || !#{tmt_biopsy_done}",
+      "id": "F5IsQDzNaOX"
+    },
+    {
+      "name": "HIDE: HIV care and treatment status",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-10-30T07:30:44.705",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "ixrzhpHscnP"
+        }
+      ],
+      "condition": "!d2:hasValue(A{hiv_status}) || A{hiv_status} == 'HIV negative' || (A{hiv_status} == 'Unknown' && (A{pitc_results} != 'Positive' || !d2:hasValue(A{pitc_accepted_for_unknown_hiv_status}) || !A{pitc_accepted_for_unknown_hiv_status}))\n",
+      "id": "DUAl9gT03IU"
+    },
+    {
+      "name": "HIDE: HIV care and treatment status [SCR]",
+      "created": "2024-10-25T02:38:16.985",
+      "lastUpdated": "2024-10-30T07:30:14.422",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "fAZmvQahCk5"
+        }
+      ],
+      "condition": "!d2:hasValue(#{scr_hiv_status}) || #{scr_hiv_status} == 'HIV negative' || (#{scr_hiv_status} == 'Unknown' && (#{scr_pitc_results} != 'Positive' || !d2:hasValue(#{scr_pitc_accepted_for_unknown_hiv_status}) || !#{scr_pitc_accepted_for_unknown_hiv_status}))",
+      "id": "sQZSQBrzCVy"
+    },
+    {
+      "name": "HIDE: HPV DNA Test Results - Null [LAB]",
+      "created": "2024-07-11T16:39:23.289",
+      "lastUpdated": "2024-07-11T16:44:40.735",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "RfN8ZOr0PFz"
+        },
+        {
+          "id": "UKFAITnQzmR"
+        },
+        {
+          "id": "cDIlET3BTqU"
+        },
+        {
+          "id": "bb0wVYIBIaI"
+        },
+        {
+          "id": "Qay2JVDOSsS"
+        },
+        {
+          "id": "Z0XnrbEgWsF"
+        },
+        {
+          "id": "Jb1IUBlELty"
+        },
+        {
+          "id": "eN60IhephKZ"
+        },
+        {
+          "id": "xfVN9Imsf9Z"
+        },
+        {
+          "id": "e9xJtr3FwJc"
+        },
+        {
+          "id": "CBF2EPfed3L"
+        },
+        {
+          "id": "pXTuCGmg9WS"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result})",
+      "id": "Fnkkjyy64Ga"
+    },
+    {
+      "name": "HIDE: HPV DNA Test Results details",
+      "created": "2023-07-04T13:23:58.382",
+      "lastUpdated": "2024-07-31T09:18:56.261",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "ipWcx3DBr6M"
+        },
+        {
+          "id": "wkaA164R3tK"
+        },
+        {
+          "id": "dhbhTMipW9Q"
+        },
+        {
+          "id": "egrzs9nK1k0"
+        },
+        {
+          "id": "T2zkwU40HA0"
+        },
+        {
+          "id": "wO9UUeUq46K"
+        },
+        {
+          "id": "qyemPS0mS0l"
+        },
+        {
+          "id": "xhfVmTgxi0u"
+        },
+        {
+          "id": "Nbew1U1ve3c"
+        },
+        {
+          "id": "oaOxaEyiTwA"
+        },
+        {
+          "id": "jauo882Qm05"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) || #{screening_type} == 'VIA'",
+      "id": "CqzE5oOx1iU"
+    },
+    {
+      "name": "HIDE: HPV genotyping is performed",
+      "created": "2023-07-20T08:43:18.198",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "x2Hst2bLWfl"
+        }
+      ],
+      "condition": "!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || #{hpv_genotyping_is_performed}",
+      "id": "YjwwLpSNlbC"
+    },
+    {
+      "name": "HIDE: HPV genotyping is performed [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "Owin0PGITWJ"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result}) || #{lab_hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{lab_hpv_genotyping_is_performed}) || #{lab_hpv_genotyping_is_performed}",
+      "id": "B4DzGlJjbEz"
+    },
+    {
+      "name": "HIDE: HPV genotyping not performed",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "awR9EmueakE"
+        }
+      ],
+      "condition": "!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed}",
+      "id": "aDnv8Kvm7NV"
+    },
+    {
+      "name": "HIDE: HPV genotyping not performed [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "LdmUbiEUDwU"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result}) || #{lab_hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{lab_hpv_genotyping_is_performed}) || !#{lab_hpv_genotyping_is_performed}",
+      "id": "CwyEpWNFclF"
+    },
+    {
+      "name": "HIDE: High risk HPV 16 and 18 genotype",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "XyyO9dXHKV2"
+        },
+        {
+          "id": "cy1woRlJWlK"
+        }
+      ],
+      "condition": "!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) || #{hpv_genotype} != 'Other high risk HPV subtypes'",
+      "id": "KI4BZzsp4Jt"
+    },
+    {
+      "name": "HIDE: High risk HPV 16 and 18 genotype [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "uQw6rGxxiOn"
+        },
+        {
+          "id": "SIMP5nOvKrA"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result}) || #{lab_hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{lab_hpv_genotyping_is_performed}) || !#{lab_hpv_genotyping_is_performed} ||\n!d2:hasValue(#{lab_hpv_genotype}) || #{lab_hpv_genotype} != 'Other high risk HPV subtypes'",
+      "id": "Q3Lf1FbNIak"
+    },
+    {
+      "name": "HIDE: Histology Results",
+      "created": "2024-10-28T14:24:16.217",
+      "lastUpdated": "2025-05-14T07:59:22.569",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "lEvcESYA9GC",
+        "code": null,
+        "name": "Meduletu Kamati",
+        "displayName": "Meduletu Kamati",
+        "username": "Meduletu_Kamati"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [],
+      "condition": "!d2:hasValue(#{confirmed_result}) || #{confirmed_result} != 'VIA positive not eligible for ablative treatment' || !d2:hasValue(#{lletz_status}) || (#{lletz_status} != 'LLETZ done onsite' && #{lletz_status} != 'LLETZ done at referral site')",
+      "id": "trGbXzBYOdA"
+    },
+    {
+      "name": "HIDE: LLETZ Post treatment complication",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-10-28T15:31:11.168",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "Ed9s739ja6B"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || (#{confirmed_result} != 'VIA positive eligible for ablative treatment' && #{confirmed_result} != 'VIA positive not eligible for ablative treatment') || (#{confirmed_result} == 'VIA positive not eligible for ablative treatment' && (!d2:hasValue(#{lletz_status}) || #{lletz_status} == 'LLETZ not done')) || (#{confirmed_result} == 'VIA positive eligible for ablative treatment' && (!d2:hasValue(#{tmt_thermoablation}) || #{tmt_thermoablation} == 'Thermoablation postponed'))",
+      "id": "jesFrQFg7tc"
+    },
+    {
+      "name": "HIDE: LLETZ post treatment complication type",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-10-28T15:38:07.596",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "UcGX4ssRlAM"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || (#{confirmed_result} != 'VIA positive eligible for ablative treatment' &&\n#{confirmed_result} != 'VIA positive not eligible for ablative treatment') || (#{confirmed_result} == 'VIA positive not eligible for ablative treatment' && (!d2:hasValue(#{lletz_status}) || #{lletz_status} == 'LLETZ not done')) || (#{confirmed_result} == 'VIA positive eligible for ablative treatment' && (!d2:hasValue(#{tmt_thermoablation}) || #{tmt_thermoablation} == 'Thermoablation postponed')) || !d2:hasValue(#{lletz_post_treatment_complication}) || !#{lletz_post_treatment_complication}",
+      "id": "iCS6aAtIKGi"
+    },
+    {
+      "name": "HIDE: Margins",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "K6HYduAordY"
+        }
+      ],
+      "condition": "!d2:hasValue(#{histology_results}) || #{histology_results} == 'Results pending'",
+      "id": "BoZg5Rs1txk"
+    },
+    {
+      "name": "HIDE: Margins [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "qpq1liMFmPX"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_histology_results}) || #{lab_histology_results} == 'Results pending'",
+      "id": "hPAIXkNjsYQ"
+    },
+    {
+      "name": "HIDE: Names when firstname and surname are empty",
+      "created": "2023-09-17T02:34:23.308",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "qxkiQaq6wGt"
+        }
+      ],
+      "condition": "d2:length(A{first_name}) == 0 && d2:length(A{surname}) == 0",
+      "id": "rmDq7RE6gfl"
+    },
+    {
+      "name": "HIDE: Namibia national id",
+      "created": "2023-09-16T08:36:20.413",
+      "lastUpdated": "2024-10-12T07:02:58.984",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "POYiMtcch5O"
+        }
+      ],
+      "condition": "d2:hasValue(A{nationality})  && A{nationality} != 'NAM'",
+      "id": "Sk8qeBJ9CW0"
+    },
+    {
+      "name": "HIDE: Negative HPV DNA test result",
+      "created": "2023-06-14T12:12:16.713",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "C7EWAY7arua"
+        }
+      ],
+      "condition": "!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive'",
+      "id": "sXtH0ZFWmMe"
+    },
+    {
+      "name": "HIDE: Negative HPV DNA test result [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "JdMv3ZcJw8k"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result}) || #{lab_hpv_dna_test_result} != 'Positive'",
+      "id": "IJawpK5IgcG"
+    },
+    {
+      "name": "HIDE: Other high risk HPV genotype subtypes",
+      "created": "2023-06-14T11:46:22.846",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "hy2DlIEyKNa"
+        }
+      ],
+      "condition": "!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) || #{hpv_genotype} != 'High risk HPV 16 and 18'",
+      "id": "Ukevuw1HMD8"
+    },
+    {
+      "name": "HIDE: Other high risk HPV genotype subtypes [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "Hnnpj8jZQJW"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result}) || #{lab_hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{lab_hpv_genotyping_is_performed}) || !#{lab_hpv_genotyping_is_performed} ||\n!d2:hasValue(#{lab_hpv_genotype}) || #{lab_hpv_genotype} != 'High risk HPV 16 and 18'",
+      "id": "pvPDHetb99I"
+    },
+    {
+      "name": "HIDE: Other national id",
+      "created": "2023-09-16T08:35:05.791",
+      "lastUpdated": "2024-10-12T07:03:06.029",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "DHMNSTtCSTi"
+        }
+      ],
+      "condition": "d2:hasValue(A{nationality}) && A{nationality} == 'NAM'",
+      "id": "HkVyCRGpjw1"
+    },
+    {
+      "name": "HIDE: PITC accepted for unknown HIV results",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-10-16T12:13:21.411",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "JyMfFlPDCnD"
+        }
+      ],
+      "condition": "!d2:hasValue(A{hiv_status}) || A{hiv_status} != 'Unknown'",
+      "id": "egXttA1YOTb"
+    },
+    {
+      "name": "HIDE: PITC accepted for unknown HIV results [SCR]",
+      "created": "2024-10-25T02:38:16.985",
+      "lastUpdated": "2024-10-25T02:38:16.985",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "MNDhtpBRuhD"
+        }
+      ],
+      "condition": "!d2:hasValue(#{scr_hiv_status}) || #{scr_hiv_status} != 'Unknown'",
+      "id": "MYbwkUAmUgB"
+    },
+    {
+      "name": "HIDE: PITC results",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-10-16T12:13:21.411",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "KuVJ0A6uJfN"
+        }
+      ],
+      "condition": "!d2:hasValue(A{hiv_status}) || A{hiv_status} != 'Unknown' || !d2:hasValue(A{pitc_accepted_for_unknown_hiv_status}) || !A{pitc_accepted_for_unknown_hiv_status}",
+      "id": "OBUzIKh0iIw"
+    },
+    {
+      "name": "HIDE: PITC results [SCR]",
+      "created": "2024-10-25T02:38:16.985",
+      "lastUpdated": "2024-10-25T02:38:16.985",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "PJeG70JMaXh"
+        }
+      ],
+      "condition": "!d2:hasValue(#{scr_hiv_status}) || #{scr_hiv_status} != 'Unknown' || !d2:hasValue(#{scr_pitc_accepted_for_unknown_hiv_status}) || !#{scr_pitc_accepted_for_unknown_hiv_status}",
+      "id": "fmJTBjoxSKx"
+    },
+    {
+      "name": "HIDE: Pap smear referral booking date and site",
+      "created": "2023-07-13T13:18:01.975",
+      "lastUpdated": "2024-10-22T07:12:04.361",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "Ij1sYVEHu9h"
+        },
+        {
+          "id": "zbqc1O9MlDh"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) ||  \n\n#{screening_type} == 'VIA' || \n\n(#{screening_type} == 'Pap smear' && (#{pap_smear_result} == 'Other' || #{pap_smear_result} == 'Result pending' || (#{pap_smear_result} == 'CIN I' && \n((d2:hasValue(A{dob_of_the_patient}) && d2:yearsBetween(A{dob_of_the_patient}, V{enrollment_date}) <= 49) || \n(d2:hasValue(A{age_of_the_patient}) && A{age_of_the_patient} <= 49))))) ||\n\n(#{screening_type} == 'HPV' &&\n(!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) ||\n\n(#{hpv_genotype} == 'Other high risk HPV subtypes' &&\n(!d2:hasValue(#{triage_is_performed}) || !#{triage_is_performed} ||\n!d2:hasValue(#{triage_test_type}) || #{triage_test_type} != 'Cytology' ||\n\n!d2:hasValue(#{pap_smear_result}) || \n\n#{pap_smear_result} == 'Other' || \n#{pap_smear_result} == 'Result pending' || \n(#{pap_smear_result} == 'CIN I' && (\n(d2:hasValue(A{dob_of_the_patient}) && d2:yearsBetween(A{dob_of_the_patient}, V{enrollment_date}) <= 49) || \n(d2:hasValue(A{age_of_the_patient}) && A{age_of_the_patient} <= 49)\n))))))",
+      "id": "j2ng07ZKLEU"
+    },
+    {
+      "name": "HIDE: Pap smear referral booking date and site [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-10-22T07:11:43.422",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "vkhp9IWvaxZ"
+        },
+        {
+          "id": "bTIOsqTjSKY"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_pap_smear_result}) || #{lab_pap_smear_result} == 'Other' || #{lab_pap_smear_result} == 'Result pending' || (#{lab_pap_smear_result} == 'CIN I' && ((d2:hasValue(A{dob_of_the_patient}) && d2:yearsBetween(A{dob_of_the_patient}, V{enrollment_date}) <= 49) || (d2:hasValue(A{age_of_the_patient}) && A{age_of_the_patient} <= 49)))",
+      "id": "devJjmHnVFl"
+    },
+    {
+      "name": "HIDE: Pap smear result - Null",
+      "created": "2023-07-13T13:14:53.412",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "xAWNh48t4XE"
+        },
+        {
+          "id": "s4YH4DTs5sp"
+        },
+        {
+          "id": "QJ6VKBJUYiu"
+        },
+        {
+          "id": "zWeWeQiU8k7"
+        }
+      ],
+      "condition": "!d2:hasValue(#{pap_smear_result})",
+      "id": "uuNfuhO2d4o"
+    },
+    {
+      "name": "HIDE: Pap smear result - Null [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "u9Ko8NORKS8"
+        },
+        {
+          "id": "e57wulI7AZI"
+        },
+        {
+          "id": "er3qIGrWPWv"
+        },
+        {
+          "id": "nOHhQQ5BMid"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_pap_smear_result})",
+      "id": "a03rbodzO3p"
+    },
+    {
+      "name": "HIDE: Pap smear result - Pap smear negative",
+      "created": "2023-07-11T10:16:15.178",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "mEDPtjnTUV7"
+        },
+        {
+          "id": "PzISC2lDqCk"
+        },
+        {
+          "id": "cjCdJaXKqM4"
+        }
+      ],
+      "condition": "#{pap_smear_result} == 'Pap smear negative'",
+      "id": "PrPNFELswgn"
+    },
+    {
+      "name": "HIDE: Pap smear result - Pap smear negative [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "XDIkaHCWIiL"
+        },
+        {
+          "id": "tGSzx4gVQan"
+        },
+        {
+          "id": "Jpw02WWNX2u"
+        }
+      ],
+      "condition": "#{lab_pap_smear_result} == 'Pap smear negative'",
+      "id": "EiQE84Q0vB9"
+    },
+    {
+      "name": "HIDE: Pap smear screening type",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-31T09:19:25.788",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "BRrHKdG5DyC"
+        },
+        {
+          "id": "wh9ybe5cK9E"
+        },
+        {
+          "id": "SXMEGklrOB2"
+        },
+        {
+          "id": "zRrqUWNL504"
+        },
+        {
+          "id": "A2cFLRUePnT"
+        },
+        {
+          "id": "N2Hl1HsxWH3"
+        },
+        {
+          "id": "UIQgq1DYSu6"
+        },
+        {
+          "id": "saRyx4Z2G3I"
+        },
+        {
+          "id": "dvZbPAoMDpV"
+        },
+        {
+          "id": "AUIsgHFuxku"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) || #{screening_type} == 'Pap smear'",
+      "id": "OjEkm0XCaKC"
+    },
+    {
+      "name": "HIDE: Positive margin specification",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-31T16:29:46.362",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "wUeRkVAM2NR"
+        }
+      ],
+      "condition": "!d2:hasValue(#{histology_results}) || #{histology_results} == 'Results pending' ||\n!d2:hasValue(#{margins}) || #{margins} != 'Positive margins'",
+      "id": "Ah4yIat88mx"
+    },
+    {
+      "name": "HIDE: Positive margin specification [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-31T16:30:25.823",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "T4CS34fwBLG"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_histology_results}) || #{lab_histology_results} == 'Results pending' ||\n!d2:hasValue(#{lab_margins}) || #{lab_margins} != 'Positive margins'",
+      "id": "f3aB9sW1gJA"
+    },
+    {
+      "name": "HIDE: Re-screening date for Pap smear",
+      "created": "2023-10-01T07:06:36.629",
+      "lastUpdated": "2024-10-13T12:26:37.885",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "ep7j8EbpKcy"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) ||  \n\n#{screening_type} == 'VIA' || \n\n(#{screening_type} == 'Pap smear' && \n(#{pap_smear_result} == 'Invasive cancer' || \n#{pap_smear_result} == 'Result pending' || \n#{pap_smear_result} == 'Other' || \n#{pap_smear_result} == 'ASCUS')) ||\n\n(#{screening_type} == 'HPV' &&\n(!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) ||\n\n(#{hpv_genotype} == 'Other high risk HPV subtypes' &&\n(!d2:hasValue(#{triage_is_performed}) || !#{triage_is_performed} ||\n!d2:hasValue(#{triage_test_type}) || #{triage_test_type} != 'Cytology' ||\n\n!d2:hasValue(#{pap_smear_result}) || \n#{pap_smear_result} == 'Invasive cancer' || \n#{pap_smear_result} == 'Result pending' || \n#{pap_smear_result} == 'Other' || \n#{pap_smear_result} == 'ASCUS'\n))))",
+      "id": "TOWMXTBd8xA"
+    },
+    {
+      "name": "HIDE: Re-screening date for Pap smear [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T15:29:28.329",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "WjVa4UeQMrH"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_pap_smear_result}) || #{lab_pap_smear_result} == 'Invasive cancer' || #{lab_pap_smear_result} == 'Result pending' || #{lab_pap_smear_result} == 'Other' || #{lab_pap_smear_result} == 'ASCUS'",
+      "id": "GkqemxSPHO9"
+    },
+    {
+      "name": "HIDE: Re-screening date for VIA",
+      "created": "2023-06-14T14:19:01.136",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "RtLol1AxaYX"
+        }
+      ],
+      "condition": "#{screening_type} != 'VIA' || !d2:hasValue(#{via_screening_result}) || #{via_screening_result} == 'Suspicious for cancer'",
+      "id": "B8GGN2AG0uZ"
+    },
+    {
+      "name": "HIDE: Reason LLETZ not performed",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-10-22T06:34:32.248",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "fxFLvcN9JnB"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || #{confirmed_result} != 'VIA positive not eligible for ablative treatment' || !d2:hasValue(#{lletz_status}) || #{lletz_status} != 'LLETZ not done'",
+      "id": "JY37ZKLNZXx"
+    },
+    {
+      "name": "HIDE: Reason PITC not accepted",
+      "created": "2024-10-12T16:51:36.666",
+      "lastUpdated": "2024-10-16T12:13:21.411",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "cq0JeWH1NiZ"
+        }
+      ],
+      "condition": "!d2:hasValue(A{hiv_status}) || A{hiv_status} != 'Unknown' || !d2:hasValue(A{pitc_accepted_for_unknown_hiv_status}) || A{pitc_accepted_for_unknown_hiv_status}",
+      "id": "agtZjGJAXhn"
+    },
+    {
+      "name": "HIDE: Reason PITC not accepted [SCR]",
+      "created": "2024-10-25T02:38:16.985",
+      "lastUpdated": "2024-10-25T02:38:16.985",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "CQ4XEw1WC66"
+        }
+      ],
+      "condition": "!d2:hasValue(#{scr_hiv_status}) || #{scr_hiv_status} != 'Unknown' || !d2:hasValue(#{scr_pitc_accepted_for_unknown_hiv_status}) || #{scr_pitc_accepted_for_unknown_hiv_status}",
+      "id": "ThjaKD7ykEj"
+    },
+    {
+      "name": "HIDE: Reason for postponing thermoablation",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-11T19:28:39.971",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "u4IEPANc8Du"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) ||  (#{screening_type} == 'HPV' &&\n(!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) || #{hpv_genotype} != 'Other high risk HPV subtypes' ||\n!d2:hasValue(#{triage_is_performed}) || !#{triage_is_performed})) ||\n(#{screening_type} != 'VIA' && #{triage_test_type} != 'VIA') || !d2:hasValue(#{via_screening_result}) || \n#{via_screening_result} != 'VIA positive eligible for ablative treatment' ||\n!d2:hasValue(#{thermoablation}) || #{thermoablation} != 'Thermoablation postponed'",
+      "id": "E4F9zwvMnX5"
+    },
+    {
+      "name": "HIDE: Reason for postponing thermoablation [TMT]",
+      "created": "2024-10-06T18:23:41.096",
+      "lastUpdated": "2024-10-22T06:31:05.155",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "I8IcjZSLZda"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || #{confirmed_result} != 'VIA positive eligible for ablative treatment' || !d2:hasValue(#{tmt_thermoablation}) || #{tmt_thermoablation} != 'Thermoablation postponed'",
+      "id": "R7gmiqVGfKX"
+    },
+    {
+      "name": "HIDE: Reason for referral for Positive VIA screening result",
+      "created": "2023-07-20T09:26:56.697",
+      "lastUpdated": "2024-10-22T10:07:23.902",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "Lk20szdLHrw"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) ||  \n#{screening_type} == 'Pap smear' ||\n#{screening_type} == 'HPV' &&\n(!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) ||\n\n(#{hpv_genotype} == 'Other high risk HPV subtypes' &&\n(!d2:hasValue(#{triage_is_performed}) || !#{triage_is_performed} ||\n!d2:hasValue(#{triage_test_type}) || #{triage_test_type} != 'VIA' ||\n!d2:hasValue(#{via_screening_result}) || #{via_screening_result} == 'VIA negative'\n)) ||\n(#{hpv_genotype} == 'High risk HPV 16 and 18' &&\n(!d2:hasValue(#{via_assessment_for_treatment_performed}) || !#{via_assessment_for_treatment_performed} ||\n!d2:hasValue(#{via_assessment_for_treatment_result}) || #{via_assessment_for_treatment_result} != 'Eligible for Thermocoagulation'\n))) || \n(#{screening_type} == 'VIA' &&\n(!d2:hasValue(#{via_screening_result}) || #{via_screening_result} == 'VIA negative'))",
+      "id": "mHvwA5YTzJt"
+    },
+    {
+      "name": "HIDE: Referral booking date for VIA",
+      "created": "2023-07-17T14:44:05.379",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "CI6QMBrQnLz"
+        }
+      ],
+      "condition": "#{screening_type} != 'VIA' || !d2:hasValue(#{via_screening_result}) || (#{via_screening_result} != 'VIA positive not eligible for ablative treatment' && #{via_screening_result} != 'Suspicious for cancer')",
+      "id": "mHrrHz4c0dN"
+    },
+    {
+      "name": "HIDE: Referral for other gynecological issues",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "bdOnKhIVr3k"
+        }
+      ],
+      "condition": "!d2:hasValue(#{via_screening_result}) || #{via_screening_result} != 'VIA negative'",
+      "id": "W6EsslINqUX"
+    },
+    {
+      "name": "HIDE: Retest Required for HPV DNA test result",
+      "created": "2023-07-20T16:09:18.710",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "G3jysfW2RVW"
+        }
+      ],
+      "condition": "#{screening_type} != 'HPV' || !d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Retest Required'",
+      "id": "FIa8BKyezRX"
+    },
+    {
+      "name": "HIDE: Retest Required for HPV DNA test result [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "fuwplhNyuxD"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result}) || #{lab_hpv_dna_test_result} != 'Retest Required'",
+      "id": "Ik2I7bnhYJK"
+    },
+    {
+      "name": "HIDE: Screening type - NOT Pap smear or Cytology",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "x0JziTg4muX"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) || #{screening_type} == 'HPV' &&\n(!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) || #{hpv_genotype} != 'Other high risk HPV subtypes' ||\n!d2:hasValue(#{triage_is_performed}) || !#{triage_is_performed}) ||\n(#{screening_type} != 'Pap smear' && #{triage_test_type} != 'Cytology')",
+      "id": "Qmkluxb3xEF"
+    },
+    {
+      "name": "HIDE: Site for referral for screening details",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "aYV4sJHpx9V"
+        },
+        {
+          "id": "p7FgDV0twmo"
+        }
+      ],
+      "condition": "#{referred_home_facility_for_screening} == 1",
+      "id": "z8tkP9mm8vd"
+    },
+    {
+      "name": "HIDE: Specify date if Thermoablation will be performed on different date",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-10-21T20:33:01.876",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "VgNyJ3tT1sA"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) || (#{screening_type} == 'HPV' &&\n(!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) || #{hpv_genotype} != 'Other high risk HPV subtypes' ||\n!d2:hasValue(#{triage_is_performed}) || !#{triage_is_performed})) ||\n(#{screening_type} != 'VIA' && #{triage_test_type} != 'VIA') || \n!d2:hasValue(#{via_screening_result}) || \n#{via_screening_result} != 'VIA positive eligible for ablative treatment' ||\n!d2:hasValue(#{thermoablation}) || #{thermoablation} == 'Thermoablation performed at screening'",
+      "id": "jJm9oWpaVWT"
+    },
+    {
+      "name": "HIDE: Specify date if Thermoablation will be performed on different date [TMT]",
+      "created": "2024-10-06T18:24:49.533",
+      "lastUpdated": "2024-10-22T06:31:05.155",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "S0iCY5OlILX"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || #{confirmed_result} != 'VIA positive eligible for ablative treatment' || !d2:hasValue(#{tmt_thermoablation}) || #{tmt_thermoablation} == 'Thermoablation performed at screening'",
+      "id": "TN2SuA0wz5w"
+    },
+    {
+      "name": "HIDE: Specify gynecological surgical history",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-10-12T07:38:08.321",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "IrqIeF0VhYb"
+        }
+      ],
+      "condition": "(!d2:hasValue(#{gynecological_surgical_history}) || !#{gynecological_surgical_history})",
+      "id": "O2v6lAYsz0F"
+    },
+    {
+      "name": "HIDE: Specify other complication type",
+      "created": "2024-10-02T13:27:59.234",
+      "lastUpdated": "2024-10-02T13:33:55.619",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "Z5DIiAzBOm6"
+        }
+      ],
+      "condition": "!d2:hasValue(#{visit_type}) || #{visit_type} != 'Post treatment complication' || #{specify_complication_type} != 'Other'",
+      "id": "rYyRb6ZaUJ3"
+    },
+    {
+      "name": "HIDE: Specify other confirmed VIA result for today",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-10-22T06:31:05.155",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "v2RkLGOIIfQ"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || #{confirmed_result} != 'Other'",
+      "id": "mDB2kaH300W"
+    },
+    {
+      "name": "HIDE: Specify other gynecological issue",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-11T19:02:32.213",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "WSthG0mXPaI"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) || (#{screening_type} == 'HPV' &&\n(!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) || #{hpv_genotype} != 'Other high risk HPV subtypes' ||\n!d2:hasValue(#{triage_is_performed}) || !#{triage_is_performed})) ||\n(#{screening_type} != 'VIA' && #{triage_test_type} != 'VIA') ||\n!d2:hasValue(#{via_screening_result}) || #{via_screening_result} == 'VIA negative' ||\n!d2:hasValue(#{referral_for_via_positive_result}) || #{referral_for_via_positive_result} != 'Other gynecological issues'",
+      "id": "FXCxqwnflSI"
+    },
+    {
+      "name": "HIDE: Specify other histology results",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "hV9NCibeFSS"
+        }
+      ],
+      "condition": "!d2:hasValue(#{histology_results}) || #{histology_results} != 'Other'",
+      "id": "TveZusPxIUw"
+    },
+    {
+      "name": "HIDE: Specify other histology results [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "fJlqVQdl7Mr"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_histology_results}) || #{lab_histology_results} != 'Other'",
+      "id": "kEIPQ74Wr6r"
+    },
+    {
+      "name": "HIDE: Specify other home facility",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "YBf87cQlHX6"
+        }
+      ],
+      "condition": "d2:hasValue(A{home_facility})",
+      "id": "BACVx2WP3ja"
+    },
+    {
+      "name": "HIDE: Specify other pap smear result",
+      "created": "2023-07-13T13:21:34.666",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "WNas0x2DQIR"
+        }
+      ],
+      "condition": "#{screening_type} != 'Pap smear' || #{pap_smear_result} != 'Other'",
+      "id": "Pph7lljJmml"
+    },
+    {
+      "name": "HIDE: Specify other pap smear result [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "X5nRch3ZI4G"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_pap_smear_result}) || #{lab_pap_smear_result} != 'Other'",
+      "id": "jh5KpRtgIZy"
+    },
+    {
+      "name": "HIDE: Specify other post treatment complication type",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-10-28T15:42:35.962",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "oR6p9nOMtVJ"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || \n(#{confirmed_result} != 'VIA positive eligible for ablative treatment' &&\n#{confirmed_result} != 'VIA positive not eligible for ablative treatment') ||\n(#{confirmed_result} == 'VIA positive not eligible for ablative treatment' && \n(!d2:hasValue(#{lletz_status}) || #{lletz_status} == 'LLETZ not done')) ||\n(#{confirmed_result} == 'VIA positive eligible for ablative treatment' && \n(!d2:hasValue(#{tmt_thermoablation}) || #{tmt_thermoablation} == 'Thermoablation postponed')) ||\n!d2:hasValue(#{lletz_post_treatment_complication}) || !#{lletz_post_treatment_complication} ||\n!d2:hasValue(#{lletz_post_treatment_complication_type}) || #{lletz_post_treatment_complication_type} != 'Other'",
+      "id": "jhZHZ6tpQ4p"
+    },
+    {
+      "name": "HIDE: Specify other reason for LLETZ treatment referral",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "sY3eMlufhrJ"
+        }
+      ],
+      "condition": "!d2:hasValue(#{reason_for_lletz_treatment_referral}) || #{reason_for_lletz_treatment_referral} != 'Other'",
+      "id": "S14fB97CFQ2"
+    },
+    {
+      "name": "HIDE: Specify other site of referral for treatment and Referral HF",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "afJVVjIcYZf"
+        },
+        {
+          "id": "NO6DJprl9bL"
+        }
+      ],
+      "condition": "#{referred_home_facility_for_treatment} == 1",
+      "id": "vpUHKytkjC6"
+    },
+    {
+      "name": "HIDE: Specify treatment referral site for VIA",
+      "created": "2023-07-17T15:16:00.758",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "h89yhMBiC46"
+        }
+      ],
+      "condition": "#{screening_type} != 'VIA' || !d2:hasValue(#{via_screening_result}) || (#{via_screening_result} != 'VIA positive not eligible for ablative treatment' && #{via_screening_result} != 'Suspicious for cancer')",
+      "id": "CPpB3Z4kKCV"
+    },
+    {
+      "name": "HIDE: Suspicious for cancer and biopsy result",
+      "created": "2024-07-31T15:15:41.293",
+      "lastUpdated": "2024-08-02T17:04:24.688",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "YZ2zA9yeHz9"
+        }
+      ],
+      "condition": "!d2:hasValue(#{histology_results}) || #{histology_results} == 'Results pending'",
+      "priority": 1,
+      "id": "Afojxx6zChK"
+    },
+    {
+      "name": "HIDE: Suspicious for cancer and biopsy result [LAB]",
+      "created": "2024-07-31T15:17:23.980",
+      "lastUpdated": "2024-08-02T17:04:35.594",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "XSED9sRJv7P"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_histology_results}) || #{lab_histology_results} == 'Results pending'",
+      "id": "hEMHJ4DMpjg"
+    },
+    {
+      "name": "HIDE: Thermoablation",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-10-13T11:25:43.350",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "Wv0G6dOL2tV"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) ||  \n#{screening_type} == 'Pap smear' ||\n#{screening_type} == 'HPV' &&\n(!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) ||\n(#{hpv_genotype} == 'Other high risk HPV subtypes' &&\n(!d2:hasValue(#{triage_is_performed}) || !#{triage_is_performed} ||\n!d2:hasValue(#{triage_test_type}) || #{triage_test_type} != 'VIA' ||\n!d2:hasValue(#{via_screening_result}) || #{via_screening_result} != 'VIA positive eligible for ablative treatment'\n)) ||\n(#{hpv_genotype} == 'High risk HPV 16 and 18' &&\n(!d2:hasValue(#{via_assessment_for_treatment_performed}) || !#{via_assessment_for_treatment_performed} ||\n!d2:hasValue(#{via_assessment_for_treatment_result}) || #{via_assessment_for_treatment_result} != 'Eligible for Thermocoagulation'\n))) || \n(#{screening_type} == 'VIA' &&\n(!d2:hasValue(#{via_screening_result}) || #{via_screening_result} != 'VIA positive eligible for ablative treatment'))",
+      "id": "xfyUv7EcMKS"
+    },
+    {
+      "name": "HIDE: Today's confirmed VIA result is Other",
+      "created": "2024-10-09T14:06:14.895",
+      "lastUpdated": "2024-12-04T07:19:23.673",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "RrVl582h9uy",
+        "code": null,
+        "name": "Sam Kasozi",
+        "displayName": "Sam Kasozi",
+        "username": "Sam_Kasozi"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "idLOW4rIo9f"
+        },
+        {
+          "id": "VT3Eco8pr6K"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || #{confirmed_result} == 'Other'",
+      "id": "YB26wiugi7s"
+    },
+    {
+      "name": "HIDE: Today's confirmed VIA result is Suspicious for cancer",
+      "created": "2024-10-08T03:25:59.011",
+      "lastUpdated": "2024-10-22T06:31:05.155",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "VVwDjpJqYsl"
+        },
+        {
+          "id": "LoR3SZV42um"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || #{confirmed_result} == 'Suspicious for cancer'",
+      "id": "ur4JXcdY5fm"
+    },
+    {
+      "name": "HIDE: Today's confirmed VIA result is VIA positive eligible for ablative treatment",
+      "created": "2024-10-08T03:21:46.319",
+      "lastUpdated": "2024-12-04T07:19:53.615",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "RrVl582h9uy",
+        "code": null,
+        "name": "Sam Kasozi",
+        "displayName": "Sam Kasozi",
+        "username": "Sam_Kasozi"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "NmywD1nk1f7"
+        },
+        {
+          "id": "bRfZYG5hUAw"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || #{confirmed_result} == 'VIA positive eligible for ablative treatment'",
+      "id": "HbYHmBccUwe"
+    },
+    {
+      "name": "HIDE: Today's confirmed VIA result is VIA positive not eligible for ablative treatment",
+      "created": "2024-10-08T03:24:51.897",
+      "lastUpdated": "2024-12-04T07:20:05.900",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "RrVl582h9uy",
+        "code": null,
+        "name": "Sam Kasozi",
+        "displayName": "Sam Kasozi",
+        "username": "Sam_Kasozi"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "GtStxotbk1d"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || #{confirmed_result} == 'VIA positive not eligible for ablative treatment'",
+      "id": "M9N4lSu5xBN"
+    },
+    {
+      "name": "HIDE: Today's confirmed VIA result is Via Negative",
+      "created": "2024-10-08T03:19:56.970",
+      "lastUpdated": "2024-10-22T06:31:05.156",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "LmM3b1PNdE4"
+        },
+        {
+          "id": "IXVZxKOdpFP"
+        },
+        {
+          "id": "zYSYoWo6Tgq"
+        },
+        {
+          "id": "T1PiA75xQ8t"
+        }
+      ],
+      "condition": "!d2:hasValue(#{confirmed_result}) || #{confirmed_result} == 'VIA negative'",
+      "id": "AlHhgHah5O8"
+    },
+    {
+      "name": "HIDE: Triage is not performed",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "IFENKjrSNGT"
+        }
+      ],
+      "condition": "!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) || #{hpv_genotype} != 'Other high risk HPV subtypes' ||\n!d2:hasValue(#{triage_is_performed}) || !#{triage_is_performed}",
+      "id": "XAyVs75B04c"
+    },
+    {
+      "name": "HIDE: Triage is not performed [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "NmcC76yVQOw"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result}) || #{lab_hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{lab_hpv_genotyping_is_performed}) || !#{lab_hpv_genotyping_is_performed} ||\n!d2:hasValue(#{lab_hpv_genotype}) || #{lab_hpv_genotype} != 'Other high risk HPV subtypes' ||\n!d2:hasValue(#{lab_triage_is_performed}) || !#{lab_triage_is_performed}",
+      "id": "bf2jUa1PDNc"
+    },
+    {
+      "name": "HIDE: Triage is performed",
+      "created": "2023-07-08T03:57:54.825",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "oFSdWR0Fcsf"
+        }
+      ],
+      "condition": "!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) || #{hpv_genotype} != 'Other high risk HPV subtypes' ||\n!d2:hasValue(#{triage_is_performed}) || #{triage_is_performed}",
+      "id": "xrgwitkic18"
+    },
+    {
+      "name": "HIDE: Triage is performed [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.496",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "t894MCQgZR9"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result}) || #{lab_hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{lab_hpv_genotyping_is_performed}) || !#{lab_hpv_genotyping_is_performed} ||\n!d2:hasValue(#{lab_hpv_genotype}) || #{lab_hpv_genotype} != 'Other high risk HPV subtypes' ||\n!d2:hasValue(#{lab_triage_is_performed}) || #{lab_triage_is_performed}",
+      "id": "OIIIyNJLgb1"
+    },
+    {
+      "name": "HIDE: Unique HIV positive client ART Number and Site",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-10-30T08:44:50.455",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "hchbB6AzkFp"
+        },
+        {
+          "id": "X2DbJss63Js"
+        },
+        {
+          "id": "mFZnNMNX2cG"
+        },
+        {
+          "id": "UKTziT2VDxv"
+        }
+      ],
+      "condition": "!d2:hasValue(A{hiv_status}) || A{hiv_status} == 'HIV negative' || (A{hiv_status} == 'Unknown' && (A{pitc_results} != 'Positive' || !d2:hasValue(A{pitc_accepted_for_unknown_hiv_status}) || !A{pitc_accepted_for_unknown_hiv_status})) || !d2:hasValue(A{hiv_care_and_treatment_enrollement_status}) || A{hiv_care_and_treatment_enrollement_status} != 'Enrolled in HIV Care and Treatment'",
+      "id": "vmgXhS1ODcv"
+    },
+    {
+      "name": "HIDE: Unique HIV positive client ART Number and Site [SCR]",
+      "created": "2024-10-25T02:38:16.985",
+      "lastUpdated": "2024-10-30T08:50:46.142",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "TDOK6P1bplo"
+        },
+        {
+          "id": "PEHvVn010S2"
+        },
+        {
+          "id": "tdOdgH4mTRE"
+        },
+        {
+          "id": "XF0ueFhjcHZ"
+        }
+      ],
+      "condition": "!d2:hasValue(#{scr_hiv_status}) || #{scr_hiv_status} == 'HIV negative' || (#{scr_hiv_status} == 'Unknown' && (#{scr_pitc_results} != 'Positive' || !d2:hasValue(#{scr_pitc_accepted_for_unknown_hiv_status}) || !#{scr_pitc_accepted_for_unknown_hiv_status})) || !d2:hasValue(#{scr_hiv_care_and_treatment_enrollement_status}) || #{scr_hiv_care_and_treatment_enrollement_status} != 'Enrolled in HIV Care and Treatment'",
+      "id": "qNJbqdfAUQL"
+    },
+    {
+      "name": "HIDE: VIA Assessment for Treatment not performed",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-11T11:12:57.497",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "GORWU9gDXy2"
+        }
+      ],
+      "condition": "!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) || #{hpv_genotype} != 'High risk HPV 16 and 18' ||\n!d2:hasValue(#{via_assessment_for_treatment_performed}) || !#{via_assessment_for_treatment_performed}",
+      "id": "YD8FumxZYft"
+    },
+    {
+      "name": "HIDE: VIA Assessment for Treatment not performed [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.497",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "yTXlBzk1St1"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result}) || #{lab_hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{lab_hpv_genotyping_is_performed}) || !#{lab_hpv_genotyping_is_performed} ||\n!d2:hasValue(#{lab_hpv_genotype}) || #{lab_hpv_genotype} != 'High risk HPV 16 and 18' ||\n!d2:hasValue(#{lab_via_assessment_for_treatment_performed}) || !#{lab_via_assessment_for_treatment_performed}",
+      "id": "IVCDDznnVuG"
+    },
+    {
+      "name": "HIDE: VIA Assessment for Treatment performed",
+      "created": "2023-07-07T06:06:25.744",
+      "lastUpdated": "2024-07-11T11:12:57.497",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "T9SyIuV2TvU"
+        }
+      ],
+      "condition": "!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) || #{hpv_genotype} != 'High risk HPV 16 and 18' ||\n!d2:hasValue(#{via_assessment_for_treatment_performed}) || #{via_assessment_for_treatment_performed}",
+      "id": "kX0b9UBK9aY"
+    },
+    {
+      "name": "HIDE: VIA Assessment for Treatment performed [LAB]",
+      "created": "2024-02-02T14:18:30.661",
+      "lastUpdated": "2024-07-11T11:12:57.497",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "PWsqZicAhfE"
+        }
+      ],
+      "condition": "!d2:hasValue(#{lab_hpv_dna_test_result}) || #{lab_hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{lab_hpv_genotyping_is_performed}) || !#{lab_hpv_genotyping_is_performed} ||\n!d2:hasValue(#{lab_hpv_genotype}) || #{lab_hpv_genotype} != 'High risk HPV 16 and 18' ||\n!d2:hasValue(#{lab_via_assessment_for_treatment_performed}) || #{lab_via_assessment_for_treatment_performed}",
+      "id": "Rxvmpn1bm89"
+    },
+    {
+      "name": "HIDE: VIA screening result",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-31T09:21:07.140",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "qgJS16Ykq85"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) || (#{screening_type} == 'HPV' &&\n(!d2:hasValue(#{hpv_dna_test_result}) || #{hpv_dna_test_result} != 'Positive' ||\n!d2:hasValue(#{hpv_genotyping_is_performed}) || !#{hpv_genotyping_is_performed} ||\n!d2:hasValue(#{hpv_genotype}) || #{hpv_genotype} != 'Other high risk HPV subtypes' ||\n!d2:hasValue(#{triage_is_performed}) || !#{triage_is_performed})) ||\n(#{screening_type} != 'VIA' && #{triage_test_type} != 'VIA')",
+      "id": "H0G2XJ1OYXP"
+    },
+    {
+      "name": "HIDE: Visit Type is not Follow-up post treatment",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-10-02T04:01:29.395",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "PtSD3nGPwgN"
+        }
+      ],
+      "condition": "!d2:hasValue(#{visit_type}) || #{visit_type} != 'Follow-up post treatment'",
+      "id": "n00w7PkqA9J"
+    },
+    {
+      "name": "HIDE: Visit Type is not Post treatment complication",
+      "created": "2024-10-02T12:51:18.249",
+      "lastUpdated": "2024-10-02T12:52:31.761",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "Tcza8Kqvi0j"
+        },
+        {
+          "id": "OBMj4Obl8eL"
+        },
+        {
+          "id": "DtdsgW7QMKl"
+        }
+      ],
+      "condition": "!d2:hasValue(#{visit_type}) || #{visit_type} != 'Post treatment complication'",
+      "id": "BIiq09VICLo"
+    },
+    {
+      "name": "HIDE: Why was the cervicogram not taken",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-11T11:12:57.497",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "uos7BdOz76V"
+        }
+      ],
+      "condition": "!d2:hasValue(#{screening_type}) || #{screening_type} == 'Pap smear'\n|| !d2:hasValue(#{cervicogram_taken}) || #{cervicogram_taken} != 'Cervicogram not taken'",
+      "id": "XHwMdEpenmY"
+    },
+    {
+      "name": "HIDE: Why was the cervicogram not taken [LAB]",
+      "created": "2024-08-02T17:40:54.445",
+      "lastUpdated": "2024-08-02T17:40:54.445",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "cVkQ9UAA1eH"
+        }
+      ],
+      "condition": "!d2:hasValue(#{hpv_dna_test_result}) || !d2:hasValue(#{lab_cervicogram_taken}) || #{lab_cervicogram_taken} != 'Cervicogram not taken'",
+      "id": "VBnlzRI1Tdj"
+    },
+    {
+      "name": "Mandatory: DOB or Age of patient if known",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-23T20:36:03.201",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "stig1XctQmV"
+        }
+      ],
+      "condition": "A{unknown_dob_or_age_of_the_patient} != 1",
+      "id": "tRvYaXIHeXt"
+    },
+    {
+      "name": "Mandatory: HPV result",
+      "created": "2024-07-23T22:18:13.372",
+      "lastUpdated": "2024-07-23T22:18:13.372",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "EdRY858QrmY"
+        }
+      ],
+      "condition": "d2:hasValue(#{screening_type}) && #{screening_type} == 'HPV'",
+      "id": "CgpSMApeOFR"
+    },
+    {
+      "name": "Mandatory: Pap smear result",
+      "created": "2024-07-23T22:16:33.054",
+      "lastUpdated": "2024-07-23T22:16:33.054",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "R9MMRVgChgx"
+        }
+      ],
+      "condition": "d2:hasValue(#{screening_type}) && #{screening_type} == 'Pap smear'",
+      "id": "OJFHSVI8AHd"
+    },
+    {
+      "name": "Mandatory: VIA result",
+      "created": "2024-07-23T22:19:52.308",
+      "lastUpdated": "2024-07-23T22:29:02.159",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "X2WglGjFIyd"
+        }
+      ],
+      "condition": "d2:hasValue(#{screening_type}) && \n(#{screening_type} == 'VIA' || \n(#{screening_type} == 'HPV' && d2:hasValue(#{triage_test_type}) && #{triage_test_type} == 'VIA'))",
+      "id": "VK3cuFymkAL"
+    },
+    {
+      "name": "PROMPT: Completing the Screening form and proceeding to the Treatment form",
+      "created": "2024-10-29T08:42:03.245",
+      "lastUpdated": "2024-10-29T08:42:45.810",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "ZW9YqO0vthW"
+        }
+      ],
+      "condition": "d2:hasValue(#{via_screening_result}) && (#{via_screening_result} == 'VIA positive not eligible for ablative treatment' || #{via_screening_result} == 'Suspicious for cancer') && !d2:hasValue(#{specify_treatment_referral_site_for_via})",
+      "id": "QBoFnEPca5o"
+    },
+    {
+      "name": "PROMPT: VIA positive not eligible for ablative treatment and Suspicious for cancer",
+      "created": "2024-10-29T08:21:20.944",
+      "lastUpdated": "2024-10-29T08:27:50.252",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "Kp8P96h0Gxl"
+        }
+      ],
+      "condition": "d2:hasValue(#{via_screening_result}) && (#{via_screening_result} == 'VIA positive not eligible for ablative treatment' || #{via_screening_result} == 'Suspicious for cancer')",
+      "id": "yM2XLkmEvbo"
+    },
+    {
+      "name": "Prompt: Suspicious for cancer and biopsy result - CLEAR",
+      "created": "2024-07-31T19:52:13.073",
+      "lastUpdated": "2024-08-02T16:45:04.009",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "Rzl4zUtH1FK"
+        }
+      ],
+      "condition": "d2:hasValue(#{suspicious_for_cancer_and_biopsy_result}) && (#{histology_results} == 'CIN I' || #{histology_results} == 'CIN II' || #{histology_results} == 'CIN III' || #{histology_results} == 'Cervicitis encompassing HPV' || #{histology_results} == 'Cervical polyp' || #{histology_results} == 'Bacterial vaginosis' || #{histology_results} == 'Results pending' || #{histology_results} == 'Other')",
+      "id": "Vum6koMcPKQ"
+    },
+    {
+      "name": "Prompt: Suspicious for cancer and biopsy result - CLEAR [LAB]",
+      "created": "2024-07-31T20:34:47.928",
+      "lastUpdated": "2024-08-02T16:45:13.842",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "qZb6v1a2O5a"
+        }
+      ],
+      "condition": "d2:hasValue(#{lab_suspicious_for_cancer_and_biopsy_result}) && (#{lab_histology_results} == 'CIN I' || #{lab_histology_results} == 'CIN II' || #{lab_histology_results} == 'CIN III' || #{lab_histology_results} == 'Cervicitis encompassing HPV' || #{lab_histology_results} == 'Cervical polyp' || #{lab_histology_results} == 'Bacterial vaginosis' || #{lab_histology_results} == 'Results pending' || #{lab_histology_results} == 'Other')",
+      "id": "d3tuqZZ4iEf"
+    },
+    {
+      "name": "Show histology if biopsy done is yes",
+      "created": "2025-04-22T13:06:33.933",
+      "lastUpdated": "2025-04-22T13:06:33.933",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "lEvcESYA9GC",
+        "code": null,
+        "name": "Meduletu Kamati",
+        "displayName": "Meduletu Kamati",
+        "username": "Meduletu_Kamati"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "CAiHMH7NGaj"
+      },
+      "programRuleActions": [
+        {
+          "id": "icDtT7DR0HF"
+        }
+      ],
+      "condition": "d2:hasValue(#{biopsy_done}) && #{biopsy_done} == false\n",
+      "id": "zbr41eQlkg9"
+    },
+    {
+      "name": "TRANSFER: ART start date at screening when Positive",
+      "created": "2024-10-25T12:02:57.818",
+      "lastUpdated": "2024-10-29T10:36:31.539",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "YIhVw32LML5"
+        }
+      ],
+      "condition": "d2:hasValue(A{hiv_status}) && (A{hiv_status} == 'HIV positive' || (A{hiv_status} == 'Unknown' && A{pitc_results} == 'Positive')) && d2:hasValue(A{hiv_care_and_treatment_enrollement_status}) && d2:hasValue(A{date_of_hiv_diagnosis})",
+      "id": "hYH2Q99pzKW"
+    },
+    {
+      "name": "TRANSFER: Client ART number at screening when Positive",
+      "created": "2024-10-25T12:13:00.005",
+      "lastUpdated": "2024-10-29T10:39:00.192",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "W3toUFwHRqg"
+        }
+      ],
+      "condition": "d2:hasValue(A{hiv_status}) && (A{hiv_status} == 'HIV positive' || (A{hiv_status} == 'Unknown' && A{pitc_results} == 'Positive')) && d2:hasValue(A{hiv_care_and_treatment_enrollement_status}) && d2:hasValue(A{hiv_positive_client_art_number})",
+      "id": "gF8kK3U1e1W"
+    },
+    {
+      "name": "TRANSFER: Client ART site at screening when Positive",
+      "created": "2024-10-25T12:15:51.208",
+      "lastUpdated": "2024-10-29T10:39:32.672",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "tTFgiBCmwTe"
+        }
+      ],
+      "condition": "d2:hasValue(A{hiv_status}) && (A{hiv_status} == 'HIV positive' || (A{hiv_status} == 'Unknown' && A{pitc_results} == 'Positive')) && d2:hasValue(A{hiv_care_and_treatment_enrollement_status}) && d2:hasValue(A{hiv_positive_client_art_site})",
+      "id": "uZj0FrgJYnQ"
+    },
+    {
+      "name": "TRANSFER: Gynecological Surgical History information",
+      "created": "2024-10-08T08:06:20.935",
+      "lastUpdated": "2024-10-08T08:06:20.935",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "G31DZpKieYD"
+        }
+      ],
+      "condition": "d2:hasValue(#{gynecological_surgical_history_transfer})",
+      "id": "EbRVrq8OFWK"
+    },
+    {
+      "name": "TRANSFER: HIV care and treatment status at screening when Positive",
+      "created": "2024-10-25T08:22:47.961",
+      "lastUpdated": "2024-10-29T10:40:52.503",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "Tuk5WXgZVq7"
+        }
+      ],
+      "condition": "d2:hasValue(A{hiv_status}) && (A{hiv_status} == 'HIV positive' || (A{hiv_status} == 'Unknown' && A{pitc_results} == 'Positive')) && d2:hasValue(A{hiv_care_and_treatment_enrollement_status})",
+      "id": "rVLHqTgXua5"
+    },
+    {
+      "name": "TRANSFER: HIV status at screening when Positive",
+      "created": "2024-10-25T08:12:05.394",
+      "lastUpdated": "2024-10-29T10:41:13.156",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "KRJDKbXzyq1"
+        }
+      ],
+      "condition": "d2:hasValue(A{hiv_status}) && (A{hiv_status} == 'HIV positive' || (A{hiv_status} == 'Unknown' && A{pitc_results} == 'Positive'))",
+      "id": "U0hZHV7lSBE"
+    },
+    {
+      "name": "TRANSFER: Month and Year of ART start date at screening when Positive",
+      "created": "2024-10-25T11:45:42.117",
+      "lastUpdated": "2024-10-29T10:41:36.287",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "byZTfTQLZKC"
+        }
+      ],
+      "condition": "d2:hasValue(A{hiv_status}) && (A{hiv_status} == 'HIV positive' || (A{hiv_status} == 'Unknown' && A{pitc_results} == 'Positive')) && d2:hasValue(A{hiv_care_and_treatment_enrollement_status}) && d2:hasValue(A{month_and_year_of_hiv_diagnosis})",
+      "id": "EWAkI8f0GQa"
+    },
+    {
+      "name": "TRANSFER: PITC accepted (unknown HIV status)",
+      "created": "2024-10-29T11:24:22.162",
+      "lastUpdated": "2024-10-29T11:24:22.162",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "Goz12DsF7En"
+        }
+      ],
+      "condition": "d2:hasValue(A{hiv_status}) && (A{hiv_status} == 'Unknown' && A{pitc_results} == 'Positive') && d2:hasValue(A{pitc_accepted_for_unknown_hiv_status})",
+      "id": "Tc0mKrBR1f5"
+    },
+    {
+      "name": "TRANSFER: PITC results",
+      "created": "2024-10-29T11:27:02.723",
+      "lastUpdated": "2024-10-29T11:27:02.723",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "zZPdzBGZYo0"
+        }
+      ],
+      "condition": "d2:hasValue(A{hiv_status}) && (A{hiv_status} == 'Unknown' && A{pitc_results} == 'Positive') && d2:hasValue(A{pitc_accepted_for_unknown_hiv_status}) && d2:hasValue(A{pitc_results})",
+      "id": "CxaFFJA8ufC"
+    },
+    {
+      "name": "TRANSFER: Pregnancy test information",
+      "created": "2024-10-08T04:19:40.064",
+      "lastUpdated": "2024-10-08T08:03:51.232",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "M2qLlPAepsh"
+        }
+      ],
+      "condition": "d2:hasValue(#{pregnancy_test_transfer})",
+      "id": "KXRWPj6kZWL"
+    },
+    {
+      "name": "TRANSFER: Specify Gynecological Surgical History information",
+      "created": "2024-10-08T08:07:36.890",
+      "lastUpdated": "2024-10-08T08:07:36.890",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "AHbeOxJLg9k"
+        }
+      ],
+      "condition": "d2:hasValue(#{specify_gynecological_surgical_history_transfer})",
+      "id": "PaQA1wCAcTY"
+    },
+    {
+      "name": "VALIDATE: Parity < 30",
+      "created": "2024-10-28T16:48:44.765",
+      "lastUpdated": "2024-10-28T16:51:39.908",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "description": "Parity must be less than 30",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "g7GriUfEhTP"
+        }
+      ],
+      "condition": "d2:hasValue( #{parity} )&& #{parity}>29",
+      "id": "x6oGONZjFs2"
+    },
+    {
+      "name": "VALIDATE: Parity >= parity at previous visit",
+      "created": "2024-10-28T15:27:47.708",
+      "lastUpdated": "2024-10-28T15:41:37.888",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "description": "Parity is an incremental number and cannot be less than the value at the previous visit",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "oOfGqiVwLS0"
+        }
+      ],
+      "condition": "d2:hasValue(#{parity-prev}) && d2:hasValue(#{parity})&&(#{parity}<#{parity-prev})",
+      "id": "T50AGiWSUH6"
+    },
+    {
+      "name": "VALIDATION: Age of patient  > 99 years",
+      "created": "2024-10-06T20:21:05.065",
+      "lastUpdated": "2024-10-06T20:21:05.065",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "description": "The age of the patient is must be less or equal to 99 years",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "agBRz8ACXeS"
+        }
+      ],
+      "condition": "d2:hasValue(A{age_of_the_patient}) && (A{age_of_the_patient} > 99)",
+      "id": "Pi6qQleKwEx"
+    },
+    {
+      "name": "VALIDATION: Age of patient < 15 years",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-10-06T20:17:36.059",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "description": "The age of the patient must be equal or greater than 15 years",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "inSfox6LOAX"
+        }
+      ],
+      "condition": "d2:hasValue(A{age_of_the_patient}) && (A{age_of_the_patient} < 15)",
+      "id": "h10kb4C2QZA"
+    },
+    {
+      "name": "VALIDATION: Age of patient >= 15 years AND < 20 years",
+      "created": "2024-10-06T20:14:47.138",
+      "lastUpdated": "2024-10-06T20:16:14.012",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "description": "The age of the patient is greater than 15 years, but less than 20 years",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "PY62X5zpHpb"
+        }
+      ],
+      "condition": "d2:hasValue(A{age_of_the_patient}) && (A{age_of_the_patient} >= 15 &&  A{age_of_the_patient} < 20)",
+      "id": "y6acYu8qqCG"
+    },
+    {
+      "name": "VALIDATION: DOB of patient => 15 years",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2023-06-12T10:18:34.074",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "description": "The age of the patient must be equal or greater than 15 years",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "bDTKNRmNxd1"
+        }
+      ],
+      "condition": "d2:hasValue(A{dob_of_the_patient}) && (V{current_date} > A{dob_of_the_patient}) && d2:yearsBetween(A{dob_of_the_patient}, V{current_date}) < 15",
+      "id": "qDaD9RZd4o0"
+    },
+    {
+      "name": "VALIDATION: Format of DOB in the National ID",
+      "created": "2024-10-22T11:29:29.766",
+      "lastUpdated": "2024-10-22T11:29:29.766",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "description": "The first 6-digits in the national id MUST be a valid DOB",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "x6sZLOraEeu"
+        }
+      ],
+      "condition": "(d2:substring(A{namibia_national_id}, 2, 2) >= 1 && d2:substring(A{namibia_national_id}, 2, 2) <= 12) &&\n((d2:substring(A{namibia_national_id}, 2, 2) == 2 && (d2:modulus(d2:substring(A{namibia_national_id}, 0, 2), 4) == 0 && d2:modulus(d2:substring(A{namibia_national_id}, 0, 2), 100) != 0 || d2:modulus(d2:substring(A{namibia_national_id}, 0, 2), 400) == 0) &&\n d2:substring(A{namibia_national_id}, 4, 2) <= 29) || \n(d2:substring(A{namibia_national_id}, 2, 2) == 2 && d2:substring(A{namibia_national_id}, 4, 2) <= 28) ||\n((d2:substring(A{namibia_national_id}, 2, 2) == '04' || d2:substring(A{namibia_national_id}, 2, 2) == '06' || d2:substring(A{namibia_national_id}, 2, 2) == '09' || d2:substring(A{namibia_national_id}, 2, 2) == '11') && d2:substring(A{namibia_national_id}, 4, 2) <= 30) ||\n(d2:substring(A{namibia_national_id}, 2, 2) != '02' && d2:substring(A{namibia_national_id}, 2, 2) != '04' && \nd2:substring(A{namibia_national_id}, 2, 2) != '06' && d2:substring(A{namibia_national_id}, 2, 2) != '09' && \nd2:substring(A{namibia_national_id}, 2, 2) != '11') && \nd2:substring(A{namibia_national_id}, 4, 2) <= 31)",
+      "id": "IoiUNCNhMyl"
+    },
+    {
+      "name": "VALIDATION: Format of the National ID",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2023-09-16T08:35:49.001",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "description": "The 11-digit national id starts with a non-zero digit and without spaces",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "p76s70lji3A"
+        }
+      ],
+      "condition": "d2:hasValue(A{namibia_national_id}) && (!d2:validatePattern(A{namibia_national_id},'^[0-9]\\\\d{10}$'))",
+      "id": "QMVBOxOykZS"
+    },
+    {
+      "name": "VALIDATION: Format of the Phone Number 081*, 083* or 085*",
+      "created": "2023-06-12T11:32:41.101",
+      "lastUpdated": "2024-11-15T06:15:03.279",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "XOMLfsvqzkR",
+        "code": null,
+        "name": "Edward Robinson",
+        "displayName": "Edward Robinson",
+        "username": "Edward_Robinson"
+      },
+      "description": "The 10-digit phone number must have the format: '081xxxxxxx', '083xxxxxxx' or '085xxxxxxx'",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "qoMsFllN2p8"
+        }
+      ],
+      "condition": "d2:hasValue(A{phone_number}) && (!d2:validatePattern(A{phone_number},'^081\\\\d{7}$')) && (!d2:validatePattern(A{phone_number},'^083\\\\d{7}$')) && (!d2:validatePattern(A{phone_number},'^085\\\\d{7}$'))",
+      "id": "CiEjgV76siX"
+    },
+    {
+      "name": "VALIDATION: Format of the client ART Number to be 12 or 14 digits",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-10-25T12:41:31.126",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "description": "The ART Number is composed of 12 or 14 digits",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "G1zg3ZOcBuF"
+        }
+      ],
+      "condition": "d2:hasValue(A{hiv_positive_client_art_number}) && !d2:validatePattern(A{hiv_positive_client_art_number},'\\\\d{12}$') && !d2:validatePattern(A{hiv_positive_client_art_number},'\\\\d{14}$')         ",
+      "id": "VCjCH0NnP9h"
+    },
+    {
+      "name": "VALIDATION: Format of the client ART Number to be 12 or 14 digits [SCR]",
+      "created": "2024-10-25T02:38:16.985",
+      "lastUpdated": "2024-10-25T13:02:47.240",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "SNgjjJdE5sF"
+        }
+      ],
+      "condition": "d2:hasValue(#{scr_hiv_positive_client_art_number}) && !d2:validatePattern(#{scr_hiv_positive_client_art_number},'\\\\d{12}$') && !d2:validatePattern(#{scr_hiv_positive_client_art_number},'\\\\d{14}$')",
+      "id": "vTk9bR6yr0k"
+    },
+    {
+      "name": "VALIDATION: Month and Year of HIV diagnosis",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2023-06-12T10:18:34.074",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "description": "The Month and Year should be in the format 'mm-yyyy'",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "JQKnGyyPKgb"
+        }
+      ],
+      "condition": "d2:hasValue(A{month_and_year_of_hiv_diagnosis}) && !d2:validatePattern(A{month_and_year_of_hiv_diagnosis},'\\\\d{2}\\\\W\\\\d{4}') ",
+      "id": "G1yHRbrFJ7R"
+    },
+    {
+      "name": "VALIDATION: Month and Year of HIV diagnosis [SCR]",
+      "created": "2024-10-25T02:38:16.985",
+      "lastUpdated": "2024-10-25T02:38:16.985",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programRuleActions": [
+        {
+          "id": "YmywYkgOWku"
+        }
+      ],
+      "condition": "d2:hasValue(#{scr_month_and_year_of_hiv_diagnosis}) && !d2:validatePattern(#{scr_month_and_year_of_hiv_diagnosis},'\\\\d{2}\\\\W\\\\d{4}') ",
+      "id": "nop2sfkLyWH"
+    },
+    {
+      "name": "VALIDATION: Update the HIV Status in the patient's profile",
+      "created": "2024-10-25T12:54:59.505",
+      "lastUpdated": "2024-10-29T12:07:44.108",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "description": "Reminder to the entrant to update the HIV Status in the patient's profile when a previously negative status changes to positive",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "Q4UJqsMH6ck"
+        }
+      ],
+      "condition": "d2:hasValue(A{hiv_status}) && A{hiv_status} == 'HIV negative' && d2:hasValue(#{scr_hiv_status}) && #{scr_hiv_status} != 'HIV negative'",
+      "id": "R3F8nFieWcf"
+    },
+    {
+      "name": "VALIDATION: [LAB] Specimen collection date <= test result date",
+      "created": "2024-10-25T16:43:22.428",
+      "lastUpdated": "2024-10-25T17:46:58.917",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "description": "Specimen collection date cannot be greater than test result date",
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "Lzn5PoFfmr8"
+      },
+      "programRuleActions": [
+        {
+          "id": "lCgwyZpjWFn"
+        }
+      ],
+      "condition": "d2:hasValue( #{lab_specimen_collected_date} )  && #{lab_specimen_collected_date}  >  V{event_date}",
+      "id": "F9MJ3fGSdjM"
+    }
+  ]
+}

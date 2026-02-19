@@ -1,0 +1,84 @@
+{
+  "indicators": [
+    {
+      "name": "Thyroid - % Pap smear screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "IGP_THYROID",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - % Pap smear screened and received result",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{zAEmVVBFSyi}",
+      "numeratorDescription": "Thyroid - % Pap smear screened and received results",
+      "denominator": "#{Cr2yUQEbQCA}",
+      "denominatorDescription": "Thyroid - % Pap smear screened and received results",
+      "id": "As6P5Vkl0EO",
+      "attributeValues": []
+    },
+    {
+      "name": "Thyroid - % VIA screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Thyroid - % VIA screened and received results",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{hnmndke37bS}",
+      "numeratorDescription": "Thyroid - % VIA screened and received results",
+      "denominator": "#{MaOpUjywuSB}",
+      "denominatorDescription": "Thyroid - % VIA screened and received results",
+      "id": "kkPfl1AG1St",
+      "attributeValues": []
+    }
+  ]
+}

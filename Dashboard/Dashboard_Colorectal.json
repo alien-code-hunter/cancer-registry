@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "gcwO8zw4iDx",
+      "created": "2026-02-18T15:44:06.457081",
+      "lastUpdated": "2026-02-18T15:44:06.457083",
+      "name": "Colorectal Cancer Dashboard",
+      "displayName": "Colorectal Cancer Dashboard",
+      "description": "Monitoring dashboard for Colorectal cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "4dda4e4f-d2",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "e5b03e6f-24",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "64a9e569-39",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "e3eba9c3-ff",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "5qRHa6XqhA7"
+    }
+  ]
+}

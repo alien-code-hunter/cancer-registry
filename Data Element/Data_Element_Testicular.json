@@ -1,0 +1,844 @@
+{
+  "dataElements": [
+    {
+      "name": "Testicular - HPV Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - HPV Positive for abnormal results",
+      "formName": "Testicular - HPV Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "ZQNQfP68pKc",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - HPV screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - HPV screened",
+      "formName": "Testicular - HPV screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "IXP4Mr8rq7D",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - HPV screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - HPV screened and received results",
+      "formName": "Testicular - HPV screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "t4hf8ZnBdkP",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - LLETZ treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - LLETZ treated",
+      "formName": "Testicular - LLETZ treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "kBiubNnnS0L",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - Pap Smear Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - Pap Smear Positive for abnormal resul",
+      "formName": "Testicular - Pap Smear Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "UylTS8olK2p",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Testicular - Pap smear screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - Pap smear screened",
+      "formName": "Testicular - Pap smear screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "XWz6aA0nWRz",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - Pap smear screened and LLETZ post treatment complication ",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - Pap smear screened and LLETZ post tre",
+      "formName": "Testicular - Pap smear screened and LLETZ post treatment complication ",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "gnbaxeRlQcc",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Testicular - Pap smear screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - Pap smear screened and received resul",
+      "formName": "Testicular - Pap smear screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "V4c0CUhHhyO",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - Pap smear screened and treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - Pap smear screened and treated",
+      "formName": "Testicular - Pap smear screened and treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "zQ6bhhfTkvx",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Testicular - Pap smear screening results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - Pap smear screening results",
+      "formName": "Testicular - Pap smear screening results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "OGgk9LMbCRb",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "epRjlDZBrJL"
+      }
+    },
+    {
+      "name": "Testicular - Thermoablation treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - Thermoablation treated",
+      "formName": "Testicular - Thermoablation treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "jVCdEQtkMTO",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - Total positive for abnormal results (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - Total positive for abnormal results (",
+      "formName": "Testicular - Total positive for abnormal results (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "O9S4NysoBac",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - Total screened (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - Total screened (VIA, Pap smear and HP",
+      "formName": "Testicular - Total screened (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "B9BaJeusZBG",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - Total screened and received results (VIA, Pap smear and HPV)",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - Total screened and received results (",
+      "formName": "Testicular - Total screened and received results (VIA, Pap smear and HPV)",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "zxDTpXfsf0m",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - VIA Positive for abnormal results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - VIA Positive for abnormal results",
+      "formName": "Testicular - VIA Positive for abnormal results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "mfPb3c0gTBq",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - VIA result suspected cancer",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - VIA result suspected cancer",
+      "formName": "Testicular - VIA result suspected cancer",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "aqHcZcZL1vw",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - VIA screened",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - VIA screened",
+      "formName": "Testicular - VIA screened",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "XvPxurxjImn",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - VIA screened and LLETZ post treatment complication",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "lEvcESYA9GC",
+        "code": null,
+        "name": "Meduletu Kamati",
+        "displayName": "Meduletu Kamati",
+        "username": "Meduletu_Kamati"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - VIA screened and LLETZ post treatment",
+      "formName": "Testicular - VIA screened and LLETZ post treatment complication",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "tgZoQxvH3Xg",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - VIA screened and Thermo post treatment complication",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "lEvcESYA9GC",
+        "code": null,
+        "name": "Meduletu Kamati",
+        "displayName": "Meduletu Kamati",
+        "username": "Meduletu_Kamati"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - VIA screened and Thermo post treatmen",
+      "formName": "Testicular - VIA screened and Thermo post treatment complication",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "P4BRSvzRhNd",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - VIA screened and received results",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - VIA screened and received results",
+      "formName": "Testicular - VIA screened and received results",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "sF8R9J6hgU5",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    },
+    {
+      "name": "Testicular - VIA screened and treated",
+      "created": "2026-02-18T18:42:34.710086",
+      "lastUpdated": "2026-02-18T18:42:34.710086",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Testicular - VIA screened and treated",
+      "formName": "Testicular - VIA screened and treated",
+      "legendSets": [],
+      "aggregationType": "SUM",
+      "valueType": "INTEGER_POSITIVE",
+      "domainType": "AGGREGATE",
+      "aggregationLevels": [],
+      "zeroIsSignificant": false,
+      "id": "Kn1tDRbwtTP",
+      "attributeValues": [],
+      "categoryCombo": {
+        "id": "xDsPPFKU2mh"
+      }
+    }
+  ]
+}

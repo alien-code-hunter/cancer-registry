@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "RhlD6znA3FX",
+      "created": "2026-02-18T15:44:06.457293",
+      "lastUpdated": "2026-02-18T15:44:06.457294",
+      "name": "Lung Cancer Dashboard",
+      "displayName": "Lung Cancer Dashboard",
+      "description": "Monitoring dashboard for Lung cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "e5225c71-17",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "beabed25-b8",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "1103b106-c9",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "0c169c9a-12",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "S4eCljzHO2x"
+    }
+  ]
+}

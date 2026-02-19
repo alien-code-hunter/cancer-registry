@@ -1,3 +1,5 @@
+# Ignore Program/stages_tmp and all its contents
+Program/stages_tmp/
 .DS_Store
 .DS_Store?
 **/.DS_Store

@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "XQh7pd2HRhO",
+      "created": "2026-02-18T15:44:06.457191",
+      "lastUpdated": "2026-02-18T15:44:06.457192",
+      "name": "Kidney Cancer Dashboard",
+      "displayName": "Kidney Cancer Dashboard",
+      "description": "Monitoring dashboard for Kidney cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "ac134ff2-b5",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "68d51212-7f",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "638e7218-a9",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "7f461f53-b5",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "Kpm6gmDySUw"
+    }
+  ]
+}

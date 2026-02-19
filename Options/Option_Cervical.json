@@ -1,0 +1,69 @@
+{
+  "options": [
+    {
+      "code": "Both margins positive (ectocervical and endocervical)",
+      "name": "Both margins positive (ectocervical and endocervical)",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-07-26T08:00:52.036",
+      "translations": [],
+      "optionSet": {
+        "id": "SwoReto3WQb"
+      },
+      "sortOrder": 1,
+      "id": "yRC62JGojLT",
+      "attributeValues": []
+    },
+    {
+      "code": "Cervical cancer register or form",
+      "name": "Cervical cancer register or form",
+      "created": "2024-07-08T09:33:09.446",
+      "lastUpdated": "2024-07-08T09:33:09.465",
+      "translations": [],
+      "optionSet": {
+        "id": "CNfPPQdnb9L"
+      },
+      "sortOrder": 1,
+      "id": "tF9TQYr6E4P",
+      "attributeValues": []
+    },
+    {
+      "code": "Cervical polyp",
+      "name": "Cervical polyp",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:31.974",
+      "translations": [],
+      "optionSet": {
+        "id": "YI5EcvrfFFC"
+      },
+      "sortOrder": 8,
+      "id": "GlbYW30CFGK",
+      "attributeValues": []
+    },
+    {
+      "code": "Positive ectocervical",
+      "name": "Positive ectocervical",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:31.974",
+      "translations": [],
+      "optionSet": {
+        "id": "SwoReto3WQb"
+      },
+      "sortOrder": 3,
+      "id": "MoJARikzeVi",
+      "attributeValues": []
+    },
+    {
+      "code": "Positive endocervical",
+      "name": "Positive endocervical",
+      "created": "2022-11-28T12:36:28.567",
+      "lastUpdated": "2023-06-12T10:18:31.974",
+      "translations": [],
+      "optionSet": {
+        "id": "SwoReto3WQb"
+      },
+      "sortOrder": 2,
+      "id": "xBPqh0GAYO9",
+      "attributeValues": []
+    }
+  ]
+}

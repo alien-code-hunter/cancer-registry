@@ -1,0 +1,393 @@
+================================================================================
+CANCER REGISTRY - COMPREHENSIVE FIX SCRIPT
+================================================================================
+
+Splitting Attribute.json by cancer type...
+✅ Split 0 objects from Attribute.json by cancer type.
+
+Splitting Category.json by cancer type...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Category/Category_Generic.json (already exists)
+✅ Split 4 objects from Category.json by cancer type.
+❌ Category_Combo split failed: No such file in Category Combo (tried ['/Users/mk/Documents/GitHub/cancer-registry/Category Combo/Category Combo.json', '/Users/mk/Documents/GitHub/cancer-registry/Category Combo/category Combo.json'])
+❌ Category_Option split failed: No such file in Category Option (tried ['/Users/mk/Documents/GitHub/cancer-registry/Category Option/Category Option.json', '/Users/mk/Documents/GitHub/cancer-registry/Category Option/category option.json'])
+❌ Category_Option_Combo split failed: No such file in Category Option Combo (tried ['/Users/mk/Documents/GitHub/cancer-registry/Category Option Combo/Category Option Combo.json', '/Users/mk/Documents/GitHub/cancer-registry/Category Option Combo/category option combo.json'])
+❌ Category_Option_Group split failed: No such file in Category Option group (tried ['/Users/mk/Documents/GitHub/cancer-registry/Category Option group/Category Option group.json', '/Users/mk/Documents/GitHub/cancer-registry/Category Option group/category option group.json'])
+❌ Category_Option_Group_Set split failed: No such file in Category Option Group Set (tried ['/Users/mk/Documents/GitHub/cancer-registry/Category Option Group Set/Category Option Group Set.json', '/Users/mk/Documents/GitHub/cancer-registry/Category Option Group Set/category option group set.json'])
+
+Splitting Data Element.json by cancer type...
+  Processed 100 objects...
+  Processed 200 objects...
+  Processed 300 objects...
+  Processed 400 objects...
+  Processed 500 objects...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Generic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Breast.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Bladder.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Colorectal.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Esophageal.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Kaposi.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Kidney.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Leukemia.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Liver.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Lung.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Lymphoma.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Oral.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Ovarian.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Pancreatic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Prostate.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Melanoma.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Stomach.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Testicular.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Thyroid.json (already exists)
+✅ Split 542 objects from Data Element.json by cancer type.
+
+Splitting Data Set.json by cancer type...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Set/Data_Set_Generic.json (already exists)
+✅ Split 1 objects from Data Set.json by cancer type.
+
+Splitting Even Visualisation.json by cancer type...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Event Visualisation/Event_Visualisation_Generic.json (already exists)
+✅ Split 33 objects from Even Visualisation.json by cancer type.
+
+Splitting Indicator.json by cancer type...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Generic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Bladder.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Breast.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Colorectal.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Esophageal.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Kaposi.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Kidney.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Leukemia.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Liver.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Lung.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Lymphoma.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Oral.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Ovarian.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Pancreatic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Prostate.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Melanoma.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Stomach.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Testicular.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Thyroid.json (already exists)
+✅ Split 38 objects from Indicator.json by cancer type.
+❌ Indicator_Group split failed: No such file in Indicator Group (tried ['/Users/mk/Documents/GitHub/cancer-registry/Indicator Group/Indicator Group.json', '/Users/mk/Documents/GitHub/cancer-registry/Indicator Group/indicator group.json'])
+❌ Indicator_Group_Set split failed: No such file in Indicator Group Set (tried ['/Users/mk/Documents/GitHub/cancer-registry/Indicator Group Set/Indicator Group Set.json', '/Users/mk/Documents/GitHub/cancer-registry/Indicator Group Set/indicator group set.json'])
+❌ Indicator_Type split failed: No such file in Indicator Type (tried ['/Users/mk/Documents/GitHub/cancer-registry/Indicator Type/Indicator Type.json', '/Users/mk/Documents/GitHub/cancer-registry/Indicator Type/indicator type.json'])
+❌ Option split failed: No such file in Option (tried ['/Users/mk/Documents/GitHub/cancer-registry/Option/Option.json', '/Users/mk/Documents/GitHub/cancer-registry/Option/option.json'])
+
+Splitting Option.json by cancer type...
+  Processed 100 objects...
+  Processed 200 objects...
+  Processed 300 objects...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Options/Option_Generic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Options/Option_Cervical.json (already exists)
+✅ Split 375 objects from Option.json by cancer type.
+❌ Option_Set split failed: No such file in Option Set (tried ['/Users/mk/Documents/GitHub/cancer-registry/Option Set/Option Set.json', '/Users/mk/Documents/GitHub/cancer-registry/Option Set/option set.json'])
+
+Splitting Option Set.json by cancer type...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Options/Option_Set_Breast.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Options/Option_Set_Generic.json (already exists)
+✅ Split 36 objects from Option Set.json by cancer type.
+❌ Option_Group split failed: No such file in Option group (tried ['/Users/mk/Documents/GitHub/cancer-registry/Option group/Option group.json', '/Users/mk/Documents/GitHub/cancer-registry/Option group/option group.json'])
+
+Splitting Option group.json by cancer type...
+✅ Split 0 objects from Option group.json by cancer type.
+❌ Option_Group_Set split failed: No such file in Option Group Set (tried ['/Users/mk/Documents/GitHub/cancer-registry/Option Group Set/Option Group Set.json', '/Users/mk/Documents/GitHub/cancer-registry/Option Group Set/option group set.json'])
+
+Splitting Option Group Set.json by cancer type...
+✅ Split 0 objects from Option Group Set.json by cancer type.
+
+Splitting Program.json by cancer type...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Cervical.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Bladder.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Breast.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Colorectal.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Esophageal.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Kaposi.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Kidney.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Leukemia.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Liver.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Lung.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Lymphoma.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Oral.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Ovarian.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Pancreatic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Prostate.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Melanoma.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Stomach.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Testicular.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Thyroid.json (already exists)
+✅ Split 19 objects from Program.json by cancer type.
+
+Splitting Program Rule.json by cancer type...
+  Processed 100 objects...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program Rule/Program_Rule_Generic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program Rule/Program_Rule_Breast.json (already exists)
+✅ Split 147 objects from Program Rule.json by cancer type.
+❌ Program_Rule_Action split failed: No such file in Program Rule Action (tried ['/Users/mk/Documents/GitHub/cancer-registry/Program Rule Action/Program Rule Action.json', '/Users/mk/Documents/GitHub/cancer-registry/Program Rule Action/program rule action.json'])
+❌ Program_Rule_Variable split failed: No such file in Program Rule Variable (tried ['/Users/mk/Documents/GitHub/cancer-registry/Program Rule Variable/Program Rule Variable.json', '/Users/mk/Documents/GitHub/cancer-registry/Program Rule Variable/program rule variable.json'])
+
+1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Generic.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Bladder.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Breast.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Colorectal.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Esophageal.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Kaposi.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Kidney.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Leukemia.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Liver.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Lung.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Lymphoma.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Oral.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Ovarian.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Pancreatic.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Prostate.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Melanoma.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Stomach.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Testicular.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Thyroid.json with 1 dashboards
+✅ Fixed 0 dashboard items and split dashboards by cancer type.
+
+2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE
+  [Generic] Processed 10 stages...
+  [Generic] Processed 20 stages...
+  [Generic] Processed 30 stages...
+  [Generic] Processed 40 stages...
+  [Generic] Processed 50 stages...
+  [Generic] Processed 60 stages...
+  [Generic] Processed 70 stages...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Stage_Generic.json (already exists)
+✅ Split program stages and assigned data elements by cancer type.
+
+6️⃣ CREATING CANCER-GROUPED DATA ELEMENTS REFERENCE
+✅ Created Data Elements by Cancer Type reference file
+  - Bladder: 21 elements
+  - Breast: 26 elements
+  - Colorectal: 21 elements
+  - Esophageal: 21 elements
+  - Generic Cancer: 36 elements
+  - Kaposi: 21 elements
+  - Kidney: 21 elements
+  - Leukemia: 21 elements
+  - Liver: 21 elements
+  - Lung: 21 elements
+  - Lymphoma: 21 elements
+  - Melanoma: 21 elements
+  - Oral: 21 elements
+  - Other: 123 elements
+  - Ovarian: 21 elements
+  - Pancreatic: 21 elements
+  - Prostate: 21 elements
+  - Stomach: 21 elements
+  - Testicular: 21 elements
+  - Thyroid: 21 elements
+
+================================================================================
+✅ FIXES COMPLETED
+================================================================================
+
+Summary:
+  ✓ dashboards: 0
+  ✓ program_stages: 0
+  ✓ data_elements: 20
+
+================================================================================
+================================================================================
+CANCER REGISTRY - COMPREHENSIVE FIX SCRIPT
+================================================================================
+
+Splitting Attribute.json by cancer type...
+✅ Split 0 objects from Attribute.json by cancer type.
+
+Splitting Category.json by cancer type...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Category/Category_Generic.json (already exists)
+✅ Split 4 objects from Category.json by cancer type.
+❌ Category_Combo split failed: No such file in Category Combo (tried ['/Users/mk/Documents/GitHub/cancer-registry/Category Combo/Category Combo.json', '/Users/mk/Documents/GitHub/cancer-registry/Category Combo/category Combo.json'])
+❌ Category_Option split failed: No such file in Category Option (tried ['/Users/mk/Documents/GitHub/cancer-registry/Category Option/Category Option.json', '/Users/mk/Documents/GitHub/cancer-registry/Category Option/category option.json'])
+❌ Category_Option_Combo split failed: No such file in Category Option Combo (tried ['/Users/mk/Documents/GitHub/cancer-registry/Category Option Combo/Category Option Combo.json', '/Users/mk/Documents/GitHub/cancer-registry/Category Option Combo/category option combo.json'])
+❌ Category_Option_Group split failed: No such file in Category Option group (tried ['/Users/mk/Documents/GitHub/cancer-registry/Category Option group/Category Option group.json', '/Users/mk/Documents/GitHub/cancer-registry/Category Option group/category option group.json'])
+❌ Category_Option_Group_Set split failed: No such file in Category Option Group Set (tried ['/Users/mk/Documents/GitHub/cancer-registry/Category Option Group Set/Category Option Group Set.json', '/Users/mk/Documents/GitHub/cancer-registry/Category Option Group Set/category option group set.json'])
+
+Splitting Data Element.json by cancer type...
+  Processed 100 objects...
+  Processed 200 objects...
+  Processed 300 objects...
+  Processed 400 objects...
+  Processed 500 objects...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Generic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Breast.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Bladder.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Colorectal.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Esophageal.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Kaposi.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Kidney.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Leukemia.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Liver.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Lung.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Lymphoma.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Oral.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Ovarian.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Pancreatic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Prostate.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Melanoma.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Stomach.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Testicular.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Element/Data_Element_Thyroid.json (already exists)
+✅ Split 542 objects from Data Element.json by cancer type.
+
+Splitting Data Set.json by cancer type...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Data Set/Data_Set_Generic.json (already exists)
+✅ Split 1 objects from Data Set.json by cancer type.
+
+Splitting Even Visualisation.json by cancer type...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Event Visualisation/Event_Visualisation_Generic.json (already exists)
+✅ Split 33 objects from Even Visualisation.json by cancer type.
+
+Splitting Indicator.json by cancer type...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Generic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Bladder.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Breast.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Colorectal.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Esophageal.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Kaposi.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Kidney.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Leukemia.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Liver.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Lung.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Lymphoma.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Oral.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Ovarian.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Pancreatic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Prostate.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Melanoma.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Stomach.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Testicular.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Indicator/Indicator_Thyroid.json (already exists)
+✅ Split 38 objects from Indicator.json by cancer type.
+❌ Indicator_Group split failed: No such file in Indicator Group (tried ['/Users/mk/Documents/GitHub/cancer-registry/Indicator Group/Indicator Group.json', '/Users/mk/Documents/GitHub/cancer-registry/Indicator Group/indicator group.json'])
+❌ Indicator_Group_Set split failed: No such file in Indicator Group Set (tried ['/Users/mk/Documents/GitHub/cancer-registry/Indicator Group Set/Indicator Group Set.json', '/Users/mk/Documents/GitHub/cancer-registry/Indicator Group Set/indicator group set.json'])
+❌ Indicator_Type split failed: No such file in Indicator Type (tried ['/Users/mk/Documents/GitHub/cancer-registry/Indicator Type/Indicator Type.json', '/Users/mk/Documents/GitHub/cancer-registry/Indicator Type/indicator type.json'])
+❌ Option split failed: No such file in Option (tried ['/Users/mk/Documents/GitHub/cancer-registry/Option/Option.json', '/Users/mk/Documents/GitHub/cancer-registry/Option/option.json'])
+
+Splitting Option.json by cancer type...
+  Processed 100 objects...
+  Processed 200 objects...
+  Processed 300 objects...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Options/Option_Generic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Options/Option_Cervical.json (already exists)
+✅ Split 375 objects from Option.json by cancer type.
+❌ Option_Set split failed: No such file in Option Set (tried ['/Users/mk/Documents/GitHub/cancer-registry/Option Set/Option Set.json', '/Users/mk/Documents/GitHub/cancer-registry/Option Set/option set.json'])
+
+Splitting Option Set.json by cancer type...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Options/Option_Set_Breast.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Options/Option_Set_Generic.json (already exists)
+✅ Split 36 objects from Option Set.json by cancer type.
+❌ Option_Group split failed: No such file in Option group (tried ['/Users/mk/Documents/GitHub/cancer-registry/Option group/Option group.json', '/Users/mk/Documents/GitHub/cancer-registry/Option group/option group.json'])
+
+Splitting Option group.json by cancer type...
+✅ Split 0 objects from Option group.json by cancer type.
+❌ Option_Group_Set split failed: No such file in Option Group Set (tried ['/Users/mk/Documents/GitHub/cancer-registry/Option Group Set/Option Group Set.json', '/Users/mk/Documents/GitHub/cancer-registry/Option Group Set/option group set.json'])
+
+Splitting Option Group Set.json by cancer type...
+✅ Split 0 objects from Option Group Set.json by cancer type.
+
+Splitting Program.json by cancer type...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Cervical.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Bladder.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Breast.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Colorectal.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Esophageal.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Kaposi.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Kidney.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Leukemia.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Liver.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Lung.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Lymphoma.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Oral.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Ovarian.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Pancreatic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Prostate.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Melanoma.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Stomach.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Testicular.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Thyroid.json (already exists)
+✅ Split 19 objects from Program.json by cancer type.
+
+Splitting Program Rule.json by cancer type...
+  Processed 100 objects...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program Rule/Program_Rule_Generic.json (already exists)
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program Rule/Program_Rule_Breast.json (already exists)
+✅ Split 147 objects from Program Rule.json by cancer type.
+❌ Program_Rule_Action split failed: No such file in Program Rule Action (tried ['/Users/mk/Documents/GitHub/cancer-registry/Program Rule Action/Program Rule Action.json', '/Users/mk/Documents/GitHub/cancer-registry/Program Rule Action/program rule action.json'])
+❌ Program_Rule_Variable split failed: No such file in Program Rule Variable (tried ['/Users/mk/Documents/GitHub/cancer-registry/Program Rule Variable/Program Rule Variable.json', '/Users/mk/Documents/GitHub/cancer-registry/Program Rule Variable/program rule variable.json'])
+
+1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE
+--------------------------------------------------------------------------------
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Generic.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Bladder.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Breast.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Colorectal.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Esophageal.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Kaposi.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Kidney.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Leukemia.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Liver.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Lung.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Lymphoma.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Oral.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Ovarian.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Pancreatic.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Prostate.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Melanoma.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Stomach.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Testicular.json with 1 dashboards
+  - Created /Users/mk/Documents/GitHub/cancer-registry/Dashboard/Dashboard_Thyroid.json with 1 dashboards
+✅ Fixed 0 dashboard items and split dashboards by cancer type.
+
+2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE
+--------------------------------------------------------------------------------
+  [Generic] Processed 10 stages...
+  [Generic] Processed 20 stages...
+  [Generic] Processed 30 stages...
+  [Generic] Processed 40 stages...
+  [Generic] Processed 50 stages...
+  [Generic] Processed 60 stages...
+  [Generic] Processed 70 stages...
+  - Skipping /Users/mk/Documents/GitHub/cancer-registry/Program/Program_Stage_Generic.json (already exists)
+✅ Split program stages and assigned data elements by cancer type.
+
+6️⃣ CREATING CANCER-GROUPED DATA ELEMENTS REFERENCE
+--------------------------------------------------------------------------------
+✅ Created Data Elements by Cancer Type reference file
+  - Bladder: 21 elements
+  - Breast: 26 elements
+  - Colorectal: 21 elements
+  - Esophageal: 21 elements
+  - Generic Cancer: 36 elements
+  - Kaposi: 21 elements
+  - Kidney: 21 elements
+  - Leukemia: 21 elements
+  - Liver: 21 elements
+  - Lung: 21 elements
+  - Lymphoma: 21 elements
+  - Melanoma: 21 elements
+  - Oral: 21 elements
+  - Other: 123 elements
+  - Ovarian: 21 elements
+  - Pancreatic: 21 elements
+  - Prostate: 21 elements
+  - Stomach: 21 elements
+  - Testicular: 21 elements
+  - Thyroid: 21 elements
+
+================================================================================
+✅ FIXES COMPLETED
+================================================================================
+
+Summary:
+  ✓ dashboards: 0
+  ✓ program_stages: 0
+  ✓ data_elements: 20
+
+================================================================================

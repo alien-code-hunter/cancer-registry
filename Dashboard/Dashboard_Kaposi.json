@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "Npy7Rh9GEsL",
+      "created": "2026-02-18T15:44:06.457158",
+      "lastUpdated": "2026-02-18T15:44:06.457159",
+      "name": "Kaposi Sarcoma Cancer Dashboard",
+      "displayName": "Kaposi Sarcoma Cancer Dashboard",
+      "description": "Monitoring dashboard for Kaposi Sarcoma cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "b922743c-ca",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "c3a05aec-bf",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "3bf781fd-dd",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "06d9fd1c-31",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "zOeGEFjZAeb"
+    }
+  ]
+}

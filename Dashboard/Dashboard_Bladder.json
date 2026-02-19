@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "rNy9m4YxyPh",
+      "created": "2026-02-18T15:44:06.456973",
+      "lastUpdated": "2026-02-18T15:44:06.456981",
+      "name": "Bladder Cancer Dashboard",
+      "displayName": "Bladder Cancer Dashboard",
+      "description": "Monitoring dashboard for Bladder cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "95af9b26-e0",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "42ac030c-d5",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "c60597a0-c5",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "b837cc47-8b",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "C7KTG6OhB69"
+    }
+  ]
+}

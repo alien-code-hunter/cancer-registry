@@ -1,0 +1,53 @@
+{
+  "optionSets": [
+    {
+      "code": "Breast cancer screening abnormality",
+      "name": "Breast cancer screening abnormality",
+      "created": "2024-07-31T11:39:26.854",
+      "lastUpdated": "2024-10-12T17:00:00.613",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "options": [
+        {
+          "id": "fN4I3Z0rVLO"
+        },
+        {
+          "id": "J0lELjwTUKI"
+        },
+        {
+          "id": "I6nIZLK5BLF"
+        },
+        {
+          "id": "KqTujWioGdM"
+        },
+        {
+          "id": "tLX5cfE63sB"
+        }
+      ],
+      "valueType": "TEXT",
+      "version": 5,
+      "id": "w6rh2d3tRxE",
+      "attributeValues": []
+    }
+  ]
+}

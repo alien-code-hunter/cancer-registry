@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "vBPD6GM3LgJ",
+      "created": "2026-02-18T15:44:06.457558",
+      "lastUpdated": "2026-02-18T15:44:06.457560",
+      "name": "Testicular Cancer Dashboard",
+      "displayName": "Testicular Cancer Dashboard",
+      "description": "Monitoring dashboard for Testicular cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "3c38d77f-a8",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "6c55d313-85",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "67386597-db",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "ce04cf40-7a",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "X0U2Lm83bt9"
+    }
+  ]
+}

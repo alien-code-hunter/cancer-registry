@@ -1,0 +1,84 @@
+{
+  "indicators": [
+    {
+      "name": "Stomach - % Pap smear screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "IGP_STOMACH",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Stomach - % Pap smear screened and received result",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{hWeeftbihic}",
+      "numeratorDescription": "Stomach - % Pap smear screened and received results",
+      "denominator": "#{mjGFgL0CsFO}",
+      "denominatorDescription": "Stomach - % Pap smear screened and received results",
+      "id": "sfaRShVQ6ad",
+      "attributeValues": []
+    },
+    {
+      "name": "Stomach - % VIA screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Stomach - % VIA screened and received results",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{oxEX4y9WWK8}",
+      "numeratorDescription": "Stomach - % VIA screened and received results",
+      "denominator": "#{YdSOqXjPnkR}",
+      "denominatorDescription": "Stomach - % VIA screened and received results",
+      "id": "mWCtXa05Ang",
+      "attributeValues": []
+    }
+  ]
+}

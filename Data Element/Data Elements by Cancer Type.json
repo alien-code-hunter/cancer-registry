@@ -1,6 +1,6 @@
 {
   "dataElementsByType": {
-    "Generic Cancer": [
+    "Other": [
       {
         "id": "tzQRmAxcgGv",
         "name": "ART start date [SCR]"
@@ -62,10 +62,6 @@
         "name": "Completion of screening visit"
       },
       {
-        "id": "OLyRCLyxjS7",
-        "name": "Completion of treatment visit"
-      },
-      {
         "id": "m43keUu0POO",
         "name": "Confirmed Result"
       },
@@ -76,10 +72,6 @@
       {
         "id": "ClxQpj43ntu",
         "name": "Gynecological surgical history"
-      },
-      {
-        "id": "JU4J6oxilGu",
-        "name": "HIV care and treatment enrollment status [SCR]"
       },
       {
         "id": "HotgtvNCWAX",
@@ -150,18 +142,6 @@
         "name": "If unknown HIV status, PITC accepted [SCR]"
       },
       {
-        "id": "EdBgQxSO7gA",
-        "name": "LLETZ Post treatment complication"
-      },
-      {
-        "id": "loJf0xwpAWs",
-        "name": "LLETZ Type of treatment provided"
-      },
-      {
-        "id": "XLzNhsSPfou",
-        "name": "LLETZ post treatment complication type"
-      },
-      {
         "id": "P8IpnBuBYEO",
         "name": "LLETZ status"
       },
@@ -200,10 +180,6 @@
       {
         "id": "M0BUnDxWyAU",
         "name": "Pap smear screened"
-      },
-      {
-        "id": "jn2AScFnXTI",
-        "name": "Pap smear screened and LLETZ post treatment complication "
       },
       {
         "id": "B60ZiXp3QP9",
@@ -294,10 +270,6 @@
         "name": "Reason for referral"
       },
       {
-        "id": "ZByVRZA7Xzu",
-        "name": "Reason for treatment referral"
-      },
-      {
         "id": "ke7h1sQ3DX9",
         "name": "Reason thermoablation postponed"
       },
@@ -322,14 +294,6 @@
         "name": "Referral booking date for LLETZ [LAB]"
       },
       {
-        "id": "tXjYWVXvYv5",
-        "name": "Referral booking date for treatment"
-      },
-      {
-        "id": "TQ63UTaUaTC",
-        "name": "Referral booking date for treatment [LAB]"
-      },
-      {
         "id": "yayiufqoUuU",
         "name": "Referral for other gynecological issues"
       },
@@ -338,16 +302,8 @@
         "name": "Referral health facility for screening"
       },
       {
-        "id": "oHOwongOcWV",
-        "name": "Referral health facility for treatment"
-      },
-      {
         "id": "TDlrn8gs5S0",
         "name": "Referred from home facility for screening"
-      },
-      {
-        "id": "TXh2V4LRYE0",
-        "name": "Referred from home facility for treatment"
       },
       {
         "id": "myAAAlBgrnI",
@@ -382,16 +338,8 @@
         "name": "Specify date if Thermoablation will be performed on different date [TMT]"
       },
       {
-        "id": "MHYLCQ7zvD7",
-        "name": "Specify follow-up post treatment"
-      },
-      {
         "id": "YHQmdSmd3SO",
         "name": "Specify gynecological surgical history"
-      },
-      {
-        "id": "U28LBZGDHKW",
-        "name": "Specify other LLETZ post treatment complication type"
       },
       {
         "id": "ZZ08zqOihWx",
@@ -434,48 +382,12 @@
         "name": "Specify other pap smear result [LAB]"
       },
       {
-        "id": "GihkTXUj1Rx",
-        "name": "Specify other reason for LLETZ treatment referral"
-      },
-      {
         "id": "NnEH9klLcnD",
         "name": "Specify other site of referral for screening"
       },
       {
-        "id": "EuwTi2RTMPj",
-        "name": "Specify other site of referral for treatment"
-      },
-      {
-        "id": "DgjU8FaZ3kl",
-        "name": "Specify post treatment complication"
-      },
-      {
-        "id": "aAAWu9p4WdH",
-        "name": "Specify treatment referral site"
-      },
-      {
-        "id": "jeZhGxi9WBf",
-        "name": "Specify treatment referral site [LAB]"
-      },
-      {
-        "id": "oKW1bKEhbSm",
-        "name": "Specify treatment referral site for LLETZ"
-      },
-      {
-        "id": "rTtMdCIYW7H",
-        "name": "Specify treatment referral site for VIA [LAB]"
-      },
-      {
         "id": "PhDPf0bUeuv",
         "name": "Specimen collection date [LAB]"
-      },
-      {
-        "id": "PyPL2SmUcDJ",
-        "name": "Suspicious for cancer and biopsy result"
-      },
-      {
-        "id": "xUNMyQEPjxk",
-        "name": "Suspicious for cancer and biopsy result [LAB]"
       },
       {
         "id": "iiKPiw4tftv",
@@ -510,10 +422,6 @@
         "name": "Total screened and received results (VIA, Pap smear and HPV)"
       },
       {
-        "id": "yhkFRp64JlW",
-        "name": "Treatment consent form signed"
-      },
-      {
         "id": "FZdzT5Mc8LB",
         "name": "Triage is performed"
       },
@@ -530,40 +438,12 @@
         "name": "Triage test type [LAB]"
       },
       {
-        "id": "vKh8TjZGlql",
-        "name": "VIA Assessment for Treatment (VAT) performed"
-      },
-      {
-        "id": "B2ncXK9v11t",
-        "name": "VIA Assessment for Treatment (VAT) performed [LAB]"
-      },
-      {
-        "id": "bVISW8cgNqj",
-        "name": "VIA Assessment for Treatment (VAT) result"
-      },
-      {
-        "id": "nIb7rqutlcR",
-        "name": "VIA Assessment for Treatment (VAT) result [LAB]"
-      },
-      {
         "id": "xG2Mo60YPX5",
         "name": "VIA Positive for abnormal results"
       },
       {
-        "id": "STIxP70Ourp",
-        "name": "VIA result suspected cancer"
-      },
-      {
         "id": "MetHojlT1yY",
         "name": "VIA screened"
-      },
-      {
-        "id": "uBbg5sKzaeD",
-        "name": "VIA screened and LLETZ post treatment complication"
-      },
-      {
-        "id": "YKo6nixV0l6",
-        "name": "VIA screened and Thermo post treatment complication"
       },
       {
         "id": "QIiAyz4Mu8W",
@@ -598,36 +478,12 @@
         "name": "parity-prev"
       },
       {
-        "id": "F5X2lAURb55",
-        "name": "Cancer Diagnosis"
-      },
-      {
-        "id": "Y42E2JjYYzl",
-        "name": "Cancer Stage"
-      },
-      {
-        "id": "b3VAiBiZ5eK",
-        "name": "Date of Diagnosis"
-      },
-      {
-        "id": "hI4xMWpZdrU",
-        "name": "Treatment Type"
-      },
-      {
         "id": "k6K6R7QOCTm",
         "name": "Performance Status"
       },
       {
         "id": "lis2LY7yQtl",
         "name": "Comorbidities"
-      },
-      {
-        "id": "JRAUB0VrK2b",
-        "name": "Treatment Response"
-      },
-      {
-        "id": "BOGsCyKhUp0",
-        "name": "Date of Treatment"
       },
       {
         "id": "QCRq9U2eIYW",
@@ -658,12 +514,1722 @@
       {
         "id": "jgo8NXcFaSN",
         "name": "Specify referral site for abnormal breast cancer screening outcome"
+      },
+      {
+        "id": "JmfNL4zEWS5",
+        "name": "Breast - HPV Positive for abnormal results"
+      },
+      {
+        "id": "cGhahzpHv9k",
+        "name": "Breast - HPV screened"
+      },
+      {
+        "id": "pcIHjOdNKdR",
+        "name": "Breast - HPV screened and received results"
+      },
+      {
+        "id": "AHTOJC5GTdg",
+        "name": "Breast - LLETZ treated"
+      },
+      {
+        "id": "JRFJBXD7vbc",
+        "name": "Breast - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "oQdMCePZC0c",
+        "name": "Breast - Pap smear screened"
+      },
+      {
+        "id": "EfvNt6hkY2r",
+        "name": "Breast - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "NPUj96GEJPm",
+        "name": "Breast - Pap smear screened and received results"
+      },
+      {
+        "id": "L7o38aEONzf",
+        "name": "Breast - Pap smear screened and treated"
+      },
+      {
+        "id": "xMrVLn8vKeV",
+        "name": "Breast - Pap smear screening results"
+      },
+      {
+        "id": "c4KIVZhuc6k",
+        "name": "Breast - Thermoablation treated"
+      },
+      {
+        "id": "lyUGxquBetv",
+        "name": "Breast - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "a0UZ7FQ3GBO",
+        "name": "Breast - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "Ky0XsfpAfqW",
+        "name": "Breast - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "lrSOf3gxlSe",
+        "name": "Breast - VIA Positive for abnormal results"
+      },
+      {
+        "id": "ReQ7lNCWGYQ",
+        "name": "Breast - VIA result suspected cancer"
+      },
+      {
+        "id": "xXV4s2lzdso",
+        "name": "Breast - VIA screened"
+      },
+      {
+        "id": "DV06OH0Wi6H",
+        "name": "Breast - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "g9G7paU00du",
+        "name": "Breast - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "wxNPirBrjUb",
+        "name": "Breast - VIA screened and received results"
+      },
+      {
+        "id": "Tugg1anpYEu",
+        "name": "Breast - VIA screened and treated"
+      }
+    ],
+    "Generic Cancer": [
+      {
+        "id": "OLyRCLyxjS7",
+        "name": "Completion of treatment visit"
+      },
+      {
+        "id": "JU4J6oxilGu",
+        "name": "HIV care and treatment enrollment status [SCR]"
+      },
+      {
+        "id": "EdBgQxSO7gA",
+        "name": "LLETZ Post treatment complication"
+      },
+      {
+        "id": "loJf0xwpAWs",
+        "name": "LLETZ Type of treatment provided"
+      },
+      {
+        "id": "XLzNhsSPfou",
+        "name": "LLETZ post treatment complication type"
+      },
+      {
+        "id": "jn2AScFnXTI",
+        "name": "Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "ZByVRZA7Xzu",
+        "name": "Reason for treatment referral"
+      },
+      {
+        "id": "tXjYWVXvYv5",
+        "name": "Referral booking date for treatment"
+      },
+      {
+        "id": "TQ63UTaUaTC",
+        "name": "Referral booking date for treatment [LAB]"
+      },
+      {
+        "id": "oHOwongOcWV",
+        "name": "Referral health facility for treatment"
+      },
+      {
+        "id": "TXh2V4LRYE0",
+        "name": "Referred from home facility for treatment"
+      },
+      {
+        "id": "MHYLCQ7zvD7",
+        "name": "Specify follow-up post treatment"
+      },
+      {
+        "id": "U28LBZGDHKW",
+        "name": "Specify other LLETZ post treatment complication type"
+      },
+      {
+        "id": "GihkTXUj1Rx",
+        "name": "Specify other reason for LLETZ treatment referral"
+      },
+      {
+        "id": "EuwTi2RTMPj",
+        "name": "Specify other site of referral for treatment"
+      },
+      {
+        "id": "DgjU8FaZ3kl",
+        "name": "Specify post treatment complication"
+      },
+      {
+        "id": "aAAWu9p4WdH",
+        "name": "Specify treatment referral site"
+      },
+      {
+        "id": "jeZhGxi9WBf",
+        "name": "Specify treatment referral site [LAB]"
+      },
+      {
+        "id": "oKW1bKEhbSm",
+        "name": "Specify treatment referral site for LLETZ"
+      },
+      {
+        "id": "rTtMdCIYW7H",
+        "name": "Specify treatment referral site for VIA [LAB]"
+      },
+      {
+        "id": "PyPL2SmUcDJ",
+        "name": "Suspicious for cancer and biopsy result"
+      },
+      {
+        "id": "xUNMyQEPjxk",
+        "name": "Suspicious for cancer and biopsy result [LAB]"
+      },
+      {
+        "id": "yhkFRp64JlW",
+        "name": "Treatment consent form signed"
+      },
+      {
+        "id": "vKh8TjZGlql",
+        "name": "VIA Assessment for Treatment (VAT) performed"
+      },
+      {
+        "id": "B2ncXK9v11t",
+        "name": "VIA Assessment for Treatment (VAT) performed [LAB]"
+      },
+      {
+        "id": "bVISW8cgNqj",
+        "name": "VIA Assessment for Treatment (VAT) result"
+      },
+      {
+        "id": "nIb7rqutlcR",
+        "name": "VIA Assessment for Treatment (VAT) result [LAB]"
+      },
+      {
+        "id": "STIxP70Ourp",
+        "name": "VIA result suspected cancer"
+      },
+      {
+        "id": "uBbg5sKzaeD",
+        "name": "VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "YKo6nixV0l6",
+        "name": "VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "F5X2lAURb55",
+        "name": "Cancer Diagnosis"
+      },
+      {
+        "id": "Y42E2JjYYzl",
+        "name": "Cancer Stage"
+      },
+      {
+        "id": "b3VAiBiZ5eK",
+        "name": "Date of Diagnosis"
+      },
+      {
+        "id": "hI4xMWpZdrU",
+        "name": "Treatment Type"
+      },
+      {
+        "id": "JRAUB0VrK2b",
+        "name": "Treatment Response"
+      },
+      {
+        "id": "BOGsCyKhUp0",
+        "name": "Date of Treatment"
+      }
+    ],
+    "Bladder": [
+      {
+        "id": "p0UKYq91U7l",
+        "name": "Bladder - HPV Positive for abnormal results"
+      },
+      {
+        "id": "AQKoSwtqVer",
+        "name": "Bladder - HPV screened"
+      },
+      {
+        "id": "mllBa4wj9L2",
+        "name": "Bladder - HPV screened and received results"
+      },
+      {
+        "id": "mofaBKfsGLL",
+        "name": "Bladder - LLETZ treated"
+      },
+      {
+        "id": "WsapcufbFup",
+        "name": "Bladder - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "dgFDwLDUt2H",
+        "name": "Bladder - Pap smear screened"
+      },
+      {
+        "id": "xM7zMokniaJ",
+        "name": "Bladder - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "xMdfgHH5pHY",
+        "name": "Bladder - Pap smear screened and received results"
+      },
+      {
+        "id": "pdCpy7PRgjZ",
+        "name": "Bladder - Pap smear screened and treated"
+      },
+      {
+        "id": "BxJ8e9Oa9DS",
+        "name": "Bladder - Pap smear screening results"
+      },
+      {
+        "id": "gtS6n5mCvQy",
+        "name": "Bladder - Thermoablation treated"
+      },
+      {
+        "id": "RlnRUn2lwNe",
+        "name": "Bladder - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "Wn2cM4Z7Ure",
+        "name": "Bladder - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "H567KczfL8O",
+        "name": "Bladder - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "HTyHJbj2sti",
+        "name": "Bladder - VIA Positive for abnormal results"
+      },
+      {
+        "id": "o05i03UMDO5",
+        "name": "Bladder - VIA result suspected cancer"
+      },
+      {
+        "id": "DxTkYmxlGpP",
+        "name": "Bladder - VIA screened"
+      },
+      {
+        "id": "IiyPu8zMqXw",
+        "name": "Bladder - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "SEp2Nvy8fJR",
+        "name": "Bladder - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "qFFtrgXF0fD",
+        "name": "Bladder - VIA screened and received results"
+      },
+      {
+        "id": "eF7Qywh4UKj",
+        "name": "Bladder - VIA screened and treated"
+      }
+    ],
+    "Colorectal": [
+      {
+        "id": "iWJpqRionnG",
+        "name": "Colorectal - HPV Positive for abnormal results"
+      },
+      {
+        "id": "BDZoD2z3teU",
+        "name": "Colorectal - HPV screened"
+      },
+      {
+        "id": "eOuyAUI1SjB",
+        "name": "Colorectal - HPV screened and received results"
+      },
+      {
+        "id": "Y3SV1wuLW5g",
+        "name": "Colorectal - LLETZ treated"
+      },
+      {
+        "id": "TnUQEKdfa5T",
+        "name": "Colorectal - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "EIXn8iLNZcq",
+        "name": "Colorectal - Pap smear screened"
+      },
+      {
+        "id": "qUQwwWu7ynY",
+        "name": "Colorectal - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "p1hidB0wJtQ",
+        "name": "Colorectal - Pap smear screened and received results"
+      },
+      {
+        "id": "ASWalrC3U4a",
+        "name": "Colorectal - Pap smear screened and treated"
+      },
+      {
+        "id": "RZcXtCGuEGn",
+        "name": "Colorectal - Pap smear screening results"
+      },
+      {
+        "id": "ULPI8KwKXAW",
+        "name": "Colorectal - Thermoablation treated"
+      },
+      {
+        "id": "oc0DRGeGhPD",
+        "name": "Colorectal - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "uVlIJDOqgXs",
+        "name": "Colorectal - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "vAfVFc96Yw8",
+        "name": "Colorectal - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "FfMq2x0PrUX",
+        "name": "Colorectal - VIA Positive for abnormal results"
+      },
+      {
+        "id": "TAmSvqt23RV",
+        "name": "Colorectal - VIA result suspected cancer"
+      },
+      {
+        "id": "Z0c0WfJqehq",
+        "name": "Colorectal - VIA screened"
+      },
+      {
+        "id": "e5J5F9TsS2T",
+        "name": "Colorectal - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "pSWPiGrLBO5",
+        "name": "Colorectal - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "Yvg5x3xpIp3",
+        "name": "Colorectal - VIA screened and received results"
+      },
+      {
+        "id": "kMoytaPpB1U",
+        "name": "Colorectal - VIA screened and treated"
+      }
+    ],
+    "Esophageal": [
+      {
+        "id": "tE9iXWGb5Yu",
+        "name": "Esophageal - HPV Positive for abnormal results"
+      },
+      {
+        "id": "Xw2hmFC1aoF",
+        "name": "Esophageal - HPV screened"
+      },
+      {
+        "id": "Kh8QfZjj6tB",
+        "name": "Esophageal - HPV screened and received results"
+      },
+      {
+        "id": "lq9kt3F0R7i",
+        "name": "Esophageal - LLETZ treated"
+      },
+      {
+        "id": "l548qOsGSXS",
+        "name": "Esophageal - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "JJgwgqWBZ2M",
+        "name": "Esophageal - Pap smear screened"
+      },
+      {
+        "id": "zDCYNvtgcOr",
+        "name": "Esophageal - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "IvVoimXlkFr",
+        "name": "Esophageal - Pap smear screened and received results"
+      },
+      {
+        "id": "pF7bEVO4JMa",
+        "name": "Esophageal - Pap smear screened and treated"
+      },
+      {
+        "id": "pMPPqnKXehT",
+        "name": "Esophageal - Pap smear screening results"
+      },
+      {
+        "id": "uvjWQYOlZRO",
+        "name": "Esophageal - Thermoablation treated"
+      },
+      {
+        "id": "Rhp8xhqzH2P",
+        "name": "Esophageal - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "f2vW5JECboV",
+        "name": "Esophageal - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "sd8Fvc6EIPs",
+        "name": "Esophageal - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "jOoMnMeZr7b",
+        "name": "Esophageal - VIA Positive for abnormal results"
+      },
+      {
+        "id": "HoDDq9jZZmm",
+        "name": "Esophageal - VIA result suspected cancer"
+      },
+      {
+        "id": "XhMy0WC408t",
+        "name": "Esophageal - VIA screened"
+      },
+      {
+        "id": "CcPQTtXKy3G",
+        "name": "Esophageal - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "bEjvx3iZ6fZ",
+        "name": "Esophageal - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "MNqyKRTmExh",
+        "name": "Esophageal - VIA screened and received results"
+      },
+      {
+        "id": "hiFDSojiMD7",
+        "name": "Esophageal - VIA screened and treated"
+      }
+    ],
+    "Kaposi": [
+      {
+        "id": "H29eeIvxWvD",
+        "name": "Kaposi Sarcoma - HPV Positive for abnormal results"
+      },
+      {
+        "id": "pDWvSV8xJ61",
+        "name": "Kaposi Sarcoma - HPV screened"
+      },
+      {
+        "id": "yMHIwpxMXGL",
+        "name": "Kaposi Sarcoma - HPV screened and received results"
+      },
+      {
+        "id": "RyK5kqu9ASP",
+        "name": "Kaposi Sarcoma - LLETZ treated"
+      },
+      {
+        "id": "gpEORLTrCbH",
+        "name": "Kaposi Sarcoma - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "J9kSZSxkHdF",
+        "name": "Kaposi Sarcoma - Pap smear screened"
+      },
+      {
+        "id": "ilUk5hTa4G3",
+        "name": "Kaposi Sarcoma - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "I7G30k7fMgh",
+        "name": "Kaposi Sarcoma - Pap smear screened and received results"
+      },
+      {
+        "id": "Nl4LkSMWH5P",
+        "name": "Kaposi Sarcoma - Pap smear screened and treated"
+      },
+      {
+        "id": "h5kus9EiPz8",
+        "name": "Kaposi Sarcoma - Pap smear screening results"
+      },
+      {
+        "id": "Leu1mOjd3Cu",
+        "name": "Kaposi Sarcoma - Thermoablation treated"
+      },
+      {
+        "id": "dfdsPn1S38l",
+        "name": "Kaposi Sarcoma - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "oOSV33iss67",
+        "name": "Kaposi Sarcoma - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "Y2zYwYgOiaq",
+        "name": "Kaposi Sarcoma - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "wzpHgX3hER3",
+        "name": "Kaposi Sarcoma - VIA Positive for abnormal results"
+      },
+      {
+        "id": "kQGh3VTuQ18",
+        "name": "Kaposi Sarcoma - VIA result suspected cancer"
+      },
+      {
+        "id": "b1chEyHmy2n",
+        "name": "Kaposi Sarcoma - VIA screened"
+      },
+      {
+        "id": "Xcqw7VK11p8",
+        "name": "Kaposi Sarcoma - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "OLixcwhZGfF",
+        "name": "Kaposi Sarcoma - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "IZNNscY2J6K",
+        "name": "Kaposi Sarcoma - VIA screened and received results"
+      },
+      {
+        "id": "BanfdDOTvPC",
+        "name": "Kaposi Sarcoma - VIA screened and treated"
+      }
+    ],
+    "Kidney": [
+      {
+        "id": "l2AjtXTtnGC",
+        "name": "Kidney - HPV Positive for abnormal results"
+      },
+      {
+        "id": "lcaKWl04FSa",
+        "name": "Kidney - HPV screened"
+      },
+      {
+        "id": "r3WY2wd3wm6",
+        "name": "Kidney - HPV screened and received results"
+      },
+      {
+        "id": "sw3HVzsv2PC",
+        "name": "Kidney - LLETZ treated"
+      },
+      {
+        "id": "AgwtAwygTfr",
+        "name": "Kidney - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "RnZP1blNDSD",
+        "name": "Kidney - Pap smear screened"
+      },
+      {
+        "id": "qqSMX2bZ9dw",
+        "name": "Kidney - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "mBSwnDj4RYp",
+        "name": "Kidney - Pap smear screened and received results"
+      },
+      {
+        "id": "l7OFsTVVKL4",
+        "name": "Kidney - Pap smear screened and treated"
+      },
+      {
+        "id": "ezDCGvLj3wk",
+        "name": "Kidney - Pap smear screening results"
+      },
+      {
+        "id": "wv2tVkAIb39",
+        "name": "Kidney - Thermoablation treated"
+      },
+      {
+        "id": "B3N5kUwQ56w",
+        "name": "Kidney - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "ioHExfjbzVK",
+        "name": "Kidney - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "bL99mDRX48V",
+        "name": "Kidney - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "b3jf2rfLr9L",
+        "name": "Kidney - VIA Positive for abnormal results"
+      },
+      {
+        "id": "zDGYYKqwfOu",
+        "name": "Kidney - VIA result suspected cancer"
+      },
+      {
+        "id": "dQkG2xQ06Vd",
+        "name": "Kidney - VIA screened"
+      },
+      {
+        "id": "zKQh4RNB6Pt",
+        "name": "Kidney - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "SrrMFlMxe1R",
+        "name": "Kidney - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "B3Jj0F0gGl5",
+        "name": "Kidney - VIA screened and received results"
+      },
+      {
+        "id": "iTU4hmWJVXB",
+        "name": "Kidney - VIA screened and treated"
+      }
+    ],
+    "Leukemia": [
+      {
+        "id": "jmG3kxooJV4",
+        "name": "Leukemia - HPV Positive for abnormal results"
+      },
+      {
+        "id": "kHS8JZHrXmw",
+        "name": "Leukemia - HPV screened"
+      },
+      {
+        "id": "QfrMIF6wBzQ",
+        "name": "Leukemia - HPV screened and received results"
+      },
+      {
+        "id": "ZaQxIdAt2u2",
+        "name": "Leukemia - LLETZ treated"
+      },
+      {
+        "id": "z5pIx2FjhfT",
+        "name": "Leukemia - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "QcBbX25J2Yc",
+        "name": "Leukemia - Pap smear screened"
+      },
+      {
+        "id": "Ccuj0G8as89",
+        "name": "Leukemia - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "aNhmvzgt7D3",
+        "name": "Leukemia - Pap smear screened and received results"
+      },
+      {
+        "id": "rMUPpu94R7F",
+        "name": "Leukemia - Pap smear screened and treated"
+      },
+      {
+        "id": "olXDPuUgsih",
+        "name": "Leukemia - Pap smear screening results"
+      },
+      {
+        "id": "lkEnvdpkD0I",
+        "name": "Leukemia - Thermoablation treated"
+      },
+      {
+        "id": "B9yOZRog5NP",
+        "name": "Leukemia - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "CRC1WvACC8R",
+        "name": "Leukemia - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "X9CQfYVvECd",
+        "name": "Leukemia - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "lIAxCdMR46I",
+        "name": "Leukemia - VIA Positive for abnormal results"
+      },
+      {
+        "id": "jg0hjFW1DBD",
+        "name": "Leukemia - VIA result suspected cancer"
+      },
+      {
+        "id": "h9VYB8aRbWj",
+        "name": "Leukemia - VIA screened"
+      },
+      {
+        "id": "kIYRlh3Y4cj",
+        "name": "Leukemia - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "iLIAy5VN5hi",
+        "name": "Leukemia - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "UpitO4Tk4dC",
+        "name": "Leukemia - VIA screened and received results"
+      },
+      {
+        "id": "kwHIIzTv9Ad",
+        "name": "Leukemia - VIA screened and treated"
+      }
+    ],
+    "Liver": [
+      {
+        "id": "wnN1UXSlAq4",
+        "name": "Liver - HPV Positive for abnormal results"
+      },
+      {
+        "id": "bUHMLKOURkQ",
+        "name": "Liver - HPV screened"
+      },
+      {
+        "id": "G3HMc2kcQN1",
+        "name": "Liver - HPV screened and received results"
+      },
+      {
+        "id": "sCek5wUh9fY",
+        "name": "Liver - LLETZ treated"
+      },
+      {
+        "id": "R3SXue8Wrz5",
+        "name": "Liver - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "kh3qyRwDxcg",
+        "name": "Liver - Pap smear screened"
+      },
+      {
+        "id": "q5aGsCf4uIr",
+        "name": "Liver - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "HhAssh9uXl2",
+        "name": "Liver - Pap smear screened and received results"
+      },
+      {
+        "id": "m0pGd91YIft",
+        "name": "Liver - Pap smear screened and treated"
+      },
+      {
+        "id": "yhic55mWrLs",
+        "name": "Liver - Pap smear screening results"
+      },
+      {
+        "id": "ZfmHv8tBb9h",
+        "name": "Liver - Thermoablation treated"
+      },
+      {
+        "id": "MsezZ3JryIi",
+        "name": "Liver - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "qIxv5Sd2LvC",
+        "name": "Liver - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "MMzIqlyM9G1",
+        "name": "Liver - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "GM1FNPwLOfD",
+        "name": "Liver - VIA Positive for abnormal results"
+      },
+      {
+        "id": "qKS3UIMtuil",
+        "name": "Liver - VIA result suspected cancer"
+      },
+      {
+        "id": "Lp3mfDawkd8",
+        "name": "Liver - VIA screened"
+      },
+      {
+        "id": "LxwtmRMAWMn",
+        "name": "Liver - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "Himn586cAj8",
+        "name": "Liver - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "SfdNcPRiCYc",
+        "name": "Liver - VIA screened and received results"
+      },
+      {
+        "id": "Tp5a2EjOmAl",
+        "name": "Liver - VIA screened and treated"
+      }
+    ],
+    "Lung": [
+      {
+        "id": "lkH3FZ42Itv",
+        "name": "Lung - HPV Positive for abnormal results"
+      },
+      {
+        "id": "hsDYLGeimTW",
+        "name": "Lung - HPV screened"
+      },
+      {
+        "id": "jxQoYMaxtLZ",
+        "name": "Lung - HPV screened and received results"
+      },
+      {
+        "id": "BwGualJcqVs",
+        "name": "Lung - LLETZ treated"
+      },
+      {
+        "id": "OlQ9e2EKhM2",
+        "name": "Lung - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "eLQviEQ75wE",
+        "name": "Lung - Pap smear screened"
+      },
+      {
+        "id": "UEmAd4aoRSS",
+        "name": "Lung - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "NRTKmHqmc4z",
+        "name": "Lung - Pap smear screened and received results"
+      },
+      {
+        "id": "f40pyxZgSEZ",
+        "name": "Lung - Pap smear screened and treated"
+      },
+      {
+        "id": "oIwC8hNhd1E",
+        "name": "Lung - Pap smear screening results"
+      },
+      {
+        "id": "tB0Eahf8wVh",
+        "name": "Lung - Thermoablation treated"
+      },
+      {
+        "id": "CpHTKHsWekm",
+        "name": "Lung - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "ZjDVaCGdcIk",
+        "name": "Lung - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "IjPOIvhyewt",
+        "name": "Lung - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "fSjlGhTBddb",
+        "name": "Lung - VIA Positive for abnormal results"
+      },
+      {
+        "id": "V8wBTsoS2Cc",
+        "name": "Lung - VIA result suspected cancer"
+      },
+      {
+        "id": "CFYfxFmjdlE",
+        "name": "Lung - VIA screened"
+      },
+      {
+        "id": "ZEha63l5x6U",
+        "name": "Lung - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "gbufICvzkav",
+        "name": "Lung - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "z06nwWH6jhG",
+        "name": "Lung - VIA screened and received results"
+      },
+      {
+        "id": "uzdbAokxWzs",
+        "name": "Lung - VIA screened and treated"
+      }
+    ],
+    "Lymphoma": [
+      {
+        "id": "f061zROt0Iv",
+        "name": "Lymphoma - HPV Positive for abnormal results"
+      },
+      {
+        "id": "ugXaGXYKRnj",
+        "name": "Lymphoma - HPV screened"
+      },
+      {
+        "id": "evjFRE9sP0A",
+        "name": "Lymphoma - HPV screened and received results"
+      },
+      {
+        "id": "wZTuzxIms6o",
+        "name": "Lymphoma - LLETZ treated"
+      },
+      {
+        "id": "udYXnEwZMm3",
+        "name": "Lymphoma - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "q38HzqBaZBs",
+        "name": "Lymphoma - Pap smear screened"
+      },
+      {
+        "id": "S0kg1W8qS1P",
+        "name": "Lymphoma - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "QD2ZhDI9rE9",
+        "name": "Lymphoma - Pap smear screened and received results"
+      },
+      {
+        "id": "Uh8HHPPoU8r",
+        "name": "Lymphoma - Pap smear screened and treated"
+      },
+      {
+        "id": "qMJKG8Ng1kp",
+        "name": "Lymphoma - Pap smear screening results"
+      },
+      {
+        "id": "gbP1PzoIIzd",
+        "name": "Lymphoma - Thermoablation treated"
+      },
+      {
+        "id": "b4kIEpxuiS8",
+        "name": "Lymphoma - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "L82xvZk2kG2",
+        "name": "Lymphoma - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "HccucDI0aip",
+        "name": "Lymphoma - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "q44cEgGN1ZA",
+        "name": "Lymphoma - VIA Positive for abnormal results"
+      },
+      {
+        "id": "PIlekpj4nkV",
+        "name": "Lymphoma - VIA result suspected cancer"
+      },
+      {
+        "id": "wghfqNi4YmX",
+        "name": "Lymphoma - VIA screened"
+      },
+      {
+        "id": "zPE6XJ8YVod",
+        "name": "Lymphoma - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "YpeYyAXBkgT",
+        "name": "Lymphoma - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "kzhEuFtalmI",
+        "name": "Lymphoma - VIA screened and received results"
+      },
+      {
+        "id": "dtgFbPN85k7",
+        "name": "Lymphoma - VIA screened and treated"
+      }
+    ],
+    "Oral": [
+      {
+        "id": "ZvauUOqCEu1",
+        "name": "Oral Head Neck - HPV Positive for abnormal results"
+      },
+      {
+        "id": "b2obrqj4wVB",
+        "name": "Oral Head Neck - HPV screened"
+      },
+      {
+        "id": "RgWmjWQGhdn",
+        "name": "Oral Head Neck - HPV screened and received results"
+      },
+      {
+        "id": "fQSyQz7Yr7b",
+        "name": "Oral Head Neck - LLETZ treated"
+      },
+      {
+        "id": "qX5fFvKUp14",
+        "name": "Oral Head Neck - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "bKa0ko7daib",
+        "name": "Oral Head Neck - Pap smear screened"
+      },
+      {
+        "id": "Sw9i4Dj0xWr",
+        "name": "Oral Head Neck - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "wdb9rwVOO76",
+        "name": "Oral Head Neck - Pap smear screened and received results"
+      },
+      {
+        "id": "y5SIkrE1iMr",
+        "name": "Oral Head Neck - Pap smear screened and treated"
+      },
+      {
+        "id": "p9KwEUOvkqb",
+        "name": "Oral Head Neck - Pap smear screening results"
+      },
+      {
+        "id": "msrmMstlceC",
+        "name": "Oral Head Neck - Thermoablation treated"
+      },
+      {
+        "id": "f4ej7gQthmB",
+        "name": "Oral Head Neck - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "ZKH4QtFkZc6",
+        "name": "Oral Head Neck - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "hQoBtAHEx7N",
+        "name": "Oral Head Neck - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "OT3tksxnpab",
+        "name": "Oral Head Neck - VIA Positive for abnormal results"
+      },
+      {
+        "id": "AqXwd6lr7Co",
+        "name": "Oral Head Neck - VIA result suspected cancer"
+      },
+      {
+        "id": "ZRPFxgg8yZ8",
+        "name": "Oral Head Neck - VIA screened"
+      },
+      {
+        "id": "QHdgMADaI3H",
+        "name": "Oral Head Neck - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "CKBXXFV1C1d",
+        "name": "Oral Head Neck - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "Csa80yqhd2D",
+        "name": "Oral Head Neck - VIA screened and received results"
+      },
+      {
+        "id": "QrpsI6nGEeL",
+        "name": "Oral Head Neck - VIA screened and treated"
+      }
+    ],
+    "Ovarian": [
+      {
+        "id": "V8otE8rCpty",
+        "name": "Ovarian - HPV Positive for abnormal results"
+      },
+      {
+        "id": "IIqwKwmzwon",
+        "name": "Ovarian - HPV screened"
+      },
+      {
+        "id": "DrT2XDpBzb8",
+        "name": "Ovarian - HPV screened and received results"
+      },
+      {
+        "id": "clHkkgDY52u",
+        "name": "Ovarian - LLETZ treated"
+      },
+      {
+        "id": "gSZbvolqvtJ",
+        "name": "Ovarian - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "giIIrQZXRZx",
+        "name": "Ovarian - Pap smear screened"
+      },
+      {
+        "id": "BBTP2sSGtfd",
+        "name": "Ovarian - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "DbxYsXdcxsu",
+        "name": "Ovarian - Pap smear screened and received results"
+      },
+      {
+        "id": "j38eno5Ghjd",
+        "name": "Ovarian - Pap smear screened and treated"
+      },
+      {
+        "id": "WfflBv2HpYC",
+        "name": "Ovarian - Pap smear screening results"
+      },
+      {
+        "id": "fiWdcRD05PK",
+        "name": "Ovarian - Thermoablation treated"
+      },
+      {
+        "id": "xyAQfKC9mM1",
+        "name": "Ovarian - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "PPbsKxThVWF",
+        "name": "Ovarian - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "dYDGBhucsht",
+        "name": "Ovarian - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "NmNOOjZiRvs",
+        "name": "Ovarian - VIA Positive for abnormal results"
+      },
+      {
+        "id": "BwXMIa1TnbR",
+        "name": "Ovarian - VIA result suspected cancer"
+      },
+      {
+        "id": "QEHgueTJLLZ",
+        "name": "Ovarian - VIA screened"
+      },
+      {
+        "id": "zYTlV3KtvuX",
+        "name": "Ovarian - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "lFn2yHaHODh",
+        "name": "Ovarian - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "FJv9xSvLtDh",
+        "name": "Ovarian - VIA screened and received results"
+      },
+      {
+        "id": "xoCy6bgcd7W",
+        "name": "Ovarian - VIA screened and treated"
+      }
+    ],
+    "Pancreatic": [
+      {
+        "id": "RciyS7Ezn2R",
+        "name": "Pancreatic - HPV Positive for abnormal results"
+      },
+      {
+        "id": "cc1U9y4Y2zg",
+        "name": "Pancreatic - HPV screened"
+      },
+      {
+        "id": "dTNt0u8H5t4",
+        "name": "Pancreatic - HPV screened and received results"
+      },
+      {
+        "id": "WzdrY1XUPRm",
+        "name": "Pancreatic - LLETZ treated"
+      },
+      {
+        "id": "N6988tJWim5",
+        "name": "Pancreatic - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "NzTk3LIpf6c",
+        "name": "Pancreatic - Pap smear screened"
+      },
+      {
+        "id": "ueAg09aFhEw",
+        "name": "Pancreatic - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "yAi9FWP5k7R",
+        "name": "Pancreatic - Pap smear screened and received results"
+      },
+      {
+        "id": "H10BtA4bEvC",
+        "name": "Pancreatic - Pap smear screened and treated"
+      },
+      {
+        "id": "CTmHtEYpfoE",
+        "name": "Pancreatic - Pap smear screening results"
+      },
+      {
+        "id": "eDO8bVukhY2",
+        "name": "Pancreatic - Thermoablation treated"
+      },
+      {
+        "id": "GHFHzVLlu6k",
+        "name": "Pancreatic - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "fjwHJsMsYVL",
+        "name": "Pancreatic - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "BXnTtCAWTvN",
+        "name": "Pancreatic - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "vlfjLrBkKpi",
+        "name": "Pancreatic - VIA Positive for abnormal results"
+      },
+      {
+        "id": "OS6G0rWFLO5",
+        "name": "Pancreatic - VIA result suspected cancer"
+      },
+      {
+        "id": "W7VP5Z2ronQ",
+        "name": "Pancreatic - VIA screened"
+      },
+      {
+        "id": "IguZy7EoVoz",
+        "name": "Pancreatic - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "ukeuziMIGeu",
+        "name": "Pancreatic - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "Glcjcm6crOl",
+        "name": "Pancreatic - VIA screened and received results"
+      },
+      {
+        "id": "v0A8PvvQT6o",
+        "name": "Pancreatic - VIA screened and treated"
+      }
+    ],
+    "Prostate": [
+      {
+        "id": "DlWOyG2ch4h",
+        "name": "Prostate - HPV Positive for abnormal results"
+      },
+      {
+        "id": "YVNFRj7UMyJ",
+        "name": "Prostate - HPV screened"
+      },
+      {
+        "id": "isUYqceCaFl",
+        "name": "Prostate - HPV screened and received results"
+      },
+      {
+        "id": "K2JKVnBi5np",
+        "name": "Prostate - LLETZ treated"
+      },
+      {
+        "id": "nPdPPQcH4HO",
+        "name": "Prostate - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "Ix84OrkJUR7",
+        "name": "Prostate - Pap smear screened"
+      },
+      {
+        "id": "rfNyjSF1LjQ",
+        "name": "Prostate - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "kR7E1zO006n",
+        "name": "Prostate - Pap smear screened and received results"
+      },
+      {
+        "id": "gUyUBS6eIVm",
+        "name": "Prostate - Pap smear screened and treated"
+      },
+      {
+        "id": "uIBLOins8LG",
+        "name": "Prostate - Pap smear screening results"
+      },
+      {
+        "id": "pHRZGS3Z2R8",
+        "name": "Prostate - Thermoablation treated"
+      },
+      {
+        "id": "tJhQZRljkTb",
+        "name": "Prostate - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "fdudcKvuQrg",
+        "name": "Prostate - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "XL50lWEULlO",
+        "name": "Prostate - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "bANSqPaoUuH",
+        "name": "Prostate - VIA Positive for abnormal results"
+      },
+      {
+        "id": "lsfuUkMyo4v",
+        "name": "Prostate - VIA result suspected cancer"
+      },
+      {
+        "id": "waqY5TwCBOj",
+        "name": "Prostate - VIA screened"
+      },
+      {
+        "id": "br5yGaRolJM",
+        "name": "Prostate - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "HjqctDqRTvy",
+        "name": "Prostate - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "xQBs7P3KekP",
+        "name": "Prostate - VIA screened and received results"
+      },
+      {
+        "id": "Qe8uWXeGj0T",
+        "name": "Prostate - VIA screened and treated"
+      }
+    ],
+    "Melanoma": [
+      {
+        "id": "V28g7JbUrnv",
+        "name": "Skin Melanoma - HPV Positive for abnormal results"
+      },
+      {
+        "id": "oRoUA6Zj59p",
+        "name": "Skin Melanoma - HPV screened"
+      },
+      {
+        "id": "Ze1qvM2rix9",
+        "name": "Skin Melanoma - HPV screened and received results"
+      },
+      {
+        "id": "ZpfLSUGdQtQ",
+        "name": "Skin Melanoma - LLETZ treated"
+      },
+      {
+        "id": "elZ2fdUPTMk",
+        "name": "Skin Melanoma - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "QihqX11w3lw",
+        "name": "Skin Melanoma - Pap smear screened"
+      },
+      {
+        "id": "ZXHv3MXz7tS",
+        "name": "Skin Melanoma - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "mz561EqH8en",
+        "name": "Skin Melanoma - Pap smear screened and received results"
+      },
+      {
+        "id": "aDmOusKFqSd",
+        "name": "Skin Melanoma - Pap smear screened and treated"
+      },
+      {
+        "id": "TjSNJ6AGZEh",
+        "name": "Skin Melanoma - Pap smear screening results"
+      },
+      {
+        "id": "zRFFVwCzLSu",
+        "name": "Skin Melanoma - Thermoablation treated"
+      },
+      {
+        "id": "ewxwm1alxim",
+        "name": "Skin Melanoma - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "H0DM1Sl6M3E",
+        "name": "Skin Melanoma - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "WmSJBddLu5S",
+        "name": "Skin Melanoma - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "BEzP8BavtYc",
+        "name": "Skin Melanoma - VIA Positive for abnormal results"
+      },
+      {
+        "id": "O4Y9aku13gg",
+        "name": "Skin Melanoma - VIA result suspected cancer"
+      },
+      {
+        "id": "yCmkVuzVhMA",
+        "name": "Skin Melanoma - VIA screened"
+      },
+      {
+        "id": "mRku9IPmh6d",
+        "name": "Skin Melanoma - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "pWaMCZTne34",
+        "name": "Skin Melanoma - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "Ugxg3qx7IK3",
+        "name": "Skin Melanoma - VIA screened and received results"
+      },
+      {
+        "id": "DvgMjnsRNWj",
+        "name": "Skin Melanoma - VIA screened and treated"
+      }
+    ],
+    "Stomach": [
+      {
+        "id": "R9k2RA3zWEE",
+        "name": "Stomach - HPV Positive for abnormal results"
+      },
+      {
+        "id": "xK4sNWRtcyJ",
+        "name": "Stomach - HPV screened"
+      },
+      {
+        "id": "cxXrtkeWj7D",
+        "name": "Stomach - HPV screened and received results"
+      },
+      {
+        "id": "nnp4ONc714S",
+        "name": "Stomach - LLETZ treated"
+      },
+      {
+        "id": "VU7ap7x8uj0",
+        "name": "Stomach - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "mjGFgL0CsFO",
+        "name": "Stomach - Pap smear screened"
+      },
+      {
+        "id": "GuYygE1BywA",
+        "name": "Stomach - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "hWeeftbihic",
+        "name": "Stomach - Pap smear screened and received results"
+      },
+      {
+        "id": "uXjsjkMmLuN",
+        "name": "Stomach - Pap smear screened and treated"
+      },
+      {
+        "id": "SaxSqJj0RlP",
+        "name": "Stomach - Pap smear screening results"
+      },
+      {
+        "id": "Ke53TiPTb62",
+        "name": "Stomach - Thermoablation treated"
+      },
+      {
+        "id": "Lkxu4i4kQ4q",
+        "name": "Stomach - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "sw2u4l6zJ5f",
+        "name": "Stomach - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "zSI9AiC6p0M",
+        "name": "Stomach - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "Z2VXB2HtbgS",
+        "name": "Stomach - VIA Positive for abnormal results"
+      },
+      {
+        "id": "nm2avEC7917",
+        "name": "Stomach - VIA result suspected cancer"
+      },
+      {
+        "id": "YdSOqXjPnkR",
+        "name": "Stomach - VIA screened"
+      },
+      {
+        "id": "RFJyrasMcKA",
+        "name": "Stomach - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "u6TNdheAag3",
+        "name": "Stomach - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "oxEX4y9WWK8",
+        "name": "Stomach - VIA screened and received results"
+      },
+      {
+        "id": "Bv5g41HOWLQ",
+        "name": "Stomach - VIA screened and treated"
+      }
+    ],
+    "Testicular": [
+      {
+        "id": "ZQNQfP68pKc",
+        "name": "Testicular - HPV Positive for abnormal results"
+      },
+      {
+        "id": "IXP4Mr8rq7D",
+        "name": "Testicular - HPV screened"
+      },
+      {
+        "id": "t4hf8ZnBdkP",
+        "name": "Testicular - HPV screened and received results"
+      },
+      {
+        "id": "kBiubNnnS0L",
+        "name": "Testicular - LLETZ treated"
+      },
+      {
+        "id": "UylTS8olK2p",
+        "name": "Testicular - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "XWz6aA0nWRz",
+        "name": "Testicular - Pap smear screened"
+      },
+      {
+        "id": "gnbaxeRlQcc",
+        "name": "Testicular - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "V4c0CUhHhyO",
+        "name": "Testicular - Pap smear screened and received results"
+      },
+      {
+        "id": "zQ6bhhfTkvx",
+        "name": "Testicular - Pap smear screened and treated"
+      },
+      {
+        "id": "OGgk9LMbCRb",
+        "name": "Testicular - Pap smear screening results"
+      },
+      {
+        "id": "jVCdEQtkMTO",
+        "name": "Testicular - Thermoablation treated"
+      },
+      {
+        "id": "O9S4NysoBac",
+        "name": "Testicular - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "B9BaJeusZBG",
+        "name": "Testicular - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "zxDTpXfsf0m",
+        "name": "Testicular - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "mfPb3c0gTBq",
+        "name": "Testicular - VIA Positive for abnormal results"
+      },
+      {
+        "id": "aqHcZcZL1vw",
+        "name": "Testicular - VIA result suspected cancer"
+      },
+      {
+        "id": "XvPxurxjImn",
+        "name": "Testicular - VIA screened"
+      },
+      {
+        "id": "tgZoQxvH3Xg",
+        "name": "Testicular - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "P4BRSvzRhNd",
+        "name": "Testicular - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "sF8R9J6hgU5",
+        "name": "Testicular - VIA screened and received results"
+      },
+      {
+        "id": "Kn1tDRbwtTP",
+        "name": "Testicular - VIA screened and treated"
+      }
+    ],
+    "Thyroid": [
+      {
+        "id": "DrnOrMCV6J2",
+        "name": "Thyroid - HPV Positive for abnormal results"
+      },
+      {
+        "id": "Jm2vms28CO1",
+        "name": "Thyroid - HPV screened"
+      },
+      {
+        "id": "JPLjLEtibg0",
+        "name": "Thyroid - HPV screened and received results"
+      },
+      {
+        "id": "aWsfoiY2O4J",
+        "name": "Thyroid - LLETZ treated"
+      },
+      {
+        "id": "qyoHpvrB9NV",
+        "name": "Thyroid - Pap Smear Positive for abnormal results"
+      },
+      {
+        "id": "Cr2yUQEbQCA",
+        "name": "Thyroid - Pap smear screened"
+      },
+      {
+        "id": "tr6xkhnK6sF",
+        "name": "Thyroid - Pap smear screened and LLETZ post treatment complication "
+      },
+      {
+        "id": "zAEmVVBFSyi",
+        "name": "Thyroid - Pap smear screened and received results"
+      },
+      {
+        "id": "JoYF1SGBkgC",
+        "name": "Thyroid - Pap smear screened and treated"
+      },
+      {
+        "id": "wCp1mbYtvuA",
+        "name": "Thyroid - Pap smear screening results"
+      },
+      {
+        "id": "YScsivbrtVW",
+        "name": "Thyroid - Thermoablation treated"
+      },
+      {
+        "id": "nzMktOJkf1X",
+        "name": "Thyroid - Total positive for abnormal results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "ckSi8FqwO8q",
+        "name": "Thyroid - Total screened (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "hO1WK1iOKju",
+        "name": "Thyroid - Total screened and received results (VIA, Pap smear and HPV)"
+      },
+      {
+        "id": "wRSZdbERXI4",
+        "name": "Thyroid - VIA Positive for abnormal results"
+      },
+      {
+        "id": "Y8yjhwcVeGH",
+        "name": "Thyroid - VIA result suspected cancer"
+      },
+      {
+        "id": "MaOpUjywuSB",
+        "name": "Thyroid - VIA screened"
+      },
+      {
+        "id": "gKU66nMiQEd",
+        "name": "Thyroid - VIA screened and LLETZ post treatment complication"
+      },
+      {
+        "id": "qli6vXgVzl5",
+        "name": "Thyroid - VIA screened and Thermo post treatment complication"
+      },
+      {
+        "id": "hnmndke37bS",
+        "name": "Thyroid - VIA screened and received results"
+      },
+      {
+        "id": "ET1ydZBY7L4",
+        "name": "Thyroid - VIA screened and treated"
       }
     ]
   },
   "summary": {
-    "Generic Cancer": 159,
-    "Breast": 5
+    "Other": 123,
+    "Breast": 26,
+    "Generic Cancer": 36,
+    "Bladder": 21,
+    "Colorectal": 21,
+    "Esophageal": 21,
+    "Kaposi": 21,
+    "Kidney": 21,
+    "Leukemia": 21,
+    "Liver": 21,
+    "Lung": 21,
+    "Lymphoma": 21,
+    "Oral": 21,
+    "Ovarian": 21,
+    "Pancreatic": 21,
+    "Prostate": 21,
+    "Melanoma": 21,
+    "Stomach": 21,
+    "Testicular": 21,
+    "Thyroid": 21
   },
-  "totalElements": 164
+  "totalElements": 542
 }

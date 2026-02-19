@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "qMLfDzfOcnq",
+      "created": "2026-02-18T15:44:06.457592",
+      "lastUpdated": "2026-02-18T15:44:06.457593",
+      "name": "Thyroid Cancer Dashboard",
+      "displayName": "Thyroid Cancer Dashboard",
+      "description": "Monitoring dashboard for Thyroid cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "b7e65883-13",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "f1d89867-42",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "eb27a247-2b",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "c6f0ed86-e9",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "LqefQgs73Ki"
+    }
+  ]
+}

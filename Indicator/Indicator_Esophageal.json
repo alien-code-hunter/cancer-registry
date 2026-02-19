@@ -1,0 +1,84 @@
+{
+  "indicators": [
+    {
+      "name": "Esophageal - % Pap smear screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "IGP_ESOPHAGEAL",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Esophageal - % Pap smear screened and received res",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{IvVoimXlkFr}",
+      "numeratorDescription": "Esophageal - % Pap smear screened and received results",
+      "denominator": "#{JJgwgqWBZ2M}",
+      "denominatorDescription": "Esophageal - % Pap smear screened and received results",
+      "id": "dnGjV104v2r",
+      "attributeValues": []
+    },
+    {
+      "name": "Esophageal - % VIA screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Esophageal - % VIA screened and received results",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{MNqyKRTmExh}",
+      "numeratorDescription": "Esophageal - % VIA screened and received results",
+      "denominator": "#{XhMy0WC408t}",
+      "denominatorDescription": "Esophageal - % VIA screened and received results",
+      "id": "WTfUAW6ZbcZ",
+      "attributeValues": []
+    }
+  ]
+}

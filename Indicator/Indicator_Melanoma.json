@@ -1,0 +1,84 @@
+{
+  "indicators": [
+    {
+      "name": "Skin Melanoma - % Pap smear screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "IGP_SKIN_MELANOMA",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Skin Melanoma - % Pap smear screened and received ",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{mz561EqH8en}",
+      "numeratorDescription": "Skin Melanoma - % Pap smear screened and received results",
+      "denominator": "#{QihqX11w3lw}",
+      "denominatorDescription": "Skin Melanoma - % Pap smear screened and received results",
+      "id": "ROLRGJdaBHD",
+      "attributeValues": []
+    },
+    {
+      "name": "Skin Melanoma - % VIA screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Skin Melanoma - % VIA screened and received result",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{Ugxg3qx7IK3}",
+      "numeratorDescription": "Skin Melanoma - % VIA screened and received results",
+      "denominator": "#{yCmkVuzVhMA}",
+      "denominatorDescription": "Skin Melanoma - % VIA screened and received results",
+      "id": "jv9QIskLCv2",
+      "attributeValues": []
+    }
+  ]
+}

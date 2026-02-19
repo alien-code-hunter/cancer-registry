@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "G5fXvvwQe9n",
+      "created": "2026-02-18T15:44:06.457459",
+      "lastUpdated": "2026-02-18T15:44:06.457460",
+      "name": "Prostate Cancer Dashboard",
+      "displayName": "Prostate Cancer Dashboard",
+      "description": "Monitoring dashboard for Prostate cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "eca17f1c-fe",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "c4386b2d-dd",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "90d7c0fc-cc",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "3d7cb02b-93",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "pptxquR0pzV"
+    }
+  ]
+}

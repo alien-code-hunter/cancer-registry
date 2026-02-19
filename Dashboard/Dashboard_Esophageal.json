@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "CQKmlhHajww",
+      "created": "2026-02-18T15:44:06.457122",
+      "lastUpdated": "2026-02-18T15:44:06.457124",
+      "name": "Esophageal Cancer Dashboard",
+      "displayName": "Esophageal Cancer Dashboard",
+      "description": "Monitoring dashboard for Esophageal cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "62e13358-78",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "fe69179b-56",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "0448997c-b8",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "054d4de0-94",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "Gz0qaXe2Fqu"
+    }
+  ]
+}

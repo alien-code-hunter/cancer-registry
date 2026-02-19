@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "W9JXG5bBbpg",
+      "created": "2026-02-18T15:44:06.457393",
+      "lastUpdated": "2026-02-18T15:44:06.457394",
+      "name": "Ovarian Cancer Dashboard",
+      "displayName": "Ovarian Cancer Dashboard",
+      "description": "Monitoring dashboard for Ovarian cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "4995c31b-e8",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "c31d7c21-fc",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "f9e38bcc-92",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "dcecbc36-09",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "8IkCPpL9OLx"
+    }
+  ]
+}

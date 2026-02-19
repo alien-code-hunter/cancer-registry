@@ -1,0 +1,84 @@
+{
+  "indicators": [
+    {
+      "name": "Kaposi Sarcoma - % Pap smear screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "IGP_KAPOSI_SARCOMA",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - % Pap smear screened and received",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{I7G30k7fMgh}",
+      "numeratorDescription": "Kaposi Sarcoma - % Pap smear screened and received results",
+      "denominator": "#{J9kSZSxkHdF}",
+      "denominatorDescription": "Kaposi Sarcoma - % Pap smear screened and received results",
+      "id": "GwFNeGambO0",
+      "attributeValues": []
+    },
+    {
+      "name": "Kaposi Sarcoma - % VIA screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Kaposi Sarcoma - % VIA screened and received resul",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{IZNNscY2J6K}",
+      "numeratorDescription": "Kaposi Sarcoma - % VIA screened and received results",
+      "denominator": "#{b1chEyHmy2n}",
+      "denominatorDescription": "Kaposi Sarcoma - % VIA screened and received results",
+      "id": "lRoYMFNsxGO",
+      "attributeValues": []
+    }
+  ]
+}

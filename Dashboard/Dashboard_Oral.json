@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "pKZgtaZpa7i",
+      "created": "2026-02-18T15:44:06.457360",
+      "lastUpdated": "2026-02-18T15:44:06.457361",
+      "name": "Oral Head Neck Cancer Dashboard",
+      "displayName": "Oral Head Neck Cancer Dashboard",
+      "description": "Monitoring dashboard for Oral Head Neck cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "af2af017-e4",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "a9445b8a-fa",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "af44d8dc-c7",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "b02254e8-9f",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "K4BAS5rDWjp"
+    }
+  ]
+}

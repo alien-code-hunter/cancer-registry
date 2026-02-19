@@ -1,0 +1,35 @@
+{
+  "dashboards": [
+    {
+      "id": "uCtEEA9zn7T",
+      "created": "2026-02-18T15:44:06.457257",
+      "lastUpdated": "2026-02-18T15:44:06.457258",
+      "name": "Liver Cancer Dashboard",
+      "displayName": "Liver Cancer Dashboard",
+      "description": "Monitoring dashboard for Liver cancer program - includes case tracking, treatment outcomes, and program indicators",
+      "dashboardItems": [
+        {
+          "id": "6015d8dd-94",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "74598130-58",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "a73c6980-a6",
+          "type": "VISUALIZATION"
+        },
+        {
+          "id": "c77ea032-38",
+          "type": "VISUALIZATION"
+        }
+      ],
+      "dashboardType": "PROGRAM",
+      "favorite": false,
+      "owner": "dhis2user",
+      "external": false,
+      "uid": "xRWfE2OtZIR"
+    }
+  ]
+}

@@ -1,136 +1,212 @@
-#!/usr/bin/env python3
-"""
-Comprehensive Fix Script for Cancer Registry Issues:
-1. Fix dashboards - add missing item type
-2. Assign data elements to program stages
-3. Rename CECAP to Cervical Cancer
-4. Fix event visualizer conflicts
-5. Group data elements by cancer type
-"""
+# --- Fix 2: IndicatorGroup code uniqueness and UID validity ---
+def fix_indicatorgroup_code_and_uid():
+    print("\n🔧 Fixing IndicatorGroup code uniqueness and UID validity...")
+    ig_path = BASE_DIR / "Indicator" / "indicator group.json"
+    if not ig_path.exists():
+        print(f"  - IndicatorGroup file not found: {ig_path}")
+        return
+    with open(ig_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    import random, string
+    seen_codes = set()
+    for ig in data.get('indicatorGroups', []):
+        # Regenerate invalid UID
+        uid = ig.get('uid')
+        if not uid or len(uid) != 11 or not uid.isalnum():
+            ig['uid'] = ''.join(random.choices(string.ascii_letters + string.digits, k=11))
+        # Remove or rename duplicate codes
+        code = ig.get('code')
+        if code in seen_codes:
+            ig['code'] = f"{code}_{ig['uid']}"
+        seen_codes.add(ig['code'])
+    with open(ig_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=True)
+        f.write('\n')
+    print(f"  - Fixed IndicatorGroup codes and UIDs in {ig_path}")
+    print("✅ IndicatorGroup code/UID fix complete.")
 
+# --- Fix 3: Dashboard UID regeneration ---
+def fix_dashboard_uids():
+    print("\n🔧 Regenerating Dashboard UIDs to valid DHIS2 format...")
+    dash_dir = BASE_DIR / "Dashboard"
+    for file in dash_dir.glob("Dashboard_*.json"):
+        with open(file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        changed = False
+        for dash in data.get('dashboards', []):
+            uid = dash.get('uid')
+            if not uid or len(uid) != 11 or not uid.isalnum():
+                import random, string
+                dash['uid'] = ''.join(random.choices(string.ascii_letters + string.digits, k=11))
+                changed = True
+        if changed:
+            with open(file, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Fixed Dashboard UIDs in {file}")
+    print("✅ Dashboard UID regeneration complete.")
+
+# --- Fix 4: Remove avatar property from all Users ---
+def remove_user_avatars():
+    print("\n🔧 Removing avatar property from all Users...")
+    user_path = BASE_DIR / "Users" / "User.json"
+    if not user_path.exists():
+        print(f"  - User file not found: {user_path}")
+        return
+    with open(user_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    changed = False
+    for user in data.get('users', []):
+        if 'avatar' in user:
+            user.pop('avatar')
+            changed = True
+    if changed:
+        with open(user_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Removed avatar property in {user_path}")
+    print("✅ User avatar removal complete.")
+
+# --- Fix 5: ValidationRule leftSide/rightSide deserialization errors ---
+def fix_validationrule_sides():
+    print("\n🔧 Fixing ValidationRule leftSide/rightSide deserialization errors...")
+    vr_path = BASE_DIR / "Validation" / "Validation Rule.json"
+    if not vr_path.exists():
+        print(f"  - ValidationRule file not found: {vr_path}")
+        return
+    with open(vr_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    changed = False
+    for vr in data.get('validationRules', []):
+        # Fix leftSide/rightSide
+        for side in ['leftSide', 'rightSide']:
+            if side in vr and isinstance(vr[side], str):
+                vr[side] = {'expression': vr[side]}
+                changed = True
+            elif side not in vr:
+                vr[side] = {'expression': ''}
+                changed = True
+        # Replace invalid operator values
+        if vr.get('operator') == 'not_empty':
+            vr['operator'] = 'compulsory_pair'
+            changed = True
+        # Add missing periodType
+        if 'periodType' not in vr:
+            vr['periodType'] = 'Monthly'
+            changed = True
+    if changed:
+        with open(vr_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Fixed ValidationRule sides, operator, and periodType in {vr_path}")
+    print("✅ ValidationRule leftSide/rightSide, operator, and periodType fix complete.")
+# --- Fix 1: Truncate DataElement shortName ---
+def truncate_dataelement_shortnames():
+    print("\n🔧 Truncating DataElement shortName to 50 chars for all cancer-type files...")
+    data_element_dir = BASE_DIR / "Data Element"
+    for file in data_element_dir.glob("Data_Element_*.json"):
+        with open(file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        changed = False
+        for de in data.get('dataElements', []):
+            if 'shortName' in de and len(de['shortName']) > 50:
+                de['shortName'] = de['shortName'][:50]
+                changed = True
+        if changed:
+            with open(file, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Fixed shortName in {file}")
+    print("✅ DataElement shortName truncation complete.")
 import json
 from pathlib import Path
 from collections import defaultdict
+import tempfile
+import shutil
+try:
+    import ijson
+except ImportError:
+    ijson = None
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 
-def issue_1_fix_dashboards():
-    """Fix dashboards - add missing item type"""
-    print("\n1️⃣ FIXING DASHBOARDS - MISSING ITEM TYPE")
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
     print("-" * 80)
-    
     db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
-    with open(db_path) as f:
-        data = json.load(f)
-    
-    dashboards = data.get('dashboards', [])
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
     items_fixed = 0
-    
-    for dashboard in dashboards:
-        items = dashboard.get('dashboardItems', [])
-        for item in items:
-            # Add missing type field
-            if 'type' not in item or not item.get('type'):
-                # Infer type from content
-                if item.get('visualization'):
-                    item['type'] = 'VISUALIZATION'
-                elif item.get('eventChart'):
-                    item['type'] = 'EVENT_CHART'
-                elif item.get('map'):
-                    item['type'] = 'MAP'
-                elif item.get('appKey'):
-                    item['type'] = 'APP'
-                else:
-                    item['type'] = 'VISUALIZATION'  # Default
-                items_fixed += 1
-    
-    with open(db_path, 'w') as f:
-        json.dump(data, f, indent=2, ensure_ascii=True)
-        f.write('\n')
-    
-    print(f"✅ Fixed {items_fixed} dashboard items with missing type")
-    return items_fixed
-
-
-
-# Step 1: Load data
-def load_program_stage_and_de():
-    stage_path = BASE_DIR / "Program" / "Program Stage.json"
-    de_path = BASE_DIR / "Data Element" / "Data Element.json"
-    with open(stage_path) as f:
-        stage_data = json.load(f)
-    with open(de_path) as f:
-        de_data = json.load(f)
-    return stage_data, de_data
-
-# Step 2: Map cancer types to data elements
-def map_cancer_to_data_elements(de_data):
-    cancer_de_map = {}
-    data_elements = de_data.get('dataElements', [])
-    for de in data_elements:
-        name = de.get('name', '')
-        de_id = de.get('id', '')
-        if not name:
-            continue
-        for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
-                      'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
-                      'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
-                      'Kaposi', 'Melanoma', 'CECAP']:
-            if cancer.lower() in name.lower():
-                if cancer not in cancer_de_map:
-                    cancer_de_map[cancer] = []
-                cancer_de_map[cancer].append(de_id)
-                break
-        else:
-            if 'cancer' in name.lower() or 'diagnosis' in name.lower() or 'treatment' in name.lower():
-                if 'Generic' not in cancer_de_map:
-                    cancer_de_map['Generic'] = []
-                cancer_de_map['Generic'].append(de_id)
-    return cancer_de_map
-
-# Step 3: Map cancer types to program stage IDs
-def map_cancer_to_stages(stage_data):
-    stages = stage_data.get('programStages', [])
-    cancer_stages = defaultdict(list)
-    for stage in stages:
-        name = stage.get('name', '')
-        stage_id = stage.get('id', '')
-        prog = stage.get('program', {})
-        prog_id = prog.get('id', '')
-        for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
-                      'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
-                      'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
-                      'Kaposi', 'Melanoma', 'CECAP']:
-            if cancer.lower() in name.lower() or cancer.lower() in prog_id.lower():
-                cancer_stages[cancer].append({'id': stage_id, 'name': name})
-                break
-    return cancer_stages
-
-# Step 4: Assign data elements to stages in batches
-def assign_data_elements_to_stages(stage_data, cancer_de_map, cancer_stages, batch_size=50):
-    stages = stage_data.get('programStages', [])
-    updated_count = 0
-    total = len(stages)
-    print(f"Total stages: {total}")
-    per_stage_dir = BASE_DIR / "Program" / "stages_tmp"
-    per_stage_dir.mkdir(exist_ok=True)
-    for idx, stage in enumerate(stages):
-        try:
-            stage_id = stage.get('id')
-            if not stage_id:
-                continue
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
             cancer_type = None
-            prog_id = stage.get('program', {}).get('id', '')
-            for cancer in cancer_stages:
-                if any(s['id'] == stage_id for s in cancer_stages[cancer]):
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
                     cancer_type = cancer
                     break
             if not cancer_type:
                 cancer_type = 'Generic'
-            elements_to_add = cancer_de_map.get(cancer_type, [])
-            elements_to_add += cancer_de_map.get('Generic', [])
-            if not elements_to_add:
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
                 continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
             existing = stage.get('programStageDataElements', [])
             existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
             sort_order = len(existing) + 1
@@ -146,186 +222,2090 @@ def assign_data_elements_to_stages(stage_data, cancer_de_map, cancer_stages, bat
                     sort_order += 1
             if len(existing) > 0:
                 stage['programStageDataElements'] = existing
-                updated_count += 1
-            # Save each stage to its own file
-            with open(per_stage_dir / f"stage_{idx+1:03d}_{stage_id}.json", 'w') as f:
-                json.dump(stage, f, indent=2, ensure_ascii=True)
-            if idx % 5 == 0:
-                print(f"Processed stage {idx+1}/{total} (ID: {stage_id})")
-        except Exception as e:
-            print(f"Error processing stage {idx+1}/{total} (ID: {stage.get('id')}): {e}")
-    print(f"✅ Assigned data elements to {updated_count} program stages (per-stage file)")
-    print(f"All stages written to {per_stage_dir}")
-    return updated_count
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
 
-# Main runner for stepwise execution
-def run_data_element_assignment_batched():
-    print("\n2️⃣ ASSIGNING DATA ELEMENTS TO PROGRAM STAGES (BATCHED)")
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
     print("-" * 80)
-    stage_data, de_data = load_program_stage_and_de()
-    cancer_de_map = map_cancer_to_data_elements(de_data)
-    cancer_stages = map_cancer_to_stages(stage_data)
-    return assign_data_elements_to_stages(stage_data, cancer_de_map, cancer_stages, batch_size=10)
-
-# Utility to merge per-stage files into one Program Stage.json
-def merge_per_stage_files():
-    print("Merging per-stage files into Program Stage.json ...")
-    per_stage_dir = BASE_DIR / "Program" / "stages_tmp"
-    stage_path = BASE_DIR / "Program" / "Program Stage.json"
-    import glob
-    all_files = sorted(glob.glob(str(per_stage_dir / "stage_*.json")))
-    stages = []
-    for fpath in all_files:
-        with open(fpath) as f:
-            stages.append(json.load(f))
-    # Load original file to preserve other keys
-    with open(stage_path) as f:
-        orig = json.load(f)
-    orig['programStages'] = stages
-    with open(stage_path, 'w') as f:
-        json.dump(orig, f, indent=2, ensure_ascii=True)
-        f.write('\n')
-    print(f"Merged {len(stages)} stages into {stage_path}")
-
-
-def issue_3_rename_cecap():
-    """Rename CECAP program to Cervical Cancer"""
-    print("\n3️⃣ RENAMING CECAP TO CERVICAL CANCER PROGRAM")
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
     print("-" * 80)
-    
-    prog_path = BASE_DIR / "Program" / "Program.json"
-    
-    with open(prog_path) as f:
-        data = json.load(f)
-    
-    programs = data.get('programs', [])
-    renamed = 0
-    
-    for prog in programs:
-        if prog.get('shortName') == 'CECAP' or 'CECAP' in prog.get('name', ''):
-            old_name = prog.get('name')
-            prog['name'] = 'Cervical Cancer Program'
-            prog['shortName'] = 'CCP'
-            prog['description'] = 'Cervical cancer screening, diagnosis, treatment, and follow-up program'
-            renamed += 1
-            print(f"  {old_name} → {prog['name']}")
-    
-    with open(prog_path, 'w') as f:
-        json.dump(data, f, indent=2, ensure_ascii=True)
-        f.write('\n')
-    
-    # Also rename stages
-    stage_path = BASE_DIR / "Program" / "Program Stage.json"
-    with open(stage_path) as f:
-        stage_data = json.load(f)
-    
-    stages = stage_data.get('programStages', [])
-    stage_renamed = 0
-    
-    for stage in stages:
-        name = stage.get('name', '')
-        if 'CECAP' in name:
-            new_name = name.replace('CECAP', 'Cervical Cancer')
-            stage['name'] = new_name
-            stage_renamed += 1
-    
-    with open(stage_path, 'w') as f:
-        json.dump(stage_data, f, indent=2, ensure_ascii=True)
-        f.write('\n')
-    
-    # Rename in other files
-    renamed += stage_renamed
-    print(f"✅ Renamed {renamed} CECAP items to Cervical Cancer")
-    return renamed
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
 
 
-def issue_6_group_data_elements():
-    """Group data elements by cancer type"""
-    print("\n6️⃣ CREATING CANCER-GROUPED DATA ELEMENTS REFERENCE")
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
     print("-" * 80)
-    
-    de_path = BASE_DIR / "Data Element" / "Data Element.json"
-    
-    with open(de_path) as f:
-        data = json.load(f)
-    
-    data_elements = data.get('dataElements', [])
-    
-    # Group by cancer
-    grouped = defaultdict(list)
-    
-    for de in data_elements:
-        name = de.get('name', '')
-        de_id = de.get('id', '')
-        
-        # Determine cancer type
-        cancer_type = None
-        for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
-                      'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
-                      'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
-                      'Kaposi', 'Melanoma', 'Cervical']:
-            if cancer.lower() in name.lower():
-                cancer_type = cancer
-                break
-        
-        if not cancer_type:
-            if any(word in name.lower() for word in ['cancer', 'diagnosis', 'treatment', 'staging']):
-                cancer_type = 'Generic Cancer'
-            else:
-                cancer_type = 'Other'
-        
-        grouped[cancer_type].append({'id': de_id, 'name': name})
-    
-    # Create reference file
-    ref_file = BASE_DIR / "Data Element" / "Data Elements by Cancer Type.json"
-    reference = {
-        'dataElementsByType': dict(grouped),
-        'summary': {cancer: len(elements) for cancer, elements in grouped.items()},
-        'totalElements': len(data_elements)
-    }
-    
-    with open(ref_file, 'w') as f:
-        json.dump(reference, f, indent=2, ensure_ascii=True)
-        f.write('\n')
-    
-    print("✅ Created Data Elements by Cancer Type reference file")
-    for cancer in sorted(grouped.keys()):
-        print(f"  - {cancer}: {len(grouped[cancer])} elements")
-    
-    return len(grouped)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
 
 
-def main():
-    print("\n" + "="*80)
-    print("CANCER REGISTRY - COMPREHENSIVE FIX SCRIPT")
-    print("="*80)
-    
-    results = {}
-    
-    # try:
-    #     results['dashboards'] = issue_1_fix_dashboards()
-    # except Exception as e:
-    #     print(f"❌ Dashboard fix failed: {e}")
-    try:
-        results['data_elements'] = run_data_element_assignment_batched()
-    except Exception as e:
-        print(f"❌ Data element assignment failed: {e}")
-    # try:
-    #     results['cecap_rename'] = issue_3_rename_cecap()
-    # except Exception as e:
-    #     print(f"❌ CECAP rename failed: {e}")
-    # try:
-    #     results['grouping'] = issue_6_group_data_elements()
-    # except Exception as e:
-    #     print(f"❌ Element grouping failed: {e}")
-    
-    print("\n" + "="*80)
-    print("✅ FIXES COMPLETED")
-    print("="*80)
-    print(f"\nSummary:")
-    for key, value in results.items():
-        print(f"  ✓ {key}: {value}")
-    print("\n" + "="*80)
+BASE_DIR = Path(__file__).resolve().parents[2]
 
-if __name__ == "__main__":
-    main()
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+                          'Kaposi', 'Melanoma', 'Cervical']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break
+            if not cancer_type:
+                cancer_type = 'Generic'
+            items = dashboard.get('dashboardItems', [])
+            for item in items:
+                if 'type' not in item or not item.get('type'):
+                    if item.get('visualization'):
+                        item['type'] = 'VISUALIZATION'
+                    elif item.get('eventChart'):
+                        item['type'] = 'EVENT_CHART'
+                    elif item.get('map'):
+                        item['type'] = 'MAP'
+                    elif item.get('appKey'):
+                        item['type'] = 'APP'
+                    else:
+                        item['type'] = 'VISUALIZATION'
+                    items_fixed += 1
+            dashboards_by_cancer[cancer_type].append(dashboard)
+    for cancer, dashboards in dashboards_by_cancer.items():
+        out_path = BASE_DIR / "Dashboard" / f"Dashboard_{cancer}.json"
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump({'dashboards': dashboards}, f, indent=2, ensure_ascii=True)
+            f.write('\n')
+        print(f"  - Created {out_path} with {len(dashboards)} dashboards")
+    print(f"✅ Fixed {items_fixed} dashboard items and split dashboards by cancer type.")
+    return items_fixed
+# Add missing function to split program stages by cancer type
+def assign_data_elements_to_stages_split(stages, cancer_de_map, cancer_stages):
+    print("\n2️⃣ SPLITTING PROGRAM STAGES AND DATA ELEMENTS BY CANCER TYPE")
+    print("-" * 80)
+    # Process and write each cancer's program stages one at a time
+    cancer_types = ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+        'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+        'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal',
+        'Kaposi', 'Melanoma', 'Cervical', 'Generic']
+    total_written = 0
+    for cancer in cancer_types:
+        cancer_stages_list = []
+        for idx, stage in enumerate(stages, 1):
+            # Determine if this stage belongs to the current cancer type
+            stage_cancer_type = None
+            name = stage.get('name', '')
+            prog_id = stage.get('program', {}).get('id', '')
+            for c in cancer_stages:
+                if any(s['id'] == stage.get('id') for s in cancer_stages[c]):
+                    stage_cancer_type = c
+                    break
+            if not stage_cancer_type:
+                for c in cancer_types:
+                    if c.lower() in name.lower() or c.lower() in prog_id.lower():
+                        stage_cancer_type = c
+                        break
+            if not stage_cancer_type:
+                stage_cancer_type = 'Generic'
+            if stage_cancer_type != cancer:
+                continue
+            # Assign data elements
+            elements_to_add = cancer_de_map.get(cancer, []) + cancer_de_map.get('Generic', [])
+            existing = stage.get('programStageDataElements', [])
+            existing_ids = {item.get('dataElement', {}).get('id') for item in existing}
+            sort_order = len(existing) + 1
+            for elem_id in elements_to_add:
+                if elem_id not in existing_ids:
+                    existing.append({
+                        'dataElement': {'id': elem_id},
+                        'compulsory': False,
+                        'allowProvidedElsewhere': False,
+                        'allowFutureDate': False,
+                        'sortOrder': sort_order
+                    })
+                    sort_order += 1
+            if len(existing) > 0:
+                stage['programStageDataElements'] = existing
+            cancer_stages_list.append(stage)
+            if len(cancer_stages_list) % 10 == 0:
+                print(f"  [{cancer}] Processed {len(cancer_stages_list)} stages...")
+        if cancer_stages_list:
+            out_path = BASE_DIR / "Program" / f"Program_Stage_{cancer}.json"
+            if out_path.exists():
+                print(f"  - Skipping {out_path} (already exists)")
+                continue
+            with open(out_path, 'w', encoding='utf-8') as f:
+                json.dump({'programStages': cancer_stages_list}, f, indent=2, ensure_ascii=True)
+                f.write('\n')
+            print(f"  - Created {out_path} with {len(cancer_stages_list)} stages")
+            total_written += len(cancer_stages_list)
+    print(f"✅ Split program stages and assigned data elements by cancer type.")
+    return total_written
+#!/usr/bin/env python3
+"""
+Comprehensive Fix Script for Cancer Registry Issues:
+1. Fix dashboards - add missing item type
+2. Assign data elements to program stages
+3. Rename CECAP to Cervical Cancer
+4. Fix event visualizer conflicts
+5. Group data elements by cancer type
+"""
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+def issue_1_split_dashboards_by_cancer():
+    print("\n1️⃣ SPLITTING DASHBOARDS BY CANCER TYPE")
+    print("-" * 80)
+    db_path = BASE_DIR / "Dashboard" / "Dashboard.json"
+    if ijson is None:
+        print("❌ ijson is not installed. Please install it with 'pip install ijson'.")
+        return 0
+    dashboards_by_cancer = defaultdict(list)
+    items_fixed = 0
+    with open(db_path, 'r', encoding='utf-8') as infile:
+        for dashboard in ijson.items(infile, 'dashboards.item'):
+            cancer_type = None
+            dash_name = dashboard.get('name', '')
+            for cancer in ['Breast', 'Prostate', 'Lung', 'Colorectal', 'Kidney', 'Liver',
+                          'Stomach', 'Pancreatic', 'Ovarian', 'Testicular', 'Bladder',
+                          'Thyroid', 'Leukemia', 'Lymphoma', 'Oral', 'Esophageal']:
+                if cancer.lower() in dash_name.lower():
+                    cancer_type = cancer
+                    break

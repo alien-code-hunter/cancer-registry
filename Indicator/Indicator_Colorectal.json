@@ -1,0 +1,84 @@
+{
+  "indicators": [
+    {
+      "name": "Colorectal - % Pap smear screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "IGP_COLORECTAL",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Colorectal - % Pap smear screened and received res",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{p1hidB0wJtQ}",
+      "numeratorDescription": "Colorectal - % Pap smear screened and received results",
+      "denominator": "#{EIXn8iLNZcq}",
+      "denominatorDescription": "Colorectal - % Pap smear screened and received results",
+      "id": "Y4iMS8Z2tae",
+      "attributeValues": []
+    },
+    {
+      "name": "Colorectal - % VIA screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Colorectal - % VIA screened and received results",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{Yvg5x3xpIp3}",
+      "numeratorDescription": "Colorectal - % VIA screened and received results",
+      "denominator": "#{Z0c0WfJqehq}",
+      "denominatorDescription": "Colorectal - % VIA screened and received results",
+      "id": "HJrRVElg4XR",
+      "attributeValues": []
+    }
+  ]
+}

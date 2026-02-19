@@ -1,0 +1,84 @@
+{
+  "indicators": [
+    {
+      "name": "Pancreatic - % Pap smear screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "IGP_PANCREATIC",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Pancreatic - % Pap smear screened and received res",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{yAi9FWP5k7R}",
+      "numeratorDescription": "Pancreatic - % Pap smear screened and received results",
+      "denominator": "#{NzTk3LIpf6c}",
+      "denominatorDescription": "Pancreatic - % Pap smear screened and received results",
+      "id": "vT2BrpWhHnZ",
+      "attributeValues": []
+    },
+    {
+      "name": "Pancreatic - % VIA screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Pancreatic - % VIA screened and received results",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{Glcjcm6crOl}",
+      "numeratorDescription": "Pancreatic - % VIA screened and received results",
+      "denominator": "#{W7VP5Z2ronQ}",
+      "denominatorDescription": "Pancreatic - % VIA screened and received results",
+      "id": "ykiPH39mAIg",
+      "attributeValues": []
+    }
+  ]
+}

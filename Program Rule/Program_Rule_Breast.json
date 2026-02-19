@@ -1,0 +1,85 @@
+{
+  "programRules": [
+    {
+      "name": "HIDE: Breast cancer screening outcome",
+      "created": "2023-03-15T16:01:33.565",
+      "lastUpdated": "2024-07-11T11:12:57.495",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "gwRuy8wNhzV"
+        }
+      ],
+      "condition": "!d2:hasValue(#{breast_cancer_screening_done}) || #{breast_cancer_screening_done} != 'Done'",
+      "id": "Ny0bzuaonIC"
+    },
+    {
+      "name": "HIDE: Specify and referral site for abnormal breast cancer screening outcome",
+      "created": "2023-03-15T16:01:33.566",
+      "lastUpdated": "2024-07-31T11:51:34.920",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "to9JbOj447z"
+        },
+        {
+          "id": "kxFqslYvIiz"
+        }
+      ],
+      "condition": "!d2:hasValue(#{breast_cancer_screening_done}) || #{breast_cancer_screening_done} != 'Done' || !d2:hasValue(#{breast_cancer_screening_outcome}) || #{breast_cancer_screening_outcome} != 'Abnormal'",
+      "id": "tuBcElzuOwn"
+    },
+    {
+      "name": "HIDE: Specify other breast cancer screening abnormality",
+      "created": "2024-10-12T17:14:56.935",
+      "lastUpdated": "2024-10-22T07:43:55.543",
+      "translations": [],
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "program": {
+        "id": "F5lx6p0yaU9"
+      },
+      "programStage": {
+        "id": "ymx76J82mIm"
+      },
+      "programRuleActions": [
+        {
+          "id": "kdZRVvpu24A"
+        }
+      ],
+      "condition": "!d2:hasValue(#{breast_cancer_screening_done}) || #{breast_cancer_screening_done} != 'Done' || !d2:hasValue(#{breast_cancer_screening_outcome}) || #{breast_cancer_screening_outcome} != 'Abnormal' ||\n!d2:hasValue(#{specify_breast_cancer_screening_abnormality}) || #{specify_breast_cancer_screening_abnormality} != 'Other'",
+      "id": "wBj6lc3omnw"
+    }
+  ]
+}

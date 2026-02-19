@@ -1,0 +1,84 @@
+{
+  "indicators": [
+    {
+      "name": "Oral Head Neck - % Pap smear screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "IGP_ORAL_HEAD_NECK",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Oral Head Neck - % Pap smear screened and received",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{wdb9rwVOO76}",
+      "numeratorDescription": "Oral Head Neck - % Pap smear screened and received results",
+      "denominator": "#{bKa0ko7daib}",
+      "denominatorDescription": "Oral Head Neck - % Pap smear screened and received results",
+      "id": "oXRzlEAh6fJ",
+      "attributeValues": []
+    },
+    {
+      "name": "Oral Head Neck - % VIA screened and received results",
+      "created": "2026-02-18T18:45:03.322378",
+      "lastUpdated": "2026-02-18T18:45:03.322378",
+      "translations": [],
+      "createdBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "lastUpdatedBy": {
+        "id": "M5zQapPyTZI",
+        "code": "admin",
+        "name": "admin admin",
+        "displayName": "admin admin",
+        "username": "admin"
+      },
+      "sharing": {
+        "owner": "M5zQapPyTZI",
+        "external": false,
+        "users": {},
+        "userGroups": {},
+        "public": "rw------"
+      },
+      "shortName": "Oral Head Neck - % VIA screened and received resul",
+      "legendSets": [],
+      "annualized": false,
+      "decimals": 2,
+      "indicatorType": {
+        "id": "eNCqYnPdfhi"
+      },
+      "numerator": "#{Csa80yqhd2D}",
+      "numeratorDescription": "Oral Head Neck - % VIA screened and received results",
+      "denominator": "#{ZRPFxgg8yZ8}",
+      "denominatorDescription": "Oral Head Neck - % VIA screened and received results",
+      "id": "hFs0PFOMlgh",
+      "attributeValues": []
+    }
+  ]
+}
