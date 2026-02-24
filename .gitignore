@@ -1,4 +1,4 @@
-# Ignore Program/stages_tmp and all its contents
+# Ignore all files in Program/stages_tmp/ (large temp files)
 Program/stages_tmp/
 .DS_Store
 .DS_Store?

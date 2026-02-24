@@ -81,12 +81,17 @@ import_file() {
 # REMAINING IMPORTS - Data Sets and Validation Rules
 # ============================================================================
 
-echo -e "\n${YELLOW}=== Data Sets ===${NC}" | tee -a "$LOG_FILE"
-import_file "${BASE_DIR}/Data Set/Data Set.json" "Data Sets"
-
 echo -e "\n${YELLOW}=== Validation Rules ===${NC}" | tee -a "$LOG_FILE"
-import_file "${BASE_DIR}/Validation/Validation Rule Group.json" "Validation Rule Groups"
-import_file "${BASE_DIR}/Validation/Validation Rule.json" "Validation Rules"
+
+echo -e "\n${YELLOW}=== Cancer-Specific Data Elements ===${NC}" | tee -a "$LOG_FILE"
+for data_element_file in "${BASE_DIR}"/Data\ Element/Data_Element_*.json; do
+    # Skip Cervical Cancer data elements
+    if [[ "$data_element_file" != *Cervical* ]] && [ -f "$data_element_file" ]; then
+        FILE_NAME=$(basename "$data_element_file")
+        import_file "$data_element_file" "Data Element: $FILE_NAME"
+        sleep 1
+    fi
+done
 
 # ============================================================================
 # OPTIONAL: Re-import individual cancer programs (redundant but safe)
@@ -94,7 +99,8 @@ import_file "${BASE_DIR}/Validation/Validation Rule.json" "Validation Rules"
 
 echo -e "\n${YELLOW}=== Individual Cancer Programs (Re-import) ===${NC}" | tee -a "$LOG_FILE"
 for program_file in "${BASE_DIR}"/archive/programs/*Cancer\ Program.json; do
-    if [ -f "$program_file" ]; then
+    # Skip Cervical Cancer program
+    if [[ "$program_file" != *Cervical* ]] && [ -f "$program_file" ]; then
         PROGRAM_NAME=$(basename "$program_file" .json)
         import_file "$program_file" "Cancer Program: $PROGRAM_NAME"
         sleep 1  # Brief pause between imports

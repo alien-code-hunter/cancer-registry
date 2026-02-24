@@ -1,5 +1,23 @@
 {
   "dataElements": [
+        {
+          "name": "Kidney - Tumour Side",
+          "shortName": "Tumour_Side",
+          "formName": "Tumour Side",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "a1b2c3d4e5F"
+        },
+        {
+          "name": "Kidney - Creatinine Baseline",
+          "shortName": "Creatinine_Baseline",
+          "formName": "Creatinine Baseline",
+          "aggregationType": "AVERAGE",
+          "valueType": "NUMBER",
+          "domainType": "AGGREGATE",
+          "id": "f6g7h8i9j0K"
+        },
     {
       "name": "Kidney - HPV Positive for abnormal results",
       "created": "2026-02-18T18:42:34.710086",
@@ -840,5 +858,45 @@
         "id": "xDsPPFKU2mh"
       }
     }
+     ,{
+        "name": "Meduletu",
+        "created": "2026-02-19T00:00:00.000",
+        "lastUpdated": "2026-02-19T00:00:00.000",
+        "translations": [],
+        "createdBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "lastUpdatedBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "sharing": {
+          "owner": "M5zQapPyTZI",
+          "external": false,
+          "users": {},
+          "userGroups": {},
+          "public": "rw------"
+        },
+        "shortName": "Meduletu",
+        "formName": "Meduletu",
+        "legendSets": [],
+        "aggregationType": "COUNT",
+        "valueType": "TEXT",
+        "domainType": "TRACKER",
+        "aggregationLevels": [],
+        "zeroIsSignificant": false,
+        "id": "MuT3LuT3uID",
+        "attributeValues": [],
+        "categoryCombo": {
+          "id": "bjDvmb4bfuf"
+        }
+      }
   ]
 }

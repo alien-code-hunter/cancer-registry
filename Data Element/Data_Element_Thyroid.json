@@ -1,5 +1,32 @@
 {
   "dataElements": [
+        {
+          "name": "Thyroid - TSH Value",
+          "shortName": "TSH_Value",
+          "formName": "TSH Value",
+          "aggregationType": "AVERAGE",
+          "valueType": "NUMBER",
+          "domainType": "AGGREGATE",
+          "id": "THYR_TSHValue"
+        },
+        {
+          "name": "Thyroid - Ultrasound Risk Category",
+          "shortName": "Ultrasound_Risk_Category",
+          "formName": "Ultrasound Risk Category",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "THYR_UltrasoundRisk"
+        },
+        {
+          "name": "Thyroid - FNAC Bethesda Category",
+          "shortName": "FNAC_Bethesda_Category",
+          "formName": "FNAC Bethesda Category",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "THYR_FNACBethesda"
+        },
     {
       "name": "Thyroid - HPV Positive for abnormal results",
       "created": "2026-02-18T18:42:34.710086",
@@ -840,5 +867,45 @@
         "id": "xDsPPFKU2mh"
       }
     }
+     ,{
+        "name": "Meduletu",
+        "created": "2026-02-19T00:00:00.000",
+        "lastUpdated": "2026-02-19T00:00:00.000",
+        "translations": [],
+        "createdBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "lastUpdatedBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "sharing": {
+          "owner": "M5zQapPyTZI",
+          "external": false,
+          "users": {},
+          "userGroups": {},
+          "public": "rw------"
+        },
+        "shortName": "Meduletu",
+        "formName": "Meduletu",
+        "legendSets": [],
+        "aggregationType": "COUNT",
+        "valueType": "TEXT",
+        "domainType": "TRACKER",
+        "aggregationLevels": [],
+        "zeroIsSignificant": false,
+        "id": "MuT3LuT3uID",
+        "attributeValues": [],
+        "categoryCombo": {
+          "id": "bjDvmb4bfuf"
+        }
+      }
   ]
 }

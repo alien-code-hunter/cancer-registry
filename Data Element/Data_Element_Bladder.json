@@ -1,73 +1,43 @@
 {
   "dataElements": [
     {
-      "name": "Bladder - HPV Positive for abnormal results",
-      "created": "2026-02-18T18:42:34.710086",
-      "lastUpdated": "2026-02-18T18:42:34.710086",
-      "translations": [],
-      "createdBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "lastUpdatedBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "sharing": {
-        "owner": "M5zQapPyTZI",
-        "external": false,
-        "users": {},
-        "userGroups": {},
-        "public": "rw------"
-      },
-      "shortName": "Bladder - HPV Positive for abnormal results",
-      "formName": "Bladder - HPV Positive for abnormal results",
-      "legendSets": [],
+      "name": "Bladder - Hematuria",
+      "shortName": "Hematuria",
+      "formName": "Hematuria",
       "aggregationType": "SUM",
-      "valueType": "INTEGER_POSITIVE",
+      "valueType": "BOOLEAN",
       "domainType": "AGGREGATE",
-      "aggregationLevels": [],
-      "zeroIsSignificant": false,
-      "id": "p0UKYq91U7l",
-      "attributeValues": [],
-      "categoryCombo": {
-        "id": "xDsPPFKU2mh"
-      }
+      "id": "a1b2c3d4e5F"
     },
     {
-      "name": "Bladder - HPV screened",
-      "created": "2026-02-18T18:42:34.710086",
-      "lastUpdated": "2026-02-18T18:42:34.710086",
-      "translations": [],
-      "createdBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "lastUpdatedBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "sharing": {
-        "owner": "M5zQapPyTZI",
-        "external": false,
-        "users": {},
-        "userGroups": {},
-        "public": "rw------"
-      },
-      "shortName": "Bladder - HPV screened",
-      "formName": "Bladder - HPV screened",
+      "name": "Bladder - Cystoscopy Done",
+      "shortName": "Cystoscopy_Done",
+      "formName": "Cystoscopy Done",
+      "aggregationType": "SUM",
+      "valueType": "BOOLEAN",
+      "domainType": "AGGREGATE",
+      "id": "f6g7h8i9j0K"
+    },
+    {
+      "name": "Bladder - Cystoscopy Findings",
+      "shortName": "Cystoscopy_Findings",
+      "formName": "Cystoscopy Findings",
+      "aggregationType": "NONE",
+      "valueType": "TEXT",
+      "domainType": "AGGREGATE",
+      "id": "l1m2n3o4p5Q"
+    },
+    {
+      "name": "Bladder - Muscle Invasion",
+      "shortName": "Muscle_Invasion",
+      "formName": "Muscle Invasion",
+      "aggregationType": "SUM",
+      "valueType": "BOOLEAN",
+      "domainType": "AGGREGATE",
+      "id": "r6s7t8u9v0W"
+    }
+  ]
+}
       "legendSets": [],
       "aggregationType": "SUM",
       "valueType": "INTEGER_POSITIVE",
@@ -584,96 +554,48 @@
         "external": false,
         "users": {},
         "userGroups": {},
-        "public": "rw------"
-      },
-      "shortName": "Bladder - VIA Positive for abnormal results",
-      "formName": "Bladder - VIA Positive for abnormal results",
-      "legendSets": [],
-      "aggregationType": "SUM",
-      "valueType": "INTEGER_POSITIVE",
-      "domainType": "AGGREGATE",
-      "aggregationLevels": [],
-      "zeroIsSignificant": false,
-      "id": "HTyHJbj2sti",
-      "attributeValues": [],
-      "categoryCombo": {
-        "id": "xDsPPFKU2mh"
-      }
-    },
-    {
-      "name": "Bladder - VIA result suspected cancer",
-      "created": "2026-02-18T18:42:34.710086",
-      "lastUpdated": "2026-02-18T18:42:34.710086",
-      "translations": [],
-      "createdBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "lastUpdatedBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "sharing": {
-        "owner": "M5zQapPyTZI",
-        "external": false,
-        "users": {},
-        "userGroups": {},
-        "public": "rw------"
-      },
-      "shortName": "Bladder - VIA result suspected cancer",
-      "formName": "Bladder - VIA result suspected cancer",
-      "legendSets": [],
-      "aggregationType": "SUM",
-      "valueType": "INTEGER_POSITIVE",
-      "domainType": "AGGREGATE",
-      "aggregationLevels": [],
-      "zeroIsSignificant": false,
-      "id": "o05i03UMDO5",
-      "attributeValues": [],
-      "categoryCombo": {
-        "id": "xDsPPFKU2mh"
-      }
-    },
-    {
-      "name": "Bladder - VIA screened",
-      "created": "2026-02-18T18:42:34.710086",
-      "lastUpdated": "2026-02-18T18:42:34.710086",
-      "translations": [],
-      "createdBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "lastUpdatedBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "sharing": {
-        "owner": "M5zQapPyTZI",
-        "external": false,
-        "users": {},
-        "userGroups": {},
-        "public": "rw------"
-      },
-      "shortName": "Bladder - VIA screened",
-      "formName": "Bladder - VIA screened",
-      "legendSets": [],
-      "aggregationType": "SUM",
-      "valueType": "INTEGER_POSITIVE",
-      "domainType": "AGGREGATE",
-      "aggregationLevels": [],
-      "zeroIsSignificant": false,
+        "dataElements": [
+          {
+            "name": "Bladder - Hematuria",
+            "shortName": "Hematuria",
+            "formName": "Hematuria",
+            "valueType": "BOOLEAN",
+            "domainType": "TRACKER",
+            "aggregationType": "NONE",
+            "id": "BLADDER_HEMATURIA",
+            "categoryCombo": {"id": "xDsPPFKU2mh"}
+          },
+          {
+            "name": "Bladder - Cystoscopy Done",
+            "shortName": "Cystoscopy_Done",
+            "formName": "Cystoscopy Done",
+            "valueType": "BOOLEAN",
+            "domainType": "TRACKER",
+            "aggregationType": "NONE",
+            "id": "BLADDER_CYSTOSCOPY_DONE",
+            "categoryCombo": {"id": "xDsPPFKU2mh"}
+          },
+          {
+            "name": "Bladder - Cystoscopy Findings",
+            "shortName": "Cystoscopy_Findings",
+            "formName": "Cystoscopy Findings",
+            "valueType": "TEXT",
+            "domainType": "TRACKER",
+            "aggregationType": "NONE",
+            "id": "BLADDER_CYSTOSCOPY_FINDINGS",
+            "categoryCombo": {"id": "xDsPPFKU2mh"}
+          },
+          {
+            "name": "Bladder - Muscle Invasion",
+            "shortName": "Muscle_Invasion",
+            "formName": "Muscle Invasion",
+            "valueType": "BOOLEAN",
+            "domainType": "TRACKER",
+            "aggregationType": "NONE",
+            "id": "BLADDER_MUSCLE_INVASION",
+            "categoryCombo": {"id": "xDsPPFKU2mh"}
+          }
+        ]
       "id": "DxTkYmxlGpP",
       "attributeValues": [],
       "categoryCombo": {
@@ -840,5 +762,45 @@
         "id": "xDsPPFKU2mh"
       }
     }
+     ,{
+        "name": "Meduletu",
+        "created": "2026-02-19T00:00:00.000",
+        "lastUpdated": "2026-02-19T00:00:00.000",
+        "translations": [],
+        "createdBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "lastUpdatedBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "sharing": {
+          "owner": "M5zQapPyTZI",
+          "external": false,
+          "users": {},
+          "userGroups": {},
+          "public": "rw------"
+        },
+        "shortName": "Meduletu",
+        "formName": "Meduletu",
+        "legendSets": [],
+        "aggregationType": "COUNT",
+        "valueType": "TEXT",
+        "domainType": "TRACKER",
+        "aggregationLevels": [],
+        "zeroIsSignificant": false,
+        "id": "MuT3LuT3uID",
+        "attributeValues": [],
+        "categoryCombo": {
+          "id": "bjDvmb4bfuf"
+        }
+      }
   ]
 }

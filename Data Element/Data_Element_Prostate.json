@@ -1,5 +1,50 @@
 {
   "dataElements": [
+        {
+          "name": "Prostate - PSA Done",
+          "shortName": "PSA_Done",
+          "formName": "PSA Done",
+          "aggregationType": "SUM",
+          "valueType": "BOOLEAN",
+          "domainType": "AGGREGATE",
+          "id": "PROS_PSADone"
+        },
+        {
+          "name": "Prostate - PSA Value",
+          "shortName": "PSA_Value",
+          "formName": "PSA Value",
+          "aggregationType": "AVERAGE",
+          "valueType": "NUMBER",
+          "domainType": "AGGREGATE",
+          "id": "PROS_PSAValue"
+        },
+        {
+          "name": "Prostate - DRE Finding",
+          "shortName": "DRE_Finding",
+          "formName": "DRE Finding",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "PROS_DREFinding"
+        },
+        {
+          "name": "Prostate - Gleason Score",
+          "shortName": "Gleason_Score",
+          "formName": "Gleason Score",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "PROS_GleasonScore"
+        },
+        {
+          "name": "Prostate - Risk Group",
+          "shortName": "Risk_Group",
+          "formName": "Risk Group",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "PROS_RiskGroup"
+        },
     {
       "name": "Prostate - HPV Positive for abnormal results",
       "created": "2026-02-18T18:42:34.710086",
@@ -840,5 +885,45 @@
         "id": "xDsPPFKU2mh"
       }
     }
+     ,{
+        "name": "Meduletu",
+        "created": "2026-02-19T00:00:00.000",
+        "lastUpdated": "2026-02-19T00:00:00.000",
+        "translations": [],
+        "createdBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "lastUpdatedBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "sharing": {
+          "owner": "M5zQapPyTZI",
+          "external": false,
+          "users": {},
+          "userGroups": {},
+          "public": "rw------"
+        },
+        "shortName": "Meduletu",
+        "formName": "Meduletu",
+        "legendSets": [],
+        "aggregationType": "COUNT",
+        "valueType": "TEXT",
+        "domainType": "TRACKER",
+        "aggregationLevels": [],
+        "zeroIsSignificant": false,
+        "id": "MuT3LuT3uID",
+        "attributeValues": [],
+        "categoryCombo": {
+          "id": "bjDvmb4bfuf"
+        }
+      }
   ]
 }

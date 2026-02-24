@@ -1,0 +1,14 @@
+Starting batch import at Thu Feb 19 22:35:47 CAT 2026
+Import Strategy: CREATE_AND_UPDATE
+Atomic Mode: NONE
+---
+
+[1;33m=== Validation Rules ===[0m
+
+[1;33m=== Cancer-Specific Data Elements ===[0m
+[0;32m✓[0m "stats":{"created":0,"updated":4,"deleted":0,"ignored":0,"total":4}
+[0;32m✓[0m "stats":{"created":0,"updated":33,"deleted":0,"ignored":0,"total":33}
+[0;32m✓[0m "stats":{"created":0,"updated":27,"deleted":0,"ignored":0,"total":27}
+[0;32m✓[0m "stats":{"created":0,"updated":26,"deleted":0,"ignored":0,"total":26}
+[0;31m✗[0m "message":"One or more errors occurred, please see full details in import report."
+Full response: {"httpStatus":"Conflict","httpStatusCode":409,"status":"WARNING","message":"One or more errors occurred, please see full details in import report.","response":{"responseType":"ImportReport","status":"WARNING","stats":{"created":0,"updated":22,"deleted":0,"ignored":6,"total":28},"typeReports":[{"klass":"org.hisp.dhis.dataelement.DataElement","stats":{"created":0,"updated":22,"deleted":0,"ignored":6,"total":28},"objectReports":[{"klass":"org.hisp.dhis.dataelement.DataElement","index":0,"uid":"KAP_LesionDistribution","errorReports":[{"message":"Maximum length of property `id`is 11, but given length was 22","mainKlass":"org.hisp.dhis.dataelement.DataElement","errorCode":"E4001","errorKlass":"java.lang.String","errorProperty":"id","errorProperties":["id",11,22]},{"message":"Invalid UID `KAP_LesionDistribution` for property `DataElement`","mainKlass":"org.hisp.dhis.dataelement.DataElement","errorCode":"E4014","errorProperties":["KAP_LesionDistribution","DataElement"]}]},{"klass":"org.hisp.dhis.dataelement.DataElement","index":1,"uid":"KAP_OralLesions","errorReports":[{"message":"Maximum length of property `id`is 11, but given length was 15","mainKlass":"org.hisp.dhis.dataelement.DataElement","errorCode":"E4001","errorKlass":"java.lang.String","errorProperty":"id","errorProperties":["id",11,15]},{"message":"Invalid UID `KAP_OralLesions` for property `DataElement`","mainKlass":"org.hisp.dhis.dataelement.DataElement","errorCode":"E4014","errorProperties":["KAP_OralLesions","DataElement"]}]},{"klass":"org.hisp.dhis.dataelement.DataElement","index":2,"uid":"KAP_VisceralInvolvement","errorReports":[{"message":"Maximum length of property `id`is 11, but given length was 23","mainKlass":"org.hisp.dhis.dataelement.DataElement","errorCode":"E4001","errorKlass":"java.lang.String","errorProperty":"id","errorProperties":["id",11,23]},{"message":"Invalid UID `KAP_VisceralInvolvement` for property `DataElement`","mainKlass":"org.hisp.dhis.dataelement.DataElement","errorCode":"E4014","errorProperties":["KAP_VisceralInvolvement","DataElement"]}]}]}]}}

@@ -1,5 +1,50 @@
 {
   "dataElements": [
+        {
+          "name": "Lung - Pack Years",
+          "shortName": "Pack_Years",
+          "formName": "Pack Years",
+          "aggregationType": "SUM",
+          "valueType": "NUMBER",
+          "domainType": "AGGREGATE",
+          "id": "LUNG_PackYears"
+        },
+        {
+          "name": "Lung - Histology Group",
+          "shortName": "Histology_Group",
+          "formName": "Histology Group",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "LUNG_HistologyGroup"
+        },
+        {
+          "name": "Lung - EGFR Status",
+          "shortName": "EGFR_Status",
+          "formName": "EGFR Status",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "LUNG_EGFRStatus"
+        },
+        {
+          "name": "Lung - ALK Status",
+          "shortName": "ALK_Status",
+          "formName": "ALK Status",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "LUNG_ALKStatus"
+        },
+        {
+          "name": "Lung - PDL1 Status",
+          "shortName": "PDL1_Status",
+          "formName": "PDL1 Status",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "LUNG_PDL1Status"
+        },
     {
       "name": "Lung - HPV Positive for abnormal results",
       "created": "2026-02-18T18:42:34.710086",
@@ -840,5 +885,45 @@
         "id": "xDsPPFKU2mh"
       }
     }
+     ,{
+        "name": "Meduletu",
+        "created": "2026-02-19T00:00:00.000",
+        "lastUpdated": "2026-02-19T00:00:00.000",
+        "translations": [],
+        "createdBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "lastUpdatedBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "sharing": {
+          "owner": "M5zQapPyTZI",
+          "external": false,
+          "users": {},
+          "userGroups": {},
+          "public": "rw------"
+        },
+        "shortName": "Meduletu",
+        "formName": "Meduletu",
+        "legendSets": [],
+        "aggregationType": "COUNT",
+        "valueType": "TEXT",
+        "domainType": "TRACKER",
+        "aggregationLevels": [],
+        "zeroIsSignificant": false,
+        "id": "MuT3LuT3uID",
+        "attributeValues": [],
+        "categoryCombo": {
+          "id": "bjDvmb4bfuf"
+        }
+      }
   ]
 }

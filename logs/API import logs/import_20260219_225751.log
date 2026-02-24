@@ -1,0 +1,17 @@
+Starting batch import at Thu Feb 19 22:57:51 CAT 2026
+Import Strategy: CREATE_AND_UPDATE
+Atomic Mode: NONE
+---
+
+[1;33m=== Validation Rules ===[0m
+
+[1;33m=== Cancer-Specific Data Elements ===[0m
+[0;32m✓[0m "stats":{"created":0,"updated":4,"deleted":0,"ignored":0,"total":4}
+[0;32m✓[0m "stats":{"created":0,"updated":33,"deleted":0,"ignored":0,"total":33}
+[0;32m✓[0m "stats":{"created":0,"updated":27,"deleted":0,"ignored":0,"total":27}
+[0;32m✓[0m "stats":{"created":0,"updated":26,"deleted":0,"ignored":0,"total":26}
+[0;32m✓[0m "stats":{"created":0,"updated":25,"deleted":0,"ignored":0,"total":25}
+[0;32m✓[0m "stats":{"created":0,"updated":24,"deleted":0,"ignored":0,"total":24}
+[0;31m✗[0m "message":"Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (BufferedInputStream); line: 1, column: 3902]"
+Full response: {"httpStatus":"Conflict","httpStatusCode":409,"status":"ERROR","message":"Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)\n at [Source: (BufferedInputStream); line: 1, column: 3902]"}

@@ -1,5 +1,32 @@
 {
   "dataElements": [
+        {
+          "name": "Oral - Tobacco Chewing",
+          "shortName": "Tobacco_Chewing",
+          "formName": "Tobacco Chewing",
+          "aggregationType": "SUM",
+          "valueType": "BOOLEAN",
+          "domainType": "AGGREGATE",
+          "id": "ORAL_TobaccoChewing"
+        },
+        {
+          "name": "Oral - Lesion Site Oral",
+          "shortName": "Lesion_Site_Oral",
+          "formName": "Lesion Site Oral",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "ORAL_LesionSite"
+        },
+        {
+          "name": "Oral - Trismus",
+          "shortName": "Trismus",
+          "formName": "Trismus",
+          "aggregationType": "NONE",
+          "valueType": "BOOLEAN",
+          "domainType": "AGGREGATE",
+          "id": "ORAL_Trismus"
+        },
     {
       "name": "Oral Head Neck - HPV Positive for abnormal results",
       "created": "2026-02-18T18:42:34.710086",
@@ -840,5 +867,45 @@
         "id": "xDsPPFKU2mh"
       }
     }
+     ,{
+        "name": "Meduletu",
+        "created": "2026-02-19T00:00:00.000",
+        "lastUpdated": "2026-02-19T00:00:00.000",
+        "translations": [],
+        "createdBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "lastUpdatedBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "sharing": {
+          "owner": "M5zQapPyTZI",
+          "external": false,
+          "users": {},
+          "userGroups": {},
+          "public": "rw------"
+        },
+        "shortName": "Meduletu",
+        "formName": "Meduletu",
+        "legendSets": [],
+        "aggregationType": "COUNT",
+        "valueType": "TEXT",
+        "domainType": "TRACKER",
+        "aggregationLevels": [],
+        "zeroIsSignificant": false,
+        "id": "MuT3LuT3uID",
+        "attributeValues": [],
+        "categoryCombo": {
+          "id": "bjDvmb4bfuf"
+        }
+      }
   ]
 }

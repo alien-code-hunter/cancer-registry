@@ -1,5 +1,59 @@
 {
   "dataElements": [
+        {
+          "name": "Breast - Laterality",
+          "shortName": "Laterality",
+          "formName": "Laterality",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "a1b2c3d4e5F"
+        },
+        {
+          "name": "Breast - Mammogram Done",
+          "shortName": "Mammogram_Done",
+          "formName": "Mammogram Done",
+          "aggregationType": "SUM",
+          "valueType": "BOOLEAN",
+          "domainType": "AGGREGATE",
+          "id": "f6g7h8i9j0K"
+        },
+        {
+          "name": "Breast - BI-RADS",
+          "shortName": "BI_RADS",
+          "formName": "BI-RADS",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "l1m2n3o4p5Q"
+        },
+        {
+          "name": "Breast - ER Status",
+          "shortName": "ER_Status",
+          "formName": "ER Status",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "r6s7t8u9v0W"
+        },
+        {
+          "name": "Breast - PR Status",
+          "shortName": "PR_Status",
+          "formName": "PR Status",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "x1y2z3a4b5C"
+        },
+        {
+          "name": "Breast - HER2 Status",
+          "shortName": "HER2_Status",
+          "formName": "HER2 Status",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "d6e7f8g9h0I"
+        },
     {
       "name": "Breast cancer screening done",
       "created": "2022-12-11T17:10:59.898",
@@ -1049,5 +1103,45 @@
         "id": "xDsPPFKU2mh"
       }
     }
+     ,{
+        "name": "Meduletu",
+        "created": "2026-02-19T00:00:00.000",
+        "lastUpdated": "2026-02-19T00:00:00.000",
+        "translations": [],
+        "createdBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "lastUpdatedBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "sharing": {
+          "owner": "M5zQapPyTZI",
+          "external": false,
+          "users": {},
+          "userGroups": {},
+          "public": "rw------"
+        },
+        "shortName": "Meduletu",
+        "formName": "Meduletu",
+        "legendSets": [],
+        "aggregationType": "COUNT",
+        "valueType": "TEXT",
+        "domainType": "TRACKER",
+        "aggregationLevels": [],
+        "zeroIsSignificant": false,
+        "id": "MuT3LuT3uID",
+        "attributeValues": [],
+        "categoryCombo": {
+          "id": "bjDvmb4bfuf"
+        }
+      }
   ]
 }

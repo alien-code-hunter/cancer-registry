@@ -1,6 +1,42 @@
 {
   "dataElements": [
     {
+      "name": "Liver - AFP Value",
+      "shortName": "AFP_Value",
+      "formName": "AFP Value",
+      "aggregationType": "AVERAGE",
+      "valueType": "NUMBER",
+      "domainType": "AGGREGATE",
+      "id": "LIV_AFPValue"
+    },
+    {
+      "name": "Liver - HepB Status",
+      "shortName": "HepB_Status",
+      "formName": "HepB Status",
+      "aggregationType": "NONE",
+      "valueType": "TEXT",
+      "domainType": "AGGREGATE",
+      "id": "LIV_HepBStatus"
+    },
+    {
+      "name": "Liver - HepC Status",
+      "shortName": "HepC_Status",
+      "formName": "HepC Status",
+      "aggregationType": "NONE",
+      "valueType": "TEXT",
+      "domainType": "AGGREGATE",
+      "id": "LIV_HepCStatus"
+    },
+    {
+      "name": "Liver - Cirrhosis",
+      "shortName": "Cirrhosis",
+      "formName": "Cirrhosis",
+      "aggregationType": "SUM",
+      "valueType": "BOOLEAN",
+      "domainType": "AGGREGATE",
+      "id": "LIV_Cirrhosis"
+    },
+    {
       "name": "Liver - HPV Positive for abnormal results",
       "created": "2026-02-18T18:42:34.710086",
       "lastUpdated": "2026-02-18T18:42:34.710086",
@@ -39,47 +75,47 @@
       "categoryCombo": {
         "id": "xDsPPFKU2mh"
       }
-    },
-    {
-      "name": "Liver - HPV screened",
-      "created": "2026-02-18T18:42:34.710086",
-      "lastUpdated": "2026-02-18T18:42:34.710086",
-      "translations": [],
-      "createdBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
       },
-      "lastUpdatedBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
+      {
+        "name": "Liver - HPV screened",
+        "created": "2026-02-18T18:42:34.710086",
+        "lastUpdated": "2026-02-18T18:42:34.710086",
+        "translations": [],
+        "createdBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "lastUpdatedBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "sharing": {
+          "owner": "M5zQapPyTZI",
+          "external": false,
+          "users": {},
+          "userGroups": {},
+          "public": "rw------"
+        },
+        "shortName": "Liver - HPV screened",
+        "formName": "Liver - HPV screened",
+        "legendSets": [],
+        "aggregationType": "SUM",
+        "valueType": "INTEGER_POSITIVE",
+        "domainType": "AGGREGATE",
+        "aggregationLevels": [],
+        "zeroIsSignificant": false,
+        "id": "bUHMLKOURkQ",
+        "attributeValues": [],
+        "categoryCombo": {
+          "id": "xDsPPFKU2mh"
+        }
       },
-      "sharing": {
-        "owner": "M5zQapPyTZI",
-        "external": false,
-        "users": {},
-        "userGroups": {},
-        "public": "rw------"
-      },
-      "shortName": "Liver - HPV screened",
-      "formName": "Liver - HPV screened",
-      "legendSets": [],
-      "aggregationType": "SUM",
-      "valueType": "INTEGER_POSITIVE",
-      "domainType": "AGGREGATE",
-      "aggregationLevels": [],
-      "zeroIsSignificant": false,
-      "id": "bUHMLKOURkQ",
-      "attributeValues": [],
-      "categoryCombo": {
-        "id": "xDsPPFKU2mh"
-      }
-    },
     {
       "name": "Liver - HPV screened and received results",
       "created": "2026-02-18T18:42:34.710086",
@@ -840,5 +876,6 @@
         "id": "xDsPPFKU2mh"
       }
     }
+    
   ]
 }

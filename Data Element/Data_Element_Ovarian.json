@@ -1,5 +1,32 @@
 {
   "dataElements": [
+        {
+          "name": "Ovarian - CA125 Value",
+          "shortName": "CA125_Value",
+          "formName": "CA125 Value",
+          "aggregationType": "AVERAGE",
+          "valueType": "NUMBER",
+          "domainType": "AGGREGATE",
+          "id": "OVAR_CA125Value"
+        },
+        {
+          "name": "Ovarian - Ascites",
+          "shortName": "Ascites",
+          "formName": "Ascites",
+          "aggregationType": "SUM",
+          "valueType": "BOOLEAN",
+          "domainType": "AGGREGATE",
+          "id": "OVAR_Ascites"
+        },
+        {
+          "name": "Ovarian - FIGO Stage",
+          "shortName": "FIGO_Stage",
+          "formName": "FIGO Stage",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "OVAR_FIGOStage"
+        },
     {
       "name": "Ovarian - HPV Positive for abnormal results",
       "created": "2026-02-18T18:42:34.710086",
@@ -840,5 +867,45 @@
         "id": "xDsPPFKU2mh"
       }
     }
+     ,{
+        "name": "Meduletu",
+        "created": "2026-02-19T00:00:00.000",
+        "lastUpdated": "2026-02-19T00:00:00.000",
+        "translations": [],
+        "createdBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "lastUpdatedBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "sharing": {
+          "owner": "M5zQapPyTZI",
+          "external": false,
+          "users": {},
+          "userGroups": {},
+          "public": "rw------"
+        },
+        "shortName": "Meduletu",
+        "formName": "Meduletu",
+        "legendSets": [],
+        "aggregationType": "COUNT",
+        "valueType": "TEXT",
+        "domainType": "TRACKER",
+        "aggregationLevels": [],
+        "zeroIsSignificant": false,
+        "id": "MuT3LuT3uID",
+        "attributeValues": [],
+        "categoryCombo": {
+          "id": "bjDvmb4bfuf"
+        }
+      }
   ]
 }

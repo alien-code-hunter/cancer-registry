@@ -1,0 +1,11 @@
+Starting batch import at Thu Feb 19 22:29:49 CAT 2026
+Import Strategy: CREATE_AND_UPDATE
+Atomic Mode: NONE
+---
+
+[1;33m=== Validation Rules ===[0m
+
+[1;33m=== Cancer-Specific Data Elements ===[0m
+[0;31m✗[0m "message":"Unexpected character ('{' (code 123)): was expecting double-quote to start field name
+ at [Source: (BufferedInputStream); line: 1, column: 468]"
+Full response: {"httpStatus":"Conflict","httpStatusCode":409,"status":"ERROR","message":"Unexpected character ('{' (code 123)): was expecting double-quote to start field name\n at [Source: (BufferedInputStream); line: 1, column: 468]"}

@@ -87,7 +87,47 @@
         "id": "bjDvmb4bfuf"
       }
     },
-    {
+      ,{
+        "name": "Meduletu",
+        "created": "2024-06-01T00:00:00.000",
+        "lastUpdated": "2024-06-01T00:00:00.000",
+        "translations": [],
+        "createdBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "lastUpdatedBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "sharing": {
+          "owner": "M5zQapPyTZI",
+          "external": false,
+          "users": {},
+          "userGroups": {},
+          "public": "rw------"
+        },
+        "shortName": "Meduletu",
+        "formName": "Meduletu",
+        "legendSets": [],
+        "aggregationType": "COUNT",
+        "valueType": "TEXT",
+        "domainType": "TRACKER",
+        "aggregationLevels": [],
+        "zeroIsSignificant": false,
+        "id": "MuT3LuT3uID",
+        "attributeValues": [],
+        "categoryCombo": {
+          "id": "bjDvmb4bfuf"
+        }
+      }
+    ]
       "name": "Biopsy performed",
       "created": "2022-12-11T17:10:59.898",
       "lastUpdated": "2023-06-12T10:18:32.795",
@@ -6545,7 +6585,7 @@
       "id": "QCRq9U2eIYW",
       "created": "2026-02-18T15:44:06.494648",
       "lastUpdated": "2026-02-18T15:44:06.494649",
-      "name": "Survival Status",
+      "name": "Treatment Outcome",
       "shortName": "Survival",
       "description": "Patient survival status (Alive, Deceased, Lost to follow-up)",
       "valueType": "TEXT",
@@ -6566,7 +6606,7 @@
         "public": "rw------"
       },
       "translations": [],
-      "formName": "Survival Status"
+      "formName": "Treatment Outcome"
     },
     {
       "id": "jYb6NdNhcUO",

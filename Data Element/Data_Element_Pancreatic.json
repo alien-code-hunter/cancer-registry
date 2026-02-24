@@ -1,5 +1,41 @@
 {
   "dataElements": [
+        {
+          "name": "Pancreatic - Jaundice",
+          "shortName": "Jaundice",
+          "formName": "Jaundice",
+          "aggregationType": "SUM",
+          "valueType": "BOOLEAN",
+          "domainType": "AGGREGATE",
+          "id": "PANC_Jaundice"
+        },
+        {
+          "name": "Pancreatic - Tumour Location Pancreas",
+          "shortName": "Tumour_Location_Pancreas",
+          "formName": "Tumour Location Pancreas",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "PANC_TumourLocation"
+        },
+        {
+          "name": "Pancreatic - Resectable Status",
+          "shortName": "Resectable_Status",
+          "formName": "Resectable Status",
+          "aggregationType": "NONE",
+          "valueType": "TEXT",
+          "domainType": "AGGREGATE",
+          "id": "PANC_ResectableStatus"
+        },
+        {
+          "name": "Pancreatic - CA19-9 Value",
+          "shortName": "CA19_9_Value",
+          "formName": "CA19-9 Value",
+          "aggregationType": "AVERAGE",
+          "valueType": "NUMBER",
+          "domainType": "AGGREGATE",
+          "id": "PANC_CA199Value"
+        },
     {
       "name": "Pancreatic - HPV Positive for abnormal results",
       "created": "2026-02-18T18:42:34.710086",
@@ -840,5 +876,45 @@
         "id": "xDsPPFKU2mh"
       }
     }
+     ,{
+        "name": "Meduletu",
+        "created": "2026-02-19T00:00:00.000",
+        "lastUpdated": "2026-02-19T00:00:00.000",
+        "translations": [],
+        "createdBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "lastUpdatedBy": {
+          "id": "M5zQapPyTZI",
+          "code": "admin",
+          "name": "admin admin",
+          "displayName": "admin admin",
+          "username": "admin"
+        },
+        "sharing": {
+          "owner": "M5zQapPyTZI",
+          "external": false,
+          "users": {},
+          "userGroups": {},
+          "public": "rw------"
+        },
+        "shortName": "Meduletu",
+        "formName": "Meduletu",
+        "legendSets": [],
+        "aggregationType": "COUNT",
+        "valueType": "TEXT",
+        "domainType": "TRACKER",
+        "aggregationLevels": [],
+        "zeroIsSignificant": false,
+        "id": "MuT3LuT3uID",
+        "attributeValues": [],
+        "categoryCombo": {
+          "id": "bjDvmb4bfuf"
+        }
+      }
   ]
 }

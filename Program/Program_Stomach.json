@@ -1,1754 +1,1606 @@
 {
-  "programs": [
+  "name": "Stomach Cancer Program",
+  "stages": [
     {
-      "name": "Stomach Cancer Program",
-      "created": "2026-02-17T18:24:02.521",
-      "lastUpdated": "2026-02-17T18:24:02.521",
-      "translations": [],
-      "createdBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "lastUpdatedBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "sharing": {
-        "owner": "M5zQapPyTZI",
-        "external": false,
-        "users": {},
-        "userGroups": {},
-        "public": "--------"
-      },
-      "shortName": "SCP",
-      "description": "Stomach cancer screening, diagnosis, treatment, and follow-up program",
-      "version": 1,
-      "enrollmentDateLabel": "Enrollment date",
-      "programType": "WITH_REGISTRATION",
-      "displayIncidentDate": false,
-      "ignoreOverdueEvents": false,
-      "onlyEnrollOnce": true,
-      "notificationTemplates": [],
-      "selectEnrollmentDatesInFuture": false,
-      "selectIncidentDatesInFuture": false,
-      "trackedEntityType": {
-        "id": "Tzy1eEduuLj"
-      },
-      "style": {
-        "color": "#4caf50",
-        "icon": "person_outline"
-      },
-      "categoryCombo": {
-        "id": "bjDvmb4bfuf"
-      },
-      "skipOffline": false,
-      "displayFrontPageList": true,
-      "useFirstStageDuringRegistration": false,
-      "featureType": "POINT",
-      "expiryDays": 0,
-      "completeEventsExpiryDays": 0,
-      "openDaysAfterCoEndDate": 0,
-      "minAttributesRequiredToSearch": 1,
-      "maxTeiCountToReturn": 0,
-      "accessLevel": "PROTECTED",
-      "id": "oAs7wAazMbg",
-      "attributeValues": [],
-      "organisationUnits": [
+      "name": "Registration & Risk",
+      "dataElements": [
         {
-          "id": "uKGCw3wyRFK"
+          "name": "National ID",
+          "id": "core_national_id",
+          "valueType": "TEXT"
         },
         {
-          "id": "qeii3Bj2AoE"
+          "name": "Full name",
+          "id": "core_full_name",
+          "valueType": "TEXT"
         },
         {
-          "id": "JPdikUXe2Pa"
+          "name": "DOB",
+          "id": "core_dob",
+          "valueType": "DATE"
         },
         {
-          "id": "xK9Xoqkhop8"
+          "name": "Sex",
+          "id": "core_sex",
+          "valueType": "TEXT"
         },
         {
-          "id": "UfOBkbqHOx0"
+          "name": "Phone",
+          "id": "core_phone",
+          "valueType": "TEXT"
         },
         {
-          "id": "hsFmvG4WCzN"
+          "name": "Address",
+          "id": "core_address",
+          "valueType": "TEXT"
         },
         {
-          "id": "fPJ3hdwdvI7"
+          "name": "Registry Case ID",
+          "id": "core_case_id",
+          "valueType": "TEXT"
         },
         {
-          "id": "BgxDov5UFz0"
+          "name": "Encounter date",
+          "id": "core_encounter_date",
+          "valueType": "DATE"
         },
         {
-          "id": "t2K6wSYEQWu"
+          "name": "HIV status",
+          "id": "core_hiv_status",
+          "valueType": "TEXT"
         },
         {
-          "id": "esqZO1LWPZ4"
+          "name": "Smoking status",
+          "id": "core_smoking_status",
+          "valueType": "TEXT"
         },
         {
-          "id": "aGVfzQFRnhD"
+          "name": "Alcohol use",
+          "id": "core_alcohol_use",
+          "valueType": "TEXT"
         },
         {
-          "id": "rLr0PoDygp2"
+          "name": "Family history of cancer",
+          "id": "core_family_history",
+          "valueType": "TEXT"
         },
         {
-          "id": "B1RO0E0Kf90"
+          "name": "Comorbidities",
+          "id": "core_comorbidities",
+          "valueType": "TEXT"
         },
         {
-          "id": "MSAggngaBew"
+          "name": "Primary cancer site",
+          "id": "core_primary_site",
+          "valueType": "TEXT"
         },
         {
-          "id": "c2ZgdibkK5C"
+          "name": "Date of diagnosis",
+          "id": "core_diag_date",
+          "valueType": "DATE"
         },
         {
-          "id": "nuGlbIskNvJ"
+          "name": "Basis of diagnosis",
+          "id": "core_basis_diag",
+          "valueType": "TEXT"
         },
         {
-          "id": "bNr26jOztrp"
+          "name": "Histology type",
+          "id": "core_histology",
+          "valueType": "TEXT"
         },
         {
-          "id": "IADWoI6C5v6"
+          "name": "Grade",
+          "id": "core_grade",
+          "valueType": "NUMBER"
         },
         {
-          "id": "kIugC5Dw8P5"
+          "name": "ICD-10 code",
+          "id": "core_icd10",
+          "valueType": "TEXT"
         },
         {
-          "id": "MD54jQqL6RM"
+          "name": "Staging system",
+          "id": "core_staging_system",
+          "valueType": "TEXT"
         },
         {
-          "id": "YZN4dIf2VTq"
+          "name": "Stage group",
+          "id": "core_stage_group",
+          "valueType": "TEXT"
         },
         {
-          "id": "NNA95juno04"
+          "name": "T",
+          "id": "core_t",
+          "valueType": "TEXT"
         },
         {
-          "id": "dnJgujSdEZn"
+          "name": "N",
+          "id": "core_n",
+          "valueType": "TEXT"
         },
         {
-          "id": "i8Pp0foqTqb"
+          "name": "M",
+          "id": "core_m",
+          "valueType": "TEXT"
         },
         {
-          "id": "N1OaSGOanSR"
+          "name": "Performance status",
+          "id": "core_perf_status",
+          "valueType": "NUMBER"
         },
         {
-          "id": "nxLX0sDFAqF"
+          "name": "Treatment intent",
+          "id": "core_treatment_intent",
+          "valueType": "TEXT"
         },
         {
-          "id": "RBXwyBtkfnK"
+          "name": "Surgery done",
+          "id": "core_surgery_done",
+          "valueType": "BOOLEAN"
         },
         {
-          "id": "EVcDXL70fvq"
+          "name": "Chemo started",
+          "id": "core_chemo_started",
+          "valueType": "BOOLEAN"
         },
         {
-          "id": "yEeyg75UnxI"
+          "name": "Radiotherapy started",
+          "id": "core_rt_started",
+          "valueType": "BOOLEAN"
         },
         {
-          "id": "JNqhsmfNYls"
+          "name": "Hormonal therapy",
+          "id": "core_hormonal",
+          "valueType": "BOOLEAN"
         },
         {
-          "id": "nz44o4oBeAv"
+          "name": "Targeted/immunotherapy",
+          "id": "core_targeted",
+          "valueType": "BOOLEAN"
         },
         {
-          "id": "cxoPIzeQ2is"
+          "name": "Treatment completion status",
+          "id": "core_treatment_status",
+          "valueType": "TEXT"
         },
         {
-          "id": "qiQfQD6PcFH"
+          "name": "Vital status",
+          "id": "core_vital_status",
+          "valueType": "TEXT"
         },
         {
-          "id": "ZawxXOphsO7"
+          "name": "Date last seen",
+          "id": "core_last_seen",
+          "valueType": "DATE"
         },
         {
-          "id": "K3mQgKI1knB"
+          "name": "Disease status",
+          "id": "core_disease_status",
+          "valueType": "TEXT"
         },
         {
-          "id": "oftErzlHuQv"
+          "name": "Recurrence",
+          "id": "core_recurrence",
+          "valueType": "BOOLEAN"
         },
         {
-          "id": "fs1OEUKBudn"
+          "name": "Palliative care enrolled",
+          "id": "core_palliative",
+          "valueType": "BOOLEAN"
         },
         {
-          "id": "qWPKR4F56CS"
-        },
-        {
-          "id": "LUkbFpqElHo"
-        },
-        {
-          "id": "EZ2gKbJ2tDp"
-        },
-        {
-          "id": "W0mpl2ccgmE"
-        },
-        {
-          "id": "Mk53sDtEspd"
-        },
-        {
-          "id": "Y9OMytXMnHN"
-        },
-        {
-          "id": "mdwXU447IN7"
-        },
-        {
-          "id": "zM4NN4hhH5b"
-        },
-        {
-          "id": "tEdvq4RyJOE"
-        },
-        {
-          "id": "N91JPDfAnPI"
-        },
-        {
-          "id": "fzfr3jnYqvr"
-        },
-        {
-          "id": "MfijOiUsjhw"
-        },
-        {
-          "id": "UnCEqbY7RBn"
-        },
-        {
-          "id": "Dp7cxer6fGw"
-        },
-        {
-          "id": "xzqpwPmn6xE"
-        },
-        {
-          "id": "YmLhNI30SHg"
-        },
-        {
-          "id": "D6ijAdImmjU"
-        },
-        {
-          "id": "WdxZMqs5g1b"
-        },
-        {
-          "id": "ClStzg3HUNX"
-        },
-        {
-          "id": "T9SzeteM2Wi"
-        },
-        {
-          "id": "xN1clD405w4"
-        },
-        {
-          "id": "PDr2vMf7Sbq"
-        },
-        {
-          "id": "Iil3CGXTift"
-        },
-        {
-          "id": "jcFOvwr2uYR"
-        },
-        {
-          "id": "B9W3DN7gMAP"
-        },
-        {
-          "id": "GeeQ5pT4Ata"
-        },
-        {
-          "id": "ddM5TIndfgE"
-        },
-        {
-          "id": "ss6eUxENAZm"
-        },
-        {
-          "id": "zZh4fg2TjCS"
-        },
-        {
-          "id": "ETqETd3r7UJ"
-        },
-        {
-          "id": "JToD03STsnQ"
-        },
-        {
-          "id": "gDDck3ziQN5"
-        },
-        {
-          "id": "vQ2RMMY67MA"
-        },
-        {
-          "id": "EzGUUeDC3Fu"
-        },
-        {
-          "id": "LZC7qQuUayE"
-        },
-        {
-          "id": "Q5NWBPvmG2e"
-        },
-        {
-          "id": "jbwnaK3gSD2"
-        },
-        {
-          "id": "gBvX8CqARwt"
-        },
-        {
-          "id": "g9t434vLE7N"
-        },
-        {
-          "id": "vURjtBtBP40"
-        },
-        {
-          "id": "BD09Xcfsb7M"
-        },
-        {
-          "id": "WdtcM6kSrh0"
-        },
-        {
-          "id": "byHVtjB1F5v"
-        },
-        {
-          "id": "sGdmnrxgggM"
-        },
-        {
-          "id": "dvLp4V4T1Cf"
-        },
-        {
-          "id": "udkjFv9svtd"
-        },
-        {
-          "id": "jJ5t7b5aCD1"
-        },
-        {
-          "id": "V9ZKVIOuQCt"
-        },
-        {
-          "id": "X1elzJAGXfN"
-        },
-        {
-          "id": "dPQhgMYgsfL"
-        },
-        {
-          "id": "T2VOg9HzW3U"
-        },
-        {
-          "id": "TRN03bbiFNS"
-        },
-        {
-          "id": "HyQPb67NpGK"
-        },
-        {
-          "id": "GJim47vcM2x"
-        },
-        {
-          "id": "ZKGIKoqoHdY"
-        },
-        {
-          "id": "mcJowJnnxjY"
-        },
-        {
-          "id": "qtjtGktRm2t"
-        },
-        {
-          "id": "wE9fH9mwLhI"
-        },
-        {
-          "id": "FnyBnrtKmrM"
-        },
-        {
-          "id": "Zuk9tl5d7H9"
-        },
-        {
-          "id": "LFH7EjmGILd"
-        },
-        {
-          "id": "YM0qFmbr9Rh"
-        },
-        {
-          "id": "PvEwLKd8rYn"
-        },
-        {
-          "id": "sUcnIT3SSiR"
-        },
-        {
-          "id": "sz37jUeCCBX"
-        },
-        {
-          "id": "R236LNBT9Sm"
-        },
-        {
-          "id": "ffBwswotrlJ"
-        },
-        {
-          "id": "CnEgkMJRoNn"
-        },
-        {
-          "id": "tA4zSnHPMr7"
-        },
-        {
-          "id": "R40CIvTvuw7"
-        },
-        {
-          "id": "bg5avZzLLJ2"
-        },
-        {
-          "id": "p0JzU1IBlyX"
-        },
-        {
-          "id": "C9v0IT0hyLJ"
-        },
-        {
-          "id": "v2uLAmfQXuu"
-        },
-        {
-          "id": "ECwY8FqtEzn"
-        },
-        {
-          "id": "zjYX57XPBxu"
-        },
-        {
-          "id": "ZXyoMRJ3RGM"
-        },
-        {
-          "id": "RuCY7GEHm4n"
-        },
-        {
-          "id": "pqewRJQ9IdA"
-        },
-        {
-          "id": "LIXOLUllVKI"
-        },
-        {
-          "id": "XH4eHnkIbJ0"
-        },
-        {
-          "id": "QVHfPfs26T2"
-        },
-        {
-          "id": "VHNmmmPPwJx"
-        },
-        {
-          "id": "s1BJeSplWRB"
-        },
-        {
-          "id": "hNjfLPpzjbg"
-        },
-        {
-          "id": "i1QIsO1kAp3"
-        },
-        {
-          "id": "CGvswxXEP3q"
-        },
-        {
-          "id": "r8Pi6zLeFxT"
-        },
-        {
-          "id": "lUomsWsL7A6"
-        },
-        {
-          "id": "kDtE1LiHast"
-        },
-        {
-          "id": "BADHLNP90Ge"
-        },
-        {
-          "id": "LJVXg2Sb4X8"
-        },
-        {
-          "id": "WVKaxo18kQS"
-        },
-        {
-          "id": "KQhv80JO3W9"
-        },
-        {
-          "id": "eDYJKjtyepq"
-        },
-        {
-          "id": "zyLv56yFjZb"
-        },
-        {
-          "id": "eIOtAZGNcim"
-        },
-        {
-          "id": "OFeWvznMoPR"
-        },
-        {
-          "id": "ajlRmhpANPe"
-        },
-        {
-          "id": "OocmWk0GKjJ"
-        },
-        {
-          "id": "pyYAxl0eGnI"
-        },
-        {
-          "id": "YmWzhpL2Jn6"
-        },
-        {
-          "id": "gHur1CW9vKo"
-        },
-        {
-          "id": "yqhS9Gq4PX2"
-        },
-        {
-          "id": "AIqnwOXxx8C"
-        },
-        {
-          "id": "sV0WIclEUMl"
-        },
-        {
-          "id": "NblWOTY56TS"
-        },
-        {
-          "id": "QkPV6A7e74o"
-        },
-        {
-          "id": "r2OXYWNUJlP"
-        },
-        {
-          "id": "SNcR07dy1XB"
-        },
-        {
-          "id": "SWMyC6TDs0G"
-        },
-        {
-          "id": "PQTr5SZCIEA"
-        },
-        {
-          "id": "GmoysL2hi4Q"
-        },
-        {
-          "id": "zccMVrg6niG"
-        },
-        {
-          "id": "msKNuUf1NBS"
-        },
-        {
-          "id": "ON0TQNFm35Y"
-        },
-        {
-          "id": "SblaJuO5fU4"
-        },
-        {
-          "id": "W4zyZ4nQpbc"
-        },
-        {
-          "id": "UCLqbq1NUjg"
-        },
-        {
-          "id": "GJWHVKWSgtt"
-        },
-        {
-          "id": "jAIELRJpu3p"
-        },
-        {
-          "id": "Ict4PzvnAEx"
-        },
-        {
-          "id": "ig88deJdRg3"
-        },
-        {
-          "id": "oeyzdYIzwuj"
-        },
-        {
-          "id": "gHjYihE74pN"
-        },
-        {
-          "id": "juZeBUCqf6R"
-        },
-        {
-          "id": "ND49un7u635"
-        },
-        {
-          "id": "sn5CJDjjc1a"
-        },
-        {
-          "id": "MZ5ty5ydNMz"
-        },
-        {
-          "id": "FNShkpYM7jz"
-        },
-        {
-          "id": "a8tK5zaryFC"
-        },
-        {
-          "id": "Njvqxi1bo2h"
-        },
-        {
-          "id": "RH9pj9dQ5uG"
-        },
-        {
-          "id": "skF6GqHBnBn"
-        },
-        {
-          "id": "DbA3aeuVUCb"
-        },
-        {
-          "id": "CRML6tqhypY"
-        },
-        {
-          "id": "uB5OsvE8PGZ"
-        },
-        {
-          "id": "uPedvh3qzS1"
-        },
-        {
-          "id": "Ts4pGgNwxnm"
-        },
-        {
-          "id": "rvEk7kHM9DQ"
-        },
-        {
-          "id": "eM59Rcdw32p"
-        },
-        {
-          "id": "HHtrRNxrALx"
-        },
-        {
-          "id": "lWlOfldQv7C"
-        },
-        {
-          "id": "QPHYmwHARik"
-        },
-        {
-          "id": "lUgylqwbxHi"
-        },
-        {
-          "id": "yDugL3kTByv"
-        },
-        {
-          "id": "wrdn2SNwYAh"
-        },
-        {
-          "id": "JAXtrbNCiu6"
-        },
-        {
-          "id": "UdfsBgLSlGx"
-        },
-        {
-          "id": "Eh7g1X86RLq"
-        },
-        {
-          "id": "oz5rYni4oWI"
-        },
-        {
-          "id": "ckgacTOo276"
-        },
-        {
-          "id": "raS3FkAX8Bo"
-        },
-        {
-          "id": "e1iRHBCEMyB"
-        },
-        {
-          "id": "W2dxPWrIPj0"
-        },
-        {
-          "id": "LUqTkolRtQv"
-        },
-        {
-          "id": "MIL37E4RNO5"
-        },
-        {
-          "id": "bkbdPKyGOpK"
-        },
-        {
-          "id": "VWFew5Hfrm9"
-        },
-        {
-          "id": "bfUpR87z8wQ"
-        },
-        {
-          "id": "rbyjmtFmHi1"
-        },
-        {
-          "id": "Z18r81MiAHk"
-        },
-        {
-          "id": "YG1WMmusg3l"
-        },
-        {
-          "id": "jWzOTFz4i75"
-        },
-        {
-          "id": "IQ5cWTwEHUG"
-        },
-        {
-          "id": "LMb3RJHbD6x"
-        },
-        {
-          "id": "JanXt39SLBL"
-        },
-        {
-          "id": "PiljaDQL8bP"
-        },
-        {
-          "id": "Rdq72kBPTfr"
-        },
-        {
-          "id": "doR8gyMYGxO"
-        },
-        {
-          "id": "TnXvmNU1mmT"
-        },
-        {
-          "id": "HJTcwppEOiY"
-        },
-        {
-          "id": "eYmCx2NYb7N"
-        },
-        {
-          "id": "LGckYJbckh2"
-        },
-        {
-          "id": "DVBR4Ng2ORX"
-        },
-        {
-          "id": "pOfeOGeEEAu"
-        },
-        {
-          "id": "TB0yEehvc4z"
-        },
-        {
-          "id": "drQ4ZRcxq5Y"
-        },
-        {
-          "id": "e17qfRmKvYr"
-        },
-        {
-          "id": "rTTkMkTYfnt"
-        },
-        {
-          "id": "dhWeKF3gbhI"
-        },
-        {
-          "id": "LdSChk12sNm"
-        },
-        {
-          "id": "wYGprfjWqhz"
-        },
-        {
-          "id": "MKrjfN9gWvH"
-        },
-        {
-          "id": "D4840Q9vwIj"
-        },
-        {
-          "id": "Y2JKAoRuoFf"
-        },
-        {
-          "id": "uwjPFCOPRFX"
-        },
-        {
-          "id": "qh8Nup1DDcf"
-        },
-        {
-          "id": "D7n1ndGWtJf"
-        },
-        {
-          "id": "doUgayD9Rj5"
-        },
-        {
-          "id": "M0nwvvUk36S"
-        },
-        {
-          "id": "THWhiZwvxIc"
-        },
-        {
-          "id": "kVnelLwdpIw"
-        },
-        {
-          "id": "EbzmH8cTehA"
-        },
-        {
-          "id": "ng8uund7MKX"
-        },
-        {
-          "id": "DnmsuWTK4dZ"
-        },
-        {
-          "id": "wCVFEDCJq9M"
-        },
-        {
-          "id": "Np5eOU6jyaf"
-        },
-        {
-          "id": "X5uX48GIXjd"
-        },
-        {
-          "id": "qk1wu0Bwgbq"
-        },
-        {
-          "id": "eraTzWYfEe2"
-        },
-        {
-          "id": "IDU7yGgqnAs"
-        },
-        {
-          "id": "bcZWHYpfbuF"
-        },
-        {
-          "id": "LKeUW3AEWea"
-        },
-        {
-          "id": "p8suatoiSWH"
-        },
-        {
-          "id": "KEhRiXeFev9"
-        },
-        {
-          "id": "ANkbLfhfh9n"
-        },
-        {
-          "id": "QE5tqeJE0rp"
-        },
-        {
-          "id": "ClVdx8bxXyW"
-        },
-        {
-          "id": "xLQrHmCdrZS"
-        },
-        {
-          "id": "RPxz5gws9c3"
-        },
-        {
-          "id": "ofxhzHlTJXc"
-        },
-        {
-          "id": "MMhN30jsGvT"
-        },
-        {
-          "id": "aTK7z5LovZI"
-        },
-        {
-          "id": "LKVm5UBXbkQ"
-        },
-        {
-          "id": "d2dWGTTmSJr"
-        },
-        {
-          "id": "b5xx6UC3atj"
-        },
-        {
-          "id": "st4WCDQi5QU"
-        },
-        {
-          "id": "XpeM43oZYRC"
-        },
-        {
-          "id": "WkrBKr7pMAD"
-        },
-        {
-          "id": "U5qTVVRJJMI"
-        },
-        {
-          "id": "FNTUkZnmAKH"
-        },
-        {
-          "id": "AOfv8v0OQEo"
-        },
-        {
-          "id": "p7wn2r09Xm4"
-        },
-        {
-          "id": "gzMznVJi2lz"
-        },
-        {
-          "id": "D2n2FRIdOS4"
-        },
-        {
-          "id": "yxhOmdo2CXg"
-        },
-        {
-          "id": "jk6XWnmIBK1"
-        },
-        {
-          "id": "veJATS0b9yW"
-        },
-        {
-          "id": "yuRJwIhTu88"
-        },
-        {
-          "id": "FiCA3QDJ7Y0"
-        },
-        {
-          "id": "sLggBr8VDKJ"
-        },
-        {
-          "id": "Dwpfbg9I65J"
-        },
-        {
-          "id": "kb2ial21wCD"
-        },
-        {
-          "id": "ktm5Srmh5tC"
-        },
-        {
-          "id": "Iw4uM4xhuxy"
-        },
-        {
-          "id": "s0DKe0VqFyT"
-        },
-        {
-          "id": "Sqt8M87C3jj"
-        },
-        {
-          "id": "IOGcSDB00YQ"
-        },
-        {
-          "id": "lrCTB5KwSUa"
-        },
-        {
-          "id": "z3gifcU1hwb"
-        },
-        {
-          "id": "M88bQDDdlAm"
-        },
-        {
-          "id": "HavXOgWO9ip"
-        },
-        {
-          "id": "J83JtnFX18B"
-        },
-        {
-          "id": "jeC3h61AhCi"
-        },
-        {
-          "id": "IgIxIP14Ihj"
-        },
-        {
-          "id": "DLQvaxjwBRd"
-        },
-        {
-          "id": "CrS6Bg0maZI"
-        },
-        {
-          "id": "nUmA29oGLjw"
-        },
-        {
-          "id": "MrFsJ1yM2Mb"
-        },
-        {
-          "id": "cfGenbNpmaH"
-        },
-        {
-          "id": "FI2bIyoDzdz"
-        },
-        {
-          "id": "BCYCLAWyHqT"
-        },
-        {
-          "id": "qXjkhphjUTm"
-        },
-        {
-          "id": "mSVlqJ4wtUm"
-        },
-        {
-          "id": "f0omxbpiUGC"
-        },
-        {
-          "id": "EOCFQuZevWd"
-        },
-        {
-          "id": "uVdwohlpTrw"
-        },
-        {
-          "id": "AFtuvUQI0vR"
-        },
-        {
-          "id": "i7PclNijeDy"
-        },
-        {
-          "id": "nZ7yM5C8vUv"
-        },
-        {
-          "id": "Ez9X6wuidg0"
-        },
-        {
-          "id": "bb5lQJpYuB7"
-        },
-        {
-          "id": "nq2cnHiuF5w"
-        },
-        {
-          "id": "uL4upSXxmz7"
-        },
-        {
-          "id": "hWQDG56ONzy"
-        },
-        {
-          "id": "n7DbcZMpBLm"
-        },
-        {
-          "id": "aDHo33DwBLV"
-        },
-        {
-          "id": "oXFLdTRrvGG"
-        },
-        {
-          "id": "vEfjAtoJbAQ"
-        },
-        {
-          "id": "BHjukGymbeK"
-        },
-        {
-          "id": "QeQCDAQfdgt"
-        },
-        {
-          "id": "HoDgGnj4Ygu"
-        },
-        {
-          "id": "CfwslEolrpd"
-        },
-        {
-          "id": "q68Ck7V87RL"
-        },
-        {
-          "id": "G5Nf55NyUwl"
-        },
-        {
-          "id": "e7KvAx0XQul"
-        },
-        {
-          "id": "bWixrT0q4JG"
-        },
-        {
-          "id": "Wfn3i19mGML"
-        },
-        {
-          "id": "huGNHWFOv6H"
-        },
-        {
-          "id": "MxBTlvCxzVr"
-        },
-        {
-          "id": "PwNu11haLCo"
-        },
-        {
-          "id": "UwvmGcAZwqc"
-        },
-        {
-          "id": "ileI96vsLvS"
-        },
-        {
-          "id": "KyLevsZF9w5"
-        },
-        {
-          "id": "x79c3tvMm8D"
-        },
-        {
-          "id": "kb5B0Q0NrmV"
-        },
-        {
-          "id": "xxeX8rv04I1"
-        },
-        {
-          "id": "qSvN13zHUL3"
-        },
-        {
-          "id": "ECxDESyLmfP"
-        },
-        {
-          "id": "p6ihkGYHoy9"
-        },
-        {
-          "id": "zNAIxOxMGAW"
-        },
-        {
-          "id": "UjfB3g3REfs"
-        },
-        {
-          "id": "m2PHOpQMv6A"
-        },
-        {
-          "id": "yri5td63j8k"
-        },
-        {
-          "id": "gfDXPYgmBfI"
-        },
-        {
-          "id": "miI7pJUmQ7T"
-        },
-        {
-          "id": "x3TOlH50zin"
-        },
-        {
-          "id": "Kqlf7d7ZY06"
-        },
-        {
-          "id": "vMIPKwQgiVn"
-        },
-        {
-          "id": "mFXjKj8nrkv"
-        },
-        {
-          "id": "tXMjhIt8lPr"
-        },
-        {
-          "id": "wRGmcNsxG7u"
-        },
-        {
-          "id": "BKjVuPzUyOi"
-        },
-        {
-          "id": "Nt9AAnvj88T"
-        },
-        {
-          "id": "MPytJjweNqw"
-        },
-        {
-          "id": "Nwp0aPPMLjp"
-        },
-        {
-          "id": "fsfFA4G4x4L"
-        },
-        {
-          "id": "Eevw1KtADP0"
-        },
-        {
-          "id": "P7LPtg66BtM"
-        },
-        {
-          "id": "WAyHR4TPI0W"
-        },
-        {
-          "id": "WLCcf9NYd6K"
-        },
-        {
-          "id": "CrHps9jkj3s"
-        },
-        {
-          "id": "IfjUxEe0rUB"
-        },
-        {
-          "id": "gqfCiG46uCt"
-        },
-        {
-          "id": "TxQSNIWyfK5"
-        },
-        {
-          "id": "x4MjQhehIxV"
-        },
-        {
-          "id": "YkdAa6S3zx0"
-        },
-        {
-          "id": "Og1aYOXJqNK"
-        },
-        {
-          "id": "MYLWOov9fpi"
-        },
-        {
-          "id": "j8zdsXQVmQP"
-        },
-        {
-          "id": "f8iYvGKib0x"
-        },
-        {
-          "id": "tMQPrYocV2G"
-        },
-        {
-          "id": "Wc1Hd3enCIG"
-        },
-        {
-          "id": "gVnj0dNPqfp"
-        },
-        {
-          "id": "kJ3s4OsV7Xj"
-        },
-        {
-          "id": "oBZHBLN5JY8"
-        },
-        {
-          "id": "cD350etVJco"
-        },
-        {
-          "id": "RSxNalAsDPK"
-        },
-        {
-          "id": "kZkNRsCfN37"
-        },
-        {
-          "id": "H5OQqpHrfJ7"
-        },
-        {
-          "id": "CdLIXFoKZ19"
-        },
-        {
-          "id": "Txmd12EuyCS"
-        },
-        {
-          "id": "mGEmgXfrXt9"
-        },
-        {
-          "id": "jR15irytbSf"
-        },
-        {
-          "id": "Taa5m70wyL1"
-        },
-        {
-          "id": "gEFMW8yNxL8"
-        },
-        {
-          "id": "W9nHmqjt5qE"
-        },
-        {
-          "id": "Td2fvlYddwH"
-        },
-        {
-          "id": "UyVjYkWtZMz"
-        },
-        {
-          "id": "gDVEuOcG9q0"
-        },
-        {
-          "id": "O1smci6XFER"
-        },
-        {
-          "id": "eNzAIvF5l75"
-        },
-        {
-          "id": "xzo4m8o44Xu"
-        },
-        {
-          "id": "hHkLSP80EBl"
-        },
-        {
-          "id": "KsOjmWiKdE4"
-        },
-        {
-          "id": "YDdAV2R7fpa"
-        },
-        {
-          "id": "o54ARnO3HwD"
-        },
-        {
-          "id": "KYocH3ar9vq"
-        },
-        {
-          "id": "FpTrKzyYvNZ"
-        },
-        {
-          "id": "cdHtME7jz7V"
-        },
-        {
-          "id": "XvgDr3MAEdp"
-        },
-        {
-          "id": "bQ4HeoJsKwp"
-        },
-        {
-          "id": "xDzRNevHHuM"
-        },
-        {
-          "id": "pVpRq3kMOis"
-        },
-        {
-          "id": "W3plfYvnlog"
-        },
-        {
-          "id": "G7YelK8Uj63"
-        },
-        {
-          "id": "UUVLNAopD46"
-        },
-        {
-          "id": "gfH89GgYFCX"
-        },
-        {
-          "id": "V9Eyu9zbfIU"
-        },
-        {
-          "id": "vjpiVujuN62"
-        },
-        {
-          "id": "Gc7cya5Gdy5"
-        },
-        {
-          "id": "TwDvrl2lcrv"
-        },
-        {
-          "id": "VPEvFGfnTTh"
-        },
-        {
-          "id": "KFhA4G6l1Z1"
-        },
-        {
-          "id": "J4xebr9foZ6"
-        },
-        {
-          "id": "XsmiNd1hW8r"
-        },
-        {
-          "id": "ChzzoXj8TNs"
-        },
-        {
-          "id": "cqG5xZTl9up"
-        },
-        {
-          "id": "Sf8ctjA7qjo"
-        },
-        {
-          "id": "opC1CMfddeO"
-        },
-        {
-          "id": "ClIVz91lFfw"
-        },
-        {
-          "id": "Ym9sFa5y2aZ"
-        },
-        {
-          "id": "Ii8Lz407ktd"
-        },
-        {
-          "id": "p0MjgPQnq0X"
-        },
-        {
-          "id": "TMdYFfDa12B"
-        },
-        {
-          "id": "oDYRsa0mJIv"
-        },
-        {
-          "id": "f6N4IYiwVPJ"
-        },
-        {
-          "id": "YEGhoWcKBsV"
-        },
-        {
-          "id": "JSr83VA27J5"
-        },
-        {
-          "id": "W3CkTBxH1PO"
-        },
-        {
-          "id": "olwD7YYadZ9"
-        },
-        {
-          "id": "SMyvheSlUVF"
-        },
-        {
-          "id": "Kw8SswXDyms"
-        },
-        {
-          "id": "Uttm2O8yujd"
-        },
-        {
-          "id": "bCWweDAER5v"
-        },
-        {
-          "id": "gtPzpmwAGmJ"
-        },
-        {
-          "id": "zVQiPcIoAM7"
-        },
-        {
-          "id": "n7Osv5fr2rC"
-        },
-        {
-          "id": "C8u3vg6yBeQ"
-        },
-        {
-          "id": "a6UJSTuzdom"
-        },
-        {
-          "id": "BnejauevWcB"
-        },
-        {
-          "id": "iznsoRR8fG7"
-        },
-        {
-          "id": "c779w7RUFRs"
-        },
-        {
-          "id": "KmmxOmRJSMY"
-        },
-        {
-          "id": "zI3hHLKkfxc"
-        },
-        {
-          "id": "hdU2KOFoFDN"
-        },
-        {
-          "id": "OTJQTaFAnEf"
-        },
-        {
-          "id": "DJqA6VrYx41"
-        },
-        {
-          "id": "FYpjNzNkRgt"
-        },
-        {
-          "id": "q9Zv1UDHIkP"
-        },
-        {
-          "id": "NRUFElFCzxV"
-        },
-        {
-          "id": "R0A7R9v7XFp"
-        },
-        {
-          "id": "slUmOIg0cEQ"
-        },
-        {
-          "id": "om7VQ4rcT5a"
-        },
-        {
-          "id": "XkcRlFMwnsY"
-        },
-        {
-          "id": "faxn3ud3ivv"
-        },
-        {
-          "id": "T7gs6cLVQ8X"
-        },
-        {
-          "id": "TLRE5clKxlF"
-        },
-        {
-          "id": "qHUKq1CiWcg"
-        },
-        {
-          "id": "OIQKgf2W7Qg"
-        },
-        {
-          "id": "psar4lJfnNN"
-        },
-        {
-          "id": "BCnJK96Ba94"
-        },
-        {
-          "id": "BKij9g5cp1K"
-        },
-        {
-          "id": "GGTLdoDHbrR"
-        },
-        {
-          "id": "p5jozoAsoS9"
-        },
-        {
-          "id": "It2mEGYOzIt"
-        },
-        {
-          "id": "y2JBqmDMvvr"
-        },
-        {
-          "id": "yBpES83eD7R"
-        },
-        {
-          "id": "DD80E48fYPI"
-        },
-        {
-          "id": "K9ISp1qfyYQ"
-        },
-        {
-          "id": "OTq7awafsbC"
-        },
-        {
-          "id": "MsEagkRsP0T"
-        },
-        {
-          "id": "GrmuwxIzxSR"
-        },
-        {
-          "id": "F2KAPbj4ksO"
-        },
-        {
-          "id": "xRMR0Nl1FwO"
-        },
-        {
-          "id": "vpT6Q5fzp7F"
-        },
-        {
-          "id": "qtR7h9Q77vJ"
-        },
-        {
-          "id": "QJGUkfdSxuU"
-        },
-        {
-          "id": "OH0CHyFlwEx"
-        },
-        {
-          "id": "vhQLfAH9Msq"
-        },
-        {
-          "id": "yfkR7dj5mKu"
-        },
-        {
-          "id": "hxcCuuBOkC4"
-        },
-        {
-          "id": "imLaUcaoENY"
-        },
-        {
-          "id": "o8nOTSzUSvb"
-        },
-        {
-          "id": "fK4mIQrHMmc"
-        },
-        {
-          "id": "gTzwAQTlX9A"
-        },
-        {
-          "id": "smuDezyCNrH"
-        },
-        {
-          "id": "Hfta133B7Jq"
-        },
-        {
-          "id": "K3e17xGMgwi"
-        },
-        {
-          "id": "ZLG0hWJJfGQ"
-        },
-        {
-          "id": "WNwuD4sNGoM"
-        },
-        {
-          "id": "jqNFbR7ev9D"
-        },
-        {
-          "id": "d1tTmgr8YRR"
-        },
-        {
-          "id": "vK2vRyx3Lvp"
-        },
-        {
-          "id": "eRDJ6xPvtxS"
-        },
-        {
-          "id": "o4byILh6qAD"
-        },
-        {
-          "id": "HyE7HapLxku"
-        },
-        {
-          "id": "oErDXm7uK90"
-        },
-        {
-          "id": "uLPT7ft1rde"
-        },
-        {
-          "id": "fW2P4QFFJYS"
-        },
-        {
-          "id": "kkxEb89xsH2"
-        },
-        {
-          "id": "a3vOpPtGnpu"
-        },
-        {
-          "id": "xnhfjriJ7Pn"
-        },
-        {
-          "id": "CuD0dM0QHni"
-        },
-        {
-          "id": "SijcYdYZVXs"
+          "name": "Death details",
+          "id": "core_death_details",
+          "valueType": "TEXT"
         }
-      ],
-      "programStages": [
+      ]
+    },
+    {
+      "name": "Clinical Assessment",
+      "dataElements": [
         {
-          "id": "WJBvxOHYHP6",
-          "programStageDataElements": []
+          "name": "National ID",
+          "id": "core_national_id",
+          "valueType": "TEXT"
         },
         {
-          "id": "alG9NgyEGD2",
-          "programStageDataElements": []
+          "name": "Full name",
+          "id": "core_full_name",
+          "valueType": "TEXT"
         },
         {
-          "id": "Cwecfe83T9O",
-          "programStageDataElements": []
+          "name": "DOB",
+          "id": "core_dob",
+          "valueType": "DATE"
         },
         {
-          "id": "efGXcmuqpZM",
-          "programStageDataElements": []
+          "name": "Sex",
+          "id": "core_sex",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Phone",
+          "id": "core_phone",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Address",
+          "id": "core_address",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Registry Case ID",
+          "id": "core_case_id",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Encounter date",
+          "id": "core_encounter_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "HIV status",
+          "id": "core_hiv_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Smoking status",
+          "id": "core_smoking_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Alcohol use",
+          "id": "core_alcohol_use",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Family history of cancer",
+          "id": "core_family_history",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Comorbidities",
+          "id": "core_comorbidities",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Primary cancer site",
+          "id": "core_primary_site",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date of diagnosis",
+          "id": "core_diag_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Basis of diagnosis",
+          "id": "core_basis_diag",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Histology type",
+          "id": "core_histology",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Grade",
+          "id": "core_grade",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "ICD-10 code",
+          "id": "core_icd10",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Staging system",
+          "id": "core_staging_system",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Stage group",
+          "id": "core_stage_group",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "T",
+          "id": "core_t",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "N",
+          "id": "core_n",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "M",
+          "id": "core_m",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Performance status",
+          "id": "core_perf_status",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "Treatment intent",
+          "id": "core_treatment_intent",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Surgery done",
+          "id": "core_surgery_done",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Chemo started",
+          "id": "core_chemo_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Radiotherapy started",
+          "id": "core_rt_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Hormonal therapy",
+          "id": "core_hormonal",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Targeted/immunotherapy",
+          "id": "core_targeted",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Treatment completion status",
+          "id": "core_treatment_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Vital status",
+          "id": "core_vital_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date last seen",
+          "id": "core_last_seen",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Disease status",
+          "id": "core_disease_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Recurrence",
+          "id": "core_recurrence",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Palliative care enrolled",
+          "id": "core_palliative",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Death details",
+          "id": "core_death_details",
+          "valueType": "TEXT"
         }
-      ],
-      "programSections": [],
-      "programTrackedEntityAttributes": [
+      ]
+    },
+    {
+      "name": "Diagnostics",
+      "dataElements": [
         {
-          "name": "SCP Record ID",
-          "created": "2026-02-17T18:24:02.521",
-          "lastUpdated": "2026-02-17T18:24:02.521",
-          "translations": [],
-          "program": {
-            "id": "oAs7wAazMbg"
-          },
-          "displayInList": true,
-          "sortOrder": 1,
-          "mandatory": false,
-          "renderOptionsAsRadio": false,
-          "searchable": false,
-          "displayShortName": "SCP Record ID",
-          "valueType": "TEXT",
-          "displayName": "SCP Record ID",
-          "id": "JQaYdLFgYBk",
-          "trackedEntityAttribute": {
-            "id": "mCZpmpREYsA"
-          }
+          "name": "National ID",
+          "id": "core_national_id",
+          "valueType": "TEXT"
         },
         {
-          "name": "SCP First name",
-          "created": "2026-02-17T18:24:02.521",
-          "lastUpdated": "2026-02-17T18:24:02.521",
-          "translations": [],
-          "program": {
-            "id": "oAs7wAazMbg"
-          },
-          "displayInList": true,
-          "sortOrder": 2,
-          "mandatory": true,
-          "renderOptionsAsRadio": false,
-          "searchable": true,
-          "displayShortName": "SCP First name",
-          "valueType": "TEXT",
-          "displayName": "SCP First name",
-          "id": "B1mj6LxVlvl",
-          "trackedEntityAttribute": {
-            "id": "ClTANDfWNnR"
-          }
+          "name": "Full name",
+          "id": "core_full_name",
+          "valueType": "TEXT"
         },
         {
-          "name": "SCP Surname",
-          "created": "2026-02-17T18:24:02.521",
-          "lastUpdated": "2026-02-17T18:24:02.521",
-          "translations": [],
-          "program": {
-            "id": "oAs7wAazMbg"
-          },
-          "displayInList": true,
-          "sortOrder": 3,
-          "mandatory": true,
-          "renderOptionsAsRadio": false,
-          "searchable": true,
-          "displayShortName": "SCP Surname",
-          "valueType": "TEXT",
-          "displayName": "SCP Surname",
-          "id": "Qj3YhyGlVzy",
-          "trackedEntityAttribute": {
-            "id": "VmVfDOX4V8Z"
-          }
+          "name": "DOB",
+          "id": "core_dob",
+          "valueType": "DATE"
         },
         {
-          "name": "SCP Namibia National ID",
-          "created": "2026-02-17T18:24:02.521",
-          "lastUpdated": "2026-02-17T18:24:02.521",
-          "translations": [],
-          "program": {
-            "id": "oAs7wAazMbg"
-          },
-          "displayInList": true,
-          "sortOrder": 4,
-          "mandatory": false,
-          "renderOptionsAsRadio": false,
-          "searchable": true,
-          "displayShortName": "SCP Namibia National ID",
-          "valueType": "TEXT",
-          "displayName": "SCP Namibia National ID",
-          "id": "OoHUk4TcIHx",
-          "trackedEntityAttribute": {
-            "id": "pSfGHge92Em"
-          }
+          "name": "Sex",
+          "id": "core_sex",
+          "valueType": "TEXT"
         },
         {
-          "name": "SCP Phone number",
-          "created": "2026-02-17T18:24:02.521",
-          "lastUpdated": "2026-02-17T18:24:02.521",
-          "translations": [],
-          "program": {
-            "id": "oAs7wAazMbg"
-          },
-          "displayInList": true,
-          "sortOrder": 5,
-          "mandatory": false,
-          "renderOptionsAsRadio": false,
-          "searchable": true,
-          "displayShortName": "SCP Phone number",
-          "valueType": "PHONE_NUMBER",
-          "displayName": "SCP Phone number",
-          "id": "R0t0ePrPopX",
-          "trackedEntityAttribute": {
-            "id": "zNqhvdgZamM"
-          }
+          "name": "Phone",
+          "id": "core_phone",
+          "valueType": "TEXT"
         },
         {
-          "name": "SCP Date of birth",
-          "created": "2026-02-17T18:24:02.521",
-          "lastUpdated": "2026-02-17T18:24:02.521",
-          "translations": [],
-          "program": {
-            "id": "oAs7wAazMbg"
-          },
-          "displayInList": false,
-          "sortOrder": 6,
-          "mandatory": false,
-          "renderOptionsAsRadio": false,
-          "searchable": false,
-          "displayShortName": "SCP Date of birth",
-          "valueType": "DATE",
-          "displayName": "SCP Date of birth",
-          "id": "Ae41IpH58ub",
-          "trackedEntityAttribute": {
-            "id": "BxJoHzbYpgX"
-          }
+          "name": "Address",
+          "id": "core_address",
+          "valueType": "TEXT"
         },
         {
-          "name": "SCP Age",
-          "created": "2026-02-17T18:24:02.521",
-          "lastUpdated": "2026-02-17T18:24:02.521",
-          "translations": [],
-          "program": {
-            "id": "oAs7wAazMbg"
-          },
-          "displayInList": true,
-          "sortOrder": 7,
-          "mandatory": false,
-          "renderOptionsAsRadio": false,
-          "searchable": false,
-          "displayShortName": "SCP Age",
-          "valueType": "INTEGER_ZERO_OR_POSITIVE",
-          "displayName": "SCP Age",
-          "id": "GID3j4hq5vP",
-          "trackedEntityAttribute": {
-            "id": "Uj0RBKPda7F"
-          }
+          "name": "Registry Case ID",
+          "id": "core_case_id",
+          "valueType": "TEXT"
         },
         {
-          "name": "SCP HIV status",
-          "created": "2026-02-17T18:24:02.521",
-          "lastUpdated": "2026-02-17T18:24:02.521",
-          "translations": [],
-          "program": {
-            "id": "oAs7wAazMbg"
-          },
-          "displayInList": true,
-          "sortOrder": 8,
-          "mandatory": false,
-          "renderOptionsAsRadio": false,
-          "searchable": false,
-          "displayShortName": "SCP HIV status",
-          "valueType": "TEXT",
-          "displayName": "SCP HIV status",
-          "id": "JisQZdK7A9m",
-          "trackedEntityAttribute": {
-            "id": "G5z3oSBOtxi"
-          }
+          "name": "Encounter date",
+          "id": "core_encounter_date",
+          "valueType": "DATE"
         },
         {
-          "name": "SCP ART number",
-          "created": "2026-02-17T18:24:02.521",
-          "lastUpdated": "2026-02-17T18:24:02.521",
-          "translations": [],
-          "program": {
-            "id": "oAs7wAazMbg"
-          },
-          "displayInList": true,
-          "sortOrder": 9,
-          "mandatory": false,
-          "renderOptionsAsRadio": false,
-          "searchable": true,
-          "displayShortName": "SCP ART number",
-          "valueType": "TEXT",
-          "displayName": "SCP ART number",
-          "id": "UBMM0HBuwJR",
-          "trackedEntityAttribute": {
-            "id": "nh3q1yEUNzZ"
-          }
+          "name": "HIV status",
+          "id": "core_hiv_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Smoking status",
+          "id": "core_smoking_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Alcohol use",
+          "id": "core_alcohol_use",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Family history of cancer",
+          "id": "core_family_history",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Comorbidities",
+          "id": "core_comorbidities",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Primary cancer site",
+          "id": "core_primary_site",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date of diagnosis",
+          "id": "core_diag_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Basis of diagnosis",
+          "id": "core_basis_diag",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Histology type",
+          "id": "core_histology",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Grade",
+          "id": "core_grade",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "ICD-10 code",
+          "id": "core_icd10",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Staging system",
+          "id": "core_staging_system",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Stage group",
+          "id": "core_stage_group",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "T",
+          "id": "core_t",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "N",
+          "id": "core_n",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "M",
+          "id": "core_m",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Performance status",
+          "id": "core_perf_status",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "Treatment intent",
+          "id": "core_treatment_intent",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Surgery done",
+          "id": "core_surgery_done",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Chemo started",
+          "id": "core_chemo_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Radiotherapy started",
+          "id": "core_rt_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Hormonal therapy",
+          "id": "core_hormonal",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Targeted/immunotherapy",
+          "id": "core_targeted",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Treatment completion status",
+          "id": "core_treatment_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Vital status",
+          "id": "core_vital_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date last seen",
+          "id": "core_last_seen",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Disease status",
+          "id": "core_disease_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Recurrence",
+          "id": "core_recurrence",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Palliative care enrolled",
+          "id": "core_palliative",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Death details",
+          "id": "core_death_details",
+          "valueType": "TEXT"
         }
+      ]
+    },
+    {
+      "name": "Staging",
+      "dataElements": [
+        {
+          "name": "National ID",
+          "id": "core_national_id",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Full name",
+          "id": "core_full_name",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "DOB",
+          "id": "core_dob",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Sex",
+          "id": "core_sex",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Phone",
+          "id": "core_phone",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Address",
+          "id": "core_address",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Registry Case ID",
+          "id": "core_case_id",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Encounter date",
+          "id": "core_encounter_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "HIV status",
+          "id": "core_hiv_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Smoking status",
+          "id": "core_smoking_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Alcohol use",
+          "id": "core_alcohol_use",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Family history of cancer",
+          "id": "core_family_history",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Comorbidities",
+          "id": "core_comorbidities",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Primary cancer site",
+          "id": "core_primary_site",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date of diagnosis",
+          "id": "core_diag_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Basis of diagnosis",
+          "id": "core_basis_diag",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Histology type",
+          "id": "core_histology",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Grade",
+          "id": "core_grade",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "ICD-10 code",
+          "id": "core_icd10",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Staging system",
+          "id": "core_staging_system",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Stage group",
+          "id": "core_stage_group",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "T",
+          "id": "core_t",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "N",
+          "id": "core_n",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "M",
+          "id": "core_m",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Performance status",
+          "id": "core_perf_status",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "Treatment intent",
+          "id": "core_treatment_intent",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Surgery done",
+          "id": "core_surgery_done",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Chemo started",
+          "id": "core_chemo_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Radiotherapy started",
+          "id": "core_rt_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Hormonal therapy",
+          "id": "core_hormonal",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Targeted/immunotherapy",
+          "id": "core_targeted",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Treatment completion status",
+          "id": "core_treatment_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Vital status",
+          "id": "core_vital_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date last seen",
+          "id": "core_last_seen",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Disease status",
+          "id": "core_disease_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Recurrence",
+          "id": "core_recurrence",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Palliative care enrolled",
+          "id": "core_palliative",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Death details",
+          "id": "core_death_details",
+          "valueType": "TEXT"
+        }
+      ]
+    },
+    {
+      "name": "MDT & Treatment Plan",
+      "dataElements": [
+        {
+          "name": "National ID",
+          "id": "core_national_id",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Full name",
+          "id": "core_full_name",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "DOB",
+          "id": "core_dob",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Sex",
+          "id": "core_sex",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Phone",
+          "id": "core_phone",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Address",
+          "id": "core_address",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Registry Case ID",
+          "id": "core_case_id",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Encounter date",
+          "id": "core_encounter_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "HIV status",
+          "id": "core_hiv_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Smoking status",
+          "id": "core_smoking_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Alcohol use",
+          "id": "core_alcohol_use",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Family history of cancer",
+          "id": "core_family_history",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Comorbidities",
+          "id": "core_comorbidities",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Primary cancer site",
+          "id": "core_primary_site",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date of diagnosis",
+          "id": "core_diag_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Basis of diagnosis",
+          "id": "core_basis_diag",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Histology type",
+          "id": "core_histology",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Grade",
+          "id": "core_grade",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "ICD-10 code",
+          "id": "core_icd10",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Staging system",
+          "id": "core_staging_system",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Stage group",
+          "id": "core_stage_group",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "T",
+          "id": "core_t",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "N",
+          "id": "core_n",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "M",
+          "id": "core_m",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Performance status",
+          "id": "core_perf_status",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "Treatment intent",
+          "id": "core_treatment_intent",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Surgery done",
+          "id": "core_surgery_done",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Chemo started",
+          "id": "core_chemo_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Radiotherapy started",
+          "id": "core_rt_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Hormonal therapy",
+          "id": "core_hormonal",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Targeted/immunotherapy",
+          "id": "core_targeted",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Treatment completion status",
+          "id": "core_treatment_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Vital status",
+          "id": "core_vital_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date last seen",
+          "id": "core_last_seen",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Disease status",
+          "id": "core_disease_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Recurrence",
+          "id": "core_recurrence",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Palliative care enrolled",
+          "id": "core_palliative",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Death details",
+          "id": "core_death_details",
+          "valueType": "TEXT"
+        }
+      ]
+    },
+    {
+      "name": "Treatment Delivery",
+      "dataElements": [
+        {
+          "name": "National ID",
+          "id": "core_national_id",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Full name",
+          "id": "core_full_name",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "DOB",
+          "id": "core_dob",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Sex",
+          "id": "core_sex",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Phone",
+          "id": "core_phone",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Address",
+          "id": "core_address",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Registry Case ID",
+          "id": "core_case_id",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Encounter date",
+          "id": "core_encounter_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "HIV status",
+          "id": "core_hiv_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Smoking status",
+          "id": "core_smoking_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Alcohol use",
+          "id": "core_alcohol_use",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Family history of cancer",
+          "id": "core_family_history",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Comorbidities",
+          "id": "core_comorbidities",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Primary cancer site",
+          "id": "core_primary_site",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date of diagnosis",
+          "id": "core_diag_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Basis of diagnosis",
+          "id": "core_basis_diag",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Histology type",
+          "id": "core_histology",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Grade",
+          "id": "core_grade",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "ICD-10 code",
+          "id": "core_icd10",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Staging system",
+          "id": "core_staging_system",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Stage group",
+          "id": "core_stage_group",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "T",
+          "id": "core_t",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "N",
+          "id": "core_n",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "M",
+          "id": "core_m",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Performance status",
+          "id": "core_perf_status",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "Treatment intent",
+          "id": "core_treatment_intent",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Surgery done",
+          "id": "core_surgery_done",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Chemo started",
+          "id": "core_chemo_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Radiotherapy started",
+          "id": "core_rt_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Hormonal therapy",
+          "id": "core_hormonal",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Targeted/immunotherapy",
+          "id": "core_targeted",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Treatment completion status",
+          "id": "core_treatment_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Vital status",
+          "id": "core_vital_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date last seen",
+          "id": "core_last_seen",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Disease status",
+          "id": "core_disease_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Recurrence",
+          "id": "core_recurrence",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Palliative care enrolled",
+          "id": "core_palliative",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Death details",
+          "id": "core_death_details",
+          "valueType": "TEXT"
+        }
+      ]
+    },
+    {
+      "name": "Follow-up / Response",
+      "dataElements": [
+        {
+          "name": "National ID",
+          "id": "core_national_id",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Full name",
+          "id": "core_full_name",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "DOB",
+          "id": "core_dob",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Sex",
+          "id": "core_sex",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Phone",
+          "id": "core_phone",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Address",
+          "id": "core_address",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Registry Case ID",
+          "id": "core_case_id",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Encounter date",
+          "id": "core_encounter_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "HIV status",
+          "id": "core_hiv_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Smoking status",
+          "id": "core_smoking_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Alcohol use",
+          "id": "core_alcohol_use",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Family history of cancer",
+          "id": "core_family_history",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Comorbidities",
+          "id": "core_comorbidities",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Primary cancer site",
+          "id": "core_primary_site",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date of diagnosis",
+          "id": "core_diag_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Basis of diagnosis",
+          "id": "core_basis_diag",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Histology type",
+          "id": "core_histology",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Grade",
+          "id": "core_grade",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "ICD-10 code",
+          "id": "core_icd10",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Staging system",
+          "id": "core_staging_system",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Stage group",
+          "id": "core_stage_group",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "T",
+          "id": "core_t",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "N",
+          "id": "core_n",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "M",
+          "id": "core_m",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Performance status",
+          "id": "core_perf_status",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "Treatment intent",
+          "id": "core_treatment_intent",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Surgery done",
+          "id": "core_surgery_done",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Chemo started",
+          "id": "core_chemo_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Radiotherapy started",
+          "id": "core_rt_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Hormonal therapy",
+          "id": "core_hormonal",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Targeted/immunotherapy",
+          "id": "core_targeted",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Treatment completion status",
+          "id": "core_treatment_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Vital status",
+          "id": "core_vital_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date last seen",
+          "id": "core_last_seen",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Disease status",
+          "id": "core_disease_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Recurrence",
+          "id": "core_recurrence",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Palliative care enrolled",
+          "id": "core_palliative",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Death details",
+          "id": "core_death_details",
+          "valueType": "TEXT"
+        }
+      ]
+    },
+    {
+      "name": "Outcome / Death",
+      "dataElements": [
+        {
+          "name": "National ID",
+          "id": "core_national_id",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Full name",
+          "id": "core_full_name",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "DOB",
+          "id": "core_dob",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Sex",
+          "id": "core_sex",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Phone",
+          "id": "core_phone",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Address",
+          "id": "core_address",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Registry Case ID",
+          "id": "core_case_id",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Encounter date",
+          "id": "core_encounter_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "HIV status",
+          "id": "core_hiv_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Smoking status",
+          "id": "core_smoking_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Alcohol use",
+          "id": "core_alcohol_use",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Family history of cancer",
+          "id": "core_family_history",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Comorbidities",
+          "id": "core_comorbidities",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Primary cancer site",
+          "id": "core_primary_site",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date of diagnosis",
+          "id": "core_diag_date",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Basis of diagnosis",
+          "id": "core_basis_diag",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Histology type",
+          "id": "core_histology",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Grade",
+          "id": "core_grade",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "ICD-10 code",
+          "id": "core_icd10",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Staging system",
+          "id": "core_staging_system",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Stage group",
+          "id": "core_stage_group",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "T",
+          "id": "core_t",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "N",
+          "id": "core_n",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "M",
+          "id": "core_m",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Performance status",
+          "id": "core_perf_status",
+          "valueType": "NUMBER"
+        },
+        {
+          "name": "Treatment intent",
+          "id": "core_treatment_intent",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Surgery done",
+          "id": "core_surgery_done",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Chemo started",
+          "id": "core_chemo_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Radiotherapy started",
+          "id": "core_rt_started",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Hormonal therapy",
+          "id": "core_hormonal",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Targeted/immunotherapy",
+          "id": "core_targeted",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Treatment completion status",
+          "id": "core_treatment_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Vital status",
+          "id": "core_vital_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Date last seen",
+          "id": "core_last_seen",
+          "valueType": "DATE"
+        },
+        {
+          "name": "Disease status",
+          "id": "core_disease_status",
+          "valueType": "TEXT"
+        },
+        {
+          "name": "Recurrence",
+          "id": "core_recurrence",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Palliative care enrolled",
+          "id": "core_palliative",
+          "valueType": "BOOLEAN"
+        },
+        {
+          "name": "Death details",
+          "id": "core_death_details",
+          "valueType": "TEXT"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "if": "HIV_status == Positive",
+      "then": [
+        "ART_status mandatory",
+        "On_ART_since show"
+      ]
+    },
+    {
+      "if": "Biopsy_done == Yes",
+      "then": [
+        "Pathology_result mandatory",
+        "Histology_type mandatory"
+      ]
+    },
+    {
+      "if": "Imaging_done == Yes",
+      "then": [
+        "Imaging_type show",
+        "Imaging_result_summary show"
+      ]
+    },
+    {
+      "if": "Stage_group == IV",
+      "then": [
+        "Palliative_care_enrolled show"
+      ]
+    },
+    {
+      "if": "Sex != Female",
+      "then": [
+        "Hide pregnancy-related elements"
+      ]
+    },
+    {
+      "if": "Vital_status == Dead",
+      "then": [
+        "Date_of_death mandatory",
+        "Place_of_death mandatory"
       ]
     }
   ]

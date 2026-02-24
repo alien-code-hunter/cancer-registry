@@ -34,91 +34,74 @@
       "domainType": "AGGREGATE",
       "aggregationLevels": [],
       "zeroIsSignificant": false,
-      "id": "jmG3kxooJV4",
-      "attributeValues": [],
-      "categoryCombo": {
-        "id": "xDsPPFKU2mh"
-      }
-    },
-    {
-      "name": "Leukemia - HPV screened",
-      "created": "2026-02-18T18:42:34.710086",
-      "lastUpdated": "2026-02-18T18:42:34.710086",
-      "translations": [],
-      "createdBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "lastUpdatedBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "sharing": {
-        "owner": "M5zQapPyTZI",
-        "external": false,
-        "users": {},
-        "userGroups": {},
-        "public": "rw------"
-      },
-      "shortName": "Leukemia - HPV screened",
-      "formName": "Leukemia - HPV screened",
-      "legendSets": [],
-      "aggregationType": "SUM",
-      "valueType": "INTEGER_POSITIVE",
-      "domainType": "AGGREGATE",
-      "aggregationLevels": [],
-      "zeroIsSignificant": false,
-      "id": "kHS8JZHrXmw",
-      "attributeValues": [],
-      "categoryCombo": {
-        "id": "xDsPPFKU2mh"
-      }
-    },
-    {
-      "name": "Leukemia - HPV screened and received results",
-      "created": "2026-02-18T18:42:34.710086",
-      "lastUpdated": "2026-02-18T18:42:34.710086",
-      "translations": [],
-      "createdBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "lastUpdatedBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "sharing": {
-        "owner": "M5zQapPyTZI",
-        "external": false,
-        "users": {},
-        "userGroups": {},
-        "public": "rw------"
-      },
-      "shortName": "Leukemia - HPV screened and received results",
-      "formName": "Leukemia - HPV screened and received results",
-      "legendSets": [],
-      "aggregationType": "SUM",
-      "valueType": "INTEGER_POSITIVE",
-      "domainType": "AGGREGATE",
-      "aggregationLevels": [],
-      "zeroIsSignificant": false,
       "id": "QfrMIF6wBzQ",
       "attributeValues": [],
       "categoryCombo": {
         "id": "xDsPPFKU2mh"
       }
+    },
+    {
+      "name": "Leukemia - CBC WBC",
+      "shortName": "CBC_WBC",
+      "formName": "CBC WBC",
+      "aggregationType": "SUM",
+      "valueType": "INTEGER",
+      "domainType": "AGGREGATE",
+      "id": "A1B2C3D4E5F"
+    },
+    {
+      "name": "Leukemia - Hemoglobin",
+      "shortName": "Hemoglobin",
+      "formName": "Hemoglobin",
+      "aggregationType": "SUM",
+      "valueType": "INTEGER",
+      "domainType": "AGGREGATE",
+      "id": "G6H7I8J9K0L"
+    },
+    {
+      "name": "Leukemia - Platelets",
+      "shortName": "Platelets",
+      "formName": "Platelets",
+      "aggregationType": "SUM",
+      "valueType": "INTEGER",
+      "domainType": "AGGREGATE",
+      "id": "M1N2O3P4Q5R"
+    },
+    {
+      "name": "Leukemia - Bone Marrow Done",
+      "shortName": "Bone_Marrow_Done",
+      "formName": "Bone Marrow Done",
+      "aggregationType": "SUM",
+      "valueType": "BOOLEAN",
+      "domainType": "AGGREGATE",
+      "id": "S6T7U8V9W0X"
+    },
+    {
+      "name": "Leukemia - Marrow Blast Percent",
+      "shortName": "Marrow_Blast_Percent",
+      "formName": "Marrow Blast Percent",
+      "aggregationType": "AVERAGE",
+      "valueType": "PERCENTAGE",
+      "domainType": "AGGREGATE",
+      "id": "Y1Z2A3B4C5D"
+    },
+    {
+      "name": "Leukemia - Subtype",
+      "shortName": "Subtype",
+      "formName": "Subtype",
+      "aggregationType": "NONE",
+      "valueType": "TEXT",
+      "domainType": "AGGREGATE",
+      "id": "E6F7G8H9I0J"
+    },
+    {
+      "name": "Leukemia - Risk Group Protocol",
+      "shortName": "Risk_Group_Protocol",
+      "formName": "Risk Group Protocol",
+      "aggregationType": "NONE",
+      "valueType": "TEXT",
+      "domainType": "AGGREGATE",
+      "id": "K1L2M3N4O5P"
     },
     {
       "name": "Leukemia - LLETZ treated",
@@ -154,7 +137,7 @@
       "domainType": "AGGREGATE",
       "aggregationLevels": [],
       "zeroIsSignificant": false,
-      "id": "ZaQxIdAt2u2",
+      "id": "Q1W2E3R4T5Y",
       "attributeValues": [],
       "categoryCombo": {
         "id": "xDsPPFKU2mh"
@@ -755,86 +738,6 @@
       "aggregationLevels": [],
       "zeroIsSignificant": false,
       "id": "iLIAy5VN5hi",
-      "attributeValues": [],
-      "categoryCombo": {
-        "id": "xDsPPFKU2mh"
-      }
-    },
-    {
-      "name": "Leukemia - VIA screened and received results",
-      "created": "2026-02-18T18:42:34.710086",
-      "lastUpdated": "2026-02-18T18:42:34.710086",
-      "translations": [],
-      "createdBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "lastUpdatedBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "sharing": {
-        "owner": "M5zQapPyTZI",
-        "external": false,
-        "users": {},
-        "userGroups": {},
-        "public": "rw------"
-      },
-      "shortName": "Leukemia - VIA screened and received results",
-      "formName": "Leukemia - VIA screened and received results",
-      "legendSets": [],
-      "aggregationType": "SUM",
-      "valueType": "INTEGER_POSITIVE",
-      "domainType": "AGGREGATE",
-      "aggregationLevels": [],
-      "zeroIsSignificant": false,
-      "id": "UpitO4Tk4dC",
-      "attributeValues": [],
-      "categoryCombo": {
-        "id": "xDsPPFKU2mh"
-      }
-    },
-    {
-      "name": "Leukemia - VIA screened and treated",
-      "created": "2026-02-18T18:42:34.710086",
-      "lastUpdated": "2026-02-18T18:42:34.710086",
-      "translations": [],
-      "createdBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "lastUpdatedBy": {
-        "id": "M5zQapPyTZI",
-        "code": "admin",
-        "name": "admin admin",
-        "displayName": "admin admin",
-        "username": "admin"
-      },
-      "sharing": {
-        "owner": "M5zQapPyTZI",
-        "external": false,
-        "users": {},
-        "userGroups": {},
-        "public": "rw------"
-      },
-      "shortName": "Leukemia - VIA screened and treated",
-      "formName": "Leukemia - VIA screened and treated",
-      "legendSets": [],
-      "aggregationType": "SUM",
-      "valueType": "INTEGER_POSITIVE",
-      "domainType": "AGGREGATE",
-      "aggregationLevels": [],
-      "zeroIsSignificant": false,
-      "id": "kwHIIzTv9Ad",
       "attributeValues": [],
       "categoryCombo": {
         "id": "xDsPPFKU2mh"
